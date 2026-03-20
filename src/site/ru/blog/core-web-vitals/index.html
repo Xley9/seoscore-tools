@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Web Vitals: Полное руководство по оптимизации для SEO (2026) — seoscore.tools</title>
+  <meta name="description" content="Освойте Core Web Vitals в 2026 году. Узнайте, как оптимизировать LCP, INP и CLS для улучшения позиций в Google. Включает диагностические инструменты, методы оптимизации и примеры до/после.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="seoscore.tools">
+  <link rel="canonical" href="https://seoscore.tools/ru/blog/core-web-vitals/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/core-web-vitals/">
+  <link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/core-web-vitals/">
+  <link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/core-web-vitals/">
+  <link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/core-web-vitals/">
+  <link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/core-web-vitals/">
+  <link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/core-web-vitals/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Core Web Vitals: Полное руководство по оптимизации для SEO (2026) — seoscore.tools">
+  <meta property="og:description" content="Освойте Core Web Vitals в 2026 году. Оптимизируйте LCP, INP и CLS для улучшения позиций в Google с помощью диагностических инструментов, методов и примеров.">
+  <meta property="og:url" content="https://seoscore.tools/ru/blog/core-web-vitals/">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+  <meta property="article:published_time" content="2026-03-15T00:00:00+00:00">
+  <meta property="article:modified_time" content="2026-03-15T00:00:00+00:00">
+  <meta property="article:section" content="SEO">
+  <meta property="article:tag" content="Core Web Vitals">
+  <meta property="article:tag" content="Page Speed">
+  <meta property="article:tag" content="SEO">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Core Web Vitals: Полное руководство по оптимизации для SEO (2026)">
+  <meta name="twitter:description" content="Освойте Core Web Vitals в 2026 году. Оптимизируйте LCP, INP и CLS для улучшения позиций в поиске.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/blog.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JP76DPK4GK');
+  </script>
+
+  <!-- Schema.org — BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Core Web Vitals: Полное руководство по оптимизации для SEO (2026)",
+    "description": "Освойте Core Web Vitals в 2026 году. Узнайте, как оптимизировать LCP, INP и CLS для улучшения позиций в Google. Включает диагностические инструменты, методы оптимизации и примеры до/после.",
+    "url": "https://seoscore.tools/ru/blog/core-web-vitals/",
+    "datePublished": "2026-03-15T00:00:00+00:00",
+    "dateModified": "2026-03-15T00:00:00+00:00",
+    "author": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://seoscore.tools/favicon.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://seoscore.tools/ru/blog/core-web-vitals/"
+    },
+    "articleSection": "SEO",
+    "keywords": ["Core Web Vitals", "оптимизация Core Web Vitals", "LCP INP CLS", "скорость загрузки SEO", "оптимизация INP", "Largest Contentful Paint", "Cumulative Layout Shift"],
+    "wordCount": 3200,
+    "inLanguage": "ru"
+  }
+  </script>
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://seoscore.tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Блог",
+        "item": "https://seoscore.tools/ru/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Core Web Vitals",
+        "item": "https://seoscore.tools/ru/blog/core-web-vitals/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Являются ли Core Web Vitals фактором ранжирования Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. Core Web Vitals являются подтверждённым фактором ранжирования Google в рамках сигналов качества страницы. Google использует данные LCP, INP и CLS из отчёта Chrome User Experience Report (CrUX) для оценки реального пользовательского опыта. Хотя релевантность контента и авторитетность остаются более сильными сигналами ранжирования, Core Web Vitals выступают значимым фактором при выборе между страницами схожего качества и релевантности. Сайты, проходящие все три порога CWV, имеют измеримое преимущество в ранжировании."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Что заменило FID в Core Web Vitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Interaction to Next Paint (INP) официально заменил First Input Delay (FID) в качестве Core Web Vital в марте 2024 года. В то время как FID измерял только задержку до начала обработки браузером первого пользовательского взаимодействия, INP измеряет полную задержку всех взаимодействий на протяжении жизненного цикла страницы — от ввода до следующего визуального обновления. INP является более комплексной метрикой отзывчивости, поскольку фиксирует наихудший опыт взаимодействия, а не только первое."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Какие показатели Core Web Vitals считаются хорошими?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Хорошие показатели Core Web Vitals: LCP (Largest Contentful Paint) — не более 2,5 секунд, INP (Interaction to Next Paint) — не более 200 миллисекунд, CLS (Cumulative Layout Shift) — не более 0,1. Эти пороговые значения применяются к 75-му перцентилю реального пользовательского опыта, собранного через Chrome User Experience Report (CrUX). Страница проходит проверку Core Web Vitals, когда все три метрики соответствуют порогу «хорошо» для не менее 75% визитов."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как Core Web Vitals влияют на видимость в ИИ-поиске?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Core Web Vitals косвенно влияют на видимость в ИИ-поиске двумя способами. Во-первых, страницы с плохими CWV имеют тенденцию ранжироваться ниже в традиционном поиске, что означает, что ИИ-системы, опирающиеся на поисковые индексы (такие как Google AI Overview и Perplexity), с меньшей вероятностью обнаружат и процитируют их. Во-вторых, ИИ-краулеры отдают приоритет быстрым, хорошо структурированным страницам, поскольку медленные или нестабильные страницы сложнее надёжно анализировать. Хотя ИИ-системы не используют CWV-оценки напрямую, производительность и стабильность, которые они измеряют, коррелируют с техническим качеством, которое ИИ-системы предпочитают в своих источниках."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Можно ли улучшить Core Web Vitals без разработчика?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да, многие улучшения Core Web Vitals можно сделать без навыков программирования. Быстрые победы включают сжатие и правильный размер изображений (с помощью инструментов вроде Squoosh или ShortPixel), включение кэширования браузера через панель хостинга, активацию CDN вроде Cloudflare (есть бесплатный тариф), добавление атрибутов width и height к изображениям и iframe для предотвращения сдвигов макета, а также удаление неиспользуемых плагинов или скриптов. Однако некоторые оптимизации — такие как разделение кода, реализация ленивой загрузки в JavaScript-фреймворках или оптимизация времени ответа сервера — как правило, требуют помощи разработчика."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — Speakable -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Core Web Vitals: Полное руководство по оптимизации для SEO",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-intro", ".key-definition"]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 6 L16 16 L24 20" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="2.5" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-link">Сканер</a>
+        <a href="/ru/blog/" class="nav-link" style="color:var(--accent)">Блог</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumbs -->
+    <div class="blog-container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Главная</a>
+        <span class="bc-sep">/</span>
+        <a href="/ru/blog/">Блог</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-current">Core Web Vitals</span>
+      </nav>
+    </div>
+
+    <!-- Article Layout -->
+    <div class="blog-container">
+      <div class="article-layout">
+
+        <!-- Main Content -->
+        <article class="article-main">
+
+          <!-- Article Header -->
+          <header class="article-header">
+            <div class="article-badges">
+              <span class="article-badge seo-badge">SEO</span>
+            </div>
+            <h1>Core Web Vitals: Полное руководство по оптимизации для SEO (2026)</h1>
+            <div class="article-meta">
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                15 марта 2026
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 мин чтения
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">Автор: seoscore.tools</span>
+            </div>
+          </header>
+
+          <!-- Mobile TOC -->
+          <div class="toc-mobile" id="tocMobile">
+            <button class="toc-mobile-toggle" id="tocMobileToggle">
+              Содержание
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="toc-mobile-list" id="tocMobileList">
+              <li><a class="toc-link" href="#what-are-cwv">Что такое Core Web Vitals?</a></li>
+              <li><a class="toc-link" href="#lcp">LCP: Largest Contentful Paint</a></li>
+              <li><a class="toc-link" href="#inp">INP: Interaction to Next Paint</a></li>
+              <li><a class="toc-link" href="#cls">CLS: Cumulative Layout Shift</a></li>
+              <li><a class="toc-link" href="#impact-rankings">Влияние на позиции</a></li>
+              <li><a class="toc-link" href="#optimization-workflow">Рабочий процесс оптимизации</a></li>
+              <li><a class="toc-link" href="#optimization-techniques">6 ключевых методов оптимизации</a></li>
+              <li><a class="toc-link" href="#diagnostic-tools">Диагностические инструменты</a></li>
+              <li><a class="toc-link" href="#cwv-ai-search">CWV и ИИ-поиск</a></li>
+              <li><a class="toc-link" href="#common-mistakes">Распространённые ошибки</a></li>
+              <li><a class="toc-link" href="#faq">FAQ</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Ключевые выводы</a></li>
+            </ul>
+          </div>
+
+          <!-- Article Body -->
+          <div class="article-body">
+
+            <!-- Introduction -->
+            <p class="article-intro key-definition"><strong>Core Web Vitals (CWV) — это набор из трёх конкретных метрик производительности страницы, которые Google использует в качестве подтверждённого сигнала ранжирования для оценки реального пользовательского опыта на вашем сайте.</strong> Представленные в 2020 году и обновлённые с заменой FID на INP в марте 2024, Core Web Vitals измеряют скорость загрузки основного контента страницы (LCP), быстроту реакции на действия пользователя (INP) и визуальную стабильность во время загрузки (CLS). Вместе эти три метрики определяют, обеспечивает ли ваша страница тот уровень опыта, который ожидают пользователи &mdash; и Google.</p>
+
+            <p>В 2026 году Core Web Vitals больше не являются опциональными. Они &mdash; подтверждённый компонент системы ранжирования Google по качеству страниц и напрямую влияют на то, обойдёте ли вы конкурентов с аналогичным качеством контента и авторитетностью. Более того, они влияют на опыт каждого посетителя вашего сайта. Страница, которая загружается медленно, вяло реагирует на клики или сдвигает контент во время загрузки, отталкивает пользователей &mdash; и Google это знает, потому что измеряет именно такое поведение у реальных пользователей Chrome по всему миру через Chrome User Experience Report (CrUX).</p>
+
+            <p>Это руководство охватывает всё, что вам нужно знать о Core Web Vitals в 2026 году: что измеряет каждая метрика, почему она важна для SEO и ИИ-поиска, как диагностировать проблемы и как именно их исправить. Независимо от того, являетесь ли вы разработчиком, SEO-специалистом или владельцем сайта, вы найдёте практические стратегии с реальными примерами кода, сравнениями до/после и чётким рабочим процессом оптимизации, который можно внедрить уже сегодня.</p>
+
+            <!-- What Are Core Web Vitals -->
+            <h2 id="what-are-cwv">Что такое Core Web Vitals?</h2>
+
+            <p><strong>Core Web Vitals — это три ориентированные на пользователя метрики производительности, которые Google определил как наиболее важные показатели качества страницы.</strong> В отличие от традиционных метрик производительности, сфокусированных на технических измерениях (время DNS-запроса, время до первого байта), Core Web Vitals фокусируются на том, что реально ощущают пользователи: насколько быстро страница кажется загруженной? Как быстро она реагирует при нажатии? Прыгает ли макет, пока я пытаюсь читать или взаимодействовать?</p>
+
+            <p>Google представил Core Web Vitals в мае 2020 года как часть более широкой инициативы по стандартизации измерения качества страниц. Первоначальные три метрики были: LCP (Largest Contentful Paint), FID (First Input Delay) и CLS (Cumulative Layout Shift). В марте 2024 года Google заменил FID на INP (Interaction to Next Paint), потому что INP обеспечивает более комплексное измерение отзывчивости, фиксируя полный жизненный цикл взаимодействия, а не только начальную задержку ввода.</p>
+
+            <p>Ключевое, что нужно понимать о Core Web Vitals, — они измеряются с помощью <strong>реальных данных пользователей</strong>, а не лабораторных симуляций. Google собирает данные о производительности от миллионов пользователей Chrome, согласившихся на участие в Chrome User Experience Report (CrUX), и использует 75-й перцентиль этих полевых данных для оценки, проходит ли страница каждую метрику. Это означает, что вы не можете «обмануть» Core Web Vitals, оптимизируя только для лабораторных тестов &mdash; значение имеет реальный опыт ваших фактических посетителей.</p>
+
+            <!-- Score Cards Row: 3 CWV Thresholds -->
+            <div class="score-cards-row">
+              <div class="mini-score-card">
+                <div class="mini-score-value score-green">&le;2,5с</div>
+                <div class="mini-score-label">LCP &mdash; Largest Contentful Paint</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-green">&le;200мс</div>
+                <div class="mini-score-label">INP &mdash; Interaction to Next Paint</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-green">&le;0,1</div>
+                <div class="mini-score-label">CLS &mdash; Cumulative Layout Shift</div>
+              </div>
+            </div>
+
+            <!-- Stat Highlight -->
+            <div class="stat-highlight">
+              <span class="stat-number">24%</span>
+              <span class="stat-desc">Страницы с хорошими Core Web Vitals на 24% реже покидаются посетителями до завершения загрузки.</span>
+            </div>
+
+            <!-- Stat Row: 4 Metrics -->
+            <div class="stat-row">
+              <div class="stat-row-item">
+                <span class="stat-row-value">&le;2,5с</span>
+                <span class="stat-row-label">Цель LCP</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">&le;200мс</span>
+                <span class="stat-row-label">Цель INP</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">&le;0,1</span>
+                <span class="stat-row-label">Цель CLS</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">&le;800мс</span>
+                <span class="stat-row-label">Цель TTFB</span>
+              </div>
+            </div>
+
+            <h3>Пороговые значения CWV на одном экране</h3>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Метрика</th>
+                    <th>Хорошо</th>
+                    <th>Требует улучшения</th>
+                    <th>Плохо</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>LCP</strong> (Largest Contentful Paint)</td>
+                    <td>&le;2,5с</td>
+                    <td>2,5с &ndash; 4,0с</td>
+                    <td>&gt;4,0с</td>
+                  </tr>
+                  <tr>
+                    <td><strong>INP</strong> (Interaction to Next Paint)</td>
+                    <td>&le;200мс</td>
+                    <td>200мс &ndash; 500мс</td>
+                    <td>&gt;500мс</td>
+                  </tr>
+                  <tr>
+                    <td><strong>CLS</strong> (Cumulative Layout Shift)</td>
+                    <td>&le;0,1</td>
+                    <td>0,1 &ndash; 0,25</td>
+                    <td>&gt;0,25</td>
+                  </tr>
+                  <tr>
+                    <td><strong>TTFB</strong> (Time to First Byte)*</td>
+                    <td>&le;800мс</td>
+                    <td>800мс &ndash; 1800мс</td>
+                    <td>&gt;1800мс</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p><em>*TTFB не является Core Web Vital, но это критически важная диагностическая метрика, напрямую влияющая на LCP. Медленный TTFB делает достижение хорошего показателя LCP практически невозможным.</em></p>
+
+            <!-- LCP Section -->
+            <h2 id="lcp">LCP: Largest Contentful Paint</h2>
+
+            <p><strong>Largest Contentful Paint (LCP) измеряет время, необходимое для завершения рендеринга самого большого видимого элемента контента в области просмотра.</strong> Обычно это главное изображение (hero image), крупный текстовый блок, постер видео или фоновое изображение. LCP отвечает на фундаментальный вопрос пользователя: «Загрузился ли уже основной контент?» Хороший LCP составляет 2,5 секунды или менее.</p>
+
+            <p>LCP часто является самой сложной для оптимизации метрикой Core Web Vitals, потому что зависит от всей цепочки доставки: времени ответа сервера (TTFB), обнаружения ресурса, загрузки ресурса и рендеринга. Каждая добавленная миллисекунда в любой точке этой цепочки напрямую увеличивает ваш LCP. Поэтому оптимизация LCP требует комплексного подхода &mdash; исправление только одного узкого места редко бывает достаточным.</p>
+
+            <h3>Типичные причины плохого LCP</h3>
+
+            <ul>
+              <li><strong>Медленное время ответа сервера (TTFB):</strong> Если ваш сервер отвечает за 2 секунды, ваш LCP не может быть ниже 2,5 секунд. Задержки серверного рендеринга, запросы к базе данных и отсутствие кэширования &mdash; типичные виновники.</li>
+              <li><strong>Блокирующие рендеринг ресурсы:</strong> CSS- и JavaScript-файлы в <code>&lt;head&gt;</code> блокируют рендеринг до полной загрузки и парсинга. Большие, неминифицированные CSS или синхронные JS-файлы могут задерживать LCP на секунды.</li>
+              <li><strong>Неоптимизированные изображения:</strong> Главные изображения в формате PNG вместо WebP/AVIF, изображения неправильного размера для области просмотра или изображения, загружаемые без preload-подсказок, заставляют браузер обнаруживать и загружать большие файлы поздно в процессе загрузки.</li>
+              <li><strong>Рендеринг на стороне клиента:</strong> Одностраничные приложения (React, Vue, Angular), которые рендерят контент полностью на JavaScript, требуют от браузера загрузки, парсинга и выполнения JS до появления любого контента. Это создаёт пустую страницу до инициализации фреймворка.</li>
+              <li><strong>Ленивая загрузка LCP-элемента:</strong> Неправильное применение <code>loading="lazy"</code> к главному изображению или контенту выше сгиба задерживает его загрузку, потому что браузер ждёт, пока элемент не окажется рядом с областью просмотра.</li>
+            </ul>
+
+            <h3>5 стратегий оптимизации LCP</h3>
+
+            <h4>1. Оптимизируйте время ответа сервера</h4>
+
+            <p>Снизьте TTFB с помощью серверного кэширования, CDN, обновления хостинга или перехода на edge-рендеринг страниц. Каждое сокращение TTFB на 100 мс напрямую улучшает LCP.</p>
+
+            <pre><code># Nginx — включение gzip-сжатия и кэширования статики
+gzip on;
+gzip_types text/plain text/css application/json application/javascript text/xml;
+gzip_min_length 256;
+
+location ~* \.(css|js|jpg|jpeg|png|gif|ico|svg|woff2)$ {
+    expires 1y;
+    add_header Cache-Control "public, immutable";
+}</code></pre>
+
+            <h4>2. Предварительно загрузите LCP-изображение</h4>
+
+            <p>Сообщите браузеру о LCP-изображении заранее, используя тег <code>&lt;link rel="preload"&gt;</code> в head документа. Это позволяет браузеру начать загрузку изображения до его обнаружения в DOM.</p>
+
+            <pre><code>&lt;!-- Предзагрузка hero-изображения для ускорения LCP --&gt;
+&lt;link rel="preload" as="image" href="/images/hero.webp"
+      type="image/webp" fetchpriority="high"&gt;
+
+&lt;!-- Отметьте LCP-изображение fetchpriority --&gt;
+&lt;img src="/images/hero.webp" alt="Описание hero"
+     width="1200" height="630" fetchpriority="high"&gt;</code></pre>
+
+            <h4>3. Используйте современные форматы изображений</h4>
+
+            <p>Конвертируйте изображения в формат WebP или AVIF. WebP обычно обеспечивает файлы на 25-35% меньше, чем JPEG при эквивалентном качестве, а AVIF может сократить размер файла до 50%. Используйте элемент <code>&lt;picture&gt;</code> для прогрессивного улучшения.</p>
+
+            <pre><code>&lt;picture&gt;
+  &lt;source srcset="/images/hero.avif" type="image/avif"&gt;
+  &lt;source srcset="/images/hero.webp" type="image/webp"&gt;
+  &lt;img src="/images/hero.jpg" alt="Витрина продукта"
+       width="1200" height="630" fetchpriority="high"&gt;
+&lt;/picture&gt;</code></pre>
+
+            <h4>4. Устраните блокирующие рендеринг ресурсы</h4>
+
+            <p>Встройте критический CSS непосредственно в <code>&lt;head&gt;</code> и отложите некритические стили. Загружайте JavaScript с атрибутами <code>defer</code> или <code>async</code> для предотвращения блокировки парсера.</p>
+
+            <pre><code>&lt;!-- Встроенный критический CSS выше сгиба --&gt;
+&lt;style&gt;
+  /* Критические стили для шапки, hero, навигации */
+  .header { display:flex; height:60px; }
+  .hero { min-height:400px; }
+&lt;/style&gt;
+
+&lt;!-- Отложенная загрузка некритического CSS --&gt;
+&lt;link rel="preload" href="/style.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"&gt;
+
+&lt;!-- Отложенная загрузка JavaScript --&gt;
+&lt;script src="/app.js" defer&gt;&lt;/script&gt;</code></pre>
+
+            <h4>5. Используйте CDN для статических ресурсов</h4>
+
+            <p>Раздавайте изображения, CSS, JavaScript и шрифты через сеть доставки контента (CDN) с точками присутствия вблизи ваших пользователей. CDN может сократить время загрузки ресурсов на 50-80% для пользователей, находящихся далеко от вашего сервера. Cloudflare, Fastly и AWS CloudFront предлагают бесплатные или доступные тарифы, подходящие для большинства сайтов.</p>
+
+            <div class="callout callout-tip">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Быстрая победа для LCP</strong>
+                <p>Самая действенная оптимизация LCP &mdash; добавление <code>fetchpriority="high"</code> к LCP-изображению и проверка, что оно НЕ загружается лениво. Одно это может улучшить LCP на 200-500 мс на многих сайтах. Комбинируйте с preload-ссылкой в head для максимального эффекта.</p>
+              </div>
+            </div>
+
+            <!-- INP Section -->
+            <h2 id="inp">INP: Interaction to Next Paint</h2>
+
+            <p><strong>Interaction to Next Paint (INP) измеряет наихудшую отзывчивость вашей страницы, отслеживая задержку между взаимодействием пользователя (клик, тап или нажатие клавиши) и следующим визуальным обновлением на экране.</strong> INP заменил First Input Delay (FID) в качестве Core Web Vital в марте 2024 года. Хороший INP составляет 200 миллисекунд или менее.</p>
+
+            <p>Критическое различие между INP и его предшественником FID &mdash; в охвате. FID измерял только задержку до того, как браузер <em>начал</em> обработку самого первого взаимодействия пользователя. INP измеряет <em>полную</em> задержку <em>каждого</em> взаимодействия на протяжении жизненного цикла страницы и сообщает о наихудшем (или почти наихудшем, на 98-м перцентиле). Это означает, что страница, быстро реагирующая на первый клик, но зависающая на 800 мс при открытии выпадающего меню, не пройдёт INP, хотя прошла бы FID.</p>
+
+            <p>INP фиксирует три отдельные фазы задержки взаимодействия:</p>
+
+            <ul>
+              <li><strong>Задержка ввода (Input delay):</strong> Время между взаимодействием пользователя и началом выполнения обработчиков событий браузером. Вызвана занятостью главного потока другими задачами (длинные задачи, тяжёлое выполнение JavaScript).</li>
+              <li><strong>Время обработки (Processing time):</strong> Время выполнения обработчиков событий. Сложные обработчики, выполняющие синхронную DOM-манипуляцию, тяжёлые вычисления или блокирующие API-вызовы, увеличивают время обработки.</li>
+              <li><strong>Задержка отображения (Presentation delay):</strong> Время между завершением обработчиков событий и отрисовкой следующего кадра браузером. Включает пересчёт стилей, компоновку и отрисовку, вызванные взаимодействием.</li>
+            </ul>
+
+            <h3>Стратегии оптимизации INP</h3>
+
+            <h4>1. Разбивайте длинные задачи</h4>
+
+            <p>JavaScript-задачи, выполняющиеся более 50 мс, блокируют главный поток и не дают браузеру реагировать на действия пользователя. Разбивайте длинные задачи на более мелкие части с помощью <code>requestIdleCallback</code>, <code>setTimeout</code> или API <code>scheduler.yield()</code>.</p>
+
+            <pre><code>// Плохо: одна длинная синхронная задача (блокирует главный поток)
+function processAllItems(items) {
+  items.forEach(item => heavyProcessing(item)); // 500мс+
+}
+
+// Хорошо: разбивка на части с scheduler.yield()
+async function processAllItems(items) {
+  for (const item of items) {
+    heavyProcessing(item);
+    // Уступаем главному потоку между элементами
+    if (navigator.scheduler?.yield) {
+      await navigator.scheduler.yield();
+    } else {
+      await new Promise(r => setTimeout(r, 0));
+    }
+  }
+}</code></pre>
+
+            <h4>2. Уменьшите размер JavaScript-бандла</h4>
+
+            <p>Большие JavaScript-бандлы дольше парсятся и выполняются, блокируя главный поток при загрузке страницы и после взаимодействий. Используйте разделение кода (code splitting) для загрузки только необходимого JavaScript для текущей страницы, tree-shaking для удаления неиспользуемого кода и откладывание некритических скриптов.</p>
+
+            <h4>3. Используйте debounce для обработчиков ввода</h4>
+
+            <p>Обработчики событий scroll, resize, mousemove и input могут срабатывать сотни раз в секунду. Применяйте debounce или throttle к этим обработчикам, чтобы предотвратить перегрузку главного потока и ухудшение INP для последующих взаимодействий.</p>
+
+            <h4>4. Избегайте принудительных синхронных компоновок</h4>
+
+            <p>Чтение свойств компоновки (таких как <code>offsetHeight</code> или <code>getBoundingClientRect()</code>) сразу после модификации DOM вынуждает браузер выполнять синхронный расчёт компоновки, который блокирует главный поток. Группируйте операции чтения и записи отдельно.</p>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>INP vs FID: почему эта замена важна</strong>
+                <p>Большинство сайтов легко проходили FID, поскольку первые взаимодействия обычно происходят после завершения загрузки страницы. INP гораздо сложнее пройти, потому что он измеряет ВСЕ взаимодействия, включая те, что происходят в сложных состояниях страницы (например, после открытия модального окна, во время бесконечной прокрутки или при фильтрации каталога товаров). Если вы прошли FID, не предполагайте, что пройдёте INP &mdash; измеряйте его целенаправленно.</p>
+              </div>
+            </div>
+
+            <!-- CLS Section -->
+            <h2 id="cls">CLS: Cumulative Layout Shift</h2>
+
+            <p><strong>Cumulative Layout Shift (CLS) измеряет, насколько видимый контент вашей страницы неожиданно перемещается в течение её жизненного цикла.</strong> Он количественно оценивает визуальную нестабильность &mdash; те раздражающие моменты, когда вы собираетесь нажать кнопку, а она вдруг смещается из-за загрузки рекламы над ней, или когда текст, который вы читаете, сдвигается вниз из-за загрузки веб-шрифта. Хороший показатель CLS &mdash; 0,1 или менее.</p>
+
+            <p>CLS рассчитывается путём умножения <strong>доли воздействия</strong> (какая часть области просмотра была затронута сдвигом) на <strong>долю расстояния</strong> (насколько далеко сместились элементы). Учитываются только неожиданные сдвиги &mdash; изменения макета, происходящие в течение 500 мс после взаимодействия пользователя (например, нажатия на раскрывающийся список), исключаются из CLS. Google использует подход «сессионного окна» для расчёта CLS, группируя сдвиги, происходящие в пределах 1 секунды друг от друга (с максимальным окном в 5 секунд), и сообщая о наибольшем сессионном окне.</p>
+
+            <h3>Типичные причины плохого CLS</h3>
+
+            <ul>
+              <li><strong>Изображения и видео без указания размеров:</strong> Когда изображения загружаются без явных атрибутов <code>width</code> и <code>height</code>, браузер не может зарезервировать для них место. При загрузке они сдвигают весь контент ниже.</li>
+              <li><strong>Реклама, встраиваемые элементы и iframe без зарезервированного пространства:</strong> Сторонний контент, динамически внедряющийся на страницу без предопределённого контейнера, вызывает значительные сдвиги макета.</li>
+              <li><strong>Динамически внедряемый контент:</strong> Баннеры, уведомительные панели, модальные окна cookie-согласия или ленты «срочных новостей», сдвигающие контент вниз после первоначального рендеринга.</li>
+              <li><strong>Веб-шрифты, вызывающие FOUT (мигание нестилизованного текста):</strong> Когда веб-шрифт загружается и заменяет запасной шрифт, различия в метриках шрифтов (размер, высота строки, межбуквенный интервал) вызывают сдвиг текстовых блоков.</li>
+              <li><strong>CSS-анимации, запускающие перекомпоновку:</strong> Анимации, использующие свойства <code>top</code>, <code>left</code>, <code>width</code> или <code>height</code> вместо <code>transform</code>, вызывают пересчёты макета, которые засчитываются как сдвиги.</li>
+            </ul>
+
+            <h3>Стратегии исправления CLS</h3>
+
+            <h4>1. Всегда задавайте размеры изображений и видео</h4>
+
+            <pre><code>&lt;!-- Всегда указывайте width и height для изображений --&gt;
+&lt;img src="/product.webp" alt="Фото продукта"
+     width="800" height="600" loading="lazy"&gt;
+
+&lt;!-- Для адаптивных изображений используйте CSS aspect-ratio --&gt;
+&lt;style&gt;
+  .responsive-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+&lt;/style&gt;</code></pre>
+
+            <h4>2. Резервируйте место для рекламы и встраиваемых элементов</h4>
+
+            <pre><code>&lt;!-- Зарезервируйте место для рекламного блока 300x250 --&gt;
+&lt;div style="min-height: 250px; width: 300px;"&gt;
+  &lt;!-- Скрипт рекламы загрузится здесь --&gt;
+&lt;/div&gt;
+
+&lt;!-- Зарезервируйте место для iframe --&gt;
+&lt;iframe src="https://embed.example.com"
+        width="560" height="315"
+        loading="lazy"&gt;&lt;/iframe&gt;</code></pre>
+
+            <h4>3. Используйте font-display: swap с подстроенными запасными шрифтами</h4>
+
+            <pre><code>/* Предотвращение сдвига макета от веб-шрифтов */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter.woff2') format('woff2');
+  font-display: swap;
+  /* Подстроенный запасной шрифт для совпадения метрик */
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+/* Альтернатива: использование @font-face override */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  size-adjust: 107%;
+  ascent-override: 90%;
+}</code></pre>
+
+            <h4>4. Используйте CSS transform для анимаций</h4>
+
+            <pre><code>/* Плохо: анимация свойств компоновки вызывает CLS */
+.slide-in {
+  animation: slideIn 0.3s ease;
+}
+@keyframes slideIn {
+  from { left: -100%; }
+  to { left: 0; }
+}
+
+/* Хорошо: используйте transform (без сдвига макета) */
+.slide-in {
+  animation: slideIn 0.3s ease;
+}
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}</code></pre>
+
+            <div class="callout callout-warning">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Ловушка CLS: баннеры cookie-согласия</strong>
+                <p>Баннеры cookie-согласия, которые сдвигают контент страницы вниз вместо наложения поверх него, являются одним из самых распространённых источников CLS в 2026 году. Используйте баннер с фиксированным или закреплённым позиционированием, который накладывается поверх контента, а не вставляется в начало DOM. Если необходимо сдвигать контент, рендерьте баннер на сервере, чтобы он появлялся при первой отрисовке без сдвига.</p>
+              </div>
+            </div>
+
+            <!-- CTA 1 -->
+            <div class="article-cta article-cta-scan">
+              <h3>Проверьте свои Core Web Vitals &mdash; бесплатно</h3>
+              <p>Наш сканер измеряет LCP, INP, CLS, TTFB и ещё более 136 SEO-факторов за один проход.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="Введите URL вашего сайта..." required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Сканировать &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Impact on Rankings -->
+            <h2 id="impact-rankings">Как Core Web Vitals влияют на позиции</h2>
+
+            <p>Google подтвердил Core Web Vitals как сигнал ранжирования в июне 2021 года в рамках масштабного обновления Page Experience. С тех пор многочисленные исследования от Searchmetrics, Semrush и независимых SEO-исследователей проанализировали корреляцию между оценками CWV и позициями в выдаче. Консенсус очевиден: <strong>Core Web Vitals являются реальным, но умеренным фактором ранжирования.</strong> Они не перевешивают качество контента или авторитетность ссылок, но служат значимым фактором выбора, когда конкурирующие страницы схожи по качеству и релевантности.</p>
+
+            <p>Данные показывают устойчивую закономерность: сайты с хорошими Core Web Vitals, как правило, демонстрируют измеримый рост трафика, тогда как сайты с плохими CWV испытывают недостатки в ранжировании, особенно в мобильной поисковой выдаче, где Google придаёт больший вес сигналам качества страниц.</p>
+
+            <!-- Bar Chart: Impact on Rankings -->
+            <div class="bar-chart">
+              <div class="bar-chart-item">
+                <div class="bar-chart-label">Сайты с хорошими CWV</div>
+                <div class="bar-chart-track">
+                  <div class="bar-chart-fill bar-fill-success" style="width: 75%;">+15% трафика</div>
+                </div>
+                <div class="bar-chart-value">+15%</div>
+              </div>
+              <div class="bar-chart-item">
+                <div class="bar-chart-label">Сайты с плохими CWV</div>
+                <div class="bar-chart-track">
+                  <div class="bar-chart-fill bar-fill-danger" style="width: 60%;">-20% трафика</div>
+                </div>
+                <div class="bar-chart-value">-20%</div>
+              </div>
+              <div class="bar-chart-item">
+                <div class="bar-chart-label">Влияние на мобильные</div>
+                <div class="bar-chart-track">
+                  <div class="bar-chart-fill bar-fill-warning" style="width: 85%;">в 2 раза сильнее сигнал</div>
+                </div>
+                <div class="bar-chart-value">2x</div>
+              </div>
+              <div class="bar-chart-item">
+                <div class="bar-chart-label">Показатель отказов (плохие CWV)</div>
+                <div class="bar-chart-track">
+                  <div class="bar-chart-fill bar-fill-danger" style="width: 70%;">+32% отказов</div>
+                </div>
+                <div class="bar-chart-value">+32%</div>
+              </div>
+              <div class="bar-chart-item">
+                <div class="bar-chart-label">Конверсия (хорошие CWV)</div>
+                <div class="bar-chart-track">
+                  <div class="bar-chart-fill bar-fill-success" style="width: 55%;">+12% конверсий</div>
+                </div>
+                <div class="bar-chart-value">+12%</div>
+              </div>
+            </div>
+
+            <p>Косвенное влияние Core Web Vitals, пожалуй, ещё важнее прямого воздействия на ранжирование. Страницы, которые загружаются быстро, мгновенно реагируют и остаются визуально стабильными, имеют более низкий показатель отказов, более высокую вовлечённость, более длительные сеансы и больше конверсий. Google измеряет сигналы пользовательской вовлечённости (время на сайте, пого-стикинг) в рамках своих алгоритмов ранжирования, поэтому улучшение поведения пользователей от хороших CWV создаёт положительную обратную связь, которая дополнительно укрепляет ваши позиции.</p>
+
+            <!-- Flow Steps: Optimization Workflow -->
+            <h2 id="optimization-workflow">Рабочий процесс оптимизации Core Web Vitals</h2>
+
+            <p>Оптимизация Core Web Vitals — это не разовая задача, а итеративный процесс. Следуйте этому пятишаговому рабочему процессу для систематического выявления, диагностики, исправления, проверки и поддержания производительности CWV с течением времени.</p>
+
+            <div class="flow-steps">
+              <div class="flow-step">
+                <div class="flow-step-num">1</div>
+                <div class="flow-step-title">Измерьте</div>
+                <div class="flow-step-desc">Запустите PageSpeed Insights и проверьте данные CrUX для полевых метрик</div>
+              </div>
+              <div class="flow-step">
+                <div class="flow-step-num">2</div>
+                <div class="flow-step-title">Диагностируйте</div>
+                <div class="flow-step-desc">Определите конкретные узкие места с помощью Lighthouse и DevTools</div>
+              </div>
+              <div class="flow-step">
+                <div class="flow-step-num">3</div>
+                <div class="flow-step-title">Оптимизируйте</div>
+                <div class="flow-step-desc">Внедрите целевые исправления для каждой проваливающейся метрики</div>
+              </div>
+              <div class="flow-step">
+                <div class="flow-step-num">4</div>
+                <div class="flow-step-title">Протестируйте</div>
+                <div class="flow-step-desc">Проверьте улучшения в лабораторных тестах перед развёртыванием на продакшне</div>
+              </div>
+              <div class="flow-step">
+                <div class="flow-step-num">5</div>
+                <div class="flow-step-title">Мониторьте</div>
+                <div class="flow-step-desc">Настройте непрерывный мониторинг с помощью RUM-инструментов и оповещений CrUX</div>
+              </div>
+            </div>
+
+            <p><strong>Шаг 1 &mdash; Измерение:</strong> Начните с проверки реальных (полевых) данных в отчёте Core Web Vitals в Google Search Console и PageSpeed Insights. Полевые данные из CrUX отражают реальный пользовательский опыт за последние 28 дней. Если у вас недостаточно трафика для данных CrUX, используйте лабораторные данные из Lighthouse как отправную точку, но помните, что лабораторные оценки — это приближения, а не гарантии полевой производительности.</p>
+
+            <p><strong>Шаг 2 &mdash; Диагностика:</strong> Используйте панель Performance в Chrome DevTools для выявления конкретных узких мест. Для LCP посмотрите на сетевой водопад (Network waterfall), чтобы найти, что задерживает LCP-ресурс. Для INP используйте отслеживание взаимодействий в панели Performance, чтобы найти длинные задачи, блокирующие главный поток. Для CLS включите оверлей «Layout Shift Regions», чтобы увидеть, какие именно элементы сдвигаются и когда.</p>
+
+            <p><strong>Шаг 3 &mdash; Оптимизация:</strong> Применяйте целевые исправления на основе вашей диагностики. Отдавайте приоритет метрике, наиболее далёкой от порога «хорошо». Используйте конкретные стратегии оптимизации, описанные в этом руководстве для каждой метрики.</p>
+
+            <p><strong>Шаг 4 &mdash; Тестирование:</strong> После внедрения исправлений протестируйте на стейджинге с помощью Lighthouse и WebPageTest. Сравните оценки до и после. Убедитесь, что улучшения сохраняются на различных типах устройств и сетевых условиях. Используйте режим filmstrip в WebPageTest для визуального подтверждения, что контент загружается быстрее и не сдвигается.</p>
+
+            <p><strong>Шаг 5 &mdash; Мониторинг:</strong> Разверните на продакшне и отслеживайте данные CrUX в Search Console. Полевым данным требуется 28 дней для полного обновления, поэтому будьте терпеливы. Настройте Real User Monitoring (RUM) с помощью JavaScript-библиотеки <code>web-vitals</code> для получения данных о производительности в реальном времени от ваших фактических посетителей. Установите пороги оповещений, чтобы получать уведомления при регрессии любой метрики.</p>
+
+            <pre><code>// Установка: npm install web-vitals
+import { onLCP, onINP, onCLS } from 'web-vitals';
+
+function sendToAnalytics(metric) {
+  // Отправка данных метрики на ваш аналитический эндпоинт
+  const body = JSON.stringify({
+    name: metric.name,
+    value: metric.value,
+    rating: metric.rating, // 'good', 'needs-improvement' или 'poor'
+    delta: metric.delta,
+    id: metric.id,
+    navigationType: metric.navigationType,
+  });
+
+  // Используем sendBeacon для надёжной доставки
+  navigator.sendBeacon('/api/vitals', body);
+}
+
+onLCP(sendToAnalytics);
+onINP(sendToAnalytics);
+onCLS(sendToAnalytics);</code></pre>
+
+            <!-- Before/After Comparison -->
+            <h3>До и после: реальные результаты оптимизации</h3>
+
+            <div class="compare-cards">
+              <div class="compare-card compare-card-before">
+                <div class="compare-card-label">До оптимизации</div>
+                <h4>Неоптимизированная страница интернет-магазина</h4>
+                <ul>
+                  <li>LCP: 6,2с (hero-изображение 2,4 МБ PNG)</li>
+                  <li>INP: 480мс (тяжёлый JS-фреймворк, без разделения кода)</li>
+                  <li>CLS: 0,38 (изображения без размеров, поздняя загрузка рекламы)</li>
+                  <li>TTFB: 1,9с (без CDN, без серверного кэширования)</li>
+                  <li>Общий JS: 1,8 МБ без сжатия</li>
+                  <li>Показатель отказов: 58%</li>
+                </ul>
+              </div>
+              <div class="compare-card compare-card-after">
+                <div class="compare-card-label">После оптимизации</div>
+                <h4>Оптимизированная страница интернет-магазина</h4>
+                <ul>
+                  <li>LCP: 1,8с (hero-изображение 180 КБ WebP, предзагруженное)</li>
+                  <li>INP: 120мс (разделение кода, отложенный некритический JS)</li>
+                  <li>CLS: 0,04 (все размеры заданы, место для рекламы зарезервировано)</li>
+                  <li>TTFB: 340мс (CDN Cloudflare, edge-кэширование)</li>
+                  <li>Общий JS: 280 КБ gzip (tree-shaked)</li>
+                  <li>Показатель отказов: 31%</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 6 Optimization Techniques -->
+            <h2 id="optimization-techniques">6 ключевых методов оптимизации</h2>
+
+            <p>Эти шесть методов охватывают наиболее значимые оптимизации для всех трёх Core Web Vitals. Реализация всех шести решит подавляющее большинство проблем CWV на большинстве сайтов.</p>
+
+            <div class="icon-grid">
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-accent">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                </div>
+                <div class="icon-grid-content">
+                  <h4>Оптимизация изображений</h4>
+                  <p>Конвертируйте в WebP/AVIF, сжимайте, изменяйте размер до фактического отображаемого, используйте srcset для адаптивных изображений и предзагружайте LCP-изображения. Напрямую влияет на LCP.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-success">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                </div>
+                <div class="icon-grid-content">
+                  <h4>Разделение кода</h4>
+                  <p>Разделяйте JavaScript на маршрутные чанки, используйте tree-shaking для неиспользуемого кода, откладывайте некритические скрипты и применяйте ленивую загрузку для компонентов ниже сгиба. Влияет на INP и LCP.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-warning">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+                </div>
+                <div class="icon-grid-content">
+                  <h4>Стратегия загрузки шрифтов</h4>
+                  <p>Используйте font-display: swap, предзагружайте критические шрифты, применяйте подстроенные запасные шрифты и рассмотрите системные стеки шрифтов. Влияет на CLS и LCP.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-danger">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+                </div>
+                <div class="icon-grid-content">
+                  <h4>Предотвращение сдвигов макета</h4>
+                  <p>Задавайте явные width/height для изображений и iframe, резервируйте место для рекламы, используйте CSS-свойство contain и избегайте динамической вставки контента выше сгиба. Влияет на CLS.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-purple">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+                </div>
+                <div class="icon-grid-content">
+                  <h4>Оптимизация ответа сервера</h4>
+                  <p>Разверните CDN, включите серверное кэширование (Redis, Varnish), используйте HTTP/2 или HTTP/3 и внедрите edge-рендеринг для динамических страниц. Влияет на LCP через TTFB.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-accent">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                </div>
+                <div class="icon-grid-content">
+                  <h4>Стратегия кэширования браузера</h4>
+                  <p>Установите долгие сроки кэширования для статических ресурсов с immutable-заголовками, используйте версионированные имена файлов для сброса кэша и внедрите service worker для повторных визитов. Влияет на все три метрики при повторных посещениях.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3>Методы оптимизации по метрикам</h3>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Метод</th>
+                    <th>Влияние на LCP</th>
+                    <th>Влияние на INP</th>
+                    <th>Влияние на CLS</th>
+                    <th>Сложность</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Сжатие изображений + WebP</strong></td>
+                    <td>Высокое</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Легко</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Предзагрузка LCP-ресурса</strong></td>
+                    <td>Высокое</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Легко</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Задание размеров изображений</strong></td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Высокое</td>
+                    <td>Легко</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Развёртывание CDN</strong></td>
+                    <td>Высокое</td>
+                    <td>Низкое</td>
+                    <td>Нет</td>
+                    <td>Средне</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Разделение кода</strong></td>
+                    <td>Среднее</td>
+                    <td>Высокое</td>
+                    <td>Нет</td>
+                    <td>Сложно</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Отложенная загрузка некритического JS</strong></td>
+                    <td>Высокое</td>
+                    <td>Высокое</td>
+                    <td>Нет</td>
+                    <td>Средне</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Font-display: swap</strong></td>
+                    <td>Низкое</td>
+                    <td>Нет</td>
+                    <td>Среднее</td>
+                    <td>Легко</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Встраивание критического CSS</strong></td>
+                    <td>Высокое</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Средне</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Резервирование места для рекламы</strong></td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Высокое</td>
+                    <td>Легко</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Разбивка длинных задач</strong></td>
+                    <td>Нет</td>
+                    <td>Высокое</td>
+                    <td>Нет</td>
+                    <td>Сложно</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Diagnostic Tools -->
+            <h2 id="diagnostic-tools">Диагностические инструменты для Core Web Vitals</h2>
+
+            <p>Эффективная оптимизация CWV требует правильных инструментов измерения. Вот исчерпывающее сравнение инструментов, доступных в 2026 году, организованных по их сильным сторонам и идеальным сценариям использования.</p>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Инструмент</th>
+                    <th>Тип данных</th>
+                    <th>Метрики</th>
+                    <th>Лучше всего подходит для</th>
+                    <th>Стоимость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>PageSpeed Insights</strong></td>
+                    <td>Полевые + лабораторные</td>
+                    <td>LCP, INP, CLS, TTFB, FCP</td>
+                    <td>Быстрый анализ страницы с данными реальных пользователей</td>
+                    <td>Бесплатно</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Google Search Console</strong></td>
+                    <td>Полевые (CrUX)</td>
+                    <td>LCP, INP, CLS</td>
+                    <td>Общий статус CWV сайта с группировкой по типу URL</td>
+                    <td>Бесплатно</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Chrome DevTools</strong></td>
+                    <td>Лабораторные</td>
+                    <td>Все метрики + трейсы</td>
+                    <td>Интерактивная отладка конкретных узких мест</td>
+                    <td>Бесплатно</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Lighthouse</strong></td>
+                    <td>Лабораторные</td>
+                    <td>LCP, CLS, TBT (прокси INP)</td>
+                    <td>Автоматизированные лабораторные аудиты с практическими рекомендациями</td>
+                    <td>Бесплатно</td>
+                  </tr>
+                  <tr>
+                    <td><strong>WebPageTest</strong></td>
+                    <td>Лабораторные</td>
+                    <td>Все + filmstrip + waterfall</td>
+                    <td>Глубокий анализ производительности в реальных браузерах</td>
+                    <td>Бесплатно/Платно</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Библиотека web-vitals JS</strong></td>
+                    <td>Полевые (RUM)</td>
+                    <td>LCP, INP, CLS, TTFB, FCP</td>
+                    <td>Сбор собственных RUM-данных от ваших пользователей</td>
+                    <td>Бесплатно</td>
+                  </tr>
+                  <tr>
+                    <td><strong>seoscore.tools</strong></td>
+                    <td>Лабораторные + SEO-анализ</td>
+                    <td>CWV + 136 SEO-проверок</td>
+                    <td>Комбинированный аудит производительности и SEO за одно сканирование</td>
+                    <td>Бесплатно</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p><strong>Рекомендация:</strong> Используйте комбинацию инструментов. Начните с Google Search Console для общей картины (какие страницы проходят, какие нет и какие тренды). Используйте PageSpeed Insights для диагностики отдельных страниц с реальными данными CrUX. Используйте Chrome DevTools для интерактивной отладки, когда нужно отследить конкретное узкое место. Используйте WebPageTest для конкурентного анализа и тестирования изменений перед развёртыванием. Используйте <a href="https://seoscore.tools">seoscore.tools</a>, чтобы увидеть, как CWV вписывается в общую SEO-картину наряду с 136+ другими факторами ранжирования.</p>
+
+            <!-- Priority Grid: Quick Wins vs Long-term -->
+            <h3>Приоритизация: быстрые победы vs долгосрочные исправления</h3>
+
+            <div class="priority-grid">
+              <div class="priority-card priority-card-high">
+                <div class="priority-card-label">Высокий приоритет &mdash; Быстрые победы</div>
+                <h4>Сделайте это в первую очередь (часы на внедрение)</h4>
+                <p>Сожмите и конвертируйте изображения в WebP. Добавьте width/height ко всем изображениям и iframe. Добавьте fetchpriority="high" и preload к LCP-изображению. Включите gzip/brotli-сжатие. Установите заголовки кэширования для статических ресурсов. Удалите неиспользуемые CSS/JS. Добавьте font-display: swap к правилам @font-face.</p>
+              </div>
+              <div class="priority-card priority-card-medium">
+                <div class="priority-card-label">Средний приоритет &mdash; Долгосрочные исправления</div>
+                <h4>Запланируйте это (дни — недели)</h4>
+                <p>Разверните CDN (Cloudflare, Fastly). Внедрите разделение кода и динамические импорты. Настройте серверный рендеринг или генерацию статических страниц. Перенесите тяжёлый JavaScript в web worker. Внедрите ленивую загрузку для контента ниже сгиба. Добавьте service worker для стратегии кэширования. Проведите аудит и оптимизацию сторонних скриптов.</p>
+              </div>
+            </div>
+
+            <!-- CWV and AI Search -->
+            <h2 id="cwv-ai-search">Core Web Vitals и ИИ-поиск</h2>
+
+            <p>Вы можете задаться вопросом, важны ли Core Web Vitals для видимости в ИИ-поиске &mdash; ведь ИИ-системы вроде ChatGPT, Perplexity и Google AI Overview обрабатывают контент программно, а не через браузер. Ответ нюансирован, но важен: <strong>Core Web Vitals влияют на видимость в ИИ-поиске косвенно, но существенно.</strong></p>
+
+            <p>Вот как CWV связаны с ИИ-поиском:</p>
+
+            <p><strong>Влияние через поисковый индекс:</strong> Google AI Overview берёт свои источники из поискового индекса Google, где CWV является фактором ранжирования. Страницы с хорошими CWV ранжируются выше в традиционном поиске, что повышает вероятность их попадания в пул кандидатов, из которого AI Overview выбирает источники. Если ваша страница на 15-й позиции из-за плохих CWV, её вероятность быть процитированной в AI Overview значительно ниже, чем у страницы на 3-й позиции с идентичным контентом, но лучшей производительностью.</p>
+
+            <p><strong>Эффективность краулинга:</strong> ИИ-краулеры (включая краулеры Perplexity и режим просмотра ChatGPT) имеют ограниченный бюджет времени для загрузки и парсинга страниц. Медленно загружающаяся страница, которой нужно 6 секунд для рендеринга, может привести к таймауту или лишь частичному рендерингу при операциях ИИ-краулинга. Быстрые, чистые страницы более надёжно сканируются и индексируются ИИ-системами.</p>
+
+            <p><strong>Доступность контента:</strong> Страницы со значительными сдвигами макета или рендерингом, зависящим от JavaScript, могут представлять ИИ-краулерам контент, отличающийся от того, что видят пользователи. Если ваш основной контент требует тяжёлого выполнения JavaScript для рендеринга (что плохо для INP и LCP), ИИ-краулеры могут пропустить его полностью. Контент, рендерящийся на сервере с хорошими CWV, наиболее надёжно парсится как традиционными, так и ИИ-поисковыми системами.</p>
+
+            <p><strong>Пользовательский опыт как сигнал качества:</strong> Google всё активнее использует поведенческие сигналы (показатель отказов, вовлечённость, время на сайте) как косвенные факторы ранжирования. Страницы с плохими CWV генерируют худшие поведенческие сигналы, что ухудшает позиции, что снижает вероятность цитирования ИИ. Это цепная реакция, где плохая производительность на пользовательском уровне каскадно снижает видимость в ИИ.</p>
+
+            <div class="callout callout-tip">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Стратегия ИИ + CWV</strong>
+                <p>Для максимальной видимости в ИИ-поиске сочетайте хорошие Core Web Vitals с серверным рендерингом и комплексными структурированными данными (Schema.org). Это обеспечивает ИИ-системам максимально быстрый доступ к вашему контенту в наиболее машиночитаемом формате, одновременно гарантируя высокие позиции ваших страниц в традиционных поисковых индексах, из которых ИИ-системы черпают информацию.</p>
+              </div>
+            </div>
+
+            <!-- CTA 2 -->
+            <div class="article-cta article-cta-scan">
+              <h3>Оптимизируйте производительность вашей страницы</h3>
+              <p>Получите полный аудит производительности и SEO с практическими рекомендациями по LCP, INP, CLS и ещё более 136 факторам.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="Введите URL вашего сайта..." required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Сканировать &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Common CWV Mistakes -->
+            <h2 id="common-mistakes">Распространённые ошибки Core Web Vitals</h2>
+
+            <p>Даже опытные разработчики и SEO-специалисты допускают эти ошибки при оптимизации Core Web Vitals. Избегая их, вы сэкономите часы отладки и предотвратите регрессии.</p>
+
+            <ul>
+              <li><strong>Оптимизация только для лабораторных данных.</strong> Оценка Lighthouse 100 не гарантирует хорошие данные CrUX. Лабораторные тесты запускаются на фиксированном устройстве с фиксированной сетью; реальные пользователи имеют совершенно разные устройства, соединения и контексты просмотра. Всегда проверяйте лабораторные улучшения на полевых данных. Если ваша оценка Lighthouse 95, но CrUX INP составляет 450 мс, лабораторный тест вводит вас в заблуждение.</li>
+
+              <li><strong>Ленивая загрузка LCP-элемента.</strong> Добавление <code>loading="lazy"</code> к hero-изображениям, баннерам выше сгиба или основным изображениям контента — одна из самых распространённых и вредных ошибок LCP. Ленивая загрузка задерживает эти критические ресурсы, поскольку браузер ждёт, пока элемент не окажется рядом с областью просмотра. LCP-элемент всегда должен загружаться немедленно с <code>fetchpriority="high"</code>.</li>
+
+              <li><strong>Игнорирование сторонних скриптов.</strong> Аналитика, чат-виджеты, встраиваемые социальные элементы, рекламные скрипты и инструменты A/B-тестирования часто вносят больший вклад в плохие CWV, чем ваш собственный код. Один неоптимизированный чат-виджет может добавить 500+ мс к INP, блокируя главный поток. Проведите аудит каждого стороннего скрипта, отложите некритические и используйте атрибут <code>Partitioned</code> для сторонних iframe.</li>
+
+              <li><strong>Исправление CLS в разработке, но не в продакшне.</strong> CLS часто ведёт себя по-разному в продакшне из-за рекламы, баннеров cookie-согласия, вариаций A/B-тестов и пользовательского контента, которые не существуют в среде разработки. Всегда измеряйте CLS в продакшне с реальными конфигурациями рекламы и реальными пользовательскими сценариями.</li>
+
+              <li><strong>Использование слишком большого количества веб-шрифтов.</strong> Загрузка 4-6 начертаний и стилей шрифтов из Google Fonts или самохостинга добавляет значительную задержку к LCP и вызывает CLS при смене шрифтов. Ограничьтесь максимум 2-3 файлами шрифтов. Используйте <code>font-display: swap</code> с подстроенными запасными шрифтами для предотвращения сдвигов макета и предзагружайте только самый критический файл шрифта.</li>
+
+              <li><strong>Отсутствие явных размеров у адаптивных изображений.</strong> HTML-атрибуты <code>width</code> и <code>height</code> прекрасно работают с адаптивным CSS (<code>width: 100%; height: auto;</code>). Браузер использует соотношение сторон из атрибутов для резервирования правильного пространства до загрузки изображения. Между адаптивными изображениями и явными размерами нет конфликта &mdash; их отсутствие всегда является ошибкой.</li>
+
+              <li><strong>Предположение, что быстрый сайт по WiFi означает быстрый сайт везде.</strong> Тестируйте свои страницы на симулированных 3G и 4G соединениях и на реальных Android-устройствах среднего класса. Данные CrUX Google преобладают за счёт мобильных пользователей с нестабильным соединением. Ваша страница может получить оценку «хорошо» на MacBook Pro с оптоволокном, но «плохо» для большинства ваших реальных пользователей на мобильных устройствах.</li>
+
+              <li><strong>Отсутствие мониторинга после развёртывания.</strong> Регрессии производительности происходят постоянно при добавлении новых функций, рекламы, сторонних скриптов и контента. Без непрерывного мониторинга один пул-реквест, добавляющий неоптимизированное hero-изображение или новый аналитический скрипт, может перечеркнуть месяцы работы по оптимизации. Настройте автоматические оповещения с помощью библиотеки web-vitals или RUM-сервиса.</li>
+            </ul>
+
+            <!-- FAQ -->
+            <h2 id="faq">Часто задаваемые вопросы</h2>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Являются ли Core Web Vitals фактором ранжирования Google?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Да. Core Web Vitals являются подтверждённым фактором ранжирования Google в рамках сигналов качества страницы. Google использует данные LCP, INP и CLS из отчёта Chrome User Experience Report (CrUX) для оценки реальной производительности страницы. Хотя релевантность контента и авторитетность остаются более сильными сигналами ранжирования, Core Web Vitals выступают значимым фактором выбора между страницами схожего качества и релевантности. Сайты, проходящие все три порога CWV, имеют измеримое преимущество в ранжировании перед теми, которые их не проходят.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Что заменило FID в Core Web Vitals?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Interaction to Next Paint (INP) официально заменил First Input Delay (FID) в качестве Core Web Vital в марте 2024 года. В то время как FID измерял только задержку до начала обработки браузером первого пользовательского взаимодействия, INP измеряет полную задержку всех взаимодействий на протяжении жизненного цикла страницы &mdash; от ввода до следующего визуального обновления. INP является более комплексной метрикой отзывчивости, поскольку фиксирует наихудший опыт взаимодействия, а не только первый.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Какие показатели Core Web Vitals считаются хорошими?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Хорошие показатели Core Web Vitals: LCP (Largest Contentful Paint) не более 2,5 секунд, INP (Interaction to Next Paint) не более 200 миллисекунд, CLS (Cumulative Layout Shift) не более 0,1. Эти пороговые значения применяются к 75-му перцентилю реального пользовательского опыта, собранного через Chrome User Experience Report (CrUX). Страница проходит проверку Core Web Vitals, когда все три метрики соответствуют порогу «хорошо» для не менее 75% визитов.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Как Core Web Vitals влияют на видимость в ИИ-поиске?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Core Web Vitals косвенно влияют на видимость в ИИ-поиске двумя способами. Во-первых, страницы с плохими CWV имеют тенденцию ранжироваться ниже в традиционном поиске, что означает, что ИИ-системы, опирающиеся на поисковые индексы (такие как Google AI Overview и Perplexity), с меньшей вероятностью обнаружат и процитируют их. Во-вторых, ИИ-краулеры отдают приоритет быстрым, хорошо структурированным страницам, поскольку медленные или нестабильные страницы сложнее надёжно анализировать. Хотя ИИ-системы не используют CWV-оценки напрямую, производительность и стабильность, которые они измеряют, коррелируют с техническим качеством, которое ИИ-системы предпочитают в своих источниках.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Можно ли улучшить Core Web Vitals без разработчика?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Да, многие улучшения Core Web Vitals можно сделать без навыков программирования. Быстрые победы включают сжатие и правильный размер изображений (с помощью инструментов вроде Squoosh или ShortPixel), включение кэширования браузера через панель хостинга, активацию CDN вроде Cloudflare (есть бесплатный тариф), добавление атрибутов width и height к изображениям и iframe для предотвращения сдвигов макета, а также удаление неиспользуемых плагинов или скриптов. Однако некоторые оптимизации &mdash; такие как разделение кода, реализация ленивой загрузки в JavaScript-фреймворках или оптимизация времени ответа сервера &mdash; как правило, требуют помощи разработчика.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Takeaways -->
+            <h2 id="key-takeaways">Ключевые выводы</h2>
+
+            <ol>
+              <li><strong>Core Web Vitals — подтверждённый фактор ранжирования Google.</strong> LCP, INP и CLS напрямую влияют на ваши позиции в поиске как часть сигнала качества страницы. Сайты, проходящие все три порога, имеют измеримое преимущество, особенно на мобильных устройствах.</li>
+              <li><strong>INP заменил FID в марте 2024, и пройти его гораздо сложнее.</strong> В отличие от FID, который измерял только задержку ввода первого взаимодействия, INP измеряет полную задержку каждого взаимодействия на странице. Многие сайты, легко проходившие FID, проваливают INP. Проведите аудит INP целенаправленно &mdash; не предполагайте, что у вас всё в порядке.</li>
+              <li><strong>Оптимизируйте для реальных пользователей, а не для лабораторных оценок.</strong> Google использует полевые данные из Chrome User Experience Report (CrUX), измеренные на 75-м перцентиле. Идеальная оценка Lighthouse ничего не значит, если ваши реальные пользователи на реальных устройствах имеют плохой опыт. Всегда проверяйте по полевым данным CrUX.</li>
+              <li><strong>Быстрые победы существуют и должны быть сделаны первыми.</strong> Сжатие изображений, предзагрузка LCP-элемента, задание явных размеров изображений и включение кэширования могут кардинально улучшить CWV с минимальными усилиями. Начните с этого, прежде чем инвестировать в сложные архитектурные изменения.</li>
+              <li><strong>CWV влияет на ИИ-поиск косвенно, но существенно.</strong> Более быстрые и стабильные страницы ранжируются выше в традиционном поиске (из которого ИИ-системы черпают информацию), более надёжно сканируются ИИ-краулерами и генерируют лучшие сигналы пользовательской вовлечённости. Оптимизация CWV повышает видимость как в традиционном, так и в ИИ-поиске.</li>
+              <li><strong>Непрерывный мониторинг обязателен.</strong> Регрессии производительности из-за новых функций, рекламы и сторонних скриптов происходят постоянно. Используйте <a href="https://github.com/GoogleChrome/web-vitals" target="_blank" rel="noopener">библиотеку web-vitals</a> для отслеживания реальных пользовательских метрик и настройте оповещения, чтобы регрессии обнаруживались немедленно. Регулярно проверяйте <a href="https://seoscore.tools">seoscore.tools</a>, чтобы видеть, как ваши CWV вписываются в общее состояние SEO.</li>
+            </ol>
+
+            <!-- Share Bar -->
+            <div class="share-bar">
+              <span class="share-label">Поделиться этим руководством:</span>
+              <button class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title),'_blank','width=550,height=420')" aria-label="Поделиться в X">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </button>
+              <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank','width=550,height=420')" aria-label="Поделиться в LinkedIn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </button>
+              <button class="share-btn" onclick="navigator.clipboard.writeText(location.href).then(()=>this.innerHTML='<svg viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;><path d=&quot;M5 8l2 2 4-4&quot; stroke-linecap=&quot;round&quot;/></svg>')" aria-label="Скопировать ссылку">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              </button>
+            </div>
+
+            <!-- Author Box -->
+            <div class="author-box">
+              <div class="author-avatar">S</div>
+              <div class="author-info">
+                <h4>seoscore.tools</h4>
+                <p class="author-role">Эксперты по SEO, AEO и GEO</p>
+                <p class="author-bio">Мы создаём бесплатные инструменты, которые помогают владельцам сайтов оптимизировать для поисковых систем и ИИ-поиска. Наш сканер выполняет более 136 проверок по SEO, AEO и GEO, чтобы предоставить вам практические рекомендации.</p>
+              </div>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <!-- Related Articles -->
+          <section class="related-section">
+            <h2>Похожие статьи</h2>
+            <div class="related-grid">
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge seo-badge">SEO</span>
+                </div>
+                <h3><a href="/ru/blog/seo-audit-checklist/">Полный чек-лист SEO-аудита на 2026 год</a></h3>
+                <p>Пошаговый чек-лист SEO-аудита, охватывающий техническое SEO, оптимизацию страниц, качество контента и Core Web Vitals.</p>
+              </div>
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge seo-badge">SEO</span>
+                </div>
+                <h3><a href="/ru/blog/meta-tags-guide/">Полное руководство по мета-тегам для SEO</a></h3>
+                <p>Узнайте, какие мета-теги действительно важны для SEO в 2026 году и как оптимизировать title, meta description и Open Graph теги.</p>
+              </div>
+            </div>
+          </section>
+
+        </article>
+
+        <!-- Sidebar TOC (Desktop) -->
+        <aside class="article-sidebar">
+          <div class="toc">
+            <div class="toc-title">Содержание</div>
+            <ul class="toc-list" id="tocList">
+              <li><a class="toc-link" href="#what-are-cwv">Что такое Core Web Vitals?</a></li>
+              <li><a class="toc-link" href="#lcp">LCP: Largest Contentful Paint</a></li>
+              <li><a class="toc-link" href="#inp">INP: Interaction to Next Paint</a></li>
+              <li><a class="toc-link" href="#cls">CLS: Cumulative Layout Shift</a></li>
+              <li><a class="toc-link" href="#impact-rankings">Влияние на позиции</a></li>
+              <li><a class="toc-link" href="#optimization-workflow">Процесс оптимизации</a></li>
+              <li><a class="toc-link" href="#optimization-techniques">6 ключевых методов</a></li>
+              <li><a class="toc-link" href="#diagnostic-tools">Диагностические инструменты</a></li>
+              <li><a class="toc-link" href="#cwv-ai-search">CWV и ИИ-поиск</a></li>
+              <li><a class="toc-link" href="#common-mistakes">Распространённые ошибки</a></li>
+              <li><a class="toc-link" href="#faq">FAQ</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Ключевые выводы</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+        <p class="footer-tagline">Бесплатный сканер SEO, AEO и GEO</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Сканер</a>
+        <a href="/ru/blog/">Блог</a>
+        <a href="/privacy.html">Политика конфиденциальности</a>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 seoscore.tools. Все права защищены.</span>
+        <span class="footer-built">Powered by Cloudflare Workers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    function setTheme(t) { html.setAttribute('data-theme', t); localStorage.setItem('seoscore-theme', t); }
+    themeToggle.addEventListener('click', () => setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
+    const saved = localStorage.getItem('seoscore-theme');
+    if (saved) setTheme(saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // Reading progress bar
+    const progressBar = document.getElementById('readingProgress');
+    window.addEventListener('scroll', () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / docHeight) * 100;
+      progressBar.style.width = Math.min(scrolled, 100) + '%';
+    });
+
+    // TOC active state (desktop)
+    const tocLinks = document.querySelectorAll('#tocList .toc-link');
+    const headings = [];
+    tocLinks.forEach(link => {
+      const id = link.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) headings.push({ el, link });
+    });
+
+    function updateToc() {
+      let current = headings[0];
+      for (const h of headings) {
+        if (h.el.getBoundingClientRect().top <= 100) current = h;
+      }
+      tocLinks.forEach(l => l.classList.remove('active'));
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateToc);
+    updateToc();
+
+    // Mobile TOC toggle
+    const tocMobile = document.getElementById('tocMobile');
+    const tocMobileToggle = document.getElementById('tocMobileToggle');
+    tocMobileToggle.addEventListener('click', () => tocMobile.classList.toggle('open'));
+
+    // Close mobile TOC on link click
+    document.querySelectorAll('#tocMobileList .toc-link').forEach(link => {
+      link.addEventListener('click', () => tocMobile.classList.remove('open'));
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !wasOpen);
+      });
+    });
+  </script>
+</body>
+</html>

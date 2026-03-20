@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ==================== HOMEPAGE ==================== -->
+  <url>
+    <loc>https://seoscore.tools/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/?lang=tr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/"/>
+  </url>
+
+  <!-- ==================== BLOG INDEXES ==================== -->
+  <url>
+    <loc>https://seoscore.tools/blog/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/"/>
+  </url>
+
+  <!-- ==================== BLOG ARTICLES ==================== -->
+
+  <!-- 1. what-is-aeo -->
+  <url>
+    <loc>https://seoscore.tools/blog/what-is-aeo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-aeo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/what-is-aeo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-aeo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/what-is-aeo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-aeo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/what-is-aeo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-aeo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/what-is-aeo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-aeo/"/>
+  </url>
+
+  <!-- 2. what-is-geo -->
+  <url>
+    <loc>https://seoscore.tools/blog/what-is-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/what-is-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/what-is-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/what-is-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/what-is-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/what-is-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/what-is-geo/"/>
+  </url>
+
+  <!-- 3. seo-vs-aeo-vs-geo -->
+  <url>
+    <loc>https://seoscore.tools/blog/seo-vs-aeo-vs-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/seo-vs-aeo-vs-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/seo-vs-aeo-vs-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/seo-vs-aeo-vs-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/seo-vs-aeo-vs-geo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-vs-aeo-vs-geo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-vs-aeo-vs-geo/"/>
+  </url>
+
+  <!-- 4. schema-markup-guide -->
+  <url>
+    <loc>https://seoscore.tools/blog/schema-markup-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/schema-markup-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/schema-markup-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/schema-markup-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/schema-markup-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/schema-markup-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/schema-markup-guide/"/>
+  </url>
+
+  <!-- 5. eeat-optimization -->
+  <url>
+    <loc>https://seoscore.tools/blog/eeat-optimization/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/eeat-optimization/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/eeat-optimization/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/eeat-optimization/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/eeat-optimization/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/eeat-optimization/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/eeat-optimization/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/eeat-optimization/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/eeat-optimization/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/eeat-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/eeat-optimization/"/>
+  </url>
+
+  <!-- 6. faq-schema-markup -->
+  <url>
+    <loc>https://seoscore.tools/blog/faq-schema-markup/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/faq-schema-markup/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/faq-schema-markup/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/faq-schema-markup/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/faq-schema-markup/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/faq-schema-markup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/faq-schema-markup/"/>
+  </url>
+
+  <!-- 7. google-ai-overviews -->
+  <url>
+    <loc>https://seoscore.tools/blog/google-ai-overviews/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/google-ai-overviews/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/google-ai-overviews/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/google-ai-overviews/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/google-ai-overviews/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/google-ai-overviews/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/google-ai-overviews/"/>
+  </url>
+
+  <!-- 8. core-web-vitals -->
+  <url>
+    <loc>https://seoscore.tools/blog/core-web-vitals/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/core-web-vitals/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/core-web-vitals/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/core-web-vitals/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/core-web-vitals/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/core-web-vitals/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/core-web-vitals/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/core-web-vitals/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/core-web-vitals/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/core-web-vitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/core-web-vitals/"/>
+  </url>
+
+  <!-- 9. semantic-seo -->
+  <url>
+    <loc>https://seoscore.tools/blog/semantic-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/semantic-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/semantic-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/semantic-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/semantic-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/semantic-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/semantic-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/semantic-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/semantic-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/semantic-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/semantic-seo/"/>
+  </url>
+
+  <!-- 10. topical-authority -->
+  <url>
+    <loc>https://seoscore.tools/blog/topical-authority/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/topical-authority/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/topical-authority/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/topical-authority/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/topical-authority/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/topical-authority/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/topical-authority/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/topical-authority/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/topical-authority/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/topical-authority/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/topical-authority/"/>
+  </url>
+
+  <!-- 11. meta-tags-guide -->
+  <url>
+    <loc>https://seoscore.tools/blog/meta-tags-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/meta-tags-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/meta-tags-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/meta-tags-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/meta-tags-guide/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/meta-tags-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/meta-tags-guide/"/>
+  </url>
+
+  <!-- 12. seo-audit-checklist -->
+  <url>
+    <loc>https://seoscore.tools/blog/seo-audit-checklist/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/seo-audit-checklist/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/seo-audit-checklist/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/seo-audit-checklist/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/seo-audit-checklist/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-audit-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-audit-checklist/"/>
+  </url>
+
+  <!-- 13. perplexity-seo -->
+  <url>
+    <loc>https://seoscore.tools/blog/perplexity-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/perplexity-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/perplexity-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/perplexity-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/perplexity-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/perplexity-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/perplexity-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/perplexity-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/perplexity-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/perplexity-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/perplexity-seo/"/>
+  </url>
+
+  <!-- 14. rank-in-ai-search -->
+  <url>
+    <loc>https://seoscore.tools/blog/rank-in-ai-search/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/rank-in-ai-search/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/rank-in-ai-search/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/rank-in-ai-search/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/rank-in-ai-search/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/rank-in-ai-search/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/rank-in-ai-search/"/>
+  </url>
+
+  <!-- 15. robots-txt-ai -->
+  <url>
+    <loc>https://seoscore.tools/blog/robots-txt-ai/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/robots-txt-ai/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/robots-txt-ai/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/robots-txt-ai/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/robots-txt-ai/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/robots-txt-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/robots-txt-ai/"/>
+  </url>
+
+  <!-- 16. image-seo -->
+  <url>
+    <loc>https://seoscore.tools/blog/image-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/image-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/image-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/image-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/image-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/image-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/image-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/image-seo/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/image-seo/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/image-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/image-seo/"/>
+  </url>
+
+  <!-- 17. content-clusters -->
+  <url>
+    <loc>https://seoscore.tools/blog/content-clusters/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/content-clusters/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/content-clusters/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/content-clusters/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/content-clusters/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/content-clusters/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/content-clusters/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/content-clusters/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/content-clusters/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/content-clusters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/content-clusters/"/>
+  </url>
+
+  <!-- 18. zero-click-searches -->
+  <url>
+    <loc>https://seoscore.tools/blog/zero-click-searches/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/zero-click-searches/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/de/blog/zero-click-searches/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/zero-click-searches/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/tr/blog/zero-click-searches/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/zero-click-searches/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/ru/blog/zero-click-searches/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/zero-click-searches/"/>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/es/blog/zero-click-searches/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/zero-click-searches/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/zero-click-searches/"/>
+  </url>
+
+  <!-- ==================== STATIC PAGES ==================== -->
+  <url>
+    <loc>https://seoscore.tools/about.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/privacy.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://seoscore.tools/terms.html</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,7 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.log
+generate-og-image.py
+parse-scan.js
+logo-impact.html

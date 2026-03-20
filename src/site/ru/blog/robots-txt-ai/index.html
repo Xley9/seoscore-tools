@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robots.txt для ИИ: Как контролировать ИИ-краулеры и защитить свой контент (2026) — seoscore.tools</title>
+  <meta name="description" content="Узнайте, как контролировать ИИ-краулеры с помощью robots.txt в 2026 году. Полное руководство по GPTBot, PerplexityBot, ClaudeBot и Google-Extended. Включает готовые конфигурации и стратегические рекомендации.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="seoscore.tools">
+  <link rel="canonical" href="https://seoscore.tools/ru/blog/robots-txt-ai/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/robots-txt-ai/">
+  <link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/robots-txt-ai/">
+  <link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/robots-txt-ai/">
+  <link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/robots-txt-ai/">
+  <link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/robots-txt-ai/">
+  <link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/robots-txt-ai/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Robots.txt для ИИ: Как контролировать ИИ-краулеры и защитить свой контент (2026) — seoscore.tools">
+  <meta property="og:description" content="Полное руководство по контролю ИИ-краулеров с помощью robots.txt. GPTBot, PerplexityBot, ClaudeBot, Google-Extended — готовые конфигурации и стратегические рекомендации.">
+  <meta property="og:url" content="https://seoscore.tools/ru/blog/robots-txt-ai/">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+  <meta property="article:published_time" content="2026-03-15T00:00:00+00:00">
+  <meta property="article:modified_time" content="2026-03-15T00:00:00+00:00">
+  <meta property="article:section" content="SEO">
+  <meta property="article:tag" content="SEO">
+  <meta property="article:tag" content="AEO">
+  <meta property="article:tag" content="robots.txt">
+  <meta property="article:tag" content="ИИ-краулеры">
+  <meta property="article:tag" content="GPTBot">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Robots.txt для ИИ: Как контролировать ИИ-краулеры и защитить свой контент (2026)">
+  <meta name="twitter:description" content="Полное руководство по контролю ИИ-краулеров с помощью robots.txt. Готовые конфигурации для GPTBot, ClaudeBot, PerplexityBot и других.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/blog.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JP76DPK4GK');
+  </script>
+
+  <!-- Schema.org — BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Robots.txt для ИИ: Как контролировать ИИ-краулеры и защитить свой контент (2026)",
+    "description": "Узнайте, как контролировать ИИ-краулеры с помощью robots.txt в 2026 году. Полное руководство по GPTBot, PerplexityBot, ClaudeBot и Google-Extended. Включает готовые конфигурации и стратегические рекомендации.",
+    "url": "https://seoscore.tools/ru/blog/robots-txt-ai/",
+    "datePublished": "2026-03-15T00:00:00+00:00",
+    "dateModified": "2026-03-15T00:00:00+00:00",
+    "author": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://seoscore.tools/favicon.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://seoscore.tools/ru/blog/robots-txt-ai/"
+    },
+    "articleSection": "SEO",
+    "keywords": ["robots.txt ИИ", "блокировка ИИ-краулеров", "ИИ-краулеры robots.txt", "GPTBot robots.txt", "ClaudeBot", "PerplexityBot", "Google-Extended", "защита контента от ИИ"],
+    "wordCount": 3200,
+    "inLanguage": "ru"
+  }
+  </script>
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://seoscore.tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Блог",
+        "item": "https://seoscore.tools/ru/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Robots.txt для ИИ",
+        "item": "https://seoscore.tools/ru/blog/robots-txt-ai/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Действительно ли robots.txt останавливает ИИ-краулеры от использования моего контента?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Robots.txt — это добровольный протокол: он просит ботов соблюдать ваши правила, но технически не обеспечивает их выполнение. Крупные ИИ-компании, такие как OpenAI, Anthropic, Google и Perplexity, публично обязались соблюдать директивы robots.txt. Однако некоторые более мелкие или менее добросовестные краулеры могут игнорировать ваши правила. Для обеспечения защиты контента необходимо сочетать robots.txt с серверными средствами контроля доступа, ограничением частоты запросов и юридическими мерами, такими как Условия использования, явно запрещающие использование для обучения ИИ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "В чём разница между GPTBot и ChatGPT-User?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GPTBot — это краулер OpenAI, используемый преимущественно для сбора обучающих данных и улучшения ИИ-моделей. ChatGPT-User — это отдельный user-agent, используемый когда пользователь ChatGPT активно ищет информацию в интернете во время беседы (функция браузинга ChatGPT). Если вы заблокируете GPTBot, ваш контент не будет использоваться для обучения ИИ, но может отображаться в результатах браузинга ChatGPT. Если вы заблокируете ChatGPT-User, ваш контент не появится когда пользователи просматривают веб через ChatGPT. Многие владельцы сайтов блокируют GPTBot (обучение), но разрешают ChatGPT-User (поиск в реальном времени с указанием источника)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Повредит ли блокировка ИИ-краулеров моим SEO-позициям?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Блокировка специфических ИИ-краулеров, таких как GPTBot, ClaudeBot или PerplexityBot, НЕ повредит вашим позициям в Google. Эти боты полностью отделены от Googlebot, который отвечает за индексацию Google Поиска. Однако будьте осторожны с Google-Extended — этот бот обрабатывает обучающие данные для моделей Google Gemini, но НЕ влияет на ваши позиции в Google Поиске. Блокировка Google-Extended безопасна для SEO. Единственный бот, который нельзя блокировать, если вы хотите позиции в Google — это сам Googlebot."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Следует ли мне блокировать ИИ-краулеры или разрешать их?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Это зависит от вашей бизнес-стратегии. Если вы хотите получать ИИ-цитаты и реферальный трафик от ChatGPT, Perplexity и Claude, следует разрешить их поисковые краулеры. Если ваш контент является собственностью, находится за платным доступом, или вас беспокоит обучение ИИ на вашей интеллектуальной собственности, блокировка имеет смысл. Многие компании выбирают средний путь: разрешают поисковые боты (ChatGPT-User, PerplexityBot) для трафика и цитат, блокируя обучающие боты (GPTBot, CCBot), чтобы защитить свой контент от использования для обучения конкурирующих ИИ-моделей."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как проверить, сканируют ли ИИ-боты мой сайт?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Проверьте журналы доступа сервера на наличие строк user-agent, содержащих GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, anthropic-ai, Bytespider, CCBot или Google-Extended. Большинство хостинг-панелей (cPanel, Plesk) предоставляют просмотр необработанных журналов доступа. Вы также можете использовать аналитические инструменты, отслеживающие бот-трафик, или настроить пользовательский анализ журналов с помощью таких инструментов, как GoAccess или AWStats. Для быстрой проверки используйте сканер seoscore.tools, который анализирует конфигурацию вашего robots.txt и показывает, какие ИИ-краулеры вы сейчас блокируете или разрешаете."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — Speakable -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Robots.txt для ИИ: Как контролировать ИИ-краулеры и защитить свой контент",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-intro", ".key-definition"]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 6 L16 16 L24 20" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="2.5" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-link">Сканер</a>
+        <a href="/ru/blog/" class="nav-link" style="color:var(--accent)">Блог</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumbs -->
+    <div class="blog-container">
+      <nav class="breadcrumbs" aria-label="Навигация">
+        <a href="/">Главная</a>
+        <span class="bc-sep">/</span>
+        <a href="/ru/blog/">Блог</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-current">Robots.txt для ИИ</span>
+      </nav>
+    </div>
+
+    <!-- Article Layout -->
+    <div class="blog-container">
+      <div class="article-layout">
+
+        <!-- Main Content -->
+        <article class="article-main">
+
+          <!-- Article Header -->
+          <header class="article-header">
+            <div class="article-badges">
+              <span class="article-badge seo-badge">SEO</span>
+              <span class="article-badge aeo-badge">AEO</span>
+            </div>
+            <h1>Robots.txt для ИИ: Как контролировать ИИ-краулеры &amp; защитить свой контент (2026)</h1>
+            <div class="article-meta">
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                15 марта 2026
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 мин чтения
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">От seoscore.tools</span>
+            </div>
+          </header>
+
+          <!-- Mobile TOC -->
+          <div class="toc-mobile" id="tocMobile">
+            <button class="toc-mobile-toggle" id="tocMobileToggle">
+              Содержание
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="toc-mobile-list" id="tocMobileList">
+              <li><a class="toc-link" href="#what-are-ai-crawlers">Что такое ИИ-краулеры?</a></li>
+              <li><a class="toc-link" href="#ai-crawler-directory">Полный справочник ИИ-краулеров</a></li>
+              <li><a class="toc-link" href="#how-robots-txt-works">Как работает robots.txt</a></li>
+              <li><a class="toc-link" href="#decision-process">Процесс принятия решений</a></li>
+              <li><a class="toc-link" href="#four-strategies">4 стратегических подхода</a></li>
+              <li><a class="toc-link" href="#copy-paste-configs">Готовые конфигурации</a></li>
+              <li><a class="toc-link" href="#content-type-decisions">Решения по типу контента</a></li>
+              <li><a class="toc-link" href="#beyond-robots-txt">За пределами robots.txt</a></li>
+              <li><a class="toc-link" href="#seo-aeo-tradeoff">Компромисс SEO/AEO</a></li>
+              <li><a class="toc-link" href="#monitor-ai-crawlers">Мониторинг ИИ-краулеров</a></li>
+              <li><a class="toc-link" href="#faq">Частые вопросы</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Ключевые выводы</a></li>
+            </ul>
+          </div>
+
+          <!-- Article Body -->
+          <div class="article-body">
+
+            <!-- Introduction -->
+            <p class="article-intro key-definition"><strong>ИИ-краулеры — это автоматизированные боты, управляемые такими компаниями, как OpenAI, Anthropic, Google и Perplexity, которые посещают ваш сайт для сбора контента для обучения ИИ-моделей, обеспечения функций ИИ-поиска или того и другого.</strong> Ваш файл <code>robots.txt</code> — это основной механизм для контроля того, какие ИИ-краулеры могут получить доступ к вашему контенту, &mdash; и большинство сайтов в 2026 году вообще не настроили его для эпохи ИИ.</p>
+
+            <p>Прямо сейчас десятки ИИ-краулеров посещают сайты по всему интернету, скачивая контент в массовом масштабе и загружая его в большие языковые модели, обучающие датасеты и ИИ-поисковые системы. Некоторые из этих краулеров честно идентифицируют себя. Другие используют неоднозначные строки user-agent. А ваш файл robots.txt &mdash; простой текстовый файл, существующий с 1994 года &mdash; является передовой линией обороны для решения того, кто получает доступ к вашему контенту, а кто нет.</p>
+
+            <p>Проблема в том, что большинство владельцев сайтов не знают о существовании этих краулеров, не говоря уже о том, как ими управлять. В результате — неконтролируемая ситуация, когда ИИ-компании собирают контент без ограничений. На другом конце спектра некоторые сайты перестарались, заблокировав все ИИ-краулеры &mdash; непреднамеренно уничтожив свою видимость в ChatGPT, Perplexity и других ИИ-поисковых платформах, которые теперь генерируют реальный реферальный трафик.</p>
+
+            <p>Это руководство — исчерпывающий справочник по управлению ИИ-краулерами с помощью robots.txt в 2026 году. Оно включает полный каталог всех известных ИИ-краулеров, готовые конфигурации для четырёх различных стратегий и чёткую систему принятия решений о том, что блокировать, а что разрешать, исходя из ваших конкретных бизнес-целей.</p>
+
+            <div class="stat-highlight">
+              <span class="stat-number">73%</span>
+              <span class="stat-desc">сайтов НЕ имеют специфических правил для ИИ-краулеров в файле robots.txt, оставляя контент полностью открытым для обучения ИИ и сбора данных</span>
+            </div>
+
+            <!-- What Are AI Crawlers -->
+            <h2 id="what-are-ai-crawlers">Что такое ИИ-краулеры? Чем они отличаются от ботов поисковых систем</h2>
+
+            <p><strong>ИИ-краулеры — это веб-боты, которые скачивают ваш контент для целей, связанных с ИИ: обучение моделей машинного обучения, обеспечение ответов ИИ-поиска в реальном времени или построение индексов дополненной генерации (RAG).</strong> Они отличаются от традиционных поисковых краулеров, таких как Googlebot и Bingbot, в нескольких критических аспектах.</p>
+
+            <p><strong>Традиционные поисковые краулеры</strong> (Googlebot, Bingbot) индексируют ваш контент, чтобы он появлялся в результатах поиска. Когда пользователь кликает по результату поиска, он посещает ваш сайт. Существует чёткий обмен ценностью: вы разрешаете сканирование и взамен получаете органический трафик. Эта модель является основой веба уже более 25 лет.</p>
+
+            <p><strong>ИИ-обучающие краулеры</strong> (GPTBot, CCBot, Bytespider) скачивают ваш контент для обучения ИИ-моделей. Ваш контент становится частью знаний модели, но обычно нет ни атрибуции, ни обратной ссылки, ни трафика на ваш сайт. Это односторонняя экстракция ценности &mdash; ИИ-компания получает выгоду, а вы, возможно, нет.</p>
+
+            <p><strong>ИИ-поисковые краулеры</strong> (ChatGPT-User, PerplexityBot, OAI-SearchBot) получают доступ к вашему контенту в реальном времени, когда пользователи задают вопросы. Они генерируют ответы на основе ИИ, ссылаясь на ваш сайт как на источник, часто с ссылкой. Эта модель ближе к традиционному обмену ценностью в поиске &mdash; вы получаете трафик и атрибуцию в обмен на доступ.</p>
+
+            <p>Понимание этого различия крайне важно, так как оно определяет вашу стратегию robots.txt. Блокировка ИИ-обучающих краулеров защищает вашу интеллектуальную собственность. Блокировка ИИ-поисковых краулеров удаляет вас из растущего канала трафика. Оптимальный подход для большинства сайтов — разрешить одну категорию и ограничить другую.</p>
+
+            <div class="score-cards-row">
+              <div class="mini-score-card">
+                <div class="mini-score-value score-accent">12+</div>
+                <div class="mini-score-label">Известных ИИ-краулеров</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-red">6</div>
+                <div class="mini-score-label">Ботов только для обучения</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-green">4</div>
+                <div class="mini-score-label">Ботов поиска + атрибуции</div>
+              </div>
+            </div>
+
+            <!-- Complete AI Crawler Directory -->
+            <h2 id="ai-crawler-directory">Полный справочник ИИ-краулеров (2026)</h2>
+
+            <p>Это наиболее полная справочная таблица ИИ-краулеров. Она охватывает каждого крупного ИИ-бота, который может посещать ваш сайт, какая компания им управляет, что он делает с вашим контентом и разрешён ли он по умолчанию, если у вас нет специфических правил в robots.txt.</p>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Имя бота</th>
+                    <th>Компания</th>
+                    <th>Строка User-Agent</th>
+                    <th>Назначение</th>
+                    <th>По умолчанию</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>GPTBot</strong></td><td>OpenAI</td><td><code>GPTBot</code></td><td>Сбор обучающих данных для ИИ-моделей</td><td>Разрешён</td></tr>
+                  <tr><td><strong>ChatGPT-User</strong></td><td>OpenAI</td><td><code>ChatGPT-User</code></td><td>Просмотр веба в реальном времени в беседах ChatGPT</td><td>Разрешён</td></tr>
+                  <tr><td><strong>OAI-SearchBot</strong></td><td>OpenAI</td><td><code>OAI-SearchBot</code></td><td>Функция поиска ChatGPT (результаты веб-поиска)</td><td>Разрешён</td></tr>
+                  <tr><td><strong>PerplexityBot</strong></td><td>Perplexity AI</td><td><code>PerplexityBot</code></td><td>ИИ-поиск в реальном времени с цитатами</td><td>Разрешён</td></tr>
+                  <tr><td><strong>ClaudeBot</strong></td><td>Anthropic</td><td><code>ClaudeBot</code></td><td>Веб-запросы для бесед Claude</td><td>Разрешён</td></tr>
+                  <tr><td><strong>anthropic-ai</strong></td><td>Anthropic</td><td><code>anthropic-ai</code></td><td>Сбор обучающих данных для ИИ-моделей</td><td>Разрешён</td></tr>
+                  <tr><td><strong>Google-Extended</strong></td><td>Google</td><td><code>Google-Extended</code></td><td>Обучение Gemini ИИ (отдельно от Поиска)</td><td>Разрешён</td></tr>
+                  <tr><td><strong>Googlebot</strong></td><td>Google</td><td><code>Googlebot</code></td><td>Индексация Google Поиска + AI Overview</td><td>Разрешён</td></tr>
+                  <tr><td><strong>Bingbot</strong></td><td>Microsoft</td><td><code>bingbot</code></td><td>Индексация Bing + Copilot</td><td>Разрешён</td></tr>
+                  <tr><td><strong>Bytespider</strong></td><td>ByteDance</td><td><code>Bytespider</code></td><td>Обучение ИИ для моделей TikTok/Douyin</td><td>Разрешён</td></tr>
+                  <tr><td><strong>CCBot</strong></td><td>Common Crawl</td><td><code>CCBot</code></td><td>Открытый датасет, используемый многими ИИ-компаниями</td><td>Разрешён</td></tr>
+                  <tr><td><strong>FacebookBot</strong></td><td>Meta</td><td><code>FacebookBot</code></td><td>Обучение ИИ для Meta AI / моделей Llama</td><td>Разрешён</td></tr>
+                  <tr><td><strong>cohere-ai</strong></td><td>Cohere</td><td><code>cohere-ai</code></td><td>Обучение ИИ-моделей для корпоративных LLM</td><td>Разрешён</td></tr>
+                  <tr><td><strong>Applebot-Extended</strong></td><td>Apple</td><td><code>Applebot-Extended</code></td><td>Обучение Apple Intelligence / Siri ИИ</td><td>Разрешён</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout callout-warning">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Критическое различие: Никогда не блокируйте Googlebot</strong>
+                <p>Блокировка <code>Googlebot</code> полностью удаляет ваш сайт из Google Поиска. Если вы хотите запретить Google использовать ваш контент для обучения ИИ Gemini, заблокируйте вместо этого <code>Google-Extended</code> &mdash; это останавливает обучение ИИ, не влияя на ваши позиции в Google Поиске или видимость в AI Overview.</p>
+              </div>
+            </div>
+
+            <h3>Доля трафика ИИ-краулеров (оценки 2026)</h3>
+
+            <p>На основе агрегированного анализа серверных логов тысяч сайтов, вот оценки долей трафика основных ИИ-краулеров в 2026 году:</p>
+
+            <div class="bar-chart">
+              <div class="bar-chart-item"><span class="bar-chart-label">GPTBot</span><div class="bar-chart-track"><div class="bar-chart-fill bar-fill-accent" style="width:45%">45%</div></div><span class="bar-chart-value">45%</span></div>
+              <div class="bar-chart-item"><span class="bar-chart-label">PerplexityBot</span><div class="bar-chart-track"><div class="bar-chart-fill bar-fill-purple" style="width:25%">25%</div></div><span class="bar-chart-value">25%</span></div>
+              <div class="bar-chart-item"><span class="bar-chart-label">ClaudeBot</span><div class="bar-chart-track"><div class="bar-chart-fill bar-fill-blue" style="width:15%">15%</div></div><span class="bar-chart-value">15%</span></div>
+              <div class="bar-chart-item"><span class="bar-chart-label">Другие</span><div class="bar-chart-track"><div class="bar-chart-fill bar-fill-warning" style="width:15%">15%</div></div><span class="bar-chart-value">15%</span></div>
+            </div>
+
+            <p>GPTBot — самый активный ИИ-краулер в интернете, на него приходится примерно 45% всего трафика ИИ-ботов. PerplexityBot быстро растёт с 2024 года, отражая рост популярности Perplexity как ИИ-поисковой системы. Доля ClaudeBot меньше, но стабильно растёт. Категория «Другие» включает Bytespider, CCBot, FacebookBot, cohere-ai и менее распространённые краулеры.</p>
+
+            <h2 id="how-robots-txt-works">Как работает robots.txt &mdash; краткий обзор</h2>
+
+            <p><strong>Файл robots.txt — это обычный текстовый файл, размещённый в корне вашего сайта (например, <code>https://example.com/robots.txt</code>), который сообщает веб-краулерам, какие страницы или разделы вашего сайта им разрешено или запрещено посещать.</strong> Это веб-стандарт с 1994 года, формализованный как RFC 9309.</p>
+
+            <p>Файл использует простой синтаксис с тремя основными директивами:</p>
+
+            <pre><code># Базовый синтаксис robots.txt
+User-agent: ИмяБота       # К какому боту применяется правило
+Disallow: /private/       # Заблокировать доступ к этому пути
+Allow: /public/           # Явно разрешить доступ к этому пути
+Sitemap: https://example.com/sitemap.xml  # Сообщить ботам расположение карты сайта</code></pre>
+
+            <p>Ключевые правила:</p>
+
+            <ul>
+              <li><strong><code>User-agent: *</code></strong> применяется ко ВСЕМ ботам. Специфические правила <code>User-agent</code> переопределяют подстановочный знак для этого конкретного бота.</li>
+              <li><strong><code>Disallow: /</code></strong> блокирует доступ ко всему сайту для указанного бота.</li>
+              <li><strong><code>Disallow:</code></strong> (пустое значение) разрешает доступ ко всему сайту для указанного бота.</li>
+              <li><strong>Более конкретные правила побеждают.</strong> Если у вас есть <code>Disallow: /blog/</code> и <code>Allow: /blog/public/</code>, бот может получить доступ к <code>/blog/public/</code>, но ни к чему другому в <code>/blog/</code>.</li>
+              <li><strong>robots.txt — добровольный.</strong> Ботов просят соблюдать правила, но технически не принуждают. Легитимные компании (OpenAI, Google, Anthropic, Perplexity) соблюдают robots.txt. Недобросовестные скреперы могут не соблюдать.</li>
+              <li><strong>Каждая группа ботов нуждается в своём блоке.</strong> Нельзя объединять несколько строк User-agent с одним набором правил (хотя некоторые реализации это поддерживают, безопаснее разделять).</li>
+            </ul>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>Где размещать robots.txt</strong>
+                <p>Файл robots.txt ДОЛЖЕН находиться по точному URL <code>https://вашдомен.com/robots.txt</code>. Он не может быть в поддиректории и должен быть доступен через HTTP(S). Если файл возвращает ошибку 404 или 5xx, боты будут считать, что имеют полный доступ ко всему сайту.</p>
+              </div>
+            </div>
+
+            <h2 id="decision-process">Процесс принятия решений: Как решить, что блокировать</h2>
+
+            <p>Прежде чем писать правила robots.txt, вам нужна чёткая система принятия решений. Случайная блокировка или разрешение ботов без стратегии приводит либо к чрезмерной блокировке (потеря ИИ-трафика), либо к недостаточной блокировке (бесплатная раздача контента). Используйте этот пятишаговый процесс:</p>
+
+            <div class="flow-steps">
+              <div class="flow-step"><div class="flow-step-num">1</div><div class="flow-step-title">Определите ботов</div><div class="flow-step-desc">Проверьте серверные логи на ИИ user-agent'ы, посещающие ваш сайт</div></div>
+              <div class="flow-step"><div class="flow-step-num">2</div><div class="flow-step-title">Оцените ценность</div><div class="flow-step-desc">Каждый бот отправляет трафик, даёт цитаты или только извлекает?</div></div>
+              <div class="flow-step"><div class="flow-step-num">3</div><div class="flow-step-title">Настройте</div><div class="flow-step-desc">Напишите правила robots.txt, соответствующие вашей стратегии</div></div>
+              <div class="flow-step"><div class="flow-step-num">4</div><div class="flow-step-title">Протестируйте</div><div class="flow-step-desc">Проверьте синтаксис и убедитесь, что правила работают как ожидается</div></div>
+              <div class="flow-step"><div class="flow-step-num">5</div><div class="flow-step-title">Мониторьте</div><div class="flow-step-desc">Отслеживайте ИИ-реферальный трафик и активность ботов ежемесячно</div></div>
+            </div>
+
+            <p><strong>Шаг 1: Определите, какие ИИ-боты посещают ваш сайт.</strong> Проверьте журналы доступа сервера на строки user-agent, совпадающие с ботами из таблицы выше. Большинство сайтов удивляет объём трафика ИИ-краулеров &mdash; некоторые сайты получают больше запросов от ИИ-ботов, чем от реальных посетителей.</p>
+
+            <p><strong>Шаг 2: Оцените обмен ценностью.</strong> Для каждого бота спросите: «Приносит ли разрешение этого бота пользу моему сайту?» PerplexityBot отправляет реферальный трафик с чёткими цитатами. GPTBot забирает обучающие данные без прямой выгоды для вас. Ответ определяет, блокировать или разрешать.</p>
+
+            <p><strong>Шаг 3: Напишите конфигурацию.</strong> На основе оценки выберите одну из четырёх стратегий ниже и реализуйте соответствующие правила robots.txt.</p>
+
+            <p><strong>Шаг 4: Протестируйте конфигурацию.</strong> Используйте тестер robots.txt Google (в Google Search Console) и инструменты валидации robots.txt, встроенные в большинство SEO-пакетов. Одна опечатка может случайно заблокировать всех краулеров или разрешить тех, кого вы хотели заблокировать.</p>
+
+            <p><strong>Шаг 5: Мониторьте результаты.</strong> После внедрения правил отслеживайте ИИ-реферальный трафик в GA4 (переходы с chatgpt.com, perplexity.ai, claude.ai) и бот-трафик в серверных логах. Корректируйте стратегию на основе наблюдений.</p>
+
+            <div class="article-cta article-cta-scan">
+              <h3>Проверьте настройки ИИ-краулеров &mdash; Бесплатно</h3>
+              <p>Узнайте, какие ИИ-краулеры ваш robots.txt сейчас блокирует или разрешает. 40+ проверок доступности включено.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="Введите URL вашего сайта..." required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Сканировать &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+            <h2 id="four-strategies">4 стратегических подхода к управлению ИИ-краулерами</h2>
+
+            <p>Единой «правильной» конфигурации robots.txt для ИИ-краулеров не существует. Правильный подход зависит от типа контента, бизнес-модели и стратегических целей. Вот четыре основные стратегии с рекомендациями по применению.</p>
+
+            <div class="icon-grid">
+              <div class="icon-grid-item"><div class="icon-grid-icon icon-grid-icon-danger"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93l14.14 14.14"/></svg></div><div class="icon-grid-content"><h4>Блокировать весь ИИ</h4><p>Максимальная защита контента. Нулевая ИИ-видимость. Для платного и проприетарного контента.</p></div></div>
+              <div class="icon-grid-item"><div class="icon-grid-icon icon-grid-icon-success"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="icon-grid-content"><h4>Разрешить весь ИИ</h4><p>Максимальная ИИ-видимость. Без защиты. Для открытого и общественного контента.</p></div></div>
+              <div class="icon-grid-item"><div class="icon-grid-icon icon-grid-icon-accent"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="icon-grid-content"><h4>Выборочное разрешение</h4><p>Разрешить поисковые боты, блокировать обучающие. Сбалансированный подход для большинства бизнесов.</p></div></div>
+              <div class="icon-grid-item"><div class="icon-grid-icon icon-grid-icon-purple"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><div class="icon-grid-content"><h4>Уровневый доступ</h4><p>Разные правила для разных разделов. Блог открыт, данные о продуктах защищены. Продвинутая стратегия.</p></div></div>
+            </div>
+
+            <h3>Стратегия 1: Блокировать все ИИ-краулеры</h3>
+            <p><strong>Подходит для:</strong> Платный контент, проприетарные исследования, премиум-издания, юридические/медицинские базы данных и любой бизнес, где контент — это продукт.</p>
+            <p>Наиболее защитный подход. Вы блокируете каждого известного ИИ-краулера от доступа к любой части сайта. Ваш контент не будет использоваться для обучения ИИ, не появится в ответах ChatGPT или Perplexity и не будет цитироваться ни одной ИИ-поисковой системой.</p>
+            <p><strong>Компромисс:</strong> Нулевой реферальный трафик от ИИ-поисковых платформ. По мере роста ИИ-поиска всё больше потенциальных посетителей никогда не обнаружат ваш контент.</p>
+
+            <h3>Стратегия 2: Разрешить все ИИ-краулеры</h3>
+            <p><strong>Подходит для:</strong> Открытые проекты, образовательные ресурсы, государственные сайты, НКО и контент с целью максимального распространения.</p>
+            <p>Простейший подход: ничего не делать. Если в robots.txt нет специфических правил для ИИ-краулеров, все боты разрешены по умолчанию.</p>
+            <p><strong>Компромисс:</strong> Ваш контент будет использоваться для обучения ИИ-моделей без компенсации. ИИ-системы могут резюмировать контент настолько подробно, что пользователи никогда не посетят ваш сайт.</p>
+
+            <h3>Стратегия 3: Выборочное разрешение (Рекомендуется для большинства)</h3>
+            <p><strong>Подходит для:</strong> Большинства бизнесов, блогов, интернет-магазинов, SaaS-компаний и агентств, которые хотят ИИ-поисковый трафик, но защищают контент от обучения.</p>
+            <p>Рекомендуемая стратегия. Блокируйте обучающие краулеры (GPTBot, CCBot, Bytespider, anthropic-ai, cohere-ai), разрешая поисковые (ChatGPT-User, OAI-SearchBot, PerplexityBot, ClaudeBot). Контент появляется в ИИ-поисковых результатах с атрибуцией и реферальным трафиком, но не используется для обучения конкурирующих моделей.</p>
+            <p><strong>Компромисс:</strong> Граница между «поиском» и «обучением» не всегда чёткая. Однако блокировка явно обучающих краулеров отправляет ясный юридический и технический сигнал.</p>
+
+            <h3>Стратегия 4: Уровневый доступ по разделам контента</h3>
+            <p><strong>Подходит для:</strong> Крупных сайтов с разнообразным контентом — e-commerce с блогом и страницами товаров, SaaS с документацией и ценами, издатели с бесплатным и премиум-контентом.</p>
+            <p>Самый изощрённый подход: разные правила для разных разделов сайта. Например, ИИ-краулерам разрешён доступ к блогу, но заблокирован к каталогу товаров, зоне поддержки клиентов и внутренней документации.</p>
+            <p><strong>Компромисс:</strong> Сложнее в настройке и обслуживании. Требует регулярного аудита.</p>
+
+            <h2 id="copy-paste-configs">Готовые конфигурации robots.txt</h2>
+
+            <p>Четыре готовые конфигурации robots.txt, по одной для каждой стратегии. Скопируйте подходящую и добавьте в файл robots.txt. Конфигурации охватывают всех известных ИИ-краулеров по состоянию на март 2026.</p>
+
+            <h3>Конфигурация 1: Блокировать все ИИ-краулеры</h3>
+
+            <pre><code># ============================================
+# БЛОКИРОВАТЬ ВСЕ ИИ-КРАУЛЕРЫ
+# Предотвращает обучение ИИ И ИИ-поисковую индексацию
+# ============================================
+
+# OpenAI (ChatGPT, GPT-модели)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Обучение Google ИИ (НЕ влияет на Google Поиск)
+User-agent: Google-Extended
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# ByteDance (TikTok)
+User-agent: Bytespider
+Disallow: /
+
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Meta (Facebook/Instagram ИИ)
+User-agent: FacebookBot
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Disallow: /
+
+# Разрешить обычные поисковые системы
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml</code></pre>
+
+            <h3>Конфигурация 2: Разрешить все ИИ-краулеры</h3>
+
+            <pre><code># ============================================
+# РАЗРЕШИТЬ ВСЕ ИИ-КРАУЛЕРЫ
+# Максимальная ИИ-видимость и обнаруживаемость
+# ============================================
+
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml</code></pre>
+
+            <h3>Конфигурация 3: Выборочное разрешение (Рекомендуется)</h3>
+
+            <div class="compare-cards">
+              <div class="compare-card compare-card-before">
+                <span class="compare-card-label">Блокировать (Обучение)</span>
+                <h4>Боты обучения ИИ-моделей</h4>
+                <ul>
+                  <li>GPTBot &mdash; обучающие данные OpenAI</li>
+                  <li>anthropic-ai &mdash; обучение Claude</li>
+                  <li>Google-Extended &mdash; обучение Gemini</li>
+                  <li>Bytespider &mdash; модели ByteDance</li>
+                  <li>CCBot &mdash; датасет Common Crawl</li>
+                  <li>FacebookBot &mdash; обучение Meta/Llama</li>
+                  <li>cohere-ai &mdash; модели Cohere</li>
+                  <li>Applebot-Extended &mdash; Apple ИИ</li>
+                </ul>
+              </div>
+              <div class="compare-card compare-card-after">
+                <span class="compare-card-label">Разрешить (Поиск)</span>
+                <h4>Боты ИИ-поиска + цитирования</h4>
+                <ul>
+                  <li>ChatGPT-User &mdash; просмотр в ChatGPT</li>
+                  <li>OAI-SearchBot &mdash; поиск ChatGPT</li>
+                  <li>PerplexityBot &mdash; поиск Perplexity</li>
+                  <li>ClaudeBot &mdash; веб-поиск Claude</li>
+                  <li>Googlebot &mdash; Google Поиск + AI Overview</li>
+                  <li>bingbot &mdash; Bing Поиск + Copilot</li>
+                </ul>
+              </div>
+            </div>
+
+            <pre><code># ============================================
+# ВЫБОРОЧНО: Блокировать обучение, разрешить поиск
+# Лучший баланс для большинства сайтов (2026)
+# ============================================
+
+# БЛОКИРОВАТЬ — Обучающие ИИ-краулеры
+User-agent: GPTBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# РАЗРЕШИТЬ — Поисковые ИИ-краулеры (дают цитаты + трафик)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# РАЗРЕШИТЬ — Традиционные поисковые системы
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml</code></pre>
+
+            <h3>Конфигурация 4: Уровневый доступ по разделам</h3>
+
+            <pre><code># ============================================
+# УРОВНЕВЫЙ: Разные правила для разных разделов
+# Блог = открыт, Товары/API = защищены
+# ============================================
+
+# Полная блокировка всех обучающих ИИ-ботов
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Поисковые ИИ-боты: блог разрешён, товары и внутренние — нет
+User-agent: ChatGPT-User
+Allow: /blog/
+Allow: /guides/
+Disallow: /products/
+Disallow: /api/
+Disallow: /account/
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /blog/
+Allow: /guides/
+Disallow: /products/
+Disallow: /api/
+Disallow: /account/
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /blog/
+Allow: /guides/
+Disallow: /products/
+Disallow: /api/
+Disallow: /account/
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /blog/
+Allow: /guides/
+Disallow: /products/
+Disallow: /api/
+Disallow: /account/
+Disallow: /admin/
+
+# Традиционные поисковые системы: полный доступ
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml</code></pre>
+
+            <h2 id="content-type-decisions">Решения по типу контента: Что блокировать и что разрешать</h2>
+
+            <div class="priority-grid">
+              <div class="priority-card priority-card-low"><span class="priority-card-label">Разрешить ИИ-краулеры</span><h4>Публичный блог &amp; руководства</h4><p>Получают выгоду от ИИ-цитат и реферального трафика. Строят тематический авторитет.</p></div>
+              <div class="priority-card priority-card-high"><span class="priority-card-label">Блокировать ИИ-краулеры</span><h4>Частные данные &amp; контент пользователей</h4><p>Страницы аккаунтов, пользовательский контент, внутренние панели и данные клиентов всегда должны быть заблокированы.</p></div>
+              <div class="priority-card priority-card-medium"><span class="priority-card-label">Выборочно</span><h4>Страницы товаров &amp; цен</h4><p>Разрешить поисковые боты (для сравнения цен в ИИ-результатах), блокировать обучающие (для защиты каталога).</p></div>
+              <div class="priority-card priority-card-low"><span class="priority-card-label">Разрешить ИИ-краулеры</span><h4>Документация API &amp; обучающие материалы</h4><p>Техническая документация получает огромную выгоду от ИИ-цитирования. Разработчики постоянно обращаются к ИИ за помощью с кодом.</p></div>
+            </div>
+
+            <h2 id="beyond-robots-txt">За пределами robots.txt: дополнительные методы защиты контента</h2>
+
+            <p>Хотя robots.txt — основной инструмент, существуют и другие механизмы, некоторые из которых обеспечивают более сильную защиту.</p>
+
+            <h3>Мета-теги Robots</h3>
+            <pre><code>&lt;!-- Блокировать обучение Google ИИ для конкретной страницы --&gt;
+&lt;meta name="googlebot" content="noai, noimageai"&gt;
+
+&lt;!-- Стандартные директивы robots (по-прежнему важны) --&gt;
+&lt;meta name="robots" content="index, follow"&gt;</code></pre>
+
+            <h3>X-Robots-Tag HTTP-заголовок</h3>
+            <pre><code># В .htaccess или конфигурации сервера
+Header set X-Robots-Tag "noai, noimageai"</code></pre>
+
+            <h3>Предложение ai.txt</h3>
+            <p>Несколько отраслевых групп предложили <code>ai.txt</code> как выделенный стандарт. По состоянию на март 2026 года ai.txt ещё не является формально принятым стандартом, но несколько крупных ИИ-компаний выразили поддержку.</p>
+
+            <h3>Политики TDM (интеллектуальный анализ текстов и данных)</h3>
+            <p>Директива ЕС о едином цифровом рынке и аналогичное законодательство создали правовые рамки. Заголовки резервирования TDM (<code>TDMRep</code>) позволяют юридически зарезервировать права на контент.</p>
+
+            <div class="callout callout-tip">
+              <div class="callout-icon">*</div>
+              <div class="callout-content">
+                <strong>Стратегия многоуровневой защиты</strong>
+                <p>Наиболее эффективный подход сочетает несколько методов: robots.txt для контроля на уровне ботов, мета-теги robots для постраничной детализации, X-Robots-Tag для не-HTML файлов, Условия использования и ограничение частоты запросов на серверном уровне.</p>
+              </div>
+            </div>
+
+            <h2 id="seo-aeo-tradeoff">Компромисс SEO/AEO: Что вы получаете и теряете</h2>
+
+            <p><strong>Каждое решение по robots.txt — это компромисс между защитой контента и ИИ-видимостью.</strong></p>
+
+            <p><strong>Что вы получаете, разрешая ИИ-поисковые краулеры:</strong></p>
+            <ul>
+              <li><strong>ИИ-реферальный трафик:</strong> рост 3-5 раз в год для оптимизированных сайтов.</li>
+              <li><strong>Авторитет бренда:</strong> постоянное цитирование укрепляет узнаваемость.</li>
+              <li><strong>AEO/GEO-показатели:</strong> разрешение краулеров — предпосылка для оптимизации под ИИ-цитирование.</li>
+              <li><strong>Конкурентное преимущество:</strong> если конкуренты блокируют, а вы нет — ИИ цитирует вас.</li>
+            </ul>
+
+            <p><strong>Что вы теряете, разрешая обучающие ИИ-краулеры:</strong></p>
+            <ul>
+              <li><strong>Эксклюзивность контента:</strong> контент становится частью обучающих датасетов.</li>
+              <li><strong>Конкурентный риск:</strong> конкуренты косвенно выигрывают от вашей работы.</li>
+              <li><strong>Расходы на полосу пропускания:</strong> ИИ-краулеры могут быть агрессивными.</li>
+            </ul>
+
+            <p>Для большинства бизнесов стратегический оптимум — <strong>Выборочное разрешение</strong>: блокировка обучающих ботов для защиты ИС, разрешение поисковых для получения трафика и цитат.</p>
+
+            <h2 id="monitor-ai-crawlers">Как мониторить активность ИИ-краулеров</h2>
+
+            <h3>Серверные журналы доступа</h3>
+            <p>Ищите ИИ user-agent'ы в логах. Ключевые метрики: объём запросов по ботам, посещённые страницы, коды ответов, потреблённая полоса пропускания.</p>
+
+            <h3>Реферальный трафик в GA4</h3>
+            <p>Отслеживайте переходы с <code>chatgpt.com</code>, <code>perplexity.ai</code>, <code>claude.ai</code>, <code>bing.com/chat</code>. Создайте пользовательскую группу каналов «ИИ-поиск» в GA4.</p>
+
+            <h3>Валидация robots.txt</h3>
+            <p>Регулярно проверяйте с помощью Google Search Console, <a href="https://seoscore.tools">seoscore.tools</a> и ручного тестирования.</p>
+
+            <div class="callout callout-warning">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Внимание: Кэшированный robots.txt</strong>
+                <p>Краулеры кэшируют файл robots.txt, иногда до 24 часов. После изменений подождите 24-48 часов перед диагностикой.</p>
+              </div>
+            </div>
+
+            <h2 id="faq">Часто задаваемые вопросы</h2>
+
+            <div class="faq-list">
+              <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Действительно ли robots.txt останавливает ИИ-краулеры от использования моего контента?</span><svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-answer"><p>Robots.txt — добровольный протокол. Крупные компании (OpenAI, Anthropic, Google, Perplexity) соблюдают его. Для более надёжной защиты сочетайте с серверными контролями и юридическими мерами.</p></div></div>
+              <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>В чём разница между GPTBot и ChatGPT-User?</span><svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-answer"><p>GPTBot собирает данные для обучения моделей. ChatGPT-User используется при реальном веб-поиске в ChatGPT. Блокировка GPTBot не влияет на появление в ChatGPT-браузинге. Многие блокируют GPTBot, разрешая ChatGPT-User.</p></div></div>
+              <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Повредит ли блокировка ИИ-краулеров моим SEO-позициям?</span><svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-answer"><p>НЕТ. ИИ-боты полностью отделены от Googlebot. Блокировка Google-Extended безопасна для SEO. Единственный бот, который нельзя блокировать — Googlebot.</p></div></div>
+              <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Следует ли мне блокировать ИИ-краулеры или разрешать их?</span><svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-answer"><p>Зависит от стратегии. Многие выбирают средний путь: разрешают поисковые боты (ChatGPT-User, PerplexityBot), блокируют обучающие (GPTBot, CCBot).</p></div></div>
+              <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Как проверить, сканируют ли ИИ-боты мой сайт?</span><svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-answer"><p>Проверьте серверные логи на ИИ user-agent'ы. Используйте GoAccess, AWStats или <a href="https://seoscore.tools">seoscore.tools</a> для быстрого анализа.</p></div></div>
+            </div>
+
+            <h2 id="key-takeaways">Ключевые выводы</h2>
+
+            <ol>
+              <li><strong>Ваш robots.txt — первая линия обороны.</strong> Без специфических правил контент открыт всем ИИ-ботам. У 73%+ сайтов нет ИИ-правил — не будьте в их числе.</li>
+              <li><strong>Различайте обучающие и поисковые ИИ-боты.</strong> GPTBot, CCBot, Bytespider — обучение без трафика. ChatGPT-User, PerplexityBot, ClaudeBot — цитаты и реферальный трафик.</li>
+              <li><strong>Выборочное разрешение — оптимально для большинства.</strong> Блокируйте обучающие, разрешайте поисковые краулеры.</li>
+              <li><strong>Никогда не блокируйте Googlebot.</strong> Используйте Google-Extended для контроля обучения Gemini.</li>
+              <li><strong>robots.txt добровольный.</strong> Дополняйте мета-тегами, X-Robots-Tag, условиями использования и rate limiting.</li>
+              <li><strong>Мониторьте результаты.</strong> Отслеживайте ИИ-реферальный трафик в GA4 и бот-активность в логах. Используйте <a href="https://seoscore.tools">seoscore.tools</a> для аудита.</li>
+              <li><strong>Обновляйте стратегию.</strong> Новые краулеры и стандарты (ai.txt, TDM) появляются регулярно. Пересматривайте robots.txt минимум раз в квартал.</li>
+            </ol>
+
+            <div class="article-cta article-cta-scan">
+              <h3>Оптимизируйте доступность &mdash; Бесплатно</h3>
+              <p>Получите SEO, AEO &amp; GEO оценки и увидьте, как ИИ-краулеры взаимодействуют с вашим сайтом.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="Введите URL вашего сайта..." required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Сканировать &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="share-bar">
+              <span class="share-label">Поделиться руководством:</span>
+              <button class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title),'_blank','width=550,height=420')" aria-label="Поделиться в X">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </button>
+              <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank','width=550,height=420')" aria-label="Поделиться в LinkedIn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </button>
+              <button class="share-btn" onclick="navigator.clipboard.writeText(location.href).then(()=>this.innerHTML='<svg viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;><path d=&quot;M5 8l2 2 4-4&quot; stroke-linecap=&quot;round&quot;/></svg>')" aria-label="Скопировать ссылку">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              </button>
+            </div>
+
+            <div class="author-box">
+              <div class="author-avatar">S</div>
+              <div class="author-info">
+                <h4>seoscore.tools</h4>
+                <p class="author-role">Эксперты SEO, AEO & GEO</p>
+                <p class="author-bio">Мы создаём бесплатные инструменты для оптимизации сайтов под поисковые системы и ИИ-поиск. Наш сканер выполняет 136+ проверок по SEO, AEO и GEO.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <section class="related-section">
+            <h2>Похожие статьи</h2>
+            <div class="related-grid">
+              <div class="related-card">
+                <div class="related-card-badges"><span class="blog-card-badge aeo-badge">AEO</span><span class="blog-card-badge geo-badge">GEO</span></div>
+                <h3><a href="/ru/blog/rank-in-ai-search/">Как попасть в выдачу ChatGPT, Perplexity и ИИ-поисковых систем</a></h3>
+                <p>15 проверенных стратегий для цитирования вашего сайта ИИ-поисковыми системами. Практический чек-лист на 2026 год.</p>
+              </div>
+              <div class="related-card">
+                <div class="related-card-badges"><span class="blog-card-badge seo-badge">SEO</span></div>
+                <h3><a href="/ru/blog/seo-audit-checklist/">Полный чек-лист SEO-аудита (2026)</a></h3>
+                <p>Пошаговое руководство по SEO-аудиту: техническое SEO, оптимизация страниц, доступность для сканирования и многое другое.</p>
+              </div>
+            </div>
+          </section>
+
+        </article>
+
+        <aside class="article-sidebar">
+          <div class="toc">
+            <div class="toc-title">Содержание</div>
+            <ul class="toc-list" id="tocList">
+              <li><a class="toc-link" href="#what-are-ai-crawlers">Что такое ИИ-краулеры?</a></li>
+              <li><a class="toc-link" href="#ai-crawler-directory">Справочник краулеров</a></li>
+              <li><a class="toc-link" href="#how-robots-txt-works">Как работает robots.txt</a></li>
+              <li><a class="toc-link" href="#decision-process">Процесс решений</a></li>
+              <li><a class="toc-link" href="#four-strategies">4 стратегии</a></li>
+              <li><a class="toc-link" href="#copy-paste-configs">Готовые конфигурации</a></li>
+              <li><a class="toc-link" href="#content-type-decisions">По типу контента</a></li>
+              <li><a class="toc-link" href="#beyond-robots-txt">За пределами robots.txt</a></li>
+              <li><a class="toc-link" href="#seo-aeo-tradeoff">Компромисс SEO/AEO</a></li>
+              <li><a class="toc-link" href="#monitor-ai-crawlers">Мониторинг краулеров</a></li>
+              <li><a class="toc-link" href="#faq">Частые вопросы</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Ключевые выводы</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+        <p class="footer-tagline">Бесплатный сканер SEO, AEO & GEO</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Сканер</a>
+        <a href="/ru/blog/">Блог</a>
+        <a href="/privacy.html">Политика конфиденциальности</a>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 seoscore.tools. Все права защищены.</span>
+        <span class="footer-built">Powered by Cloudflare Workers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    function setTheme(t) { html.setAttribute('data-theme', t); localStorage.setItem('seoscore-theme', t); }
+    themeToggle.addEventListener('click', () => setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
+    const saved = localStorage.getItem('seoscore-theme');
+    if (saved) setTheme(saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    const progressBar = document.getElementById('readingProgress');
+    window.addEventListener('scroll', () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / docHeight) * 100;
+      progressBar.style.width = Math.min(scrolled, 100) + '%';
+    });
+
+    const tocLinks = document.querySelectorAll('#tocList .toc-link');
+    const headings = [];
+    tocLinks.forEach(link => {
+      const id = link.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) headings.push({ el, link });
+    });
+
+    function updateToc() {
+      let current = headings[0];
+      for (const h of headings) {
+        if (h.el.getBoundingClientRect().top <= 100) current = h;
+      }
+      tocLinks.forEach(l => l.classList.remove('active'));
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateToc);
+    updateToc();
+
+    const tocMobile = document.getElementById('tocMobile');
+    const tocMobileToggle = document.getElementById('tocMobileToggle');
+    tocMobileToggle.addEventListener('click', () => tocMobile.classList.toggle('open'));
+
+    document.querySelectorAll('#tocMobileList .toc-link').forEach(link => {
+      link.addEventListener('click', () => tocMobile.classList.remove('open'));
+    });
+
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !wasOpen);
+      });
+    });
+  </script>
+</body>
+</html>

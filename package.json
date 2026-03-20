@@ -1,0 +1,13 @@
+{
+  "name": "seoscore-tools",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev src/site --port 8788",
+    "deploy": "wrangler pages deploy src/site --project-name seoscore-tools",
+    "preview": "npx serve src/site -p 3000"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
