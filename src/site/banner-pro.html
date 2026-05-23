@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Autopilot — Gumroad Cover</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #111; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+
+  .cover {
+    width: 1280px;
+    height: 720px;
+    background: linear-gradient(150deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  /* Ambient glow */
+  .glow1 { position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(16,185,129,0.13) 0%, transparent 70%); right: -50px; top: -80px; border-radius: 50%; }
+  .glow2 { position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%); left: -100px; bottom: -100px; border-radius: 50%; }
+  .glow3 { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%); right: 150px; bottom: -80px; border-radius: 50%; }
+
+  /* LEFT SIDE — full height */
+  .left {
+    flex: 1;
+    padding: 56px 32px 48px 64px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .top-section {}
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(16,185,129,0.12);
+    border: 1px solid rgba(16,185,129,0.25);
+    padding: 7px 18px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #34d399;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  .headline {
+    font-size: 3.8rem;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+    margin-bottom: 18px;
+  }
+  .headline em {
+    font-style: normal;
+    background: linear-gradient(135deg, #34d399, #3b82f6, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .sub {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.55;
+    max-width: 440px;
+  }
+
+  .bottom-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .cta-btn {
+    background: linear-gradient(135deg, #10b981, #059669);
+    padding: 16px 40px;
+    border-radius: 14px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 24px rgba(16,185,129,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+    letter-spacing: -0.01em;
+  }
+  .cta-note {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  /* RIGHT SIDE — full height, filled */
+  .right {
+    width: 580px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 40px 48px 40px 16px;
+  }
+
+  /* Before/After */
+  .transform-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .score-state {
+    text-align: center;
+    padding: 20px 32px;
+    border-radius: 18px;
+    flex: 1;
+    max-width: 200px;
+  }
+  .score-state.before {
+    background: rgba(239,68,68,0.08);
+    border: 1px solid rgba(239,68,68,0.2);
+  }
+  .score-state.after {
+    background: rgba(16,185,129,0.08);
+    border: 1px solid rgba(16,185,129,0.25);
+  }
+  .score-state-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+  }
+  .before .score-state-label { color: #f87171; }
+  .after .score-state-label { color: #34d399; }
+  .score-state-num {
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+  .before .score-state-num { color: #ef4444; }
+  .after .score-state-num { color: #10b981; }
+  .score-state-max {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.3);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  .arrow-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .arrow-icon { font-size: 1.6rem; color: rgba(255,255,255,0.25); }
+  .arrow-diff {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #34d399;
+    background: rgba(16,185,129,0.12);
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+
+  /* Score Rings Row */
+  .rings-row {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ring-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px 28px 16px;
+    text-align: center;
+    flex: 1;
+    max-width: 160px;
+  }
+
+  .mini-ring {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+  .mini-ring svg {
+    width: 100px; height: 100px;
+    transform: rotate(-90deg);
+  }
+  .rbg { fill: none; stroke: rgba(255,255,255,0.08); stroke-width: 7; }
+  .rprog { fill: none; stroke-width: 7; stroke-linecap: round; }
+  .rprog.seo { stroke: #10b981; filter: drop-shadow(0 0 8px rgba(16,185,129,0.4)); }
+  .rprog.aeo { stroke: #f59e0b; filter: drop-shadow(0 0 8px rgba(245,158,11,0.4)); }
+  .rprog.geo { stroke: #8b5cf6; filter: drop-shadow(0 0 8px rgba(139,92,246,0.4)); }
+
+  .mini-ring-val {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+  .mini-ring-val.seo { color: #10b981; }
+  .mini-ring-val.aeo { color: #f59e0b; }
+  .mini-ring-val.geo { color: #8b5cf6; }
+
+  .ring-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* Tags */
+  .tags-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tag {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+  }
+  .tag strong { color: rgba(255,255,255,0.85); font-weight: 800; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="glow1"></div>
+  <div class="glow2"></div>
+  <div class="glow3"></div>
+
+  <!-- LEFT -->
+  <div class="left">
+    <div class="top-section">
+      <div class="eyebrow">&#9889; WordPress Plugin</div>
+      <h1 class="headline">From 85 to 286.<br><em>One Click.</em></h1>
+      <p class="sub">The only plugin that scans, scores & auto-fixes your site for SEO, AEO and GEO. 235 checks. 65+ instant fixes. AI content that ranks.</p>
+    </div>
+    <div class="bottom-section">
+      <div class="cta-btn">Get It — $79</div>
+      <div class="cta-note">One-time payment.<br>No subscription ever.</div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+
+    <div class="transform-box">
+      <div class="score-state before">
+        <div class="score-state-label">Before</div>
+        <div class="score-state-num">85</div>
+        <div class="score-state-max">/ 300</div>
+      </div>
+      <div class="arrow-box">
+        <div class="arrow-icon">&#10132;</div>
+        <div class="arrow-diff">+201</div>
+      </div>
+      <div class="score-state after">
+        <div class="score-state-label">After</div>
+        <div class="score-state-num">286</div>
+        <div class="score-state-max">/ 300</div>
+      </div>
+    </div>
+
+    <div class="rings-row">
+      <div class="ring-card">
+        <div class="mini-ring">
+          <svg viewBox="0 0 100 100">
+            <circle class="rbg" cx="50" cy="50" r="42"/>
+            <circle class="rprog seo" cx="50" cy="50" r="42" stroke-dasharray="263.9" stroke-dashoffset="5.3"/>
+          </svg>
+          <div class="mini-ring-val seo">98</div>
+        </div>
+        <div class="ring-label">SEO · 118</div>
+      </div>
+      <div class="ring-card">
+        <div class="mini-ring">
+          <svg viewBox="0 0 100 100">
+            <circle class="rbg" cx="50" cy="50" r="42"/>
+            <circle class="rprog aeo" cx="50" cy="50" r="42" stroke-dasharray="263.9" stroke-dashoffset="13.2"/>
+          </svg>
+          <div class="mini-ring-val aeo">95</div>
+        </div>
+        <div class="ring-label">AEO · 55</div>
+      </div>
+      <div class="ring-card">
+        <div class="mini-ring">
+          <svg viewBox="0 0 100 100">
+            <circle class="rbg" cx="50" cy="50" r="42"/>
+            <circle class="rprog geo" cx="50" cy="50" r="42" stroke-dasharray="263.9" stroke-dashoffset="18.5"/>
+          </svg>
+          <div class="mini-ring-val geo">93</div>
+        </div>
+        <div class="ring-label">GEO · 62</div>
+      </div>
+    </div>
+
+    <div class="tags-row">
+      <div class="tag"><strong>235</strong> Checks</div>
+      <div class="tag"><strong>65+</strong> Auto-Fixes</div>
+      <div class="tag"><strong>AI</strong> Content</div>
+      <div class="tag"><strong>WooCommerce</strong></div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

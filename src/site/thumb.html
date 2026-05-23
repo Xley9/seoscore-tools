@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+
+  .thumb {
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Subtle background decoration */
+  .bg-circle1 {
+    position: absolute;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%);
+    top: -80px; right: -60px;
+    border-radius: 50%;
+  }
+  .bg-circle2 {
+    position: absolute;
+    width: 250px; height: 250px;
+    background: radial-gradient(circle, rgba(99,102,241,0.06) 0%, transparent 70%);
+    bottom: -60px; left: -40px;
+    border-radius: 50%;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+    box-shadow: 0 8px 30px rgba(16,185,129,0.3);
+  }
+
+  .title {
+    font-size: 2.6rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: #0f172a;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #64748b;
+  }
+
+  .checks-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .check-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 10px;
+  }
+  .check-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+  .check-dot.seo { background: #10b981; }
+  .check-dot.aeo { background: #f59e0b; }
+  .check-dot.geo { background: #8b5cf6; }
+  .check-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #475569;
+  }
+  .check-val {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  .stat-line {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #10b981;
+    margin-top: 4px;
+  }
+
+  /* Bottom accent */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #10b981, #6366f1, #8b5cf6);
+  }
+</style>
+</head>
+<body>
+
+<div class="thumb">
+  <div class="bg-circle1"></div>
+  <div class="bg-circle2"></div>
+
+  <div class="content">
+    <div class="icon">SA</div>
+    <div class="title">SEO<br>Autopilot</div>
+    <div class="subtitle">WordPress Plugin</div>
+
+    <div class="checks-row">
+      <div class="check-pill">
+        <div class="check-dot seo"></div>
+        <div class="check-label">SEO</div>
+        <div class="check-val">118</div>
+      </div>
+      <div class="check-pill">
+        <div class="check-dot aeo"></div>
+        <div class="check-label">AEO</div>
+        <div class="check-val">55</div>
+      </div>
+      <div class="check-pill">
+        <div class="check-dot geo"></div>
+        <div class="check-label">GEO</div>
+        <div class="check-val">62</div>
+      </div>
+    </div>
+
+    <div class="stat-line">235 Checks &middot; 65+ AI-Powered Fixes</div>
+  </div>
+
+  <div class="bottom-bar"></div>
+</div>
+
+</body>
+</html>

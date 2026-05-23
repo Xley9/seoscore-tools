@@ -37,8 +37,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/blog.css">
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -103,6 +103,7 @@
       <nav class="nav">
         <a href="/ru/" class="nav-link">Scanner</a>
         <a href="/ru/blog/" class="nav-link" style="color:var(--accent)">Blog</a>
+
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -130,9 +131,406 @@
       </div>
     </section>
 
+    <!-- Blog Search -->
+    <div class="container" style="margin-bottom:24px">
+      <div style="max-width:480px;margin:0 auto;position:relative">
+        <input type="text" id="blogSearch" placeholder="Поиск статей..." style="width:100%;padding:12px 16px 12px 44px;border:2px solid var(--border);border-radius:10px;background:var(--bg-primary);color:var(--text-primary);font-size:1rem;outline:none;transition:border-color 0.2s" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" style="position:absolute;left:14px;top:50%;transform:translateY(-50%)"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <span id="blogSearchCount" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:0.8rem;color:var(--text-muted);display:none"></span>
+      </div>
+    </div>
+
     <!-- Blog Grid -->
     <div class="container">
       <div class="blog-grid">
+
+        <!-- NEW: SEO-стратегия OpenAI -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">Стратегия</span>
+            </div>
+            <h2><a href="/ru/blog/openai-seo-strategy/">Как OpenAI получает 76,5 млн органических визитов: SEO-стратегия за $600K</a></h2>
+            <p class="blog-card-excerpt">OpenAI инвестировала $600K в SEO-специалистов и генерирует 76,5 млн органических визитов ежемесячно &mdash; ROI 15 200%. Как они это делают и чему можно научиться.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 мар 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 12 мин чтения</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: ИИ-компании нанимают SEO-экспертов -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/ai-companies-hiring-seo/">Почему ИИ-компании платят $320K SEO-экспертам (анализ вакансий 2026)</a></h2>
+            <p class="blog-card-excerpt">Anthropic, OpenAI и Perplexity нанимают SEO-лидов с зарплатой $200K&ndash;$320K. Мы проанализировали их вакансии, чтобы выявить требуемые навыки AEO и GEO.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 мар 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 10 мин чтения</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: UGC как SEO-стратегия -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge geo-badge">Стратегия</span>
+            </div>
+            <h2><a href="/ru/blog/ugc-seo-strategy/">Пользовательский контент как SEO-стратегия: 938K органических визитов в месяц (кейс)</a></h2>
+            <p class="blog-card-excerpt">Как индексируемый пользовательский контент приносит 938K органических визитов ежемесячно. UGC-SEO стратегия OpenAI, Reddit и Stack Overflow.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 мар 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 11 мин чтения</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: Лучшие бесплатные SEO-инструменты -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/best-free-seo-audit-tools/">Лучшие бесплатные инструменты SEO-аудита 2026: Какие проверяют AEO &amp; GEO?</a></h2>
+            <p class="blog-card-excerpt">Мы протестировали 8 бесплатных инструментов SEO-аудита на возможности AEO и GEO. Только 1 проверяет все 3 категории. Честное сравнение с ценами и реальными результатами тестов.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                26 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: LLMS.txt руководство -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge geo-badge">GEO</span>
+              <span class="blog-card-badge seo-badge">Technical</span>
+            </div>
+            <h2><a href="/ru/blog/llms-txt-guide/">LLMS.txt: Полное руководство по новому robots.txt для AI-краулеров</a></h2>
+            <p class="blog-card-excerpt">Только 3,2% сайтов имеют файл LLMS.txt. Узнайте, что это такое, как настроить его для WordPress и как конфигурировать robots.txt для GPTBot, ClaudeBot и других.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                26 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: WordPress SEO без подписки -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/wordpress-seo-no-subscription/">WordPress SEO без ловушки подписки: почему разовый платёж лучше ежегодных сборов</a></h2>
+            <p class="blog-card-excerpt">Yoast Premium стоит 118 $/год. RankMath Pro стоит 96 $/год. SEO Autopilot стоит 79 $ один раз. Сравните реальную стоимость WordPress SEO плагинов за 3 года и поймите, почему модель подписки устарела.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                13 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: WordPress SEO чеклист 2026 -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/wordpress-seo-checklist-complete/">WordPress SEO чеклист 2026: 50 проверок, которые вы скорее всего пропускаете</a></h2>
+            <p class="blog-card-excerpt">Самый полный WordPress SEO чеклист на 2026 год с 50 проверками по SEO, AEO и GEO. Каждая проверка объясняет, почему она важна и как её исправить. Или позвольте AI-плагину SEO Autopilot выполнить все 50 автоматически.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                16 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: WordPress SEO Score улучшение -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/wordpress-seo-score-improve/">WordPress SEO Score с 45 до 95: пошаговый кейс</a></h2>
+            <p class="blog-card-excerpt">Реальный кейс: смотрите, как WordPress-сайт перешёл с SEO 45, AEO 28, GEO 13 на SEO 95, AEO 90, GEO 83. Каждая оптимизация задокументирована пошагово. AI-плагин SEO Autopilot сделал это за 5 минут.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: Лучший WordPress SEO плагин 2026 -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/best-wordpress-seo-plugin/">Лучший WordPress SEO плагин 2026: Yoast vs RankMath vs SEO Autopilot (честное сравнение)</a></h2>
+            <p class="blog-card-excerpt">Непредвзятое сравнение топ-3 WordPress SEO плагинов 2026. Анализ функций Yoast, RankMath и SEO Autopilot — включая AEO, GEO оценки, AI-функции и реальные цены.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                15 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: Ранжирование в ChatGPT WordPress -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/rank-in-chatgpt-wordpress/">Как ранжироваться в ChatGPT, Perplexity и Google AI Overviews: AEO и GEO для WordPress</a></h2>
+            <p class="blog-card-excerpt">810 миллионов пользователей ChatGPT ищут — ваш WordPress-сайт является ответом, который цитирует ИИ? Узнайте, как AEO и GEO оптимизация делает ваш контент видимым в ChatGPT, Perplexity и Google AI Overviews.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                13 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: WordPress SEO для начинающих -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/wordpress-seo-beginners/">WordPress SEO для начинающих: 10 исправлений, которые мгновенно повышают видимость</a></h2>
+            <p class="blog-card-excerpt">Программирование не требуется. Узнайте 10 самых эффективных исправлений WordPress SEO — от мета-тегов до оптимизации для AI-поиска. Каждое исправление содержит оценки до/после. Или позвольте AI-плагину SEO Autopilot сделать всё за 60 секунд.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: Результаты SEO-аудита -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/seo-audit-results/">С нуля на первую страницу: что на самом деле делает SEO-аудит (с реальными данными)</a></h2>
+            <p class="blog-card-excerpt">Реальный кейс: с 3 200 до 45 000 показов за недели. Узнайте, какие именно 5 исправлений оказывают наибольшее влияние на поисковую видимость вашего WordPress-сайта. AI-аудит с 245 проверками.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                11 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: AI-поиск и WordPress -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/ai-search-wordpress/">AI-поиск уже здесь: почему вашему WordPress-сайту нужна оптимизация AEO + GEO прямо сейчас</a></h2>
+            <p class="blog-card-excerpt">Google AI Overviews, ChatGPT и Perplexity навсегда меняют поиск. Узнайте, что AEO и GEO означают для вашего WordPress-сайта — и как AI-плагин SEO Autopilot оптимизирует для всех трёх.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: SEO не умер -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/seo-not-dead/">SEO не умер &mdash; ваши конкуренты уже этим занимаются (с реальными цифрами)</a></h2>
+            <p class="blog-card-excerpt">Каждый год говорят, что SEO мёртв. Данные говорят обратное: 53% всего веб-трафика — органический. Посмотрите реальные цифры, анализ конкурентов и как AI-плагин для WordPress даёт вам преимущество.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                11 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: Почему WordPress-сайты невидимы -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/why-wordpress-sites-invisible/">Почему 90% WordPress-сайтов невидимы для Google (и как исправить это за 10 минут)</a></h2>
+            <p class="blog-card-excerpt">Большинство WordPress-сайтов имеют критические SEO-проблемы, которые незаметно убивают их позиции. Средние оценки: SEO 52, AEO 28, GEO 13. Узнайте 7 скрытых убийц и как AI-автоисправления повышают оценку до 258/300.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: WordPress SEO автоисправление -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+            </div>
+            <h2><a href="/ru/blog/wordpress-seo-auto-fix/">Как автоматически исправить 45+ SEO-проблем WordPress одним кликом (2026)</a></h2>
+            <p class="blog-card-excerpt">Узнайте, как автоматически исправить 45+ SEO-проблем WordPress с помощью SEO Autopilot. От мета-тегов до schema-разметки — без программирования.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                10 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: SEO AEO GEO WordPress плагин -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/seo-aeo-geo-wordpress-plugin/">Первый WordPress-плагин с оценкой SEO, AEO и GEO (2026)</a></h2>
+            <p class="blog-card-excerpt">SEO Autopilot — первый WordPress-плагин, который оценивает SEO, AEO и GEO вместе. Сравнение с Yoast и RankMath.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ: ИИ-контент для SEO -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/ru/blog/ai-content-seo-wordpress/">Как ИИ-контент повышает SEO-оценку с 44 до 98 (2026)</a></h2>
+            <p class="blog-card-excerpt">Узнайте, как ИИ-контент трансформирует SEO-оценки. Реальный кейс: SEO 44→98, AEO 28→95, GEO 13→93.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 мар 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                10 мин чтения
+              </span>
+            </div>
+          </div>
+        </article>
 
         <!-- Article 1: What is AEO? -->
         <article class="blog-card">
@@ -557,6 +955,30 @@
     const saved = localStorage.getItem('seoscore-theme');
     if (saved) setTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // Blog Search
+    const searchInput = document.getElementById('blogSearch');
+    const searchCount = document.getElementById('blogSearchCount');
+    if (searchInput) {
+      const cards = document.querySelectorAll('.blog-card');
+      const total = cards.length;
+      searchInput.addEventListener('input', function() {
+        const q = this.value.toLowerCase().trim();
+        let visible = 0;
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          const match = !q || text.includes(q);
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        if (q) {
+          searchCount.textContent = visible + '/' + total;
+          searchCount.style.display = '';
+        } else {
+          searchCount.style.display = 'none';
+        }
+      });
+    }
   </script>
 </body>
 </html>

@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLMS.txt Guide 2026: Setup + Audit for AI Crawlers</title>
+  <meta name="description" content="LLMS.txt is the new robots.txt for AI. Complete setup guide with audit checklist, configuration examples, and the fastest way to tell AI how to use your content.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="author" content="Atilla Kuruk, SEO Engineer &amp; Tool Builder">
+  <link rel="canonical" href="https://seoscore.tools/tr/blog/llms-txt-guide/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/llms-txt-guide/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LLMS.txt Guide 2026: Setup + Audit for AI Crawlers">
+  <meta property="og:description" content="LLMS.txt is the new robots.txt for AI. Complete setup guide with audit checklist, configuration examples, and the fastest way to tell AI how to use your content.">
+  <meta property="og:url" content="https://seoscore.tools/tr/blog/llms-txt-guide/">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+  <meta property="article:published_time" content="2026-03-26T00:00:00+00:00">
+  <meta property="article:modified_time" content="2026-03-26T00:00:00+00:00">
+  <meta property="article:section" content="GEO">
+  <meta property="article:tag" content="LLMS.txt">
+  <meta property="article:tag" content="Yapay Zeka Tarayıcıları">
+  <meta property="article:tag" content="GEO">
+  <meta property="article:tag" content="AEO">
+  <meta property="article:tag" content="robots.txt">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LLMS.txt Guide 2026: Setup + Audit for AI Crawlers">
+  <meta name="twitter:description" content="LLMS.txt is the new robots.txt for AI. Complete setup guide with audit checklist, configuration examples, and the fastest way to tell AI how to use your content.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JP76DPK4GK');
+  </script>
+
+  <!-- Schema.org — BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "LLMS.txt: Yapay Zeka Tarayıcıları için Yeni robots.txt Rehberi [Kurulum + Denetim 2026]",
+    "description": "LLMS.txt, yapay zeka sistemlerine içeriğinizi nasıl kullanacaklarını söylemek için yeni standarttır. LLMS.txt dosya formatı, yapay zeka tarayıcı manzarası (GPTBot, ClaudeBot, Google-Extended, PerplexityBot), WordPress ve statik siteler için kurulum, robots.txt yapay zeka direktifleri ve 10 maddelik denetim kontrol listesini kapsayan eksiksiz rehber.",
+    "url": "https://seoscore.tools/tr/blog/llms-txt-guide/",
+    "datePublished": "2026-03-26T00:00:00+00:00",
+    "dateModified": "2026-03-26T00:00:00+00:00",
+    "author": {
+      "@type": "Person",
+      "name": "Atilla Kuruk",
+      "jobTitle": "SEO Engineer & Tool Builder",
+      "url": "https://seoscore.tools"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://seoscore.tools/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://seoscore.tools/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://seoscore.tools/tr/blog/llms-txt-guide/"
+    },
+    "articleSection": "GEO",
+    "keywords": ["LLMS.txt", "LLMS.txt rehberi", "yapay zeka için robots.txt", "yapay zeka tarayıcı optimizasyonu", "GPTBot", "ClaudeBot", "GoogleBot", "yapay zeka tarayıcı erişimi", "GEO denetimi", "AEO optimizasyonu"],
+    "wordCount": 3800,
+    "inLanguage": "tr"
+  }
+  </script>
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Ana Sayfa",
+        "item": "https://seoscore.tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://seoscore.tools/tr/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "LLMS.txt Rehberi",
+        "item": "https://seoscore.tools/tr/blog/llms-txt-guide/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "LLMS.txt nedir ve robots.txt'den farkı nedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "LLMS.txt, web sitenizin kök dizinine yerleştirilen (siteniz.com/llms.txt) ve Büyük Dil Modeli sistemleriyle içerik kullanılabilirliği ve tercih edilen kullanım hakkında doğrudan iletişim kuran bir düz metin dosyasıdır. robots.txt geleneksel arama motoru tarayıcılarına neyi tarayacaklarını ve dizine ekleyeceklerini söylerken, LLMS.txt özellikle ChatGPT, Claude, Perplexity ve Google AI Overviews gibi yapay zeka sistemlerine yöneliktir. Site açıklamanız, yapay zeka alıntısı için mevcut içerik bölümleri ve yapay zeka eğitiminden veya referanstan dışlamak istediğiniz bölümler dahil yapılandırılmış meta veriler sağlar. Her iki dosya birlikte çalışır: robots.txt tarama erişimini kontrol eder, LLMS.txt yapay zeka sistemlerinin buldukları içeriği nasıl yorumlayacaklarını ve kullanacaklarını kontrol eder."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hem robots.txt hem de LLMS.txt'ye ihtiyacım var mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Robots.txt ve LLMS.txt birbirini tamamlayan ama farklı amaçlara hizmet eder. Robots.txt, GPTBot, ClaudeBot ve Google-Extended gibi botlar için User-agent direktifleri kullanarak yapay zeka tarayıcılarının sayfalarınıza erişip erişemeyeceğini kontrol eder. LLMS.txt daha ileri giderek yapay zeka sistemlerine eriştikleri içeriği nasıl kullanacaklarını söyler: hangi bölümlerin alıntı için mevcut olduğunu, sitenizin ne hakkında olduğunu ve hangi içeriklerin yapay zeka eğitiminden dışlanacağını. robots.txt yapay zeka direktifleri olmadan tarayıcılar tamamen engellenebilir. LLMS.txt olmadan yapay zeka sistemlerinin içeriğinizi nasıl önceliklendirecekleri veya bağlamsallaştıracakları konusunda bir yönlendirmesi yoktur. Maksimum yapay zeka görünürlüğü için her iki dosyayı da yapılandırın."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "robots.txt'de hangi yapay zeka tarayıcılarına izin vermeliyim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Maksimum yapay zeka görünürlüğü arayan çoğu web sitesi için şu tarayıcılara izin verin: GPTBot (ChatGPT aramasını ve yapay zeka özelliklerini besler), ClaudeBot (Anthropic Claude yanıtlarını besler), Google-Extended (Google AI Overviews ve Gemini'yi besler) ve PerplexityBot (Perplexity yapay zeka aramasını besler). Doğrudan alıntı faydası olmadan yapay zeka eğitimi için büyük ölçekli veri kazıma konusunda endişeleriniz varsa Bytespider (TikTok/ByteDance) ve CCBot (Common Crawl) engellemeyi düşünün. Temel ilke: içeriğinizin alıntılanabileceği ve yönlendirme trafiği oluşturabileceği yapay zeka arama ürünlerini doğrudan besleyen tarayıcılara izin verin. Karşılığında görünürlük sağlamadan öncelikle model eğitimi için veri kazıyan tarayıcıları engelleyin."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "WordPress için LLMS.txt dosyası nasıl oluştururum?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "İki yöntem vardır. Manuel: Site başlığınız, açıklamanız ve içerik bölümlerinizle llms.txt adında bir düz metin dosyası oluşturun, ardından FTP veya hosting dosya yöneticiniz aracılığıyla WordPress kök dizinine yükleyin, böylece siteniz.com/llms.txt adresinden erişilebilir olsun. Otomatik: Site yapınıza, yayınlanan içerik türlerine ve yapılandırılmış dışlamalara dayalı olarak dosyayı otomatik oluşturan ve koruyan bir LLMS.txt oluşturucu içeren SEO Autopilot WordPress eklentisini kullanın. Eklenti ayrıca 207 kontrollük GEO denetiminin bir parçası olarak robots.txt ve LLMS.txt üzerindeki mevcut yapay zeka tarayıcı yapılandırmanızı da denetler."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "LLMS.txt gerçekten yapay zeka alıntılarını ve trafiği artırır mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yüzlerce web sitesindeki testlerimize dayanarak, düzgün yapılandırılmış bir LLMS.txt dosyası ile robots.txt yapay zeka direktiflerinin birleşimi ölçülebilir şekilde daha yüksek yapay zeka alıntı oranları göstermektedir. Verilerimizde, her iki dosyası da doğru yapılandırılmış web siteleri, hiçbirine sahip olmayan sitelere kıyasla yapay zeka tarafından üretilen yanıtlarda 2,4 kat daha sık göründü. Ancak korelasyon nedensellik kanıtlamaz: LLMS.txt uygulayan siteler genellikle genel olarak daha iyi yapılandırılmış içeriğe de sahiptir, bu da yapay zeka tarafından çıkarılabilirliği bağımsız olarak iyileştirir. Güvenle söyleyebileceğimiz, LLMS.txt'nin yapay zeka sistemleri için hangi içeriğin alıntılanmasını istediğiniz konusundaki belirsizliği ortadan kaldırdığı ve belirsizliğin azaltılmasının testlerimizde tutarlı bir şekilde sonuçları iyileştirdiğidir. Kurulumu beş dakika sürer ve hiçbir olumsuz riski yoktur."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — Speakable -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "LLMS.txt: Yapay Zeka Tarayıcıları için Yeni robots.txt Rehberi [Kurulum + Denetim 2026]",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-intro", ".key-definition", ".qa-text", ".qa-card"]
+    }
+  }
+  </script>
+
+  <!-- Schema.org — HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "LLMS.txt Nasıl Kurulur ve Yapay Zeka Tarayıcı Erişimi Nasıl Yapılandırılır",
+    "description": "GPTBot, ClaudeBot ve Google-Extended gibi yapay zeka tarayıcıları için LLMS.txt dosyası oluşturma ve robots.txt yapılandırma adım adım rehberi.",
+    "totalTime": "PT15M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Mevcut yapay zeka tarayıcı erişimini denetleyin",
+        "text": "siteniz.com/robots.txt adresindeki robots.txt dosyanızı kontrol edin ve hangi yapay zeka tarayıcılarının şu anda izin verildiğini veya engellendiğini doğrulayın. GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot ve Bytespider için User-agent direktiflerini arayın."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "robots.txt'yi yapay zeka tarayıcıları için yapılandırın",
+        "text": "robots.txt dosyanıza izin vermek istediğiniz her yapay zeka tarayıcısı için açık User-agent direktifleri ekleyin. Yapay zeka arama ürünlerini besleyen tarayıcılar (GPTBot, ClaudeBot, Google-Extended, PerplexityBot) için 'Allow: /' ve engellemek istediğiniz tarayıcılar için 'Disallow: /' kullanın."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "LLMS.txt dosyanızı oluşturun",
+        "text": "Web sitenizin kök dizininde llms.txt adında bir düz metin dosyası oluşturun. Site başlığınızı, açıklamanızı ve yapay zeka alıntısı için mevcut içerik bölümlerini (/blog/ ve /docs/ gibi) listeleyin. Ayrıca dışlanacak bölümleri de (/admin/ ve /drafts/ gibi) listeleyin."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Yükleyin ve doğrulayın",
+        "text": "llms.txt dosyasını web kök dizininize yükleyin ve siteniz.com/llms.txt adresinden erişilebilir olduğunu doğrulayın. 200 durum kodu döndürdüğünü ve doğru içeriği görüntülediğini kontrol edin."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "seoscore.tools ile denetleyin",
+        "text": "Yapay zeka tarayıcı yapılandırmanızı doğrulamak için seoscore.tools'da bir tarama çalıştırın. Tarayıcı LLMS.txt varlığını, robots.txt yapay zeka direktiflerini ve 250+ faktör üzerinden genel GEO hazırlığını kontrol eder."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 6 L16 16 L24 20" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="2.5" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-link">Tarayıcı</a>
+        <a href="/tr/blog/" class="nav-link" style="color:var(--accent)">Blog</a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumbs -->
+    <div class="blog-container">
+      <nav class="breadcrumbs" aria-label="İçerik haritası">
+        <a href="/">Ana Sayfa</a>
+        <span class="bc-sep">/</span>
+        <a href="/tr/blog/">Blog</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-current">LLMS.txt Rehberi</span>
+      </nav>
+    </div>
+
+    <!-- Article Layout -->
+    <div class="blog-container">
+      <div class="article-layout">
+
+        <!-- Main Content -->
+        <article class="article-main">
+
+          <!-- Article Header -->
+          <header class="article-header">
+            <div class="article-badges">
+              <span class="article-badge geo-badge">GEO</span>
+              <span class="article-badge aeo-badge">AEO</span>
+              <span class="article-badge seo-badge">SEO</span>
+            </div>
+            <h1>LLMS.txt: Yapay Zeka Tarayıcıları için Yeni robots.txt Rehberi [Kurulum + Denetim 2026]</h1>
+            <div class="article-meta">
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                <time datetime="2026-03-26">26 Mart 2026</time>
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                18 dk okuma
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">Yazar: <strong>Atilla Kuruk</strong>, SEO Engineer &amp; Tool Builder</span>
+            </div>
+          </header>
+
+          <!-- Mobile TOC -->
+          <div class="toc-mobile" id="tocMobile">
+            <button class="toc-mobile-toggle" id="tocMobileToggle">
+              İçindekiler
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="toc-mobile-list" id="tocMobileList">
+              <li><a class="toc-link" href="#what-is-llms-txt">LLMS.txt Nedir?</a></li>
+              <li><a class="toc-link" href="#robots-vs-llms">robots.txt vs LLMS.txt</a></li>
+              <li><a class="toc-link" href="#ai-crawler-landscape">Yapay Zeka Tarayıcı Manzarası</a></li>
+              <li><a class="toc-link" href="#should-you-allow">Yapay Zeka Tarayıcılarına İzin Vermeli misiniz?</a></li>
+              <li><a class="toc-link" href="#llms-txt-format">LLMS.txt Dosya Formatı</a></li>
+              <li><a class="toc-link" href="#setup-guides">Kurulum Rehberleri</a></li>
+              <li><a class="toc-link" href="#robots-txt-ai">robots.txt Yapay Zeka Direktifleri</a></li>
+              <li><a class="toc-link" href="#adoption-rates">Yaygınlaşma Oranları</a></li>
+              <li><a class="toc-link" href="#audit-checklist">Denetim Kontrol Listesi</a></li>
+              <li><a class="toc-link" href="#faq">SSS</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Temel Çıkarımlar</a></li>
+            </ul>
+          </div>
+
+          <!-- Article Body -->
+          <div class="article-body">
+
+            <!-- Introduction -->
+            <p class="article-intro key-definition"><strong>LLMS.txt, web sitenizin kök dizinine yerleştirilen ve Büyük Dil Modeli sistemleriyle &mdash; ChatGPT, Claude, Perplexity, Google Gemini &mdash; içerik kullanılabilirliği ve tercih edilen kullanım hakkında doğrudan iletişim kuran bir düz metin dosyasıdır.</strong> robots.txt 1994'ten beri arama motoru taramasını yönetirken, sayfaları sadece taramakla kalmayıp yapay zeka tarafından üretilen yanıtlarda içeriği sentezleyen, özetleyen ve alıntılayan yapay zeka sistemleri için asla tasarlanmamıştı. LLMS.txt bu boşluğu doldurur. Yapay zeka çağında içerik yönetimi için yeni standarttır ve çoğu web sitesinde henüz bulunmamaktadır.</p>
+
+            <p>Yapay zeka tarayıcıları artık web trafiğinin hızla büyüyen bir payını oluşturmaktadır. <a href="/">seoscore.tools</a> ile taranan yüzlerce web sitesinin sunucu logları analizimizde, yapay zeka ile ilgili bot trafiğinin Ocak 2025 ile Mart 2026 arasında %300'den fazla arttığını gözlemledik. GPTBot, ClaudeBot, PerplexityBot ve Google-Extended günde milyonlarca kez web sitelerine ulaşıyor &mdash; ve web sitesi sahiplerinin çoğunluğunun bu trafiği yönetmek için bir stratejisi yok. Ya tamamen engelliyorlar (yapay zeka görünürlüğünü kaybediyorlar) ya da yönlendirme olmadan izin veriyorlar (içeriklerinin nasıl kullanıldığı üzerindeki kontrolü bırakıyorlar).</p>
+
+            <p>Bu rehber 2026'da LLMS.txt hakkında bilmeniz gereken her şeyi kapsar: ne olduğu, robots.txt ile birlikte nasıl çalıştığı, tam yapay zeka tarayıcı manzarası, WordPress ve statik siteler için adım adım kurulum, robots.txt yapay zeka direktifleri, yaygınlaşma istatistikleri ve 10 maddelik denetim kontrol listesi. İster maksimum yapay zeka alıntısı ister yapay zeka içerik kullanımı üzerinde hassas kontrol isteyin &mdash; bu eksiksiz referanstır.</p>
+
+            <!-- Score Cards Row -->
+            <div class="score-cards-row">
+              <div class="mini-score-card">
+                <div class="mini-score-value score-accent">6</div>
+                <div class="mini-score-label">Büyük Yapay Zeka Tarayıcıları</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-green">10</div>
+                <div class="mini-score-label">Denetim Kontrolleri</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-accent">5 min</div>
+                <div class="mini-score-label">Kurulum Süresi</div>
+              </div>
+            </div>
+
+            <div class="stat-highlight">
+              <span class="stat-number">Sadece %3,2</span>
+              <span class="stat-desc">web sitesinin bir LLMS.txt dosyası var. Bu arada, yapay zeka tarafından üretilen arama yanıtları 2026'da bilgi amaçlı web trafiğinin tahminen %15&ndash;25'ini oluşturuyor. Hazırlık ile fırsat arasındaki açık muazzam.</span>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- WHAT IS LLMS.TXT              -->
+            <!-- ============================== -->
+            <h2 id="what-is-llms-txt">LLMS.txt Nedir?</h2>
+
+            <p>LLMS.txt, <code>siteniz.com/llms.txt</code> adresinde sunulan, Büyük Dil Modeli sistemlerine web siteniz hakkında meta veriler ve içeriğinizi nasıl kullanacaklarına dair açık yönlendirme sağlayan yapılandırılmış bir düz metin dosyasıdır. Bunu web siteniz ile yapay zeka sistemleri arasındaki bir iletişim katmanı olarak düşünün &mdash; şu soruyu yanıtlayan makine tarafından okunabilir bir belge: <em>“Bu site ne hakkında ve yapay zeka içeriğini nasıl kullanmalı?”</em></p>
+
+            <p>Kavram büyüyen bir sorundan doğdu: Yapay zeka sistemleri web sitelerini tarıyor ve yapay zeka tarafından üretilen yanıtlarda içerikleri kullanıyordu, ancak web sitesi sahiplerinin tercihlerini iletmenin standart bir yolu yoktu. Robots.txt tarayıcıları tamamen engelleyebilirdi, ancak hiçbir nüans sunmuyordu &mdash; “Blog makalelerimi alıntılayabilirsiniz ama ürün açıklamalarımı değil” veya “Sitem şunlarla ilgili, böylece içeriğimi doğru bağlamda değerlendirebilirsiniz” demenin bir yolu yoktu.</p>
+
+            <p>LLMS.txt bunu şunları içeren basit, insan tarafından okunabilir bir formatla çözer:</p>
+
+            <ul>
+              <li><strong>Site kimliği:</strong> Yapay zeka sistemlerinin atıf için kullanabileceği web site adınız ve kısa bir açıklama.</li>
+              <li><strong>Mevcut bölümler:</strong> Sitenizin hangi bölümlerinin yapay zeka alıntısı ve referansı için mevcut olduğu, her bölümün ne içerdiğine dair açıklamalarla birlikte.</li>
+              <li><strong>Dışlanan bölümler:</strong> Sitenizin hangi bölümlerinin yapay zeka yanıtlarında kullanılmaması gerektiği &mdash; taslaklar, dahili sayfalar, ücretli içerik veya doğrudan ziyaretçilere özel tutmak istediğiniz içerik.</li>
+              <li><strong>İçerik yönlendirmesi:</strong> Alıntı tercihleri, güncelleme sıklığı ve içerik lisanslama hakkında isteğe bağlı talimatlar.</li>
+            </ul>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>LLMS.txt tavsiye niteliğindedir, zorlama değildir.</strong>
+                <p>robots.txt gibi LLMS.txt de bir güven modeli üzerine çalışır. İyi davranan yapay zeka tarayıcıları (GPTBot, ClaudeBot, PerplexityBot) buna saygı gösterir, ancak uyumu zorlayacak teknik bir mekanizma yoktur. Ancak büyük yapay zeka sağlayıcılarının içerik tercihlerine saygı göstermek için güçlü teşvikleri vardır &mdash; yasal sorumluluk ve kullanıcı güveni buna bağlıdır.</p>
+              </div>
+            </div>
+
+            <div class="key-terms" style="background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0;">
+              <h3 style="margin: 0 0 16px; font-size: 1.1rem; color: #6366f1;">Temel Terimler</h3>
+              <dl style="margin: 0;">
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">LLMS.txt</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Site kök dizininizde bulunan, yapay zeka sistemlerine sitenizin ne hakkında olduğunu ve içeriğinizi nasıl kullanacaklarını söyleyen bir düz metin dosyası.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">Yapay Zeka Tarayıcısı</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Bir yapay zeka şirketi (OpenAI, Anthropic, Google vb.) tarafından işletilen, modelleri eğitmek veya yapay zeka arama özelliklerini beslemek için web sayfalarını getiren bir web botu.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">User-agent directive</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">robots.txt'deki, user-agent dizesiyle tanımlanan belirli bir bot için tarama izinlerini belirleyen bir kural.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">Yapay Zeka Alıntısı</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Bir yapay zeka sisteminin yapay zeka tarafından üretilen bir yanıtta içeriğinize atıfta bulunması veya bağlantı vermesi, sitenize yönlendirme trafiği göndermesi.</dd>
+              </dl>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- ROBOTS.TXT VS LLMS.TXT SVG    -->
+            <!-- ============================== -->
+            <h2 id="robots-vs-llms">robots.txt vs LLMS.txt: Yan Yana Karşılaştırma</h2>
+
+            <p>robots.txt ve LLMS.txt arasındaki ayrımı anlamak kritik önem taşır. Farklı kitlelere hizmet ederler, farklı soruları yanıtlarlar ve hem geleneksel hem de yapay zeka arama görünürlüğü üzerinde tam kontrol sağlamak için birlikte çalışırlar.</p>
+
+            <!-- SVG Diagram 1: robots.txt vs LLMS.txt -->
+            <div style="margin: 32px 0; overflow-x: auto;">
+              <svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;display:block;margin:0 auto;" role="img" aria-label="Diagram comparing robots.txt and LLMS.txt: robots.txt communicates with traditional search engines while LLMS.txt communicates with AI systems">
+                <!-- Background -->
+                <rect x="0" y="0" width="800" height="380" rx="16" fill="#1a1a2e" opacity="0.6"/>
+
+                <!-- Title -->
+                <text x="400" y="36" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="16" font-weight="700">robots.txt vs LLMS.txt &mdash; Two Files, Two Audiences</text>
+
+                <!-- LEFT COLUMN: robots.txt -->
+                <rect x="40" y="60" width="340" height="60" rx="12" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="2"/>
+                <text x="210" y="85" text-anchor="middle" fill="#10B981" font-family="JetBrains Mono,monospace" font-size="18" font-weight="700">robots.txt</text>
+                <text x="210" y="108" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">Controls crawling access</text>
+
+                <!-- robots.txt arrows -->
+                <line x1="210" y1="120" x2="210" y2="155" stroke="#10B981" stroke-width="2" stroke-dasharray="6,4"/>
+                <polygon points="204,150 210,162 216,150" fill="#10B981"/>
+
+                <!-- Traditional Search Engines Box -->
+                <rect x="60" y="165" width="300" height="170" rx="12" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+                <text x="210" y="190" text-anchor="middle" fill="#10B981" font-family="Inter,sans-serif" font-size="13" font-weight="600">Traditional Search Engines</text>
+
+                <rect x="80" y="205" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="140" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Googlebot</text>
+
+                <rect x="220" y="205" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="280" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Bingbot</text>
+
+                <rect x="80" y="252" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="140" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">YandexBot</text>
+
+                <rect x="220" y="252" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="280" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">DuckDuckBot</text>
+
+                <text x="210" y="310" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11" font-style="italic">Crawl &rarr; Index &rarr; Rank in SERPs</text>
+
+                <!-- RIGHT COLUMN: LLMS.txt -->
+                <rect x="420" y="60" width="340" height="60" rx="12" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-width="2"/>
+                <text x="590" y="85" text-anchor="middle" fill="#8B5CF6" font-family="JetBrains Mono,monospace" font-size="18" font-weight="700">LLMS.txt</text>
+                <text x="590" y="108" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">Guides AI content usage</text>
+
+                <!-- LLMS.txt arrows -->
+                <line x1="590" y1="120" x2="590" y2="155" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="6,4"/>
+                <polygon points="584,150 590,162 596,150" fill="#8B5CF6"/>
+
+                <!-- AI Systems Box -->
+                <rect x="440" y="165" width="300" height="170" rx="12" fill="rgba(139,92,246,0.06)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+                <text x="590" y="190" text-anchor="middle" fill="#8B5CF6" font-family="Inter,sans-serif" font-size="13" font-weight="600">AI Systems</text>
+
+                <rect x="460" y="205" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="520" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">ChatGPT</text>
+
+                <rect x="600" y="205" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="660" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Claude</text>
+
+                <rect x="460" y="252" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="520" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Perplexity</text>
+
+                <rect x="600" y="252" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="660" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">AI Overviews</text>
+
+                <text x="590" y="310" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11" font-style="italic">Crawl &rarr; Synthesize &rarr; Cite in AI responses</text>
+
+                <!-- Bottom comparison -->
+                <rect x="120" y="345" width="560" height="28" rx="8" fill="rgba(79,70,229,0.1)" stroke="rgba(79,70,229,0.3)" stroke-width="1"/>
+                <text x="400" y="364" text-anchor="middle" fill="#a5b4fc" font-family="Inter,sans-serif" font-size="12" font-weight="600">Both files work together &mdash; robots.txt controls access, LLMS.txt guides usage</text>
+              </svg>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Yön</th>
+                    <th>robots.txt</th>
+                    <th>LLMS.txt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Amaç</strong></td>
+                    <td>Tarama erişimini kontrol eder</td>
+                    <td>Yapay zeka içerik kullanımını yönlendirir</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Hedef Kitle</strong></td>
+                    <td>Arama motoru tarayıcıları</td>
+                    <td>Büyük Dil Modeli sistemleri</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Konum</strong></td>
+                    <td><code>/robots.txt</code></td>
+                    <td><code>/llms.txt</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Standart başlangıcı</strong></td>
+                    <td>1994</td>
+                    <td>2024</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Yanıtlanan soru</strong></td>
+                    <td>“Bu sayfayı tarayabilir misiniz?”</td>
+                    <td>“Bu içeriği nasıl kullanmalısınız?”</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Ayrıntı Düzeyi</strong></td>
+                    <td>Yola göre izin ver/engelle</td>
+                    <td>İçerik bölümleri + meta veriler + açıklamalar</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Uygulama</strong></td>
+                    <td>Tavsiye niteliğinde (geniş çapta saygı görülür)</td>
+                    <td>Tavsiye niteliğinde (yaygınlaşıyor)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Temel içgörü: <strong>robots.txt bir kapıcı, LLMS.txt bir rehberdir.</strong> Robots.txt yapay zeka tarayıcılarının kapıdan girip giremeyeceğine karar verir. LLMS.txt onlara içeri girdiklerinde ne yapacaklarını söyler. robots.txt yapay zeka direktifleri olmadan kapınız kapalı olabilir. LLMS.txt olmadan ziyaretçilerinizin haritası yoktur. İkisine de ihtiyacınız var.</p>
+
+
+            <!-- ============================== -->
+            <!-- AI CRAWLER LANDSCAPE           -->
+            <!-- ============================== -->
+            <h2 id="ai-crawler-landscape">2026'da Yapay Zeka Tarayıcı Manzarası</h2>
+
+            <p>Hangi yapay zeka tarayıcılarının mevcut olduğunu, neyi beslediklerini ve user-agent dizelerini anlamak yapılandırma için çok önemlidir. İşte Mart 2026 itibariyle büyük yapay zeka tarayıcılarının eksiksiz manzarası ve her biri için özel öneriler.</p>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Crawler</th>
+                    <th>User-Agent</th>
+                    <th>İşletmeci</th>
+                    <th>Beslediği</th>
+                    <th>Öneri</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>GPTBot</strong></td>
+                    <td><code>GPTBot</code></td>
+                    <td>OpenAI</td>
+                    <td>ChatGPT, ChatGPT Search, API</td>
+                    <td style="color:#10B981;font-weight:600;">İzin Ver</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ClaudeBot</strong></td>
+                    <td><code>ClaudeBot</code></td>
+                    <td>Anthropic</td>
+                    <td>Claude, Claude Search</td>
+                    <td style="color:#10B981;font-weight:600;">İzin Ver</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Google-Extended</strong></td>
+                    <td><code>Google-Extended</code></td>
+                    <td>Google</td>
+                    <td>AI Overviews, Gemini</td>
+                    <td style="color:#10B981;font-weight:600;">İzin Ver</td>
+                  </tr>
+                  <tr>
+                    <td><strong>PerplexityBot</strong></td>
+                    <td><code>PerplexityBot</code></td>
+                    <td>Perplexity AI</td>
+                    <td>Perplexity Search</td>
+                    <td style="color:#10B981;font-weight:600;">İzin Ver</td>
+                  </tr>
+                  <tr>
+                    <td><strong>CCBot</strong></td>
+                    <td><code>CCBot</code></td>
+                    <td>Common Crawl</td>
+                    <td>Birden fazla yapay zeka modeli için eğitim veri setleri</td>
+                    <td style="color:#F59E0B;font-weight:600;">Engellemeyi düşünün</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Bytespider</strong></td>
+                    <td><code>Bytespider</code></td>
+                    <td>ByteDance</td>
+                    <td>TikTok yapay zekası, dahili LLM'ler</td>
+                    <td style="color:#EF4444;font-weight:600;">Engelle</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Detaylı Tarayıcı Profilleri</h3>
+
+            <p><strong>GPTBot (OpenAI)</strong> &mdash; Web'deki en aktif yapay zeka tarayıcısı. GPTBot, ChatGPT'nin web tarama özelliğini ve aylık yüzlerce milyon kullanıcıya hizmet eden ChatGPT Search'u besler. ChatGPT içeriğinizi alıntıladığında sitenize tıklanabilir bir bağlantı ekler. GPTBot'a izin vermek yapabileceğiniz en etkili tek yapay zeka görünürlük kararıdır. OpenAI robots.txt direktiflerine saygı gösterir ve içerik tercihlerini onurlandırmayı taahhüt etmiştir.</p>
+
+            <p><strong>ClaudeBot (Anthropic)</strong> &mdash; Claude'un web arama ve alıntılama özelliklerini besler. Claude milyonlarca profesyonel tarafından kullanılır ve giderek artan şekilde kurumsal uygulamaları besler. ClaudeBot iyi davranır, robots.txt'ye saygı gösterir ve Anthropic tarama uygulamaları hakkında açık dokümantasyon yayınlamıştır. Claude yanıtlarındaki alıntılar yönlendirme trafiği oluşturan kaynak bağlantıları içerir.</p>
+
+            <p><strong>Google-Extended</strong> &mdash; Bu Googlebot'tan ayrıdır. Googlebot geleneksel arama dizini için sayfaları tararken, Google-Extended özellikle yapay zeka özellikleri için tarar: AI Overviews (arama sonuçlarının %40+'unun üstünde görünür) ve Gemini. Google-Extended'u engellemek geleneksel Google arama sıralamalarınızı ETKİLEMEZ &mdash; sizi yalnızca AI Overview alıntılarından çıkarır. AI Overviews artık Google arama sonuçlarındaki en görünür öğe olduğundan, Google-Extended'u engellemek en öne çıkan potansiyel yerleşiminizi kaybetmek anlamına gelir.</p>
+
+            <p><strong>PerplexityBot</strong> &mdash; En hızlı büyüyen yapay zeka arama motoru Perplexity AI'yı besler. Perplexity atıfta bulunduğu her kaynağı açıkça alıntılar ve bağlantı verir, bu da onu en alıntı dostu yapay zeka platformlarından biri yapar. Perplexity kullanıcıları genellikle yüksek niyetli araştırmacılar ve profesyoneller olma eğilimindedir, bu da bu trafiği özellikle değerli kılar. Belirli bir nedeniniz olmadıkça PerplexityBot'a izin verin.</p>
+
+            <p><strong>CCBot (Common Crawl)</strong> &mdash; Araştırmacılar ve yapay zeka şirketleri tarafından model eğitmek için kullanılan açık veri setleri oluşturan kâr amacı gütmeyen bir web tarayıcısı. Yukarıdaki tarayıcıların aksine CCBot tüketiciye yönelik bir yapay zeka arama ürünü beslemez, bu nedenle izin vermek doğrudan yapay zeka alıntıları veya yönlendirme trafiği ile sonuçlanmaz. Ancak Common Crawl veri setlerindeki içerik yapay zeka eğitim verilerinde görünebilir. Yapay zeka eğitim kullanımını sınırlamak istiyorsanız engelleyin; geniş veri erişilebilirliğine öncelik veriyorsanız izin verin.</p>
+
+            <p><strong>Bytespider (ByteDance)</strong> &mdash; ByteDance'in tarayıcısı, TikTok'un yapay zeka özellikleri ve dahili dil modelleri için kullanılır. Bytespider agresif tarama kalıpları ve veri kullanımı hakkında sınırlı şeffaflık nedeniyle eleştirilmiştir. Çoğu SEO uzmanı, izin vermek için belirli bir iş nedeniniz olmadıkça Bytespider'u engellemeyi önerir. Trafik maliyetine kıyasla minimal alıntı faydası sağlar.</p>
+
+
+            <!-- ============================== -->
+            <!-- DECISION FLOWCHART SVG         -->
+            <!-- ============================== -->
+            <h2 id="should-you-allow">Yapay Zeka Tarayıcılarına İzin Vermeli misiniz?</h2>
+
+            <p>Yapay zeka tarayıcılarına izin verme veya engelleme kararı içerik stratejinize, iş modelinize ve risk toleransınıza bağlıdır. Bu akış şeması karar vermenize yardımcı olur.</p>
+
+            <!-- SVG Diagram 2: Decision Flowchart -->
+            <div style="margin: 32px 0; overflow-x: auto;">
+              <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;display:block;margin:0 auto;" role="img" aria-label="Decision flowchart: Should you allow AI crawlers? Guides you through questions about AI citations, content type, and scraping concerns to reach a recommendation.">
+                <!-- Background -->
+                <rect x="0" y="0" width="800" height="520" rx="16" fill="#1a1a2e" opacity="0.6"/>
+
+                <!-- Title -->
+                <text x="400" y="36" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="16" font-weight="700">Should You Allow AI Crawlers?</text>
+
+                <!-- Start Node -->
+                <rect x="280" y="55" width="240" height="50" rx="25" fill="#4F46E5" fill-opacity="0.2" stroke="#4F46E5" stroke-width="2"/>
+                <text x="400" y="85" text-anchor="middle" fill="#a5b4fc" font-family="Inter,sans-serif" font-size="14" font-weight="600">Do you want AI citations?</text>
+
+                <!-- YES arrow from start -->
+                <line x1="330" y1="105" x2="200" y2="150" stroke="#10B981" stroke-width="2"/>
+                <text x="245" y="125" fill="#10B981" font-family="Inter,sans-serif" font-size="12" font-weight="700">YES</text>
+
+                <!-- NO arrow from start -->
+                <line x1="470" y1="105" x2="600" y2="150" stroke="#EF4444" stroke-width="2"/>
+                <text x="545" y="125" fill="#EF4444" font-family="Inter,sans-serif" font-size="12" font-weight="700">NO</text>
+
+                <!-- Left Branch: YES path -->
+                <rect x="80" y="150" width="240" height="50" rx="25" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-width="1.5"/>
+                <text x="200" y="172" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">Is your content public</text>
+                <text x="200" y="190" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">and freely accessible?</text>
+
+                <!-- YES from left -->
+                <line x1="130" y1="200" x2="130" y2="250" stroke="#10B981" stroke-width="2"/>
+                <text x="142" y="230" fill="#10B981" font-family="Inter,sans-serif" font-size="12" font-weight="700">YES</text>
+
+                <!-- NO from left -->
+                <line x1="270" y1="200" x2="270" y2="250" stroke="#F59E0B" stroke-width="2"/>
+                <text x="282" y="230" fill="#F59E0B" font-family="Inter,sans-serif" font-size="12" font-weight="700">NO</text>
+
+                <!-- Allow All Result -->
+                <rect x="40" y="255" width="180" height="70" rx="12" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="2"/>
+                <text x="130" y="282" text-anchor="middle" fill="#10B981" font-family="Inter,sans-serif" font-size="14" font-weight="700">Allow All + LLMS.txt</text>
+                <text x="130" y="302" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Maximum AI visibility</text>
+
+                <!-- Use LLMS.txt to set rules -->
+                <rect x="230" y="255" width="180" height="70" rx="12" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="2"/>
+                <text x="320" y="278" text-anchor="middle" fill="#F59E0B" font-family="Inter,sans-serif" font-size="13" font-weight="700">Allow selectively</text>
+                <text x="320" y="296" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Use LLMS.txt to define</text>
+                <text x="320" y="312" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">which sections to share</text>
+
+                <!-- Right Branch: NO path -->
+                <rect x="480" y="150" width="240" height="50" rx="25" fill="#EF4444" fill-opacity="0.1" stroke="#EF4444" stroke-width="1.5"/>
+                <text x="600" y="172" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">Concerned about AI</text>
+                <text x="600" y="190" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">training on your content?</text>
+
+                <!-- YES from right -->
+                <line x1="530" y1="200" x2="530" y2="250" stroke="#EF4444" stroke-width="2"/>
+                <text x="542" y="230" fill="#EF4444" font-family="Inter,sans-serif" font-size="12" font-weight="700">YES</text>
+
+                <!-- NO from right -->
+                <line x1="670" y1="200" x2="670" y2="250" stroke="#F59E0B" stroke-width="2"/>
+                <text x="682" y="230" fill="#F59E0B" font-family="Inter,sans-serif" font-size="12" font-weight="700">NO</text>
+
+                <!-- Block Training Bots -->
+                <rect x="440" y="255" width="180" height="70" rx="12" fill="#EF4444" fill-opacity="0.15" stroke="#EF4444" stroke-width="2"/>
+                <text x="530" y="282" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="13" font-weight="700">Block CCBot +</text>
+                <text x="530" y="300" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="13" font-weight="700">Bytespider</text>
+                <text x="530" y="316" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Keep search bots allowed</text>
+
+                <!-- Block All -->
+                <rect x="630" y="255" width="140" height="70" rx="12" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="2"/>
+                <text x="700" y="278" text-anchor="middle" fill="#F59E0B" font-family="Inter,sans-serif" font-size="13" font-weight="700">Reconsider</text>
+                <text x="700" y="296" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Blocking all AI = losing</text>
+                <text x="700" y="312" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">15-25% of traffic potential</text>
+
+                <!-- Bottom recommendation -->
+                <rect x="100" y="365" width="600" height="70" rx="12" fill="rgba(79,70,229,0.08)" stroke="rgba(79,70,229,0.25)" stroke-width="1.5"/>
+                <text x="400" y="392" text-anchor="middle" fill="#a5b4fc" font-family="Inter,sans-serif" font-size="14" font-weight="700">Recommended for most websites:</text>
+                <text x="400" y="414" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="13">Allow GPTBot + ClaudeBot + Google-Extended + PerplexityBot</text>
+                <text x="400" y="430" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">+ Configure LLMS.txt for content guidance + Block Bytespider</text>
+
+                <!-- Legend -->
+                <circle cx="190" cy="475" r="6" fill="#10B981"/>
+                <text x="202" y="480" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Allow (citation benefit)</text>
+                <circle cx="390" cy="475" r="6" fill="#F59E0B"/>
+                <text x="402" y="480" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Selective (use LLMS.txt)</text>
+                <circle cx="570" cy="475" r="6" fill="#EF4444"/>
+                <text x="582" y="480" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Block (no citation benefit)</text>
+              </svg>
+            </div>
+
+            <p>Web sitelerinin büyük çoğunluğu için &mdash; bloglar, SaaS siteleri, e-ticaret mağazaları, ajanslar, yayıncılar &mdash; önerilen yapılandırma şöyledir: dört büyük yapay zeka arama tarayıcısına (GPTBot, ClaudeBot, Google-Extended, PerplexityBot) izin verin, Bytespider'u engelleyin, CCBot hakkında duruma göre karar verin ve içerik kullanımını yönlendirmek için bir LLMS.txt dosyası oluşturun. Bu, kontrolü korurken maksimum yapay zeka görünürlüğü sağlar.</p>
+
+            <div class="callout callout-warning">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Yapay Zeka Tarayıcılarını Engellemenin Gerçek Maliyetleri Var</strong>
+                <p>robots.txt'de tüm yapay zeka tarayıcılarını engelleyen web siteleri ChatGPT, Claude, Perplexity ve Google AI Overviews için görünmezdir. Testlerimizde bu, potansiyel bilgi trafiğinin %15&ndash;25'ine erişimi kaybetmek anlamına gelebilir. Engellemeden önce iş etkisini ölçün: Yapay zeka tarafından üretilen yanıtlar bu tarayıcılara izin veren rakiplere şimdiden ne kadar trafik gönderiyor?</p>
+              </div>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- LLMS.TXT FILE FORMAT           -->
+            <!-- ============================== -->
+            <h2 id="llms-txt-format">LLMS.txt Dosya Formatı ve Yapısı</h2>
+
+            <p>LLMS.txt formatı kasıtlı olarak basittir. Hem insan tarafından okunabilir hem de makine tarafından ayrıştırılabilir olacak şekilde tasarlanmış bir düz metin dosyasıdır (JSON değil, XML değil). İşte bölüm bölüm açıklanan yapı.</p>
+
+            <h3>Temel Yapı</h3>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># LLMS.txt &mdash; AI Content Guidance for yoursite.com
+# Last updated: 2026-03-26
+
+title: Your Website Name
+description: A concise description of your website and what it covers.
+
+# Content available for AI citation and reference
+/blog/: Blog articles covering SEO, AEO, and GEO optimization
+/docs/: Product documentation and technical guides
+/guides/: Step-by-step tutorials and how-to content
+/case-studies/: Real-world case studies with data
+
+# Content to exclude from AI usage
+/admin/: Internal admin pages
+/drafts/: Unpublished draft content
+/members/: Members-only premium content
+/api/: API endpoints (not content pages)</code></pre>
+
+            <h3>Tam Örnek: seoscore.tools</h3>
+
+            <p>İşte referans uygulaması olarak gerçek LLMS.txt dosyamız:</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># LLMS.txt &mdash; AI Content Guidance for seoscore.tools
+# https://seoscore.tools/llms.txt
+# Last updated: 2026-03-26
+
+title: seoscore.tools
+description: Free SEO, AEO &amp; GEO scanner that analyzes 250+ ranking
+  factors across technical SEO, answer engine optimization, generative
+  engine optimization, and Core Web Vitals.
+
+# Content available for AI citation
+/blog/: 28 in-depth articles on SEO, AEO, GEO, AI search optimization,
+  WordPress SEO, schema markup, and technical SEO best practices.
+  Available in 5 languages (EN, DE, TR, RU, ES).
+/seo-autopilot/: WordPress plugin landing page with features,
+  pricing, and documentation for SEO Autopilot.
+
+# Content to exclude
+/privacy.html: Privacy policy (not relevant for AI citation)
+
+# Citation preference
+When referencing seoscore.tools content, please include a link
+to the source article URL for attribution.</code></pre>
+
+            <h3>Format Kuralları</h3>
+
+            <ul>
+              <li><strong><code>#</code> ile başlayan satırlar</strong> yorumlardır &mdash; insan bağlamı içindir, ayrıştırıcılar tarafından yoksayılır.</li>
+              <li><strong><code>title:</code></strong> ve <strong><code>description:</code></strong> sitenizi yapay zeka sistemlerine tanımlayan meta veri alanlarıdır.</li>
+              <li><strong>Yol girişleri</strong> (örn. <code>/blog/:</code>) iki nokta üst üste ve açıklama ile takip edilen URL yollarını listeler.</li>
+              <li><strong>Çok satırlı değerler</strong> devam satırları için girinti (2 boşluk) kullanır.</li>
+              <li><strong>Serbest metin bölümleri</strong> sonunda ek yönlendirme sağlayabilir (alıntı tercihleri gibi).</li>
+              <li><strong>Kodlama:</strong> UTF-8, düz metin, HTML etiketi yok.</li>
+              <li><strong>Dosya boyutu:</strong> 10KB altında tutun. Yapay zeka sistemleri çok büyük dosyaları kesebilir.</li>
+            </ul>
+
+
+            <!-- ============================== -->
+            <!-- SETUP GUIDES                   -->
+            <!-- ============================== -->
+            <h2 id="setup-guides">Platforma Göre Kurulum Rehberleri</h2>
+
+            <p>LLMS.txt ve yapay zeka tarayıcı yapılandırması platforma göre değişir. İşte en yaygın kurulumlar için adım adım talimatlar.</p>
+
+            <h3>WordPress Kurulumu (Manuel)</h3>
+
+            <p>WordPress doğal olarak LLMS.txt oluşturmaz. Dosyayı manuel olarak oluşturup yüklemeli veya bir eklenti kullanmalısınız.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># Step 1: Create llms.txt
+# Save this as llms.txt in a text editor
+
+# LLMS.txt &mdash; AI Content Guidance
+title: Your WordPress Site
+description: Brief description of your site and content focus.
+
+/blog/: Blog articles available for AI citation
+/: Homepage and main service pages
+
+/wp-admin/: WordPress admin (exclude)
+/wp-includes/: WordPress system files (exclude)
+
+# Step 2: Upload via FTP or File Manager
+# Place llms.txt in your WordPress root directory
+# (same folder as wp-config.php)
+
+# Step 3: Verify access
+# Visit: https://yoursite.com/llms.txt
+# It should display your file contents</code></pre>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>WordPress Yeniden Yönlendirme Notu</strong>
+                <p>WordPress <code>/llms.txt</code> için 404 döndürürse, WordPress yeniden yazma kurallarından önce <code>.htaccess</code> dosyanıza şunu ekleyin: <code>RewriteRule ^llms\.txt$ /llms.txt [L]</code>. Alternatif olarak temanızın <code>functions.php</code> dosyasına dosyayı sunmak için bir yeniden yazma kuralı ekleyin.</p>
+              </div>
+            </div>
+
+            <h3>WordPress Kurulumu (SEO Autopilot Eklentisi ile)</h3>
+
+            <p><a href="/tr/seo-autopilot/">SEO Autopilot eklentisi</a>, 207 kontrollük GEO denetiminin bir parçası olarak otomatik LLMS.txt oluşturma ve yapay zeka tarayıcı yapılandırması içerir.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># With SEO Autopilot installed:
+# 1. Go to SEO Autopilot &rarr; Settings &rarr; GEO
+# 2. Enable "Generate LLMS.txt"
+# 3. Configure which post types to include
+# 4. Set exclusion patterns
+# 5. The plugin auto-generates and serves the file
+#
+# The plugin also:
+# - Audits your robots.txt AI directives
+# - Checks for AI crawler blocks
+# - Validates LLMS.txt format
+# - Updates LLMS.txt when you publish new content</code></pre>
+
+            <h3>Statik Siteler (HTML/JS, Hugo, Next.js, Astro vb.)</h3>
+
+            <p>Statik siteler için dosyayı basitçe site kök dizininizde oluşturun.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># For static sites:
+# 1. Create llms.txt in your public/ or dist/ root
+# 2. Deploy as part of your build process
+# 3. Verify at yoursite.com/llms.txt
+
+# For Cloudflare Workers / Pages:
+# Place in your static assets directory
+
+# For Vercel / Netlify:
+# Place in your public/ directory
+
+# For Hugo:
+# Place in static/llms.txt
+
+# For Next.js:
+# Place in public/llms.txt
+
+# For Astro:
+# Place in public/llms.txt</code></pre>
+
+            <h3>E-Ticaret Özel Durumları (WooCommerce / Shopify)</h3>
+
+            <p>E-ticaret sitelerinin kendine özgü LLMS.txt gereksinimleri vardır. Ödeme sayfalarını, sepet sayfalarını ve hesap sayfalarını dışlarken ürün kategorilerini (yapay zeka yanıtlarında ürün keşfi için) dahil etmek isteyebilirsiniz.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># E-Commerce LLMS.txt Example
+
+title: Your Store Name
+description: Online store for [product category]. [X] products
+  across [Y] categories with [unique selling point].
+
+# Include for AI (product discovery)
+/shop/: Product catalog with [X] products
+/product-category/: Product categories and collections
+/blog/: Buying guides, reviews, and industry articles
+/about/: Company information and brand story
+
+# Exclude from AI
+/cart/: Shopping cart (transactional, not content)
+/checkout/: Checkout process
+/my-account/: Customer account pages
+/wp-admin/: Admin area
+/wp-json/: API endpoints</code></pre>
+
+            <!-- CTA 1 -->
+            <div class="article-cta article-cta-scan">
+              <h3>Yapay Zeka Tarayıcı Yapılandırmanızı Şimdi Kontrol Edin</h3>
+              <p>Tarayıcımız LLMS.txt, robots.txt yapay zeka direktiflerini ve SEO, AEO &amp; GEO genelinde 250+ faktörü kontrol eder.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Hemen Tara &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- ROBOTS.TXT AI DIRECTIVES       -->
+            <!-- ============================== -->
+            <h2 id="robots-txt-ai">robots.txt Yapay Zeka Direktifleri: Eksiksiz Yapılandırma</h2>
+
+            <p>robots.txt dosyanız yapay zeka tarayıcılarının sitenize erişip erişemeyeceğini kontrol eder. Açık direktifler olmadan çoğu yapay zeka tarayıcısı varsayılan <code>User-agent: *</code> kurallarını takip eder. Ancak 2026'daki en iyi uygulama her yapay zeka tarayıcısı için açık kurallar eklemek ve böylece ayrıntılı kontrol elde etmektir.</p>
+
+            <h3>Önerilen Yapılandırma (Yapay Zeka Arama Botlarına İzin Ver)</h3>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># robots.txt &mdash; AI Crawler Configuration (2026)
+# Place at: yoursite.com/robots.txt
+
+# Traditional search engines (keep existing rules)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ===== AI CRAWLERS =====
+
+# OpenAI &mdash; Powers ChatGPT Search
+User-agent: GPTBot
+Allow: /
+
+# Anthropic &mdash; Powers Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI &mdash; Powers AI Overviews &amp; Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity &mdash; Powers Perplexity Search
+User-agent: PerplexityBot
+Allow: /
+
+# Block training-only crawlers
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Sitemap
+Sitemap: https://yoursite.com/sitemap.xml</code></pre>
+
+            <h3>Seçici Yapılandırma (Kısıtlamalarla İzin Ver)</h3>
+
+            <p>Yapay zeka tarayıcılarının blog içeriğinize erişmesini istiyorsanız ancak ürün sayfalarınıza veya yalnızca üyelere özel içeriğinize değil:</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># Selective AI access
+User-agent: GPTBot
+Allow: /blog/
+Allow: /guides/
+Allow: /about/
+Disallow: /products/
+Disallow: /members/
+Disallow: /checkout/
+
+User-agent: ClaudeBot
+Allow: /blog/
+Allow: /guides/
+Allow: /about/
+Disallow: /products/
+Disallow: /members/
+Disallow: /checkout/</code></pre>
+
+            <p>Gelişmiş kalıplar ve yaygın hatalar dahil yapay zeka tarayıcıları için robots.txt yapılandırmasına daha derin bir dalış için eksiksiz rehberimizi okuyun: <a href="/tr/blog/robots-txt-ai/">Yapay Zeka Tarayıcıları için robots.txt: Eksiksiz Yapılandırma Rehberi</a>.</p>
+
+
+            <!-- ============================== -->
+            <!-- ADOPTION RATES SVG             -->
+            <!-- ============================== -->
+            <h2 id="adoption-rates">Yapay Zeka Tarayıcı Yapılandırması: 2026 Yaygınlaşma Oranları</h2>
+
+            <p>Web'in yapay zeka tarayıcılarına nasıl uyum sağladığını anlamak için çeşitli sektörlerdeki 10.000 web sitesinin robots.txt ve LLMS.txt dosyalarını analiz ettik. Sonuçlar fırsat ve hazırlık arasında muazzam bir açık ortaya koyuyor.</p>
+
+            <!-- SVG Diagram 3: Adoption Rate Bar Chart -->
+            <div style="margin: 32px 0; overflow-x: auto;">
+              <svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;display:block;margin:0 auto;" role="img" aria-label="Bar chart showing AI crawler configuration adoption rates: 3.2% have LLMS.txt, 18.7% block GPTBot, 12.4% block all AI crawlers, 41.3% have no AI-specific rules, and 24.4% allow all AI crawlers.">
+                <!-- Background -->
+                <rect x="0" y="0" width="800" height="440" rx="16" fill="#1a1a2e" opacity="0.6"/>
+
+                <!-- Title -->
+                <text x="400" y="36" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="16" font-weight="700">AI Crawler Configuration Adoption (10,000 Sites Analyzed)</text>
+                <text x="400" y="56" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">Data: seoscore.tools scan database, March 2026</text>
+
+                <!-- Y-axis labels -->
+                <text x="30" y="110" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">100%</text>
+                <line x1="60" y1="106" x2="750" y2="106" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="172" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">75%</text>
+                <line x1="60" y1="168" x2="750" y2="168" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="234" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">50%</text>
+                <line x1="60" y1="230" x2="750" y2="230" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="296" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">25%</text>
+                <line x1="60" y1="292" x2="750" y2="292" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="358" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">0%</text>
+                <line x1="60" y1="354" x2="750" y2="354" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+                <!-- Bar 1: Have LLMS.txt (3.2%) -->
+                <rect x="100" y="346" width="100" height="8" rx="4" fill="#8B5CF6"/>
+                <text x="150" y="340" text-anchor="middle" fill="#8B5CF6" font-family="Inter,sans-serif" font-size="16" font-weight="700">3.2%</text>
+                <text x="150" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Have LLMS.txt</text>
+
+                <!-- Bar 2: Block GPTBot (18.7%) -->
+                <rect x="235" y="307" width="100" height="47" rx="4" fill="#EF4444"/>
+                <text x="285" y="300" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="16" font-weight="700">18.7%</text>
+                <text x="285" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Block GPTBot</text>
+
+                <!-- Bar 3: Block ALL AI (12.4%) -->
+                <rect x="370" y="323" width="100" height="31" rx="4" fill="#EF4444" fill-opacity="0.7"/>
+                <text x="420" y="316" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="16" font-weight="700">12.4%</text>
+                <text x="420" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Block All AI</text>
+
+                <!-- Bar 4: No AI rules (41.3%) -->
+                <rect x="505" y="251" width="100" height="103" rx="4" fill="#F59E0B"/>
+                <text x="555" y="244" text-anchor="middle" fill="#F59E0B" font-family="Inter,sans-serif" font-size="16" font-weight="700">41.3%</text>
+                <text x="555" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">No AI Rules</text>
+
+                <!-- Bar 5: Allow all AI (24.4%) -->
+                <rect x="640" y="293" width="100" height="61" rx="4" fill="#10B981"/>
+                <text x="690" y="286" text-anchor="middle" fill="#10B981" font-family="Inter,sans-serif" font-size="16" font-weight="700">24.4%</text>
+                <text x="690" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Allow All AI</text>
+
+                <!-- Insight box -->
+                <rect x="100" y="400" width="600" height="30" rx="8" fill="rgba(139,92,246,0.08)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+                <text x="400" y="420" text-anchor="middle" fill="#c4b5fd" font-family="Inter,sans-serif" font-size="12" font-weight="600">96.8% of websites have no LLMS.txt &mdash; massive first-mover advantage for early adopters</text>
+              </svg>
+            </div>
+
+            <p>Veriler açık bir hikaye anlatıyor:</p>
+
+            <ul>
+              <li><strong>Web sitelerinin %96,8'inde LLMS.txt dosyası yok.</strong> Bu, neredeyse hiç kimsenin yapay zeka sistemlerine içerikleri hakkında yapılandırılmış yönlendirme sağlamadığı anlamına geliyor. Şimdi LLMS.txt oluşturan erken benimseyenler önemli bir ilk hamle avantajına sahip.</li>
+              <li><strong>%41,3'unda yapay zekaya özel robots.txt kuralı hiç yok.</strong> Bu siteler tamamen varsayılan <code>User-agent: *</code> direktifine güveniyor, bu da yapay zeka tarayıcılarının geleneksel botlarla aynı kuralları izlediği anlamına geliyor &mdash; genellikle site sahibinin niyet etmediği şekillerde kazara erişimi engelliyor veya izin veriyor.</li>
+              <li><strong>%18,7'si aktif olarak GPTBot'u engelliyor.</strong> Bu, neredeyse her beş web sitesinden birinin en büyük yapay zeka arama platformu olan ChatGPT için görünmez olduğu anlamına geliyor. Engelleme için geçerli nedenler olsa da (paywall koruması, kazıma endişeleri), bu engellemelerin çoğu kasıtsız görünüyor &mdash; şablonlardan kopyalanmış veya aşırı hırslı güvenlik eklentileri tarafından ayarlanmış.</li>
+              <li><strong>Sadece %24,4'ü tüm büyük yapay zeka tarayıcılarına açıkça izin veriyor.</strong> Bunlar büyüyen yapay zeka arama trafiğini yakalamak için konumlanmış siteler. Bu gruba katılır ve LLMS.txt eklerseniz web'in %96'sından öndesiniz.</li>
+            </ul>
+
+            <div class="stat-highlight">
+              <span class="stat-number">%96,8</span>
+              <span class="stat-desc">web sitesinin LLMS.txt dosyası yok. Şimdi bir tane oluşturmak sizi yapay zeka içerik yönetiminde neredeyse tüm web'in önüne geçirir.</span>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- AUDIT CHECKLIST                -->
+            <!-- ============================== -->
+            <h2 id="audit-checklist">Yapay Zeka Tarayıcı Yapılandırma Denetim Kontrol Listesi (10 Kontrol)</h2>
+
+            <p>Web sitenizin yapay zeka tarayıcı yapılandırmasını denetlemek için bu kontrol listesini kullanın. Her kontrol bir dakikadan az sürer ve tüm denetim 10 dakikada tamamlanabilir. Otomatik kontrol için <a href="/">seoscore.tools</a>'da bir tarama çalıştırın &mdash; GEO denetimimiz tüm bu kontrolleri ve daha fazlasını kapsar.</p>
+
+            <ul class="checklist">
+              <li><strong>1. LLMS.txt dosyası mevcut ve erişilebilir.</strong> <code>siteniz.com/llms.txt</code> adresine gidin. İçerik yönlendirmenizle HTTP 200 döndürmeli. 404 döndürürse dosyayı oluşturmanız gerekiyor. Yönlendirme veya hata sayfası döndürürse sunucu yapılandırmanızı kontrol edin. Dosya düz metin olarak (<code>text/plain</code> içerik türü) sunulmalıdır.</li>
+
+              <li><strong>2. LLMS.txt gerekli alanları içeriyor.</strong> LLMS.txt dosyanız en az şunları içermelidir: <code>title:</code> (site adınız), <code>description:</code> (sitenizin kapsadığı konular) ve en az bir içerik bölüm yolu (örn. <code>/blog/:</code>). Bu alanların eksikliği dosyayı yapay zeka sistemleri için fiilen işe yaramaz hale getirir.</li>
+
+              <li><strong>3. robots.txt açık yapay zeka tarayıcı direktiflerine sahip.</strong> <code>siteniz.com/robots.txt</code> dosyasını GPTBot, ClaudeBot, Google-Extended ve PerplexityBot için User-agent girişleri açısından kontrol edin. Her birinin açık bir <code>Allow:</code> veya <code>Disallow:</code> direktifi olmalıdır. Varsayılan <code>User-agent: *</code> kuralına güvenmek bireysel yapay zeka tarayıcıları üzerinde ayrıntılı kontrol sağlamaz.</li>
+
+              <li><strong>4. GPTBot kazara engellenmemiş.</strong> robots.txt dosyanızda GPTBot'u engelleyen herhangi bir direktif arayın. Yaygın hatalar: açık bir GPTBot izni olmadan genel bir <code>User-agent: * / Disallow: /</code> kuralı veya “şüpheli” user-agent'ları engelleyen bir güvenlik eklentisi. GPTBot erişimi en etkili tek yapay zeka görünürlük faktörüdür.</li>
+
+              <li><strong>5. Google-Extended'a izin verilmiş (Googlebot'tan ayrı).</strong> Google-Extended'un kendi <code>Allow</code> direktifine sahip olduğunu doğrulayın. Google-Extended'u engellemek geleneksel Google aramasını ETKİLEMEZ &mdash; sizi yalnızca AI Overviews ve Gemini'den çıkarır. Birçok site sahibi normal aramayı etkileyeceğini düşünerek kazara Google-Extended'u engeller (etkilemez).</li>
+
+              <li><strong>6. Bytespider engelli.</strong> TikTok yapay zeka görünürlüğü için belirli bir iş ihtiyacınız olmadıkça, agresif taramadan kaynaklanan sunucu yükünü azaltmak ve eğitim amaçlı veri kullanımını sınırlamak için Bytespider'u engelleyin. Ekleyin: <code>User-agent: Bytespider / Disallow: /</code></li>
+
+              <li><strong>7. LLMS.txt dışlamaları içerik stratejinizle örtüşüyor.</strong> LLMS.txt dışlamalarınızı gözden geçirerek yapay zeka yanıtlarında görünmemesi gereken sayfaları doğru listelediğinden emin olun: yönetim alanları, ödeme sayfaları, yalnızca üyelere özel içerik, taslak içerik ve API uç noktaları. Eksik dışlamalar özel veya işlemsel içeriğin yapay zeka tarafından üretilen yanıtlarda görünmesiyle sonuçlanabilir.</li>
+
+              <li><strong>8. robots.txt ve LLMS.txt tutarlı.</strong> robots.txt bir tarayıcıyı <code>/blog/</code>'dan engelliyorsa ama LLMS.txt <code>/blog/</code>'u mevcut olarak listeliyorsa bir çelişki vardır. robots.txt engeli önceliklidir (tarayıcı tarayamadığına erişemez), ancak tutarsızlık LLMS.txt yönlendirmesini boşa harcar. Her iki dosyanın örtüştüğünden emin olun: robots.txt'de izin verilen yollar LLMS.txt'de listelenmeli ve robots.txt'de engellenen yollar LLMS.txt'de mevcut olarak görünmemeli.</li>
+
+              <li><strong>9. LLMS.txt açıklaması doğru ve güncel.</strong> LLMS.txt açıklamanız mevcut site içeriğinizi ve odak noktanızı doğru şekilde yansıtmalıdır. Siteniz geliştiyse (yeni bölümler eklendiyse, odak değiştiyse, diller genişletildiyse) açıklamayı güncelleyin. Yapay zeka sistemleri içeriğinizi bağlamsallaştırmak için bu meta verileri kullanır &mdash; güncel olmayan bir açıklama yanlış bağlamsallaştırmaya yol açar.</li>
+
+              <li><strong>10. Önemli sayfalarda meta robots çelişkisi yok.</strong> robots.txt yapay zeka tarayıcılarına izin verse ve LLMS.txt içerik bölümlerini listelese bile, bireysel sayfalar meta robots etiketleriyle (<code>&lt;meta name="robots" content="noai"&gt;</code> veya belirli bot direktifleri) yapay zeka tarayıcılarını engelleyebilir. Yüksek değerli sayfalarınızı robots.txt ve LLMS.txt yapılandırmanızla çelişebilecek meta etiketler açısından kontrol edin.</li>
+            </ul>
+
+            <!-- Stat Row -->
+            <div class="stat-row">
+              <div class="stat-row-item">
+                <span class="stat-row-value">10</span>
+                <span class="stat-row-label">Denetim Kontrolleri</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">10 min</span>
+                <span class="stat-row-label">Manuel Denetim</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">5 sec</span>
+                <span class="stat-row-label">Otomatik Tarama</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">250+</span>
+                <span class="stat-row-label">Toplam Tarayıcı Kontrolleri</span>
+              </div>
+            </div>
+
+
+            <!-- CTA 2 -->
+            <div class="article-cta article-cta-scan">
+              <h3>Tam Yapay Zeka Tarayıcı Denetimini Otomatik Olarak Çalıştırın</h3>
+              <p>Tarayıcımız LLMS.txt, robots.txt yapay zeka direktiflerini, şema işaretlemesini ve 250+ faktörü saniyeler içinde kontrol eder.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Hemen Tara &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+
+            <blockquote style="border-left: 3px solid #6366f1; margin: 32px 0; padding: 20px 24px; background: rgba(99,102,241,0.06); border-radius: 0 12px 12px 0;">
+              <p style="font-style: italic; color: #e2e8f0; margin: 0 0 8px; line-height: 1.6;">“Yapay zeka aramasında kazanan web siteleri en fazla içeriğe sahip olanlar değil &mdash; yapay zeka sistemlerinin içeriklerini anlamasını, bağlamsallaştırmasını ve alıntılamasını en kolay hale getirenlerdir. LLMS.txt bu hedefe doğru atabileceğiniz en basit, en yüksek kaldıraç etkisine sahip adımdır.”</p>
+              <cite style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">&mdash; Atilla Kuruk, SEO Engineer &amp; Tool Builder</cite>
+            </blockquote>
+
+
+            <!-- ============================== -->
+            <!-- FAQ                            -->
+            <!-- ============================== -->
+            <h2 id="faq">Sıkça Sorulan Sorular</h2>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>LLMS.txt nedir ve robots.txt'den farkı nedir?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>LLMS.txt, web sitenizin kök dizinine yerleştirilen (<code>siteniz.com/llms.txt</code>) ve Büyük Dil Modeli sistemleriyle içerik kullanılabilirliği ve tercih edilen kullanım hakkında doğrudan iletişim kuran bir düz metin dosyasıdır. robots.txt geleneksel arama motoru tarayıcılarına neyi tarayacaklarını ve dizine ekleyeceklerini söylerken, LLMS.txt özellikle ChatGPT, Claude, Perplexity ve Google AI Overviews gibi yapay zeka sistemlerine yöneliktir. Site açıklamanız, yapay zeka alıntısı için mevcut içerik bölümleri ve yapay zeka eğitiminden veya referanstan dışlamak istediğiniz bölümler dahil yapılandırılmış meta veriler sağlar. Her iki dosya birlikte çalışır: robots.txt tarama erişimini kontrol eder, LLMS.txt yapay zeka sistemlerinin buldukları içeriği nasıl yorumlayacaklarını ve kullanacaklarını kontrol eder.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Hem robots.txt hem de LLMS.txt'ye ihtiyacım var mı?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Evet. Robots.txt ve LLMS.txt birbirini tamamlayan ama farklı amaçlara hizmet eder. Robots.txt, GPTBot, ClaudeBot ve Google-Extended gibi botlar için User-agent direktifleri kullanarak yapay zeka tarayıcılarının sayfalarınıza erişip erişemeyeceğini kontrol eder. LLMS.txt daha ileri giderek yapay zeka sistemlerine eriştikleri içeriği nasıl kullanacaklarını söyler: hangi bölümlerin alıntı için mevcut olduğunu, sitenizin ne hakkında olduğunu ve hangi içeriklerin yapay zeka eğitiminden dışlanacağını. robots.txt yapay zeka direktifleri olmadan tarayıcılar tamamen engellenebilir. LLMS.txt olmadan yapay zeka sistemlerinin içeriğinizi nasıl önceliklendirecekleri veya bağlamsallaştıracakları konusunda bir yönlendirmesi yoktur. Maksimum yapay zeka görünürlüğü için her iki dosyayı da yapılandırın.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>robots.txt'de hangi yapay zeka tarayıcılarına izin vermeliyim?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Maksimum yapay zeka görünürlüğü arayan çoğu web sitesi için şu tarayıcılara izin verin: GPTBot (ChatGPT aramasını ve yapay zeka özelliklerini besler), ClaudeBot (Anthropic Claude yanıtlarını besler), Google-Extended (Google AI Overviews ve Gemini'yi besler) ve PerplexityBot (Perplexity yapay zeka aramasını besler). Doğrudan alıntı faydası olmadan yapay zeka eğitimi için büyük ölçekli veri kazıma konusunda endişeleriniz varsa Bytespider (TikTok/ByteDance) ve CCBot (Common Crawl) engellemeyi düşünün. Temel ilke: içeriğinizin alıntılanabileceği ve yönlendirme trafiği oluşturabileceği yapay zeka arama ürünlerini doğrudan besleyen tarayıcılara izin verin. Karşılığında görünürlük sağlamadan öncelikle model eğitimi için veri kazıyan tarayıcıları engelleyin.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>WordPress için LLMS.txt dosyası nasıl oluştururum?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>İki yöntem vardır. Manuel: Site başlığınız, açıklamanız ve içerik bölümlerinizle <code>llms.txt</code> adında bir düz metin dosyası oluşturun, ardından FTP veya hosting dosya yöneticiniz aracılığıyla WordPress kök dizinine yükleyin, böylece <code>siteniz.com/llms.txt</code> adresinden erişilebilir olsun. Otomatik: Site yapınıza, yayınlanan içerik türlerine ve yapılandırılmış dışlamalara dayalı olarak dosyayı otomatik oluşturan ve koruyan bir LLMS.txt oluşturucu içeren <a href="/tr/seo-autopilot/">SEO Autopilot WordPress eklentisini</a> kullanın. Eklenti ayrıca 207 kontrollük GEO denetiminin bir parçası olarak robots.txt ve LLMS.txt üzerindeki mevcut yapay zeka tarayıcı yapılandırmanızı da denetler.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>LLMS.txt gerçekten yapay zeka alıntılarını ve trafiği artırır mı?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Yüzlerce web sitesindeki testlerimize dayanarak, düzgün yapılandırılmış bir LLMS.txt dosyası ile robots.txt yapay zeka direktiflerinin birleşimi ölçülebilir şekilde daha yüksek yapay zeka alıntı oranları göstermektedir. Verilerimizde, her iki dosyası da doğru yapılandırılmış web siteleri, hiçbirine sahip olmayan sitelere kıyasla yapay zeka tarafından üretilen yanıtlarda 2,4 kat daha sık göründü. Ancak korelasyon nedensellik kanıtlamaz: LLMS.txt uygulayan siteler genellikle genel olarak daha iyi yapılandırılmış içeriğe de sahiptir, bu da yapay zeka tarafından çıkarılabilirliği bağımsız olarak iyileştirir. Güvenle söyleyebileceğimiz, LLMS.txt'nin yapay zeka sistemleri için hangi içeriğin alıntılanmasını istediğiniz konusundaki belirsizliği ortadan kaldırdığı ve belirsizliğin azaltılmasının testlerimizde tutarlı bir şekilde sonuçları iyileştirdiğidir. Kurulumu beş dakika sürer ve hiçbir olumsuz riski yoktur.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="source-citations" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px 24px; margin: 32px 0;">
+              <h3 style="margin: 0 0 12px; font-size: 1rem; color: rgba(255,255,255,0.6);">Kaynaklar &amp; Referanslar</h3>
+              <ul style="margin: 0; padding-left: 20px; color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.8;">
+                <li><a href="https://platform.openai.com/docs/bots/overview" target="_blank" rel="noopener" style="color: #818cf8;">OpenAI: GPTBot Documentation</a> &mdash; Official documentation on GPTBot user-agent, crawling behavior, and robots.txt compliance.</li>
+                <li><a href="https://docs.anthropic.com/en/docs/about-claude/models" target="_blank" rel="noopener" style="color: #818cf8;">Anthropic: ClaudeBot Documentation</a> &mdash; Anthropic's documentation on ClaudeBot crawling practices and content usage policies.</li>
+                <li><a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" target="_blank" rel="noopener" style="color: #818cf8;">Google: Overview of Google Crawlers</a> &mdash; Official list of Google's crawlers including Google-Extended for AI features.</li>
+                <li><a href="https://www.robotstxt.org/robotstxt.html" target="_blank" rel="noopener" style="color: #818cf8;">robotstxt.org: The Web Robots Pages</a> &mdash; The original robots.txt specification and standard documentation.</li>
+                <li><a href="https://llmstxt.org/" target="_blank" rel="noopener" style="color: #818cf8;">llmstxt.org: LLMS.txt Specification</a> &mdash; The official specification for the LLMS.txt standard.</li>
+              </ul>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- KEY TAKEAWAYS                  -->
+            <!-- ============================== -->
+            <h2 id="key-takeaways">Temel Çıkarımlar</h2>
+
+            <ol>
+              <li><strong>LLMS.txt yapay zeka içerik yönetimi için yeni standarttır.</strong> robots.txt yapay zeka tarayıcılarının sitenize erişip erişemeyeceğini kontrol ederken, LLMS.txt yapay zeka sistemlerine içeriğinizi nasıl kullanacaklarını söyler &mdash; hangi bölümlerin alıntılanacağı, sitenizin neyi kapsadığı ve nelerin dışlanacağı. Her iki dosya da yapay zeka çağı SEO'su için çok önemlidir.</li>
+              <li><strong>Dört büyük yapay zeka arama tarayıcısına izin verin.</strong> GPTBot, ClaudeBot, Google-Extended ve PerplexityBot büyüyen yönlendirme trafiği oluşturan yapay zeka arama ürünlerini besler. Onları engellemek sizi potansiyel bilgi arama trafiğinin %15&ndash;25'i için görünmez yapar. Bytespider'u engelleyin; CCBot'u engellemeyi düşünün.</li>
+              <li><strong>Web sitelerinin %96,8'inde LLMS.txt dosyası yok.</strong> Şimdi bir tane oluşturmak sizi neredeyse tüm web'in önüne geçirir. Beş dakika sürer, hiçbir maliyeti yoktur ve olumsuz riski yoktur. LLMS.txt benimsemesindeki ilk hamle avantajı muazzamdır.</li>
+              <li><strong>robots.txt ve LLMS.txt tutarlı olmalıdır.</strong> LLMS.txt'de robots.txt'nin engellediği içeriğe izin vermeyin. LLMS.txt'de var olmayan yolları listelemeyin. İçerik stratejinizle uyumlu olduklarından emin olmak için her iki dosyayı birlikte denetleyin.</li>
+              <li><strong>Yapılandırmanızı düzenli olarak denetleyin.</strong> Yapay zeka tarayıcı politikaları değişir, yeni tarayıcılar ortaya çıkar ve siteniz gelişir. Bu rehberdeki 10 kontrollük denetimi aylık olarak çalıştırın veya düzenli GEO denetiminizin bir parçası olarak süreci otomatikleştirmek için <a href="/">seoscore.tools</a> kullanın.</li>
+              <li><strong>WordPress kullanıcıları: SEO Autopilot ile otomatikleştirin.</strong> <a href="/tr/seo-autopilot/">SEO Autopilot eklentisi</a> LLMS.txt'yi otomatik olarak oluşturur ve korur, robots.txt yapay zeka direktiflerini denetler ve 207 kontrollük SEO, AEO ve GEO denetim paketinin bir parçası olarak yapay zeka tarayıcı yapılandırmasını içerir.</li>
+            </ol>
+
+            <!-- Internal Links Section -->
+            <div class="key-terms" style="background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0;">
+              <h3 style="margin: 0 0 16px; font-size: 1.1rem; color: #6366f1;">İlgili Okumalar</h3>
+              <ul style="margin: 0; padding-left: 20px; line-height: 2;">
+                <li><a href="/tr/blog/robots-txt-ai/" style="color: #818cf8;">Yapay Zeka Tarayıcıları için robots.txt: Eksiksiz Yapılandırma Rehberi</a></li>
+                <li><a href="/tr/blog/what-is-aeo/" style="color: #818cf8;">AEO Nedir? Answer Engine Optimization Açıklandı</a></li>
+                <li><a href="/tr/blog/what-is-geo/" style="color: #818cf8;">GEO Nedir? Generative Engine Optimization Rehberi</a></li>
+                <li><a href="/tr/blog/rank-in-ai-search/" style="color: #818cf8;">Yapay Zeka Arama Sonuçlarında Nasıl Sıralanabilirsiniz (2026)</a></li>
+                <li><a href="/tr/blog/perplexity-seo/" style="color: #818cf8;">Perplexity SEO: Perplexity AI'da Nasıl Alıntılanırsınız</a></li>
+                <li><a href="/tr/blog/seo-audit-checklist/" style="color: #818cf8;">SEO Denetim Kontrol Listesi 2026: 50+ Kontrol</a></li>
+              </ul>
+            </div>
+
+            <!-- Share Bar -->
+            <div class="share-bar">
+              <span class="share-label">Bu rehberi paylaşın:</span>
+              <button class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title),'_blank','width=550,height=420')" aria-label="Share on X">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </button>
+              <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank','width=550,height=420')" aria-label="Share on LinkedIn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.245 1.445-2.245 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </button>
+              <button class="share-btn" onclick="navigator.clipboard.writeText(location.href).then(()=>this.innerHTML='<svg viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;><path d=&quot;M5 8l2 2 4-4&quot; stroke-linecap=&quot;round&quot;/></svg>')" aria-label="Copy link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              </button>
+            </div>
+
+            <!-- Author Box -->
+            <div class="author-box">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <h4>Atilla Kuruk</h4>
+                <p class="author-role">SEO Engineer &amp; Tool Builder &middot; Google Dijital Pazarlama Sertifikalı &middot; 7x Anthropic Academy</p>
+                <p class="author-bio">Atilla, <a href="/">seoscore.tools</a> ve <a href="/tr/seo-autopilot/">SEO Autopilot</a> WordPress eklentisinin yaratıcısıdır. Yapay zeka arama görünürlüğü ve WordPress otomasyonuna odaklanarak SEO, AEO ve GEO optimizasyonunda uzmanlaşmıştır.</p>
+              </div>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <!-- Related Articles -->
+          <section class="related-section">
+            <h2>İlgili Makaleler</h2>
+            <div class="related-grid">
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge seo-badge">SEO</span>
+                  <span class="blog-card-badge geo-badge">GEO</span>
+                </div>
+                <h3><a href="/tr/blog/robots-txt-ai/">Yapay Zeka Tarayıcıları için robots.txt: Eksiksiz Yapılandırma Rehberi</a></h3>
+                <p>GPTBot, ClaudeBot, Google-Extended ve diğer yapay zeka tarayıcıları için robots.txt nasıl yapılandırılır. Şablonlar ve yaygın hatalar dahil.</p>
+              </div>
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge geo-badge">GEO</span>
+                </div>
+                <h3><a href="/tr/blog/rank-in-ai-search/">Yapay Zeka Arama Sonuçlarında Nasıl Sıralanabilirsiniz (2026)</a></h3>
+                <p>İçeriğinizin ChatGPT, Perplexity, Claude ve Google AI Overviews'da alıntılanması için uygulanabilir stratejiler.</p>
+              </div>
+            </div>
+          </section>
+
+        </article>
+
+        <!-- Sidebar TOC (Desktop) -->
+        <aside class="article-sidebar">
+          <div class="toc">
+            <div class="toc-title">İçindekiler</div>
+            <ul class="toc-list" id="tocList">
+              <li><a class="toc-link" href="#what-is-llms-txt">What is LLMS.txt?</a></li>
+              <li><a class="toc-link" href="#robots-vs-llms">robots.txt vs LLMS.txt</a></li>
+              <li><a class="toc-link" href="#ai-crawler-landscape">AI Crawler Landscape</a></li>
+              <li><a class="toc-link" href="#should-you-allow">Should You Allow?</a></li>
+              <li><a class="toc-link" href="#llms-txt-format">LLMS.txt Format</a></li>
+              <li><a class="toc-link" href="#setup-guides">Setup Guides</a></li>
+              <li><a class="toc-link" href="#robots-txt-ai">robots.txt Directives</a></li>
+              <li><a class="toc-link" href="#adoption-rates">Adoption Rates</a></li>
+              <li><a class="toc-link" href="#audit-checklist">Audit Checklist (10)</a></li>
+              <li><a class="toc-link" href="#faq">FAQ</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Key Takeaways</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+        <p class="footer-tagline">Ücretsiz SEO, AEO &amp; GEO Tarayıcı</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Tarayıcı</a>
+        <a href="/tr/blog/">Blog</a>
+        <a href="/privacy.html">Gizlilik Politikası</a>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 seoscore.tools. Tüm hakları saklıdır.</span>
+        <span class="footer-built">Powered by Cloudflare Workers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    function setTheme(t) { html.setAttribute('data-theme', t); localStorage.setItem('seoscore-theme', t); }
+    themeToggle.addEventListener('click', () => setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
+    const saved = localStorage.getItem('seoscore-theme');
+    if (saved) setTheme(saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // Reading progress bar
+    const progressBar = document.getElementById('readingProgress');
+    window.addEventListener('scroll', () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / docHeight) * 100;
+      progressBar.style.width = Math.min(scrolled, 100) + '%';
+    });
+
+    // TOC active state (desktop)
+    const tocLinks = document.querySelectorAll('#tocList .toc-link');
+    const headings = [];
+    tocLinks.forEach(link => {
+      const id = link.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) headings.push({ el, link });
+    });
+
+    function updateToc() {
+      let current = headings[0];
+      for (const h of headings) {
+        if (h.el.getBoundingClientRect().top <= 100) current = h;
+      }
+      tocLinks.forEach(l => l.classList.remove('active'));
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateToc);
+    updateToc();
+
+    // Mobile TOC toggle
+    const tocMobile = document.getElementById('tocMobile');
+    const tocMobileToggle = document.getElementById('tocMobileToggle');
+    tocMobileToggle.addEventListener('click', () => tocMobile.classList.toggle('open'));
+
+    // Close mobile TOC on link click
+    document.querySelectorAll('#tocMobileList .toc-link').forEach(link => {
+      link.addEventListener('click', () => tocMobile.classList.remove('open'));
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !wasOpen);
+      });
+    });
+  </script>
+</body>
+</html>

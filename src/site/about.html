@@ -13,7 +13,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="About seoscore.tools — Free SEO, AEO & GEO Scanner">
-  <meta property="og:description" content="Built by SEO professionals. 136+ checks across SEO, AEO & GEO. Free forever, no signup required.">
+  <meta property="og:description" content="Built by SEO professionals. 260+ checks across SEO, AEO & GEO. Free forever, no signup required.">
   <meta property="og:url" content="https://seoscore.tools/about.html">
   <meta property="og:site_name" content="seoscore.tools">
   <meta property="og:image" content="https://seoscore.tools/og-image.png">
@@ -21,14 +21,14 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About seoscore.tools">
-  <meta name="twitter:description" content="Built by SEO professionals. 136+ checks. Free forever.">
+  <meta name="twitter:description" content="Built by SEO professionals. 260+ checks. Free forever.">
   <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -52,7 +52,7 @@
       "name": "seoscore.tools",
       "url": "https://seoscore.tools",
       "logo": "https://seoscore.tools/favicon.svg",
-      "description": "Free SEO, AEO & GEO website scanner with 136+ checks.",
+      "description": "Free SEO, AEO & GEO website scanner with 260+ checks.",
       "foundingDate": "2026",
       "sameAs": [
         "https://x.com/0Varianz00",
@@ -194,9 +194,14 @@
         </svg>
         <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="nav-links">
         <a href="/" class="nav-link">Scanner</a>
         <a href="/blog/" class="nav-link">Blog</a>
+        </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -227,7 +232,7 @@
           <div class="trust-badge-icon">
             <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--success)" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
           </div>
-          <div class="trust-badge-title">136+ Checks</div>
+          <div class="trust-badge-title">260+ Checks</div>
           <div class="trust-badge-text">Comprehensive analysis across SEO, AEO, and GEO categories.</div>
         </div>
         <div class="trust-badge-card">
@@ -249,7 +254,7 @@
       <h2>By the Numbers</h2>
       <div class="stat-badges">
         <div class="stat-badge"><strong>2,800+</strong> websites scanned</div>
-        <div class="stat-badge"><strong>136+</strong> checks per scan</div>
+        <div class="stat-badge"><strong>260+</strong> checks per scan</div>
         <div class="stat-badge"><strong>3</strong> scores in one scan</div>
         <div class="stat-badge"><strong>5</strong> languages supported</div>
         <div class="stat-badge"><strong>&lt;8s</strong> average scan time</div>
@@ -272,8 +277,8 @@
       <p>seoscore.tools runs entirely on <strong>Cloudflare Workers</strong> — a serverless edge computing platform that ensures fast, reliable scans from anywhere in the world. Our scanner performs real-time HTML analysis including:</p>
       <ul>
         <li><strong>50+ SEO checks</strong> — meta tags, headings, schema, performance, mobile-friendliness</li>
-        <li><strong>40+ AEO checks</strong> — FAQ structure, answer formatting, E-E-A-T signals, citation readiness</li>
-        <li><strong>46+ GEO checks</strong> — AI Overview optimization, content comprehensiveness, source authority</li>
+        <li><strong>50+ AEO checks</strong> — FAQ structure, answer formatting, E-E-A-T signals, citation readiness</li>
+        <li><strong>55+ GEO checks</strong> — AI Overview optimization, content comprehensiveness, source authority</li>
       </ul>
 
       <h2>Blog & Resources</h2>
@@ -329,5 +334,6 @@
     if (saved) setTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
   </script>
+  <script>var nt=document.getElementById('navToggle'),nl=document.querySelector('.nav-links');if(nt&&nl){nt.addEventListener('click',function(){var o=nl.classList.toggle('open');nt.setAttribute('aria-expanded',o)});document.addEventListener('click',function(e){if(!e.target.closest('.nav')&&nl.classList.contains('open')){nl.classList.remove('open');nt.setAttribute('aria-expanded','false')}})}</script>
 </body>
 </html>

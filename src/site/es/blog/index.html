@@ -37,8 +37,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/blog.css">
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -104,6 +104,7 @@
       <nav class="nav">
         <a href="/es/" class="nav-link">Scanner</a>
         <a href="/es/blog/" class="nav-link" style="color:var(--accent)">Blog</a>
+
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -131,9 +132,384 @@
       </div>
     </section>
 
+    <!-- Blog Search -->
+    <div class="container" style="margin-bottom:24px">
+      <div style="max-width:480px;margin:0 auto;position:relative">
+        <input type="text" id="blogSearch" placeholder="Buscar artículos..." style="width:100%;padding:12px 16px 12px 44px;border:2px solid var(--border);border-radius:10px;background:var(--bg-primary);color:var(--text-primary);font-size:1rem;outline:none;transition:border-color 0.2s" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" style="position:absolute;left:14px;top:50%;transform:translateY(-50%)"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <span id="blogSearchCount" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:0.8rem;color:var(--text-muted);display:none"></span>
+      </div>
+    </div>
+
     <!-- Blog Grid -->
     <div class="container">
       <div class="blog-grid">
+
+        <!-- NUEVO: OpenAI SEO Strategy -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">Strategy</span>
+            </div>
+            <h2><a href="/es/blog/openai-seo-strategy/">Cómo OpenAI obtiene 76,5M de visitas orgánicas: su estrategia SEO de $600K descifrada</a></h2>
+            <p class="blog-card-excerpt">OpenAI invierte $600K en talento SEO y obtiene 76,5M de visitas orgánicas mensuales — un ROI del 15.200%. Así es cómo lo hacen y qué puedes aprender.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 mar 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 12 min lectura</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: AI Companies Hiring SEO -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/ai-companies-hiring-seo/">Por qué las empresas de IA pagan $320K por expertos en SEO (Análisis de empleo 2026)</a></h2>
+            <p class="blog-card-excerpt">Anthropic, OpenAI y Perplexity están contratando líderes SEO por $200K–$320K. Analizamos sus ofertas de empleo para revelar qué habilidades de AEO y GEO demandan.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 mar 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 10 min lectura</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: UGC SEO Strategy -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge geo-badge">Strategy</span>
+            </div>
+            <h2><a href="/es/blog/ugc-seo-strategy/">Contenido generado por usuarios como estrategia SEO: 938K visitas orgánicas mensuales (caso de estudio)</a></h2>
+            <p class="blog-card-excerpt">Cómo el contenido generado por usuarios indexable impulsa 938K visitas orgánicas mensuales. Aprende la estrategia UGC-SEO utilizada por OpenAI, Reddit y Stack Overflow.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 mar 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 11 min lectura</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: Mejores herramientas SEO gratuitas -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/best-free-seo-audit-tools/">Mejores herramientas gratuitas de auditoría SEO 2026: ¿Cuáles verifican AEO &amp; GEO?</a></h2>
+            <p class="blog-card-excerpt">Probamos 8 herramientas gratuitas de auditoría SEO para capacidades AEO y GEO. Solo 1 verifica las 3 categorías. Comparación honesta con precios, características y resultados reales.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                26 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: WordPress SEO sin suscripción -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/wordpress-seo-no-subscription/">WordPress SEO sin la trampa de la suscripción: por qué un pago único supera a las cuotas anuales</a></h2>
+            <p class="blog-card-excerpt">Yoast Premium cuesta $118/año. RankMath Pro cuesta $96/año. SEO Autopilot cuesta $79 una vez. Compara el costo real de los plugins SEO de WordPress en 3 años y descubre por qué el modelo de suscripción está roto.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                13 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: Checklist SEO WordPress 2026 -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/wordpress-seo-checklist-complete/">Checklist SEO WordPress 2026: 50 verificaciones que probablemente estás ignorando</a></h2>
+            <p class="blog-card-excerpt">El checklist de WordPress SEO más completo para 2026 con 50 verificaciones de SEO, AEO y GEO. Cada verificación explica por qué importa y cómo solucionarlo. O deja que el plugin SEO Autopilot con IA maneje las 50 automáticamente.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                16 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: Mejorar SEO Score WordPress -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/wordpress-seo-score-improve/">WordPress SEO Score de 45 a 95: un caso de estudio paso a paso</a></h2>
+            <p class="blog-card-excerpt">Caso de estudio real: observa cómo un sitio WordPress pasó de SEO 45, AEO 28, GEO 13 a SEO 95, AEO 90, GEO 83. Cada optimización documentada paso a paso. El plugin SEO Autopilot con IA lo hizo en menos de 5 minutos.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: Mejor Plugin SEO WordPress 2026 -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/best-wordpress-seo-plugin/">Mejor Plugin SEO WordPress 2026: Yoast vs RankMath vs SEO Autopilot (Comparación honesta)</a></h2>
+            <p class="blog-card-excerpt">Comparación imparcial de los 3 mejores plugins SEO de WordPress en 2026. Análisis función por función de Yoast, RankMath y SEO Autopilot — incluyendo puntuaciones AEO, GEO, funciones de IA y precios reales.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                15 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: Posicionarse en ChatGPT WordPress -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/rank-in-chatgpt-wordpress/">Cómo posicionarse en ChatGPT, Perplexity y Google AI Overviews: AEO y GEO para WordPress</a></h2>
+            <p class="blog-card-excerpt">810 millones de usuarios de ChatGPT están buscando — ¿es tu sitio WordPress la respuesta que la IA cita? Aprende cómo la optimización AEO y GEO hace que tu contenido sea visible en ChatGPT, Perplexity y Google AI Overviews.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                13 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: WordPress SEO para Principiantes -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/wordpress-seo-beginners/">WordPress SEO para Principiantes: 10 Correcciones que Aumentan tu Visibilidad al Instante</a></h2>
+            <p class="blog-card-excerpt">Sin necesidad de programar. Aprende las 10 correcciones SEO más impactantes para WordPress — desde meta tags hasta optimización para búsqueda con IA. Cada corrección incluye puntuaciones antes/después. O deja que el plugin SEO Autopilot con IA lo haga todo en 60 segundos.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: Resultados de Auditoría SEO -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/seo-audit-results/">De cero a primera página: qué hace realmente una auditoría SEO (con datos reales)</a></h2>
+            <p class="blog-card-excerpt">Caso de estudio real: de 3.200 a 45.000 impresiones en semanas. Descubre exactamente qué 5 correcciones tienen el mayor impacto en la visibilidad de tu sitio WordPress. Auditoría con IA y 245 verificaciones.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                11 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: Búsqueda IA WordPress -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/ai-search-wordpress/">La búsqueda con IA ya está aquí: por qué tu sitio WordPress necesita optimización AEO + GEO ahora</a></h2>
+            <p class="blog-card-excerpt">Google AI Overviews, ChatGPT y Perplexity están cambiando la búsqueda para siempre. Aprende qué significan AEO y GEO para tu sitio WordPress — y cómo el plugin SEO Autopilot con IA optimiza para los tres.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: El SEO no ha muerto -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/seo-not-dead/">El SEO no ha muerto &mdash; tus competidores ya lo están haciendo (con números reales)</a></h2>
+            <p class="blog-card-excerpt">Cada año dicen que el SEO está muerto. Los datos dicen lo contrario: el 53% de todo el tráfico web es orgánico. Mira números reales, análisis de competidores y cómo un plugin WordPress con IA te da la ventaja.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                11 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: Por qué los sitios WordPress son invisibles -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/why-wordpress-sites-invisible/">Por qué el 90% de los sitios WordPress son invisibles para Google (y cómo solucionarlo en 10 minutos)</a></h2>
+            <p class="blog-card-excerpt">La mayoría de los sitios WordPress tienen problemas SEO críticos que destruyen silenciosamente sus rankings. Puntuaciones medias: SEO 52, AEO 28, GEO 13. Conoce los 7 asesinos ocultos y cómo las correcciones automáticas con IA te llevan a 258/300.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: WordPress SEO Auto-Fix -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+            </div>
+            <h2><a href="/es/blog/wordpress-seo-auto-fix/">Cómo corregir 45+ problemas SEO de WordPress con un clic (2026)</a></h2>
+            <p class="blog-card-excerpt">Aprenda a corregir automáticamente 45+ problemas SEO de WordPress con SEO Autopilot. Desde meta tags hasta schema markup — sin necesidad de programar.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                10 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: SEO AEO GEO WordPress Plugin -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/seo-aeo-geo-wordpress-plugin/">El primer plugin WordPress que evalúa SEO, AEO y GEO juntos (2026)</a></h2>
+            <p class="blog-card-excerpt">SEO Autopilot es el primer plugin WordPress que evalúa SEO, AEO y GEO juntos. Comparación con Yoast y RankMath.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NUEVO: Contenido IA para SEO -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/es/blog/ai-content-seo-wordpress/">Cómo el contenido IA eleva tu puntuación SEO de 44 a 98 (2026)</a></h2>
+            <p class="blog-card-excerpt">Descubra cómo el contenido generado por IA transforma las puntuaciones SEO. Caso real: SEO 44→98, AEO 28→95, GEO 13→93.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                10 min lectura
+              </span>
+            </div>
+          </div>
+        </article>
 
         <!-- Article 1: What is AEO? -->
         <article class="blog-card">
@@ -558,6 +934,30 @@
     const saved = localStorage.getItem('seoscore-theme');
     if (saved) setTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // Blog Search
+    const searchInput = document.getElementById('blogSearch');
+    const searchCount = document.getElementById('blogSearchCount');
+    if (searchInput) {
+      const cards = document.querySelectorAll('.blog-card');
+      const total = cards.length;
+      searchInput.addEventListener('input', function() {
+        const q = this.value.toLowerCase().trim();
+        let visible = 0;
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          const match = !q || text.includes(q);
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        if (q) {
+          searchCount.textContent = visible + '/' + total;
+          searchCount.style.display = '';
+        } else {
+          searchCount.style.display = 'none';
+        }
+      });
+    }
   </script>
 </body>
 </html>

@@ -19,3 +19,11 @@ ENVIRONMENT = "production"
 [[kv_namespaces]]
 binding = "SCAN_COUNTER"
 id = "2e0577bec22c42fa948b2f00270e60b4"
+
+[[kv_namespaces]]
+binding = "SCAN_REPORTS"
+id = "d8d712fd70044679a22e002c375b57f2"
+
+[[kv_namespaces]]
+binding = "REPORT_SITEMAP"
+id = "c4d3ff7c67a04237876ddae656c81bf0"

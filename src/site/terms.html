@@ -8,10 +8,26 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://seoscore.tools/terms.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Terms of Service & Impressum — seoscore.tools">
+  <meta property="og:description" content="Terms of service and legal notice (Impressum) for seoscore.tools — the free SEO, AEO & GEO website scanner.">
+  <meta property="og:url" content="https://seoscore.tools/terms.html">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Terms of Service & Impressum — seoscore.tools">
+  <meta name="twitter:description" content="Terms of service and legal notice for seoscore.tools.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -34,9 +50,14 @@
         </svg>
         <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="nav-links">
         <a href="/" class="nav-link">Home</a>
         <a href="/blog/" class="nav-link">Blog</a>
+        </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -82,7 +103,7 @@
 
       <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--border);">
 
-      <h1 id="impressum">Impressum</h1>
+      <h2 id="impressum">Impressum</h2>
       <p class="privacy-date">Legal Notice according to &sect; 5 TMG / &sect; 18 MStV</p>
 
       <h2>Responsible for Content</h2>
@@ -129,5 +150,6 @@
     if (saved) setTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
   </script>
+  <script>var nt=document.getElementById('navToggle'),nl=document.querySelector('.nav-links');if(nt&&nl){nt.addEventListener('click',function(){var o=nl.classList.toggle('open');nt.setAttribute('aria-expanded',o)});document.addEventListener('click',function(e){if(!e.target.closest('.nav')&&nl.classList.contains('open')){nl.classList.remove('open');nt.setAttribute('aria-expanded','false')}})}</script>
 </body>
 </html>

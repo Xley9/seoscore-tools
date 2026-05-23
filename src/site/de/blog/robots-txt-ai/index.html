@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robots.txt für KI: So kontrollieren Sie KI-Crawler und schützen Ihre Inhalte (2026) — seoscore.tools</title>
-  <meta name="description" content="Erfahren Sie, wie Sie KI-Crawler mit robots.txt im Jahr 2026 kontrollieren. Vollständiger Leitfaden zu GPTBot, PerplexityBot, ClaudeBot und Google-Extended. Inklusive Copy-Paste-Konfigurationen und strategischen Empfehlungen.">
+  <title>Robots.txt für KI-Crawler: ChatGPT & Claude blockieren (2026)</title>
+  <meta name="description" content="GPTBot, ClaudeBot, PerplexityBot und Google-Extended mit Copy-Paste-Configs blockieren oder erlauben. Der 2026-Leitfaden in 5 Minuten.">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="seoscore.tools">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="author" content="Atilla Kuruk, SEO & AI Search Specialist">
   <link rel="canonical" href="https://seoscore.tools/de/blog/robots-txt-ai/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
 
   <!-- hreflang -->
   <link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/robots-txt-ai/">
@@ -20,8 +22,8 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Robots.txt für KI: So kontrollieren Sie KI-Crawler und schützen Ihre Inhalte (2026) — seoscore.tools">
-  <meta property="og:description" content="Vollständiger Leitfaden zur Kontrolle von KI-Crawlern mit robots.txt. GPTBot, PerplexityBot, ClaudeBot, Google-Extended — Copy-Paste-Konfigurationen und strategische Empfehlungen.">
+  <meta property="og:title" content="Robots.txt für KI-Crawler: ChatGPT & Claude blockieren (2026)">
+  <meta property="og:description" content="GPTBot, ClaudeBot, PerplexityBot und Google-Extended mit Copy-Paste-Configs blockieren oder erlauben. Der 2026-Leitfaden in 5 Minuten.">
   <meta property="og:url" content="https://seoscore.tools/de/blog/robots-txt-ai/">
   <meta property="og:site_name" content="seoscore.tools">
   <meta property="og:image" content="https://seoscore.tools/og-image.png">
@@ -36,8 +38,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Robots.txt für KI: So kontrollieren Sie KI-Crawler und schützen Ihre Inhalte (2026)">
-  <meta name="twitter:description" content="Vollständiger Leitfaden zur Kontrolle von KI-Crawlern mit robots.txt. Copy-Paste-Konfigurationen für GPTBot, ClaudeBot, PerplexityBot und mehr.">
+  <meta name="twitter:title" content="Robots.txt für KI-Crawler: ChatGPT & Claude blockieren (2026)">
+  <meta name="twitter:description" content="GPTBot, ClaudeBot, PerplexityBot und Google-Extended mit Copy-Paste-Configs blockieren oder erlauben. Der 2026-Leitfaden in 5 Minuten.">
   <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
 
   <!-- Fonts -->
@@ -45,8 +47,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/blog.css">
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -68,8 +70,9 @@
     "datePublished": "2026-03-15T00:00:00+00:00",
     "dateModified": "2026-03-15T00:00:00+00:00",
     "author": {
-      "@type": "Organization",
-      "name": "seoscore.tools",
+      "@type": "Person",
+      "name": "Atilla Kuruk",
+      "jobTitle": "SEO & AI Search Specialist",
       "url": "https://seoscore.tools"
     },
     "publisher": {
@@ -78,8 +81,16 @@
       "url": "https://seoscore.tools",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://seoscore.tools/favicon.svg"
+        "url": "https://seoscore.tools/logo.png",
+        "width": 600,
+        "height": 60
       }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://seoscore.tools/og-image.png",
+      "width": 1200,
+      "height": 630
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -178,7 +189,7 @@
     "name": "Robots.txt für KI: So kontrollieren Sie KI-Crawler und schützen Ihre Inhalte",
     "speakable": {
       "@type": "SpeakableSpecification",
-      "cssSelector": [".article-intro", ".key-definition"]
+      "cssSelector": [".article-intro", ".key-definition", ".qa-text", ".qa-card"]
     }
   }
   </script>
@@ -202,6 +213,7 @@
       <nav class="nav">
         <a href="/" class="nav-link">Scanner</a>
         <a href="/de/blog/" class="nav-link" style="color:var(--accent)">Blog</a>
+
         <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -240,7 +252,7 @@
             <div class="article-meta">
               <span class="article-meta-item">
                 <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
-                15. März 2026
+                <time datetime="2026-03-23">15. März 2026</time>
               </span>
               <span class="article-meta-sep">&middot;</span>
               <span class="article-meta-item">
@@ -320,6 +332,21 @@
             </div>
 
             <!-- Complete AI Crawler Directory -->
+
+            <div class="key-terms" style="background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0;">
+              <h3 style="margin: 0 0 16px; font-size: 1.1rem; color: #6366f1;">Wichtige Begriffe</h3>
+              <dl style="margin: 0;">
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">robots.txt</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">A plain text file at your domain root that tells web crawlers which pages they may or may not access. Formalized as RFC 9309.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">AI Training Crawler</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">A bot that downloads content to train AI models (e.g., GPTBot, CCBot, Bytespider) with no direct traffic benefit to the site owner.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">AI Search Crawler</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">A bot that accesses content in real time to generate cited answers (e.g., ChatGPT-User, PerplexityBot), providing attribution and referral traffic.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">User-Agent String</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">The identifier a bot sends when requesting your pages, used in robots.txt rules to target specific crawlers.</dd>
+              </dl>
+            </div>
+
             <h2 id="ai-crawler-directory">Vollständiges KI-Crawler-Verzeichnis (2026)</h2>
 
             <p>Dies ist die umfassendste verfügbare Referenztabelle für KI-Crawler. Sie deckt jeden großen KI-Bot ab, der möglicherweise Ihre Website besucht, welches Unternehmen ihn betreibt, was er mit Ihren Inhalten macht und ob er standardmäßig zugelassen ist, wenn Sie keine spezifischen Regeln in Ihrer robots.txt haben.</p>
@@ -517,6 +544,12 @@ Sitemap: https://example.com/sitemap.xml  # Bots mitteilen, wo Ihre Sitemap ist<
             </div>
 
             <!-- Decision Process -->
+
+            <blockquote style="border-left: 3px solid #6366f1; margin: 32px 0; padding: 20px 24px; background: rgba(99,102,241,0.06); border-radius: 0 12px 12px 0;">
+              <p style="font-style: italic; color: #e2e8f0; margin: 0 0 8px; line-height: 1.6;">"Most site owners either block all AI crawlers or allow all of them. The smart move is the selective approach: block training bots to protect your IP while keeping search bots open for citations and referral traffic. That balance is where the real competitive advantage lives."</p>
+              <cite style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">— Atilla Kuruk, SEO &amp; AI-Suchspezialist</cite>
+            </blockquote>
+
             <h2 id="decision-process">Der Entscheidungsprozess: Wie Sie entscheiden, was blockiert wird</h2>
 
             <p>Bevor Sie robots.txt-Regeln schreiben, benötigen Sie ein klares Entscheidungs-Framework. Wahllos Bots zu blockieren oder zuzulassen führt ohne Strategie entweder zu Über-Blockierung (KI-Traffic-Verlust) oder Unter-Blockierung (kostenlose Inhaltsweitergabe). Verwenden Sie diesen Fünf-Schritte-Prozess:</p>
@@ -562,10 +595,10 @@ Sitemap: https://example.com/sitemap.xml  # Bots mitteilen, wo Ihre Sitemap ist<
             <!-- CTA 1 -->
             <div class="article-cta article-cta-scan">
               <h3>Prüfen Sie Ihre KI-Crawler-Einstellungen &mdash; Kostenlos</h3>
-              <p>Sehen Sie, welche KI-Crawler Ihre robots.txt derzeit blockiert oder zulässt. 40+ Crawlability-Checks inklusive.</p>
+              <p>Sehen Sie, welche KI-Crawler Ihre robots.txt derzeit blockiert oder zulässt. 50+ Crawlability-Checks inklusive.</p>
               <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
                 <div class="cta-input-wrapper">
-                  <input type="url" name="url" class="cta-scan-input" placeholder="Ihre Website-URL eingeben..." required>
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
                   <button type="submit" class="btn btn-primary cta-scan-btn">Jetzt scannen &rarr;</button>
                 </div>
               </form>
@@ -1023,7 +1056,7 @@ Header set X-Robots-Tag "noai, noimageai"</code></pre>
             <p>Validieren Sie Ihre robots.txt-Datei regelmäßig, um sicherzustellen, dass sie syntaktisch korrekt ist und die beabsichtigten Ergebnisse liefert:</p>
             <ul>
               <li><strong>Google Search Console:</strong> Verwenden Sie den robots.txt-Tester, um zu überprüfen, welche URLs für Googlebot und Google-Extended blockiert sind</li>
-              <li><strong>seoscore.tools:</strong> Unser <a href="https://seoscore.tools">Scanner</a> überprüft Ihre robots.txt-Konfiguration als Teil seiner 136+ SEO-, AEO- und GEO-Checks, einschließlich spezifischer Analyse von KI-Crawler-Regeln</li>
+              <li><strong>seoscore.tools:</strong> Unser <a href="https://seoscore.tools">Scanner</a> überprüft Ihre robots.txt-Konfiguration als Teil seiner 260+ SEO-, AEO- und GEO-Checks, einschließlich spezifischer Analyse von KI-Crawler-Regeln</li>
               <li><strong>Manuelle Tests:</strong> Besuchen Sie regelmäßig Ihre robots.txt-Datei direkt (<code>ihredomain.com/robots.txt</code>), um zu überprüfen, ob die Datei zugänglich und korrekt formatiert ist</li>
             </ul>
 
@@ -1099,7 +1132,7 @@ Header set X-Robots-Tag "noai, noimageai"</code></pre>
               <li><strong>Die selektive Zulassungsstrategie ist für die meisten Unternehmen optimal.</strong> Blockieren Sie Training-Crawler (GPTBot, CCBot, Bytespider, anthropic-ai, Google-Extended, FacebookBot, cohere-ai) und lassen Sie Such-Crawler zu (ChatGPT-User, OAI-SearchBot, PerplexityBot, ClaudeBot). Dies schützt Ihr geistiges Eigentum und erhält gleichzeitig die KI-Suchsichtbarkeit.</li>
               <li><strong>Blockieren Sie niemals Googlebot.</strong> Das Blockieren von Googlebot entfernt Sie vollständig aus der Google-Suche. Verwenden Sie Google-Extended, um das Gemini-KI-Training zu kontrollieren, ohne Ihre Suchrankings oder AI-Overview-Sichtbarkeit zu beeinträchtigen.</li>
               <li><strong>robots.txt ist freiwillig, nicht durchsetzbar.</strong> Seriöse Unternehmen respektieren es, aber illegitime Scraper möglicherweise nicht. Kombinieren Sie robots.txt mit Meta-Robots-Tags, X-Robots-Tag-Headern, Nutzungsbedingungen und serverseitiger Ratenbegrenzung für umfassenden Schutz.</li>
-              <li><strong>Überwachen Sie Ihre Ergebnisse.</strong> Verfolgen Sie KI-Referral-Traffic in GA4 (chatgpt.com, perplexity.ai, claude.ai als Quellen), überprüfen Sie Server-Logs auf KI-Bot-Aktivität und validieren Sie Ihre robots.txt-Konfiguration regelmäßig. Verwenden Sie <a href="https://seoscore.tools">seoscore.tools</a>, um Ihre KI-Crawlability über 136+ Checks zu prüfen.</li>
+              <li><strong>Überwachen Sie Ihre Ergebnisse.</strong> Verfolgen Sie KI-Referral-Traffic in GA4 (chatgpt.com, perplexity.ai, claude.ai als Quellen), überprüfen Sie Server-Logs auf KI-Bot-Aktivität und validieren Sie Ihre robots.txt-Konfiguration regelmäßig. Verwenden Sie <a href="https://seoscore.tools">seoscore.tools</a>, um Ihre KI-Crawlability über 260+ Checks zu prüfen.</li>
               <li><strong>Aktualisieren Sie Ihre Strategie, wenn sich die Landschaft entwickelt.</strong> Regelmäßig tauchen neue KI-Crawler auf. Neue Standards wie ai.txt und TDM-Richtlinien entwickeln sich. Überprüfen und aktualisieren Sie Ihre robots.txt-Konfiguration mindestens vierteljährlich, um aktuell zu bleiben.</li>
             </ol>
 
@@ -1109,7 +1142,7 @@ Header set X-Robots-Tag "noai, noimageai"</code></pre>
               <p>Erhalten Sie SEO-, AEO- &amp; GEO-Scores und sehen Sie genau, wie KI-Crawler mit Ihrer Website interagieren.</p>
               <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
                 <div class="cta-input-wrapper">
-                  <input type="url" name="url" class="cta-scan-input" placeholder="Ihre Website-URL eingeben..." required>
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
                   <button type="submit" class="btn btn-primary cta-scan-btn">Jetzt scannen &rarr;</button>
                 </div>
               </form>
@@ -1122,7 +1155,7 @@ Header set X-Robots-Tag "noai, noimageai"</code></pre>
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </button>
               <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank','width=550,height=420')" aria-label="Auf LinkedIn teilen">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.245 1.445-2.245 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </button>
               <button class="share-btn" onclick="navigator.clipboard.writeText(location.href).then(()=>this.innerHTML='<svg viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;><path d=&quot;M5 8l2 2 4-4&quot; stroke-linecap=&quot;round&quot;/></svg>')" aria-label="Link kopieren">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
@@ -1131,11 +1164,11 @@ Header set X-Robots-Tag "noai, noimageai"</code></pre>
 
             <!-- Author Box -->
             <div class="author-box">
-              <div class="author-avatar">S</div>
+              <div class="author-avatar">AK</div>
               <div class="author-info">
-                <h4>seoscore.tools</h4>
+                <h4>Atilla Kuruk</h4>
                 <p class="author-role">SEO, AEO & GEO Experten</p>
-                <p class="author-bio">Wir entwickeln kostenlose Tools, um Website-Betreibern bei der Optimierung für Suchmaschinen und KI-gestützte Suche zu helfen. Unser Scanner führt 136+ Checks in den Bereichen SEO, AEO und GEO durch und liefert umsetzbare Erkenntnisse.</p>
+                <p class="author-bio">Atilla is the creator of <a href="/">seoscore.tools</a> and the <a href="/seo-autopilot/">SEO Autopilot</a> WordPress plugin. He specializes in SEO, AEO, and GEO optimization for WordPress and e-commerce sites.</p>
               </div>
             </div>
 
@@ -1143,6 +1176,15 @@ Header set X-Robots-Tag "noai, noimageai"</code></pre>
 
           <!-- Related Articles -->
           <section class="related-section">
+            <div class="source-citations" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px 24px; margin: 32px 0;">
+              <h3 style="margin: 0 0 12px; font-size: 1rem; color: rgba(255,255,255,0.6);">Quellen &amp; Referenzen</h3>
+              <ul style="margin: 0; padding-left: 20px; color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.8;">
+                <li><a href="https://www.rfc-editor.org/rfc/rfc9309" target="_blank" rel="noopener" style="color: #818cf8;">RFC 9309 — Robots Exclusion Protocol</a> — The formal internet standard for robots.txt</li>
+                <li><a href="https://platform.openai.com/docs/bots" target="_blank" rel="noopener" style="color: #818cf8;">OpenAI Bot Documentation</a> — Official documentation for GPTBot, ChatGPT-User, and OAI-SearchBot user agents</li>
+                <li><a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" target="_blank" rel="noopener" style="color: #818cf8;">Google Crawlers Overview</a> — Google's reference for Googlebot, Google-Extended, and other Google crawlers</li>
+              </ul>
+            </div>
+
             <h2>Verwandte Artikel</h2>
             <div class="related-grid">
               <div class="related-card">

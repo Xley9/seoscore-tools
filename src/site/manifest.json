@@ -1,0 +1,16 @@
+{
+  "name": "SEO Score Tools",
+  "short_name": "seoscore",
+  "description": "Free SEO, AEO & GEO website scanner with 260+ checks",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}

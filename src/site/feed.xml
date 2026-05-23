@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>seoscore.tools Blog</title>
+  <link>https://seoscore.tools/blog/</link>
+  <description>Expert guides on SEO, AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization). Learn how to optimize for search engines and AI.</description>
+  <language>en</language>
+  <lastBuildDate>Fri, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+  <atom:link href="https://seoscore.tools/feed.xml" rel="self" type="application/rss+xml"/>
+
+<item>
+    <title>Free SEO Scanner: 260+ Checks in 30 Seconds – No Signup Required</title>
+    <link>https://seoscore.tools/blog/free-seo-scanner/</link>
+    <guid>https://seoscore.tools/blog/free-seo-scanner/</guid>
+    <pubDate>Fri, 04 Apr 2026 00:00:00 +0000</pubDate>
+    <description>Compare the best free SEO scanners in 2026. See why 260+ automated checks (SEO + AEO + GEO + Core Web Vitals) beat traditional tools.</description>
+  </item>
+
+  <item>
+    <title>Why AI Companies Pay $320K for SEO Experts (2026 Job Analysis)</title>
+    <link>https://seoscore.tools/blog/ai-companies-hiring-seo/</link>
+    <guid>https://seoscore.tools/blog/ai-companies-hiring-seo/</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    <description>Anthropic, OpenAI, and Perplexity are hiring SEO leads at $200K-$320K. We analyzed their job postings to reveal what AEO and GEO skills they demand.</description>
+  </item>
+
+  <item>
+    <title>How OpenAI Gets 76.5M Organic Visits: Their $600K SEO Strategy Decoded</title>
+    <link>https://seoscore.tools/blog/openai-seo-strategy/</link>
+    <guid>https://seoscore.tools/blog/openai-seo-strategy/</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    <description>OpenAI invested $600K in SEO talent and gets 76.5M monthly organic visits. Here's how they do it and what you can learn.</description>
+  </item>
+
+  <item>
+    <title>User-Generated Content as SEO Strategy: 938K Monthly Organic Visits (Case Study)</title>
+    <link>https://seoscore.tools/blog/ugc-seo-strategy/</link>
+    <guid>https://seoscore.tools/blog/ugc-seo-strategy/</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    <description>How indexable user-generated content drives 938K monthly organic visits. Learn the UGC-SEO strategy used by OpenAI, Reddit, and Stack Overflow.</description>
+  </item>
+
+  <item>
+    <title>LLMS.txt: Complete Guide to the New robots.txt for AI Crawlers</title>
+    <link>https://seoscore.tools/blog/llms-txt-guide/</link>
+    <guid>https://seoscore.tools/blog/llms-txt-guide/</guid>
+    <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+    <description>LLMS.txt is the new standard for telling AI crawlers how to use your content. Complete guide with setup instructions, audit checklist, and configuration for GPTBot, ClaudeBot, and Google-Extended.</description>
+  </item>
+
+  <item>
+    <title>How to Get Cited in Google AI Overviews: 12 Checks Your Website Must Pass</title>
+    <link>https://seoscore.tools/blog/get-cited-ai-overviews/</link>
+    <guid>https://seoscore.tools/blog/get-cited-ai-overviews/</guid>
+    <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+    <description>Data-driven guide to getting cited in Google AI Overviews. 12 specific checks covering FAQ schema, E-E-A-T, AI crawlers, LLMS.txt, and more.</description>
+  </item>
+
+  <item>
+    <title>Google March 2026 Core Update: Complete Website Audit Checklist</title>
+    <link>https://seoscore.tools/blog/google-core-update-recovery/</link>
+    <guid>https://seoscore.tools/blog/google-core-update-recovery/</guid>
+    <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+    <description>Complete recovery checklist for the Google March 2026 Core Update. 30 audit checks across SEO, AEO and GEO to diagnose traffic drops and recover rankings fast.</description>
+  </item>
+
+  <item>
+    <title>Best Free SEO Audit Tools 2026 Compared: Which Ones Check AEO &amp; GEO?</title>
+    <link>https://seoscore.tools/blog/best-free-seo-audit-tools/</link>
+    <guid>https://seoscore.tools/blog/best-free-seo-audit-tools/</guid>
+    <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+    <description>Honest comparison of 8 free SEO audit tools in 2026. See which tools check AEO and GEO readiness, pricing, total checks, auto-fix, and WordPress plugin support.</description>
+  </item>
+
+  <item>
+    <title>AI Visibility Audit: How to Measure Your Website's Presence in AI Search</title>
+    <link>https://seoscore.tools/blog/ai-visibility-audit/</link>
+    <guid>https://seoscore.tools/blog/ai-visibility-audit/</guid>
+    <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+    <description>Complete AI visibility audit guide for 2026. Learn how to measure and improve your website's presence in ChatGPT, Google AI Mode, Perplexity, and other AI search platforms.</description>
+  </item>
+
+</channel>
+</rss>

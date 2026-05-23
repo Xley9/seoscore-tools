@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Autopilot: WordPress плагин, авто-исправляющий 260+ SEO/AEO/GEO проблем</title>
+  <meta name="description" content="Единственный WordPress плагин, оценивающий + авто-исправляющий SEO, AEO и GEO в один клик. 45+ автофиксов, Claude AI. $79 единоразово, без подписки.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#4F46E5">
+  <meta name="author" content="seoscore.tools">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="canonical" href="https://seoscore.tools/ru/seo-autopilot/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="en" href="https://seoscore.tools/seo-autopilot/">
+  <link rel="alternate" hreflang="de" href="https://seoscore.tools/de/seo-autopilot/">
+  <link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/seo-autopilot/">
+  <link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/seo-autopilot/">
+  <link rel="alternate" hreflang="es" href="https://seoscore.tools/es/seo-autopilot/">
+  <link rel="alternate" hreflang="x-default" href="https://seoscore.tools/seo-autopilot/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SEO Autopilot: WordPress плагин, авто-исправляющий 260+ SEO/AEO/GEO проблем">
+  <meta property="og:description" content="Единственный WordPress плагин, оценивающий + авто-исправляющий SEO, AEO и GEO в один клик. 45+ автофиксов, Claude AI. $79 единоразово, без подписки.">
+  <meta property="og:url" content="https://seoscore.tools/ru/seo-autopilot/">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO Autopilot: WordPress плагин, авто-исправляющий 260+ SEO/AEO/GEO проблем">
+  <meta name="twitter:description" content="Единственный WordPress плагин, оценивающий + авто-исправляющий SEO, AEO и GEO в один клик. 45+ автофиксов, Claude AI. $79 единоразово, без подписки.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.min.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JP76DPK4GK');
+    // Auto-track outbound clicks to Gumroad (Plugin Funnel)
+    document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('a[href*="gumroad.com"]').forEach(l=>{l.addEventListener('click',()=>{const h=l.getAttribute('href')||'',d=h.includes('-pro')?'pro':(h.includes('-free')?'free':'other');let o='unknown';const p=l.closest('section, header, footer, [id]');if(p)o=p.id||p.tagName.toLowerCase();gtag('event','click_gumroad',{destination:d,location:o,url:h,page_path:window.location.pathname});});});});
+  </script>
+
+  <!-- Schema.org — SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SEO Autopilot Pro",
+    "description": "The only WordPress plugin that scores SEO, AEO & GEO and auto-fixes 45+ issues in one click. AI content generation via Claude API included.",
+    "url": "https://seoscore.tools/seo-autopilot/",
+    "applicationCategory": "WordPress Plugin",
+    "operatingSystem": "WordPress 6.x",
+    "offers": {
+      "@type": "Offer",
+      "price": "79",
+      "priceCurrency": "USD",
+      "url": "https://atilla45.gumroad.com/l/seo-autopilot-pro"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools"
+    },
+    "featureList": [
+      "260+ SEO/AEO/GEO checks",
+      "45+ one-click auto-fixes",
+      "AI-powered content generation",
+      "Bulk site analysis",
+      "WooCommerce support",
+      "PDF & CSV reports"
+    ],
+    "softwareVersion": "1.3.3",
+    "datePublished": "2026-03-21"
+  }
+  </script>
+
+  <!-- Schema.org — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does SEO Autopilot fix automatically?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO Autopilot auto-fixes 45+ issues including meta tags, Open Graph tags, Twitter Cards, canonical URLs, HTTPS enforcement, schema markup (Organization, Product, FAQ, HowTo, Speakable), security headers, image ALT text, script deferring, font preconnect, theme-color, and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a subscription or one-time payment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO Autopilot Pro is a one-time payment of $79. No monthly fees, no annual renewal. You get lifetime access to all current and future features. This is an early adopter price that will increase as new features are added."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it work with WooCommerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. SEO Autopilot has full WooCommerce support including Product schema, price markup, availability status, reviews, and product-specific meta tags. It can scan and fix all your product pages in bulk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is this different from Yoast or RankMath?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yoast and RankMath only check traditional SEO. SEO Autopilot is the only WordPress plugin that also scores AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) and auto-fixes 45+ issues in one click — ensuring your site is optimized for AI search engines like ChatGPT, Perplexity, and Google AI Overview."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What AI features does it include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO Autopilot uses your Claude API key to generate FAQ sections, content summaries, expert quotes, key-value data, comparison tables, and HowTo steps. You only pay for what you use (~$0.01-0.05 per page). These AI-generated sections are specifically designed to boost your AEO and GEO scores."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a Claude API key? Is it worth it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We strongly recommend it. Without an API key, SEO Autopilot applies 45+ technical auto-fixes which boost your SEO score from ~44 to ~79. But the AI content features (FAQ sections, expert summaries, comparison tables, HowTo steps) are what push AEO from 28 to 90+ and GEO from 13 to 83+ — the scores that determine whether AI search engines cite your site. A Claude API key is free to create and costs ~$0.01-0.05 per page processed."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://seoscore.tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "SEO Autopilot",
+        "item": "https://seoscore.tools/seo-autopilot/"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .lp-hero { padding: 100px 0 80px; text-align: center; }
+    .lp-hero h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 800; line-height: 1.15; margin-bottom: 16px; letter-spacing: -1px; }
+    .lp-hero h1 span { background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .lp-hero .lp-sub { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px; line-height: 1.7; }
+    .lp-hero .lp-badge { display: inline-block; padding: 6px 16px; background: var(--accent-light); color: var(--accent); font-size: 13px; font-weight: 600; border-radius: 100px; margin-bottom: 20px; }
+    .lp-cta-row { display: flex; justify-content: center; gap: 12px; margin-bottom: 16px; }
+    .lp-trust { font-size: 13px; color: var(--text-muted); }
+
+    .lp-problem { padding: 60px 0; background: var(--bg-card-hover); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .lp-problem h2 { text-align: center; font-size: 28px; font-weight: 800; margin-bottom: 16px; }
+    .lp-problem p { text-align: center; font-size: 16px; color: var(--text-secondary); max-width: 620px; margin: 0 auto; line-height: 1.7; }
+
+    .lp-features { padding: 80px 0; }
+    .lp-features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .lp-feat-card { padding: 28px 24px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
+    .lp-feat-card .feat-icon { font-size: 28px; margin-bottom: 12px; }
+    .lp-feat-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .lp-feat-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    .lp-scores { padding: 60px 0; text-align: center; }
+    .lp-scores h2 { font-size: 28px; font-weight: 800; margin-bottom: 40px; }
+    .lp-score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 700px; margin: 0 auto; }
+    .lp-score-card { padding: 28px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
+    .lp-score-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 16px; color: var(--text-secondary); }
+    .lp-score-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-family: 'JetBrains Mono', monospace; }
+    .lp-score-row:last-child { border-bottom: none; }
+    .lp-score-row .lbl { font-size: 13px; font-weight: 700; color: var(--text-secondary); }
+    .lp-score-row .before { font-size: 20px; color: var(--danger); text-decoration: line-through; opacity: 0.6; }
+    .lp-score-row .arrow { color: var(--text-muted); font-size: 16px; }
+    .lp-score-row .after { font-size: 24px; font-weight: 800; color: var(--success); }
+
+    .lp-how { padding: 80px 0; background: var(--bg-card-hover); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .lp-how h2 { text-align: center; font-size: 28px; font-weight: 800; margin-bottom: 40px; }
+    .lp-steps { display: flex; gap: 20px; max-width: 800px; margin: 0 auto; }
+    .lp-step { flex: 1; text-align: center; padding: 24px 16px; }
+    .lp-step .step-n { width: 40px; height: 40px; border-radius: 50%; background: var(--gradient); color: white; font-size: 16px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+    .lp-step h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .lp-step p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+
+    .lp-pricing { padding: 80px 0; text-align: center; }
+    .lp-pricing h2 { font-size: 28px; font-weight: 800; margin-bottom: 40px; }
+    .lp-price-card { max-width: 420px; margin: 0 auto; padding: 40px 32px; background: var(--bg-card); border: 2px solid var(--accent); border-radius: 20px; box-shadow: var(--shadow-glow); }
+    .lp-price-card .price-amount { font-family: 'JetBrains Mono', monospace; font-size: 56px; font-weight: 800; color: var(--text); line-height: 1; }
+    .lp-price-card .price-period { font-size: 15px; color: var(--text-muted); margin-bottom: 24px; }
+    .lp-price-card .price-features { list-style: none; text-align: left; margin-bottom: 28px; }
+    .lp-price-card .price-features li { padding: 8px 0; font-size: 14px; color: var(--text-secondary); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+    .lp-price-card .price-features li:last-child { border-bottom: none; }
+    .lp-price-card .price-features .check { color: var(--success); font-weight: 700; flex-shrink: 0; }
+
+    .lp-compare { padding: 60px 0; }
+    .lp-compare h2 { text-align: center; font-size: 28px; font-weight: 800; margin-bottom: 16px; }
+    .lp-compare .section-subtitle { text-align: center; font-size: 15px; color: var(--text-secondary); margin-bottom: 32px; }
+
+    .lp-faq { padding: 80px 0; background: var(--bg-card-hover); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+    .lp-final-cta { padding: 80px 0; text-align: center; background: var(--gradient); color: white; }
+    .lp-final-cta h2 { font-size: clamp(24px, 3.5vw, 36px); font-weight: 800; margin-bottom: 16px; }
+    .lp-final-cta p { font-size: 17px; opacity: 0.9; margin-bottom: 28px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    @media (max-width: 768px) {
+      .lp-features-grid { grid-template-columns: 1fr; }
+      .lp-score-grid { grid-template-columns: 1fr; }
+      .lp-steps { flex-direction: column; }
+      .lp-cta-row { flex-direction: column; align-items: center; }
+      .lp-cta-row .btn { width: 100%; max-width: 280px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 6 L16 16 L24 20" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="2.5" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-link">Сканер</a>
+        <a href="/blog/" class="nav-link">Блог</a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" style="max-width:1200px;margin:0 auto;padding:12px 24px;font-size:13px;color:var(--text-muted)">
+    <a href="/" style="color:var(--text-muted);text-decoration:none">Главная</a> &rsaquo; <span>SEO Autopilot</span>
+  </nav>
+
+  <!-- Hero -->
+  <section class="lp-hero">
+    <div class="container">
+      <div class="lp-badge">WordPress Плагин &middot; Бесплатно &amp; Pro (разово $79)</div>
+      <h1>Исправьте 260+ SEO-проблем <span>автоматически</span></h1>
+      <p class="lp-sub">Единственный WordPress-плагин, который оценивает и исправляет <strong>SEO</strong>, <strong>AEO</strong> и <strong>GEO</strong> одновременно. 45+ автоматических исправлений в один клик и AI-генерация контента через Claude API. Создан командой seoscore.tools.</p>
+      <div class="lp-cta-row">
+        <a href="https://atilla45.gumroad.com/l/seo-autopilot-free" class="btn btn-outline" target="_blank" rel="noopener">Скачать бесплатно</a>
+        <a href="https://atilla45.gumroad.com/l/seo-autopilot-free" class="btn btn-primary" target="_blank" rel="noopener">Уведомить меня при запуске Pro</a>
+      </div>
+      <p class="lp-trust">Бесплатно: 163 проверки &middot; Pro: + исправления в 1 клик + AI-контент + массовый анализ &middot; Без подписки</p>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="lp-problem">
+    <div class="container">
+      <h2>Вы просканировали сайт. Нашли проблемы. Что дальше?</h2>
+      <p>Вы использовали seoscore.tools (или любой другой SEO-сканер) и обнаружили десятки проблем: отсутствующие мета-теги, нет разметки Schema, низкие показатели AEO, нулевая GEO-оптимизация. Ручное исправление занимает часы на каждую страницу. Умножьте это на 50, 100 или 500 страниц, и это станет полноценной работой. SEO Autopilot — это WordPress-плагин, который исправляет большинство этих проблем автоматически. Установите, просканируйте сайт, нажмите «Исправить все» — готово.</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="lp-features" id="features">
+    <div class="container">
+      <h2 class="section-title">Все, что нужно для доминирования в поиске</h2>
+      <div class="lp-features-grid">
+        <div class="lp-feat-card">
+          <div class="feat-icon">&#9889;</div>
+          <h3>45+ автоматических исправлений в один клик</h3>
+          <p>Мета-теги, канонические URL, Open Graph, Twitter Cards, разметка Schema, заголовки безопасности, ALT-текст изображений, отложенная загрузка скриптов, предзагрузка шрифтов — все исправляется автоматически.</p>
+        </div>
+        <div class="lp-feat-card" style="border-color:var(--accent);box-shadow:var(--shadow-glow)">
+          <div class="feat-icon">&#129302;</div>
+          <h3>AI-генерация контента <span style="background:var(--accent);color:white;font-size:11px;padding:2px 8px;border-radius:100px;vertical-align:middle;margin-left:6px">Рекомендуется</span></h3>
+          <p><strong>Именно здесь происходит настоящий рост показателей.</strong> Добавьте свой ключ Claude API, и плагин сгенерирует разделы FAQ, резюме контента, экспертные цитаты, сравнительные таблицы и пошаговые инструкции HowTo — контент, который поднимает AEO с 28 до 90 и GEO с 13 до 83. Без него вы получите 45+ технических исправлений. С ним вы раскрываете полный потенциал. Стоимость ~$0.01-0.05 за страницу.</p>
+        </div>
+        <div class="lp-feat-card">
+          <div class="feat-icon">&#128200;</div>
+          <h3>3 показателя: SEO + AEO + GEO</h3>
+          <p>Те же 245 проверок, что и в seoscore.tools — встроены прямо в вашу панель управления WordPress. Отслеживайте все три показателя для каждой страницы и точно знайте, что нужно исправить.</p>
+        </div>
+        <div class="lp-feat-card">
+          <div class="feat-icon">&#128640;</div>
+          <h3>Массовый анализ сайта</h3>
+          <p>Сканируйте весь сайт сразу — все страницы, записи, товары. Получите полный обзор SEO-здоровья сайта с сортировкой результатов и приоритетными рекомендациями.</p>
+        </div>
+        <div class="lp-feat-card">
+          <div class="feat-icon">&#128722;</div>
+          <h3>Готов для WooCommerce</h3>
+          <p>Полная поддержка страниц товаров, включая разметку Product Schema, цены, наличие, отзывы и мета-теги для товаров. Оптимизирован для SEO интернет-магазинов.</p>
+        </div>
+        <div class="lp-feat-card">
+          <div class="feat-icon">&#128196;</div>
+          <h3>Отчеты и экспорт</h3>
+          <p>Создавайте профессиональные PDF-отчеты и CSV-экспорт. Делитесь результатами с клиентами или командой. Отслеживайте прогресс с историей сканирований.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Scores -->
+  <section class="lp-scores">
+    <div class="container">
+      <h2>Реальные результаты: до и после SEO Autopilot</h2>
+      <p style="color:var(--text-secondary);max-width:600px;margin:0 auto 32px;font-size:15px;line-height:1.7">Одни только автоматические исправления значительно повышают ваш SEO-показатель. <strong>Добавьте ключ Claude API, чтобы раскрыть полный потенциал AEO и GEO</strong> — именно здесь происходит максимальный рост.</p>
+      <div class="lp-score-grid">
+        <div class="lp-score-card">
+          <h3>Страница товара <span style="font-size:12px;color:var(--accent)">(Автоисправление + AI-контент)</span></h3>
+          <div class="lp-score-row">
+            <span class="lbl">SEO</span>
+            <span class="before">44</span>
+            <span class="arrow">&rarr;</span>
+            <span class="after">85</span>
+          </div>
+          <div class="lp-score-row">
+            <span class="lbl">AEO</span>
+            <span class="before">28</span>
+            <span class="arrow">&rarr;</span>
+            <span class="after">90</span>
+          </div>
+          <div class="lp-score-row">
+            <span class="lbl">GEO</span>
+            <span class="before">13</span>
+            <span class="arrow">&rarr;</span>
+            <span class="after">83</span>
+          </div>
+        </div>
+        <div class="lp-score-card">
+          <h3>Блог-пост <span style="font-size:12px;color:var(--accent)">(Автоисправление + AI-контент)</span></h3>
+          <div class="lp-score-row">
+            <span class="lbl">SEO</span>
+            <span class="before">64</span>
+            <span class="arrow">&rarr;</span>
+            <span class="after">98</span>
+          </div>
+          <div class="lp-score-row">
+            <span class="lbl">AEO</span>
+            <span class="before">53</span>
+            <span class="arrow">&rarr;</span>
+            <span class="after">95</span>
+          </div>
+          <div class="lp-score-row">
+            <span class="lbl">GEO</span>
+            <span class="before">35</span>
+            <span class="arrow">&rarr;</span>
+            <span class="after">93</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="lp-how">
+    <div class="container">
+      <h2>Как это работает</h2>
+      <div class="lp-steps">
+        <div class="lp-step">
+          <div class="step-n">1</div>
+          <h3>Установите плагин</h3>
+          <p>Загрузите ZIP-файл в WordPress Админ &rarr; Плагины &rarr; Добавить новый &rarr; Загрузить. Активируйте.</p>
+        </div>
+        <div class="lp-step">
+          <div class="step-n">2</div>
+          <h3>Настройте</h3>
+          <p>Перейдите в SEO Autopilot в панели управления WordPress. Добавьте ваш ключ Claude API для AI-контента (настоятельно рекомендуется).</p>
+        </div>
+        <div class="lp-step">
+          <div class="step-n">3</div>
+          <h3>Сканируйте</h3>
+          <p>Запустите полное сканирование сайта. Получите показатели SEO, AEO и GEO для каждой страницы с 245 детальными проверками.</p>
+        </div>
+        <div class="lp-step">
+          <div class="step-n">4</div>
+          <h3>Автоисправление</h3>
+          <p>Нажмите «Исправить все», чтобы применить 45+ исправлений. Мета-теги, Schema, OG-теги — все за секунды с автоматическим резервным копированием.</p>
+        </div>
+        <div class="lp-step">
+          <div class="step-n">5</div>
+          <h3>AI-контент <span style="font-size:11px;color:var(--accent)">(Настоятельно рекомендуется)</span></h3>
+          <p>Добавьте ключ Claude API для генерации разделов FAQ, резюме и экспертного контента. <strong>Именно этот шаг поднимает показатели AEO и GEO до 90+.</strong> Стоимость всего ~$0.01-0.05 за страницу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Video Demo -->
+  <section class="lp-video" style="padding:60px 0;text-align:center">
+    <div class="container">
+      <h2 style="font-size:28px;font-weight:800;margin-bottom:16px">Смотрите демо</h2>
+      <p style="color:var(--text-secondary);max-width:560px;margin:0 auto 32px;font-size:15px;line-height:1.7">2-минутное демо: установка, сканирование, исправление и AI-контент — всё в WordPress.</p>
+      <div style="max-width:720px;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:16/9">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K4UwUQBqLiI" title="SEO Autopilot Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing -->
+  <section class="lp-pricing" id="pricing">
+    <div class="container">
+      <h2>Простые цены. Без подписки.</h2>
+      <div class="lp-price-card">
+        <div class="price-amount">$79</div>
+        <div class="price-period">Единоразовый платеж &middot; Пожизненный доступ &middot; Все функции включены</div>
+        <ul class="price-features">
+          <li><span class="check">&#10003;</span> WordPress-плагин (совместим с WP 6.x)</li>
+          <li><span class="check">&#10003;</span> 245 проверок SEO/AEO/GEO</li>
+          <li><span class="check">&#10003;</span> 45+ автоматических исправлений в один клик</li>
+          <li><span class="check">&#10003;</span> Работает из панели управления WordPress</li>
+          <li><span class="check">&#10003;</span> <strong>AI-генерация контента (подключите ваш ключ Claude API — настоятельно рекомендуется для максимальных показателей)</strong></li>
+          <li><span class="check">&#10003;</span> Поддержка WooCommerce + OpenCart</li>
+          <li><span class="check">&#10003;</span> Автоматическое резервное копирование перед каждым исправлением</li>
+          <li><span class="check">&#10003;</span> PDF- и CSV-отчеты</li>
+          <li><span class="check">&#10003;</span> Все будущие обновления включены</li>
+        </ul>
+        <a href="https://atilla45.gumroad.com/l/seo-autopilot-free" class="btn btn-primary" target="_blank" rel="noopener" style="width:100%;justify-content:center;font-size:17px;padding:16px">Скачать Free — Получить уведомление о Pro</a>
+        <a href="https://atilla45.gumroad.com/l/seo-autopilot-free" class="btn btn-outline" target="_blank" rel="noopener" style="width:100%;justify-content:center;font-size:15px;padding:14px;margin-top:10px">Или скачайте бесплатную версию</a>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:12px;text-align:center">Цена для ранних пользователей — будет расти по мере добавления новых функций. Зафиксируйте $79 сегодня и получите пожизненный доступ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="lp-compare">
+    <div class="container">
+      <h2>SEO Autopilot vs Конкуренты</h2>
+      <p class="section-subtitle">Единственный WordPress-плагин, который оптимизирует все три направления: SEO, AEO и GEO.</p>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Функция</th>
+              <th class="highlight-col">SEO Autopilot</th>
+              <th>Yoast SEO</th>
+              <th>RankMath</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SEO-оценка</td>
+              <td class="highlight-col">&#10003; (68 проверок)</td>
+              <td>&#10003; (ограниченно)</td>
+              <td>&#10003; (ограниченно)</td>
+            </tr>
+            <tr>
+              <td>AEO-оценка</td>
+              <td class="highlight-col">&#10003; (50 проверок)</td>
+              <td>&#10007;</td>
+              <td>&#10007;</td>
+            </tr>
+            <tr>
+              <td>GEO-оценка</td>
+              <td class="highlight-col">&#10003; (55 проверок)</td>
+              <td>&#10007;</td>
+              <td>&#10007;</td>
+            </tr>
+            <tr>
+              <td>Автоисправление</td>
+              <td class="highlight-col">45+ исправлений</td>
+              <td>Только вручную</td>
+              <td>Только вручную</td>
+            </tr>
+            <tr>
+              <td>AI-генерация контента</td>
+              <td class="highlight-col">&#10003; (Claude AI)</td>
+              <td>&#10007;</td>
+              <td>&#10003; (базовая)</td>
+            </tr>
+            <tr>
+              <td>FAQ Schema</td>
+              <td class="highlight-col">Автогенерация</td>
+              <td>Вручную</td>
+              <td>Вручную</td>
+            </tr>
+            <tr>
+              <td>HowTo Schema</td>
+              <td class="highlight-col">Автогенерация</td>
+              <td>&#10007;</td>
+              <td>Вручную</td>
+            </tr>
+            <tr>
+              <td>Speakable Schema</td>
+              <td class="highlight-col">&#10003;</td>
+              <td>&#10007;</td>
+              <td>&#10007;</td>
+            </tr>
+            <tr>
+              <td>Массовый анализ</td>
+              <td class="highlight-col">&#10003;</td>
+              <td>&#10007;</td>
+              <td>Ограниченно</td>
+            </tr>
+            <tr>
+              <td>Стоимость</td>
+              <td class="highlight-col">$79 единоразово</td>
+              <td>$99/год</td>
+              <td>$59/год</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="lp-faq">
+    <div class="container">
+      <h2 class="section-title">Часто задаваемые вопросы</h2>
+      <div class="faq-list" style="max-width:760px;margin:0 auto">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Что SEO Autopilot исправляет автоматически?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>SEO Autopilot автоматически исправляет 45+ проблем, включая мета-теги, теги Open Graph, Twitter Cards, канонические URL, принудительный HTTPS, разметку Schema (Organization, Product, FAQ, HowTo, Speakable), заголовки безопасности, ALT-текст изображений, отложенную загрузку скриптов, предзагрузку шрифтов, theme-color, favicon, hreflang и многое другое.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Это подписка или единоразовый платеж?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>SEO Autopilot Pro — это единоразовый платеж $79: без ежемесячной оплаты, без ежегодного продления. Вы получаете пожизненный доступ ко всем текущим и будущим функциям. Это цена для ранних пользователей, которая будет расти по мере добавления новых функций (генератор блогов, исследование ключевых слов, локальное SEO). Купите сейчас, чтобы навсегда зафиксировать минимальную цену.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Работает ли с WooCommerce?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Да. SEO Autopilot полностью поддерживает WooCommerce, включая разметку Product Schema, цены, статус наличия, отзывы и мета-теги для товаров. Плагин может сканировать и исправлять все страницы товаров массово.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Чем это отличается от Yoast или RankMath?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yoast и RankMath проверяют только традиционное SEO. SEO Autopilot — единственный WordPress-плагин, который также оценивает AEO (оптимизацию для поисковых систем ответов) и GEO (оптимизацию для генеративных поисковых систем), гарантируя, что ваш сайт оптимизирован для AI-поисковиков, таких как ChatGPT, Perplexity и Google AI Overview. Кроме того, он автоматически исправляет 45+ проблем в один клик, а не просто сообщает о них.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Какие AI-функции включены?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>SEO Autopilot использует ваш ключ Claude API для генерации разделов FAQ, резюме контента, экспертных цитат, структурированных данных, сравнительных таблиц и пошаговых инструкций HowTo. Вы платите только за то, что используете (~$0.01-0.05 за страницу). Эти AI-генерированные разделы специально разработаны для повышения ваших показателей AEO и GEO, делая контент более структурированным и цитируемым для AI-поисковых систем.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Нужен ли мне ключ Claude API? Стоит ли оно того?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Мы настоятельно рекомендуем.</strong> Без API-ключа SEO Autopilot применяет 45+ технических автоматических исправлений (мета-теги, Schema, OG-теги, заголовки безопасности и т.д.), которые обычно повышают ваш SEO-показатель с ~44 до ~79. Это уже значительное улучшение. Но настоящая сила — в AI-функциях генерации контента: разделы FAQ, экспертные резюме, сравнительные таблицы и пошаговые инструкции HowTo. Именно они поднимают ваш показатель AEO с 28 до 90+ и GEO с 13 до 83+ — показатели, которые определяют, будут ли AI-поисковики, такие как ChatGPT и Google AI Overview, ссылаться на ваш сайт. Ключ Claude API можно создать бесплатно на <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a>, а оплата — только за обработанные страницы (~$0.01-0.05). Для сайта из 50 страниц это примерно $0.50-2.50. Окупаемость колоссальная.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="lp-final-cta">
+    <div class="container">
+      <h2>Готовы исправить SEO на автопилоте?</h2>
+      <p>45+ автоматических исправлений включены. Добавьте ключ Claude API, чтобы разблокировать AI-генерацию контента и достичь показателей AEO 90+ / GEO 83+. Общая стоимость для сайта из 50 страниц: около $1.</p>
+      <div class="lp-cta-row">
+        <a href="https://atilla45.gumroad.com/l/seo-autopilot-free" class="btn btn-outline" target="_blank" rel="noopener" style="font-size:15px;padding:14px 28px;border-color:rgba(255,255,255,0.4);color:white">Скачать бесплатно</a>
+        <a href="https://atilla45.gumroad.com/l/seo-autopilot-free" class="btn btn-white" target="_blank" rel="noopener" style="font-size:17px;padding:16px 32px">Скачать Free — Получить уведомление о Pro</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+        <p class="footer-tagline">Бесплатный сканер SEO, AEO и GEO</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Сканер</a>
+        <a href="/blog/">Блог</a>
+        <a href="/ru/seo-autopilot/">Плагин SEO Autopilot</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Политика конфиденциальности</a>
+        <a href="/terms.html">Terms & Impressum</a>
+        <a href="mailto:contact@seoscore.tools">Contact</a>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 seoscore.tools. Все права защищены.</span>
+        <span class="footer-built">Работает на Cloudflare Workers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    function setTheme(t) { html.setAttribute('data-theme', t); localStorage.setItem('seoscore-theme', t); }
+    themeToggle.addEventListener('click', () => setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
+    const saved = localStorage.getItem('seoscore-theme');
+    if (saved) setTheme(saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+  </script>
+</body>
+</html>

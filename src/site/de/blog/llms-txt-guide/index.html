@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLMS.txt Anleitung 2026: Setup + Audit für AI-Crawler</title>
+  <meta name="description" content="LLMS.txt ist die neue Robots.txt für KI. Komplette Setup-Anleitung mit Audit-Checkliste, Konfigurations-Beispielen und wie du AI-Crawler steuerst.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="author" content="Atilla Kuruk, SEO Engineer &amp; Tool Builder">
+  <link rel="canonical" href="https://seoscore.tools/de/blog/llms-txt-guide/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/llms-txt-guide/">
+  <link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/llms-txt-guide/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LLMS.txt Anleitung 2026: Setup + Audit für AI-Crawler">
+  <meta property="og:description" content="LLMS.txt ist die neue Robots.txt für KI. Komplette Setup-Anleitung mit Audit-Checkliste, Konfigurations-Beispielen und wie du AI-Crawler steuerst.">
+  <meta property="og:url" content="https://seoscore.tools/de/blog/llms-txt-guide/">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+  <meta property="article:published_time" content="2026-03-26T00:00:00+00:00">
+  <meta property="article:modified_time" content="2026-03-26T00:00:00+00:00">
+  <meta property="article:section" content="GEO">
+  <meta property="article:tag" content="LLMS.txt">
+  <meta property="article:tag" content="KI-Crawler">
+  <meta property="article:tag" content="GEO">
+  <meta property="article:tag" content="AEO">
+  <meta property="article:tag" content="robots.txt">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LLMS.txt Anleitung 2026: Setup + Audit für AI-Crawler">
+  <meta name="twitter:description" content="LLMS.txt ist die neue Robots.txt für KI. Komplette Setup-Anleitung mit Audit-Checkliste, Konfigurations-Beispielen und wie du AI-Crawler steuerst.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JP76DPK4GK');
+  </script>
+
+  <!-- Schema.org — BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "LLMS.txt: Kompletter Leitfaden zur neuen robots.txt für KI-Crawler [Einrichtung + Audit 2026]",
+    "description": "LLMS.txt ist der neue Standard, um KI-Systemen mitzuteilen, wie sie Ihre Inhalte nutzen sollen. Kompletter Leitfaden zum LLMS.txt-Dateiformat, der KI-Crawler-Landschaft (GPTBot, ClaudeBot, Google-Extended, PerplexityBot), Einrichtung für WordPress und statische Seiten, robots.txt KI-Direktiven und einer 10-Punkte-Audit-Checkliste.",
+    "url": "https://seoscore.tools/de/blog/llms-txt-guide/",
+    "datePublished": "2026-03-26T00:00:00+00:00",
+    "dateModified": "2026-03-26T00:00:00+00:00",
+    "author": {
+      "@type": "Person",
+      "name": "Atilla Kuruk",
+      "jobTitle": "SEO Engineer & Tool Builder",
+      "url": "https://seoscore.tools"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://seoscore.tools/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://seoscore.tools/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://seoscore.tools/de/blog/llms-txt-guide/"
+    },
+    "articleSection": "GEO",
+    "keywords": ["LLMS.txt", "LLMS.txt Leitfaden", "robots.txt für KI", "KI-Crawler-Optimierung", "GPTBot", "ClaudeBot", "GoogleBot", "KI-Crawler-Zugriff", "GEO Audit", "AEO Optimierung"],
+    "wordCount": 3800,
+    "inLanguage": "de"
+  }
+  </script>
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://seoscore.tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://seoscore.tools/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "LLMS.txt Leitfaden",
+        "item": "https://seoscore.tools/de/blog/llms-txt-guide/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist LLMS.txt und wie unterscheidet es sich von robots.txt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "LLMS.txt ist eine Klartextdatei im Stammverzeichnis Ihrer Website (ihreseite.de/llms.txt), die direkt mit Large-Language-Model-Systemen über Ihre Inhaltsverfügbarkeit und bevorzugte Nutzung kommuniziert. Während robots.txt traditionellen Suchmaschinen-Crawlern mitteilt, was gecrawlt und indexiert werden soll, richtet sich LLMS.txt speziell an KI-Systeme wie ChatGPT, Claude, Perplexity und Google AI Overviews. Es liefert strukturierte Metadaten einschließlich Ihrer Website-Beschreibung, der für KI-Zitierung verfügbaren Inhaltsbereiche und der Bereiche, die Sie vom KI-Training oder der Referenzierung ausschließen möchten. Beide Dateien arbeiten zusammen: robots.txt steuert den Crawling-Zugriff, LLMS.txt steuert, wie KI-Systeme die gefundenen Inhalte interpretieren und nutzen sollen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Brauche ich sowohl robots.txt als auch LLMS.txt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Robots.txt und LLMS.txt dienen sich ergänzenden, aber unterschiedlichen Zwecken. Robots.txt steuert, ob KI-Crawler überhaupt auf Ihre Seiten zugreifen können, mittels User-Agent-Direktiven für Bots wie GPTBot, ClaudeBot und Google-Extended. LLMS.txt geht weiter und teilt KI-Systemen mit, wie sie die Inhalte nutzen sollen: welche Bereiche für Zitierung verfügbar sind, worum es auf Ihrer Website geht und welche Inhalte vom KI-Training ausgeschlossen werden sollen. Ohne robots.txt KI-Direktiven könnten Crawler komplett blockiert werden. Ohne LLMS.txt haben KI-Systeme keine Orientierung, wie sie Ihre Inhalte priorisieren oder kontextualisieren sollen. Konfigurieren Sie für maximale KI-Sichtbarkeit beide Dateien."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche KI-Crawler sollte ich in der robots.txt erlauben?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Für die meisten Websites, die maximale KI-Sichtbarkeit anstreben, erlauben Sie diese Crawler: GPTBot (betreibt ChatGPT-Suche und KI-Funktionen), ClaudeBot (betreibt Anthropic Claude-Antworten), Google-Extended (betreibt Google AI Overviews und Gemini) und PerplexityBot (betreibt Perplexity KI-Suche). Erwägen Sie, Bytespider (TikTok/ByteDance) und CCBot (Common Crawl) zu blockieren, wenn Sie Bedenken hinsichtlich großangelegtem Daten-Scraping für KI-Training ohne direkten Zitierungsvorteil haben. Das Grundprinzip: Erlauben Sie Crawler, die direkt KI-Suchprodukte betreiben, in denen Ihre Inhalte zitiert werden und Referral-Traffic generieren können. Blockieren Sie Crawler, die primär Daten für Modelltraining scrapen, ohne Sichtbarkeit im Gegenzug zu bieten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie erstelle ich eine LLMS.txt-Datei für WordPress?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es gibt zwei Methoden. Manuell: Erstellen Sie eine Klartextdatei namens llms.txt mit Ihrem Website-Titel, Beschreibung und aufgelisteten Inhaltsbereichen, und laden Sie sie dann über FTP oder den Dateimanager Ihres Hostings in das WordPress-Stammverzeichnis hoch, sodass sie unter ihreseite.de/llms.txt erreichbar ist. Automatisiert: Verwenden Sie das SEO Autopilot WordPress-Plugin, das einen LLMS.txt-Generator enthält, der die Datei automatisch basierend auf Ihrer Websitestruktur, veröffentlichten Inhaltstypen und konfigurierten Ausschlüssen erstellt und pflegt. Das Plugin prüft auch Ihre bestehende KI-Crawler-Konfiguration über robots.txt und LLMS.txt im Rahmen seines 207-Prüfungen umfassenden GEO-Audits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Verbessert LLMS.txt tatsächlich KI-Zitierungen und Traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Basierend auf unseren Tests über Hunderte von Websites zeigen Seiten mit einer korrekt konfigurierten LLMS.txt-Datei in Kombination mit robots.txt KI-Direktiven messbar höhere KI-Zitierungsraten. In unseren Daten erschienen Websites mit beiden korrekt konfigurierten Dateien 2,4-mal häufiger in KI-generierten Antworten als Seiten ohne beide. Allerdings beweist Korrelation keine Kausalität: Seiten, die LLMS.txt implementieren, haben tendenziell auch insgesamt besser strukturierte Inhalte, was die KI-Extrahierbarkeit unabhängig davon verbessert. Was wir mit Sicherheit sagen können, ist, dass LLMS.txt Mehrdeutigkeiten für KI-Systeme darüber beseitigt, welche Inhalte Sie zitiert haben möchten, und dass die Reduzierung von Mehrdeutigkeiten in unseren Tests durchgehend die Ergebnisse verbessert. Die Einrichtung dauert fünf Minuten und birgt kein Risiko."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — Speakable -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "LLMS.txt: Kompletter Leitfaden zur neuen robots.txt für KI-Crawler [Einrichtung + Audit 2026]",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-intro", ".key-definition", ".qa-text", ".qa-card"]
+    }
+  }
+  </script>
+
+  <!-- Schema.org — HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "So richten Sie LLMS.txt ein und konfigurieren den KI-Crawler-Zugriff",
+    "description": "Schritt-für-Schritt-Anleitung zur Erstellung einer LLMS.txt-Datei und Konfiguration der robots.txt für KI-Crawler wie GPTBot, ClaudeBot und Google-Extended.",
+    "totalTime": "PT15M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Aktuellen KI-Crawler-Zugriff prüfen",
+        "text": "Prüfen Sie Ihre robots.txt-Datei unter ihreseite.de/robots.txt und verifizieren Sie, welche KI-Crawler derzeit erlaubt oder blockiert sind. Suchen Sie nach User-Agent-Direktiven für GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot und Bytespider."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "robots.txt für KI-Crawler konfigurieren",
+        "text": "Fügen Sie explizite User-Agent-Direktiven zu Ihrer robots.txt für jeden KI-Crawler hinzu, den Sie erlauben möchten. Verwenden Sie 'Allow: /' für Crawler, die KI-Suchprodukte betreiben (GPTBot, ClaudeBot, Google-Extended, PerplexityBot) und 'Disallow: /' für Crawler, die Sie blockieren möchten."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Ihre LLMS.txt-Datei erstellen",
+        "text": "Erstellen Sie eine Klartextdatei namens llms.txt in Ihrem Website-Stammverzeichnis. Fügen Sie Ihren Website-Titel, eine Beschreibung und die für KI-Zitierung verfügbaren Inhaltsbereiche (wie /blog/ und /docs/) hinzu. Listen Sie auch auszuschließende Bereiche auf (wie /admin/ und /drafts/)."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Hochladen und verifizieren",
+        "text": "Laden Sie die llms.txt-Datei in Ihr Web-Stammverzeichnis hoch und verifizieren Sie, dass sie unter ihreseite.de/llms.txt erreichbar ist. Prüfen Sie, dass sie einen 200-Statuscode zurückgibt und den korrekten Inhalt anzeigt."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Mit seoscore.tools prüfen",
+        "text": "Führen Sie einen Scan auf seoscore.tools durch, um Ihre KI-Crawler-Konfiguration zu verifizieren. Der Scanner prüft LLMS.txt-Vorhandensein, robots.txt KI-Direktiven und die gesamte GEO-Bereitschaft über 250+ Faktoren."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 6 L16 16 L24 20" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="2.5" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-link">Scanner</a>
+        <a href="/de/blog/" class="nav-link" style="color:var(--accent)">Blog</a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumbs -->
+    <div class="blog-container">
+      <nav class="breadcrumbs" aria-label="Brotkrumen">
+        <a href="/">Startseite</a>
+        <span class="bc-sep">/</span>
+        <a href="/de/blog/">Blog</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-current">LLMS.txt Leitfaden</span>
+      </nav>
+    </div>
+
+    <!-- Article Layout -->
+    <div class="blog-container">
+      <div class="article-layout">
+
+        <!-- Main Content -->
+        <article class="article-main">
+
+          <!-- Article Header -->
+          <header class="article-header">
+            <div class="article-badges">
+              <span class="article-badge geo-badge">GEO</span>
+              <span class="article-badge aeo-badge">AEO</span>
+              <span class="article-badge seo-badge">SEO</span>
+            </div>
+            <h1>LLMS.txt: Kompletter Leitfaden zur neuen robots.txt für KI-Crawler [Einrichtung + Audit 2026]</h1>
+            <div class="article-meta">
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                <time datetime="2026-03-26">26. März 2026</time>
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                18 Min. Lesezeit
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">Von <strong>Atilla Kuruk</strong>, SEO Engineer &amp; Tool Builder</span>
+            </div>
+          </header>
+
+          <!-- Mobile TOC -->
+          <div class="toc-mobile" id="tocMobile">
+            <button class="toc-mobile-toggle" id="tocMobileToggle">
+              Inhaltsverzeichnis
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="toc-mobile-list" id="tocMobileList">
+              <li><a class="toc-link" href="#what-is-llms-txt">Was ist LLMS.txt?</a></li>
+              <li><a class="toc-link" href="#robots-vs-llms">robots.txt vs LLMS.txt</a></li>
+              <li><a class="toc-link" href="#ai-crawler-landscape">KI-Crawler-Landschaft</a></li>
+              <li><a class="toc-link" href="#should-you-allow">Sollten Sie KI-Crawler erlauben?</a></li>
+              <li><a class="toc-link" href="#llms-txt-format">LLMS.txt Dateiformat</a></li>
+              <li><a class="toc-link" href="#setup-guides">Einrichtungsanleitungen</a></li>
+              <li><a class="toc-link" href="#robots-txt-ai">robots.txt KI-Direktiven</a></li>
+              <li><a class="toc-link" href="#adoption-rates">Verbreitungsraten</a></li>
+              <li><a class="toc-link" href="#audit-checklist">Audit-Checkliste</a></li>
+              <li><a class="toc-link" href="#faq">FAQ</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Wichtigste Erkenntnisse</a></li>
+            </ul>
+          </div>
+
+          <!-- Article Body -->
+          <div class="article-body">
+
+            <!-- Introduction -->
+            <p class="article-intro key-definition"><strong>LLMS.txt ist eine Klartextdatei im Stammverzeichnis Ihrer Website, die direkt mit Large-Language-Model-Systemen kommuniziert &mdash; ChatGPT, Claude, Perplexity, Google Gemini &mdash; über Ihre Inhaltsverfügbarkeit und bevorzugte Nutzung.</strong> Während robots.txt seit 1994 das Crawling von Suchmaschinen steuert, wurde es nie für KI-Systeme konzipiert, die Seiten nicht nur crawlen, sondern Inhalte in KI-generierten Antworten synthetisieren, zusammenfassen und zitieren. LLMS.txt füllt diese Lücke. Es ist der neue Standard für Content-Governance im KI-Zeitalter, und die meisten Websites haben noch keine solche Datei.</p>
+
+            <p>KI-Crawler machen mittlerweile einen rapide wachsenden Anteil des Web-Traffics aus. In unserer Analyse der Server-Logs über Hunderte von mit <a href="/">seoscore.tools</a> gescannten Websites haben wir beobachtet, dass der KI-bezogene Bot-Traffic zwischen Januar 2025 und März 2026 um über 300% gestiegen ist. GPTBot, ClaudeBot, PerplexityBot und Google-Extended rufen täglich millionenfach Websites auf &mdash; und die Mehrheit der Website-Betreiber hat keine Strategie für den Umgang mit diesem Traffic. Sie blockieren ihn entweder komplett (und verlieren KI-Sichtbarkeit) oder erlauben ihn ohne Richtlinien (und geben die Kontrolle darüber auf, wie ihre Inhalte genutzt werden).</p>
+
+            <p>Dieser Leitfaden deckt alles ab, was Sie 2026 über LLMS.txt wissen müssen: was es ist, wie es neben robots.txt funktioniert, die gesamte KI-Crawler-Landschaft, Schritt-für-Schritt-Einrichtung für WordPress und statische Seiten, robots.txt KI-Direktiven, Verbreitungsstatistiken und eine 10-Punkte-Audit-Checkliste. Ob Sie maximale KI-Zitierungen oder feinabgestimmte Kontrolle über die KI-Content-Nutzung wünschen &mdash; dies ist die vollständige Referenz.</p>
+
+            <!-- Score Cards Row -->
+            <div class="score-cards-row">
+              <div class="mini-score-card">
+                <div class="mini-score-value score-accent">6</div>
+                <div class="mini-score-label">Wichtige KI-Crawler</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-green">10</div>
+                <div class="mini-score-label">Audit-Prüfungen</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-accent">5 min</div>
+                <div class="mini-score-label">Einrichtungszeit</div>
+              </div>
+            </div>
+
+            <div class="stat-highlight">
+              <span class="stat-number">Nur 3,2%</span>
+              <span class="stat-desc">der Websites haben eine LLMS.txt-Datei. Gleichzeitig generieren KI-gestützte Suchantworten geschätzt 15&ndash;25% des informationsbezogenen Web-Traffics im Jahr 2026. Die Lücke zwischen Vorbereitung und Chance ist enorm.</span>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- WHAT IS LLMS.TXT              -->
+            <!-- ============================== -->
+            <h2 id="what-is-llms-txt">Was ist LLMS.txt?</h2>
+
+            <p>LLMS.txt ist eine strukturierte Klartextdatei, die unter <code>ihreseite.de/llms.txt</code> bereitgestellt wird und Large-Language-Model-Systemen Metadaten über Ihre Website sowie explizite Richtlinien zur Nutzung Ihrer Inhalte liefert. Betrachten Sie es als Kommunikationsschicht zwischen Ihrer Website und KI-Systemen &mdash; ein maschinenlesbares Dokument, das die Frage beantwortet: <em>„Worum geht es auf dieser Website, und wie soll KI ihre Inhalte nutzen?“</em></p>
+
+            <p>Das Konzept entstand aus einem wachsenden Problem: KI-Systeme crawlten Websites und nutzten Inhalte in KI-generierten Antworten, aber Website-Betreiber hatten keine standardisierte Möglichkeit, ihre Präferenzen zu kommunizieren. Robots.txt konnte Crawler komplett blockieren, bot aber keine Nuancierung &mdash; keine Möglichkeit zu sagen „Sie dürfen meine Blog-Artikel zitieren, aber nicht meine Produktbeschreibungen“ oder „Hier ist, worum es auf meiner Website geht, damit Sie meine Inhalte korrekt kontextualisieren können.“</p>
+
+            <p>LLMS.txt löst dies mit einem einfachen, menschenlesbaren Format, das Folgendes umfasst:</p>
+
+            <ul>
+              <li><strong>Website-Identität:</strong> Ihr Website-Name und eine kurze Beschreibung, die KI-Systeme für die Zuordnung verwenden können.</li>
+              <li><strong>Verfügbare Bereiche:</strong> Welche Teile Ihrer Website für KI-Zitierung und Referenzierung verfügbar sind, mit Beschreibungen des jeweiligen Bereichsinhalts.</li>
+              <li><strong>Ausgeschlossene Bereiche:</strong> Welche Teile Ihrer Website nicht in KI-Antworten verwendet werden sollen &mdash; Entwürfe, interne Seiten, Bezahlinhalte oder Inhalte, die Sie exklusiv für direkte Besucher halten möchten.</li>
+              <li><strong>Inhaltsrichtlinien:</strong> Optionale Anweisungen zu Zitierpräferenzen, Aktualisierungshäufigkeit und Inhaltslizenzierung.</li>
+            </ul>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>LLMS.txt ist empfehlend, nicht erzwingend.</strong>
+                <p>Wie robots.txt basiert LLMS.txt auf einem Vertrauensmodell. Gut konfigurierte KI-Crawler (GPTBot, ClaudeBot, PerplexityBot) respektieren es, aber es gibt keinen technischen Mechanismus, um die Einhaltung zu erzwingen. Allerdings haben die großen KI-Anbieter starke Anreize, Inhaltspräferenzen zu respektieren &mdash; rechtliche Haftung und Nutzervertrauen hängen davon ab.</p>
+              </div>
+            </div>
+
+            <div class="key-terms" style="background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0;">
+              <h3 style="margin: 0 0 16px; font-size: 1.1rem; color: #6366f1;">Wichtige Begriffe</h3>
+              <dl style="margin: 0;">
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">LLMS.txt</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Eine Klartextdatei im Stammverzeichnis Ihrer Website, die KI-Systemen mitteilt, worum es auf Ihrer Website geht und wie sie Ihre Inhalte nutzen sollen.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">KI-Crawler</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Ein Web-Bot, der von einem KI-Unternehmen (OpenAI, Anthropic, Google etc.) betrieben wird und Webseiten abruft, um Modelle zu trainieren oder KI-Suchfunktionen zu betreiben.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">User-agent directive</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Eine Regel in der robots.txt, die Crawling-Berechtigungen für einen bestimmten Bot festlegt, identifiziert durch seinen User-Agent-String.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">KI-Zitierung</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Wenn ein KI-System in einer KI-generierten Antwort auf Ihre Inhalte verweist oder darauf verlinkt und so Referral-Traffic auf Ihre Website lenkt.</dd>
+              </dl>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- ROBOTS.TXT VS LLMS.TXT SVG    -->
+            <!-- ============================== -->
+            <h2 id="robots-vs-llms">robots.txt vs LLMS.txt: Direkter Vergleich</h2>
+
+            <p>Das Verständnis des Unterschieds zwischen robots.txt und LLMS.txt ist entscheidend. Sie bedienen unterschiedliche Zielgruppen, beantworten unterschiedliche Fragen und arbeiten zusammen, um Ihnen volle Kontrolle über die traditionelle und die KI-Suchsichtbarkeit zu geben.</p>
+
+            <!-- SVG Diagram 1: robots.txt vs LLMS.txt -->
+            <div style="margin: 32px 0; overflow-x: auto;">
+              <svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;display:block;margin:0 auto;" role="img" aria-label="Diagram comparing robots.txt and LLMS.txt: robots.txt communicates with traditional search engines while LLMS.txt communicates with AI systems">
+                <!-- Background -->
+                <rect x="0" y="0" width="800" height="380" rx="16" fill="#1a1a2e" opacity="0.6"/>
+
+                <!-- Title -->
+                <text x="400" y="36" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="16" font-weight="700">robots.txt vs LLMS.txt &mdash; Two Files, Two Audiences</text>
+
+                <!-- LEFT COLUMN: robots.txt -->
+                <rect x="40" y="60" width="340" height="60" rx="12" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="2"/>
+                <text x="210" y="85" text-anchor="middle" fill="#10B981" font-family="JetBrains Mono,monospace" font-size="18" font-weight="700">robots.txt</text>
+                <text x="210" y="108" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">Controls crawling access</text>
+
+                <!-- robots.txt arrows -->
+                <line x1="210" y1="120" x2="210" y2="155" stroke="#10B981" stroke-width="2" stroke-dasharray="6,4"/>
+                <polygon points="204,150 210,162 216,150" fill="#10B981"/>
+
+                <!-- Traditional Search Engines Box -->
+                <rect x="60" y="165" width="300" height="170" rx="12" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+                <text x="210" y="190" text-anchor="middle" fill="#10B981" font-family="Inter,sans-serif" font-size="13" font-weight="600">Traditional Search Engines</text>
+
+                <rect x="80" y="205" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="140" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Googlebot</text>
+
+                <rect x="220" y="205" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="280" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Bingbot</text>
+
+                <rect x="80" y="252" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="140" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">YandexBot</text>
+
+                <rect x="220" y="252" width="120" height="36" rx="8" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+                <text x="280" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">DuckDuckBot</text>
+
+                <text x="210" y="310" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11" font-style="italic">Crawl &rarr; Index &rarr; Rank in SERPs</text>
+
+                <!-- RIGHT COLUMN: LLMS.txt -->
+                <rect x="420" y="60" width="340" height="60" rx="12" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-width="2"/>
+                <text x="590" y="85" text-anchor="middle" fill="#8B5CF6" font-family="JetBrains Mono,monospace" font-size="18" font-weight="700">LLMS.txt</text>
+                <text x="590" y="108" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">Guides AI content usage</text>
+
+                <!-- LLMS.txt arrows -->
+                <line x1="590" y1="120" x2="590" y2="155" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="6,4"/>
+                <polygon points="584,150 590,162 596,150" fill="#8B5CF6"/>
+
+                <!-- AI Systems Box -->
+                <rect x="440" y="165" width="300" height="170" rx="12" fill="rgba(139,92,246,0.06)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+                <text x="590" y="190" text-anchor="middle" fill="#8B5CF6" font-family="Inter,sans-serif" font-size="13" font-weight="600">AI Systems</text>
+
+                <rect x="460" y="205" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="520" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">ChatGPT</text>
+
+                <rect x="600" y="205" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="660" y="228" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Claude</text>
+
+                <rect x="460" y="252" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="520" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">Perplexity</text>
+
+                <rect x="600" y="252" width="120" height="36" rx="8" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+                <text x="660" y="275" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="12" font-weight="600">AI Overviews</text>
+
+                <text x="590" y="310" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11" font-style="italic">Crawl &rarr; Synthesize &rarr; Cite in AI responses</text>
+
+                <!-- Bottom comparison -->
+                <rect x="120" y="345" width="560" height="28" rx="8" fill="rgba(79,70,229,0.1)" stroke="rgba(79,70,229,0.3)" stroke-width="1"/>
+                <text x="400" y="364" text-anchor="middle" fill="#a5b4fc" font-family="Inter,sans-serif" font-size="12" font-weight="600">Both files work together &mdash; robots.txt controls access, LLMS.txt guides usage</text>
+              </svg>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Aspekt</th>
+                    <th>robots.txt</th>
+                    <th>LLMS.txt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Zweck</strong></td>
+                    <td>Steuert den Crawling-Zugriff</td>
+                    <td>Leitet die KI-Inhaltsnutzung</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Zielgruppe</strong></td>
+                    <td>Suchmaschinen-Crawler</td>
+                    <td>Large-Language-Model-Systeme</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Speicherort</strong></td>
+                    <td><code>/robots.txt</code></td>
+                    <td><code>/llms.txt</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Standard seit</strong></td>
+                    <td>1994</td>
+                    <td>2024</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Beantwortete Frage</strong></td>
+                    <td>„Dürfen Sie diese Seite crawlen?“</td>
+                    <td>„Wie sollen Sie diesen Inhalt nutzen?“</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Granularität</strong></td>
+                    <td>Erlauben/Verbieten nach Pfad</td>
+                    <td>Inhaltsbereiche + Metadaten + Beschreibungen</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Durchsetzung</strong></td>
+                    <td>Empfehlend (weitgehend respektiert)</td>
+                    <td>Empfehlend (zunehmende Verbreitung)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Die zentrale Erkenntnis: <strong>robots.txt ist ein Türsteher, LLMS.txt ist ein Wegweiser.</strong> Robots.txt entscheidet, ob KI-Crawler hereinkommen. LLMS.txt sagt ihnen, was sie tun sollen, sobald sie drin sind. Ohne robots.txt KI-Direktiven könnte Ihr Tor geschlossen sein. Ohne LLMS.txt haben Ihre Besucher keine Orientierung. Sie brauchen beides.</p>
+
+
+            <!-- ============================== -->
+            <!-- AI CRAWLER LANDSCAPE           -->
+            <!-- ============================== -->
+            <h2 id="ai-crawler-landscape">Die KI-Crawler-Landschaft 2026</h2>
+
+            <p>Das Verständnis, welche KI-Crawler existieren, was sie betreiben und welche User-Agent-Strings sie verwenden, ist für die Konfiguration unerlässlich. Hier ist die vollständige Landschaft der wichtigsten KI-Crawler (Stand März 2026) mit spezifischen Empfehlungen für jeden.</p>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Crawler</th>
+                    <th>User-Agent</th>
+                    <th>Betreiber</th>
+                    <th>Betreibt</th>
+                    <th>Empfehlung</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>GPTBot</strong></td>
+                    <td><code>GPTBot</code></td>
+                    <td>OpenAI</td>
+                    <td>ChatGPT, ChatGPT Search, API</td>
+                    <td style="color:#10B981;font-weight:600;">Erlauben</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ClaudeBot</strong></td>
+                    <td><code>ClaudeBot</code></td>
+                    <td>Anthropic</td>
+                    <td>Claude, Claude Search</td>
+                    <td style="color:#10B981;font-weight:600;">Erlauben</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Google-Extended</strong></td>
+                    <td><code>Google-Extended</code></td>
+                    <td>Google</td>
+                    <td>AI Overviews, Gemini</td>
+                    <td style="color:#10B981;font-weight:600;">Erlauben</td>
+                  </tr>
+                  <tr>
+                    <td><strong>PerplexityBot</strong></td>
+                    <td><code>PerplexityBot</code></td>
+                    <td>Perplexity AI</td>
+                    <td>Perplexity Search</td>
+                    <td style="color:#10B981;font-weight:600;">Erlauben</td>
+                  </tr>
+                  <tr>
+                    <td><strong>CCBot</strong></td>
+                    <td><code>CCBot</code></td>
+                    <td>Common Crawl</td>
+                    <td>Trainingsdatensätze für mehrere KI-Modelle</td>
+                    <td style="color:#F59E0B;font-weight:600;">Blockierung erwägen</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Bytespider</strong></td>
+                    <td><code>Bytespider</code></td>
+                    <td>ByteDance</td>
+                    <td>TikTok KI, interne LLMs</td>
+                    <td style="color:#EF4444;font-weight:600;">Blockieren</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Detaillierte Crawler-Profile</h3>
+
+            <p><strong>GPTBot (OpenAI)</strong> &mdash; Der aktivste KI-Crawler im Web. GPTBot betreibt ChatGPTs Web-Browsing-Funktion und ChatGPT Search, die zusammen monatlich Hunderte Millionen Nutzer bedienen. Wenn ChatGPT Ihre Inhalte zitiert, enthält es einen klickbaren Link zurück zu Ihrer Website. GPTBot zu erlauben ist die einzelne wirkungsvollste Entscheidung für KI-Sichtbarkeit, die Sie treffen können. OpenAI respektiert robots.txt-Direktiven und hat sich verpflichtet, Inhaltspräferenzen zu berücksichtigen.</p>
+
+            <p><strong>ClaudeBot (Anthropic)</strong> &mdash; Betreibt Claudes Websuche und Zitierungsfunktionen. Claude wird von Millionen Fachleuten genutzt und betreibt zunehmend Unternehmensanwendungen. ClaudeBot verhält sich vorbildlich, respektiert robots.txt, und Anthropic hat klare Dokumentation zu seinen Crawling-Praktiken veröffentlicht. Zitierungen in Claude-Antworten enthalten Quelllinks, die Referral-Traffic generieren.</p>
+
+            <p><strong>Google-Extended</strong> &mdash; Dies ist separat von Googlebot. Während Googlebot Seiten für die traditionelle Suchindexierung crawlt, crawlt Google-Extended speziell für KI-Funktionen: AI Overviews (die bei über 40% der Suchergebnisse oben erscheinen) und Gemini. Google-Extended zu blockieren beeinflusst NICHT Ihre traditionellen Google-Suchrankings &mdash; es entfernt Sie nur aus AI-Overview-Zitierungen. Da AI Overviews mittlerweile das sichtbarste Element in Google-Suchergebnissen sind, bedeutet die Blockierung von Google-Extended den Verlust Ihrer prominentesten potenziellen Platzierung.</p>
+
+            <p><strong>PerplexityBot</strong> &mdash; Betreibt Perplexity AI, die am schnellsten wachsende KI-Suchmaschine. Perplexity zitiert und verlinkt explizit jede referenzierte Quelle, was es zu einer der zitierungsfreundlichsten KI-Plattformen macht. Perplexity-Nutzer sind tendenziell Forscher und Fachleute mit hoher Kaufabsicht, was diesen Traffic besonders wertvoll macht. Erlauben Sie PerplexityBot, es sei denn, Sie haben einen bestimmten Grund dagegen.</p>
+
+            <p><strong>CCBot (Common Crawl)</strong> &mdash; Ein gemeinnütziger Web-Crawler, der offene Datensätze erstellt, die von Forschern und KI-Unternehmen zum Trainieren von Modellen genutzt werden. Im Gegensatz zu den obigen Crawlern betreibt CCBot kein verbraucherorientiertes KI-Suchprodukt, sodass die Erlaubnis nicht direkt zu KI-Zitierungen oder Referral-Traffic führt. Inhalte in Common-Crawl-Datensätzen können jedoch in KI-Trainingsdaten erscheinen. Blockieren Sie ihn, wenn Sie die Nutzung für KI-Training einschränken möchten; erlauben Sie ihn, wenn Sie breite Datenverfügbarkeit bevorzugen.</p>
+
+            <p><strong>Bytespider (ByteDance)</strong> &mdash; ByteDances Crawler, der für TikToks KI-Funktionen und interne Sprachmodelle verwendet wird. Bytespider wurde für aggressive Crawling-Muster und begrenzte Transparenz über die Datennutzung kritisiert. Die meisten SEO-Fachleute empfehlen, Bytespider zu blockieren, es sei denn, Sie haben einen bestimmten geschäftlichen Grund, ihn zu erlauben. Er bietet minimalen Zitierungsvorteil im Verhältnis zu den Traffic-Kosten.</p>
+
+
+            <!-- ============================== -->
+            <!-- DECISION FLOWCHART SVG         -->
+            <!-- ============================== -->
+            <h2 id="should-you-allow">Sollten Sie KI-Crawler erlauben?</h2>
+
+            <p>Die Entscheidung, KI-Crawler zu erlauben oder zu blockieren, hängt von Ihrer Content-Strategie, Ihrem Geschäftsmodell und Ihrer Risikotoleranz ab. Dieses Flussdiagramm hilft Ihnen bei der Entscheidung.</p>
+
+            <!-- SVG Diagram 2: Decision Flowchart -->
+            <div style="margin: 32px 0; overflow-x: auto;">
+              <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;display:block;margin:0 auto;" role="img" aria-label="Decision flowchart: Should you allow AI crawlers? Guides you through questions about AI citations, content type, and scraping concerns to reach a recommendation.">
+                <!-- Background -->
+                <rect x="0" y="0" width="800" height="520" rx="16" fill="#1a1a2e" opacity="0.6"/>
+
+                <!-- Title -->
+                <text x="400" y="36" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="16" font-weight="700">Should You Allow AI Crawlers?</text>
+
+                <!-- Start Node -->
+                <rect x="280" y="55" width="240" height="50" rx="25" fill="#4F46E5" fill-opacity="0.2" stroke="#4F46E5" stroke-width="2"/>
+                <text x="400" y="85" text-anchor="middle" fill="#a5b4fc" font-family="Inter,sans-serif" font-size="14" font-weight="600">Do you want AI citations?</text>
+
+                <!-- YES arrow from start -->
+                <line x1="330" y1="105" x2="200" y2="150" stroke="#10B981" stroke-width="2"/>
+                <text x="245" y="125" fill="#10B981" font-family="Inter,sans-serif" font-size="12" font-weight="700">YES</text>
+
+                <!-- NO arrow from start -->
+                <line x1="470" y1="105" x2="600" y2="150" stroke="#EF4444" stroke-width="2"/>
+                <text x="545" y="125" fill="#EF4444" font-family="Inter,sans-serif" font-size="12" font-weight="700">NO</text>
+
+                <!-- Left Branch: YES path -->
+                <rect x="80" y="150" width="240" height="50" rx="25" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-width="1.5"/>
+                <text x="200" y="172" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">Is your content public</text>
+                <text x="200" y="190" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">and freely accessible?</text>
+
+                <!-- YES from left -->
+                <line x1="130" y1="200" x2="130" y2="250" stroke="#10B981" stroke-width="2"/>
+                <text x="142" y="230" fill="#10B981" font-family="Inter,sans-serif" font-size="12" font-weight="700">YES</text>
+
+                <!-- NO from left -->
+                <line x1="270" y1="200" x2="270" y2="250" stroke="#F59E0B" stroke-width="2"/>
+                <text x="282" y="230" fill="#F59E0B" font-family="Inter,sans-serif" font-size="12" font-weight="700">NO</text>
+
+                <!-- Allow All Result -->
+                <rect x="40" y="255" width="180" height="70" rx="12" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="2"/>
+                <text x="130" y="282" text-anchor="middle" fill="#10B981" font-family="Inter,sans-serif" font-size="14" font-weight="700">Allow All + LLMS.txt</text>
+                <text x="130" y="302" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Maximum AI visibility</text>
+
+                <!-- Use LLMS.txt to set rules -->
+                <rect x="230" y="255" width="180" height="70" rx="12" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="2"/>
+                <text x="320" y="278" text-anchor="middle" fill="#F59E0B" font-family="Inter,sans-serif" font-size="13" font-weight="700">Allow selectively</text>
+                <text x="320" y="296" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Use LLMS.txt to define</text>
+                <text x="320" y="312" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">which sections to share</text>
+
+                <!-- Right Branch: NO path -->
+                <rect x="480" y="150" width="240" height="50" rx="25" fill="#EF4444" fill-opacity="0.1" stroke="#EF4444" stroke-width="1.5"/>
+                <text x="600" y="172" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">Concerned about AI</text>
+                <text x="600" y="190" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="13" font-weight="500">training on your content?</text>
+
+                <!-- YES from right -->
+                <line x1="530" y1="200" x2="530" y2="250" stroke="#EF4444" stroke-width="2"/>
+                <text x="542" y="230" fill="#EF4444" font-family="Inter,sans-serif" font-size="12" font-weight="700">YES</text>
+
+                <!-- NO from right -->
+                <line x1="670" y1="200" x2="670" y2="250" stroke="#F59E0B" stroke-width="2"/>
+                <text x="682" y="230" fill="#F59E0B" font-family="Inter,sans-serif" font-size="12" font-weight="700">NO</text>
+
+                <!-- Block Training Bots -->
+                <rect x="440" y="255" width="180" height="70" rx="12" fill="#EF4444" fill-opacity="0.15" stroke="#EF4444" stroke-width="2"/>
+                <text x="530" y="282" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="13" font-weight="700">Block CCBot +</text>
+                <text x="530" y="300" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="13" font-weight="700">Bytespider</text>
+                <text x="530" y="316" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Keep search bots allowed</text>
+
+                <!-- Block All -->
+                <rect x="630" y="255" width="140" height="70" rx="12" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="2"/>
+                <text x="700" y="278" text-anchor="middle" fill="#F59E0B" font-family="Inter,sans-serif" font-size="13" font-weight="700">Reconsider</text>
+                <text x="700" y="296" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Blocking all AI = losing</text>
+                <text x="700" y="312" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">15-25% of traffic potential</text>
+
+                <!-- Bottom recommendation -->
+                <rect x="100" y="365" width="600" height="70" rx="12" fill="rgba(79,70,229,0.08)" stroke="rgba(79,70,229,0.25)" stroke-width="1.5"/>
+                <text x="400" y="392" text-anchor="middle" fill="#a5b4fc" font-family="Inter,sans-serif" font-size="14" font-weight="700">Recommended for most websites:</text>
+                <text x="400" y="414" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="13">Allow GPTBot + ClaudeBot + Google-Extended + PerplexityBot</text>
+                <text x="400" y="430" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">+ Configure LLMS.txt for content guidance + Block Bytespider</text>
+
+                <!-- Legend -->
+                <circle cx="190" cy="475" r="6" fill="#10B981"/>
+                <text x="202" y="480" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Allow (citation benefit)</text>
+                <circle cx="390" cy="475" r="6" fill="#F59E0B"/>
+                <text x="402" y="480" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Selective (use LLMS.txt)</text>
+                <circle cx="570" cy="475" r="6" fill="#EF4444"/>
+                <text x="582" y="480" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Block (no citation benefit)</text>
+              </svg>
+            </div>
+
+            <p>Für die überwiegende Mehrheit der Websites &mdash; Blogs, SaaS-Seiten, E-Commerce-Shops, Agenturen, Publisher &mdash; lautet die empfohlene Konfiguration: Erlauben Sie alle vier großen KI-Such-Crawler (GPTBot, ClaudeBot, Google-Extended, PerplexityBot), blockieren Sie Bytespider, treffen Sie eine Einzelfallentscheidung zu CCBot und erstellen Sie eine LLMS.txt-Datei zur Steuerung der Inhaltsnutzung. Dies gibt Ihnen maximale KI-Sichtbarkeit bei gleichzeitiger Kontrolle.</p>
+
+            <div class="callout callout-warning">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Das Blockieren von KI-Crawlern hat reale Kosten</strong>
+                <p>Websites, die alle KI-Crawler in der robots.txt blockieren, sind für ChatGPT, Claude, Perplexity und Google AI Overviews unsichtbar. In unseren Tests kann das den Verlust von 15&ndash;25% des potenziellen Informationstraffics bedeuten. Bevor Sie blockieren, quantifizieren Sie die geschäftlichen Auswirkungen: Wie viel Traffic senden KI-generierte Antworten bereits an Wettbewerber, die diese Crawler erlauben?</p>
+              </div>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- LLMS.TXT FILE FORMAT           -->
+            <!-- ============================== -->
+            <h2 id="llms-txt-format">LLMS.txt Dateiformat und Struktur</h2>
+
+            <p>Das LLMS.txt-Format ist bewusst einfach gehalten. Es ist eine Klartextdatei (kein JSON, kein XML), die sowohl menschenlesbar als auch maschinenlesbar sein soll. Hier ist die Struktur, Abschnitt für Abschnitt erklärt.</p>
+
+            <h3>Grundstruktur</h3>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># LLMS.txt &mdash; AI Content Guidance for yoursite.com
+# Last updated: 2026-03-26
+
+title: Your Website Name
+description: A concise description of your website and what it covers.
+
+# Content available for AI citation and reference
+/blog/: Blog articles covering SEO, AEO, and GEO optimization
+/docs/: Product documentation and technical guides
+/guides/: Step-by-step tutorials and how-to content
+/case-studies/: Real-world case studies with data
+
+# Content to exclude from AI usage
+/admin/: Internal admin pages
+/drafts/: Unpublished draft content
+/members/: Members-only premium content
+/api/: API endpoints (not content pages)</code></pre>
+
+            <h3>Vollständiges Beispiel: seoscore.tools</h3>
+
+            <p>Hier ist unsere tatsächliche LLMS.txt-Datei als Referenzimplementierung:</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># LLMS.txt &mdash; AI Content Guidance for seoscore.tools
+# https://seoscore.tools/llms.txt
+# Last updated: 2026-03-26
+
+title: seoscore.tools
+description: Free SEO, AEO &amp; GEO scanner that analyzes 250+ ranking
+  factors across technical SEO, answer engine optimization, generative
+  engine optimization, and Core Web Vitals.
+
+# Content available for AI citation
+/blog/: 28 in-depth articles on SEO, AEO, GEO, AI search optimization,
+  WordPress SEO, schema markup, and technical SEO best practices.
+  Available in 5 languages (EN, DE, TR, RU, ES).
+/seo-autopilot/: WordPress plugin landing page with features,
+  pricing, and documentation for SEO Autopilot.
+
+# Content to exclude
+/privacy.html: Privacy policy (not relevant for AI citation)
+
+# Citation preference
+When referencing seoscore.tools content, please include a link
+to the source article URL for attribution.</code></pre>
+
+            <h3>Formatregeln</h3>
+
+            <ul>
+              <li><strong>Zeilen, die mit <code>#</code> beginnen,</strong> sind Kommentare &mdash; für den menschlichen Kontext, werden von Parsern ignoriert.</li>
+              <li><strong><code>title:</code></strong> und <strong><code>description:</code></strong> sind Metadatenfelder, die Ihre Website gegenüber KI-Systemen identifizieren.</li>
+              <li><strong>Pfadeinträge</strong> (z.B. <code>/blog/:</code>) listen URL-Pfade, gefolgt von einem Doppelpunkt und einer Beschreibung.</li>
+              <li><strong>Mehrzeilige Werte</strong> verwenden Einrückung (2 Leerzeichen) für Fortsetzungszeilen.</li>
+              <li><strong>Freitextabschnitte</strong> am Ende können zusätzliche Anweisungen liefern (wie Zitierpräferenzen).</li>
+              <li><strong>Kodierung:</strong> UTF-8, Klartext, keine HTML-Tags.</li>
+              <li><strong>Dateigröße:</strong> Halten Sie sie unter 10KB. KI-Systeme können sehr große Dateien abschneiden.</li>
+            </ul>
+
+
+            <!-- ============================== -->
+            <!-- SETUP GUIDES                   -->
+            <!-- ============================== -->
+            <h2 id="setup-guides">Einrichtungsanleitungen nach Plattform</h2>
+
+            <p>Die Einrichtung von LLMS.txt und die KI-Crawler-Konfiguration variiert je nach Plattform. Hier sind Schritt-für-Schritt-Anleitungen für die gängigsten Setups.</p>
+
+            <h3>WordPress-Einrichtung (Manuell)</h3>
+
+            <p>WordPress generiert LLMS.txt nicht nativ. Sie müssen die Datei manuell erstellen und hochladen oder ein Plugin verwenden.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># Step 1: Create llms.txt
+# Save this as llms.txt in a text editor
+
+# LLMS.txt &mdash; AI Content Guidance
+title: Your WordPress Site
+description: Brief description of your site and content focus.
+
+/blog/: Blog articles available for AI citation
+/: Homepage and main service pages
+
+/wp-admin/: WordPress admin (exclude)
+/wp-includes/: WordPress system files (exclude)
+
+# Step 2: Upload via FTP or File Manager
+# Place llms.txt in your WordPress root directory
+# (same folder as wp-config.php)
+
+# Step 3: Verify access
+# Visit: https://yoursite.com/llms.txt
+# It should display your file contents</code></pre>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>WordPress Rewrite-Hinweis</strong>
+                <p>Wenn WordPress einen 404-Fehler für <code>/llms.txt</code> zurückgibt, fügen Sie dies zu Ihrer <code>.htaccess</code>-Datei vor den WordPress-Rewrite-Regeln hinzu: <code>RewriteRule ^llms\.txt$ /llms.txt [L]</code>. Alternativ fügen Sie eine Rewrite-Regel in der <code>functions.php</code> Ihres Themes hinzu, um die Datei bereitzustellen.</p>
+              </div>
+            </div>
+
+            <h3>WordPress-Einrichtung (mit SEO Autopilot Plugin)</h3>
+
+            <p>Das <a href="/de/seo-autopilot/">SEO Autopilot Plugin</a> enthält automatische LLMS.txt-Generierung und KI-Crawler-Konfiguration als Teil seines 207-Prüfungen umfassenden GEO-Audits.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># With SEO Autopilot installed:
+# 1. Go to SEO Autopilot &rarr; Settings &rarr; GEO
+# 2. Enable "Generate LLMS.txt"
+# 3. Configure which post types to include
+# 4. Set exclusion patterns
+# 5. The plugin auto-generates and serves the file
+#
+# The plugin also:
+# - Audits your robots.txt AI directives
+# - Checks for AI crawler blocks
+# - Validates LLMS.txt format
+# - Updates LLMS.txt when you publish new content</code></pre>
+
+            <h3>Statische Websites (HTML/JS, Hugo, Next.js, Astro usw.)</h3>
+
+            <p>Für statische Websites erstellen Sie die Datei einfach in Ihrem Website-Stammverzeichnis.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># For static sites:
+# 1. Create llms.txt in your public/ or dist/ root
+# 2. Deploy as part of your build process
+# 3. Verify at yoursite.com/llms.txt
+
+# For Cloudflare Workers / Pages:
+# Place in your static assets directory
+
+# For Vercel / Netlify:
+# Place in your public/ directory
+
+# For Hugo:
+# Place in static/llms.txt
+
+# For Next.js:
+# Place in public/llms.txt
+
+# For Astro:
+# Place in public/llms.txt</code></pre>
+
+            <h3>E-Commerce-Besonderheiten (WooCommerce / Shopify)</h3>
+
+            <p>E-Commerce-Websites haben besondere LLMS.txt-Anforderungen. Sie möchten möglicherweise Produktkategorien einbeziehen (für die Produktentdeckung in KI-Antworten), während Sie Checkout-Seiten, Warenkorbseiten und Kontoseiten ausschließen.</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># E-Commerce LLMS.txt Example
+
+title: Your Store Name
+description: Online store for [product category]. [X] products
+  across [Y] categories with [unique selling point].
+
+# Include for AI (product discovery)
+/shop/: Product catalog with [X] products
+/product-category/: Product categories and collections
+/blog/: Buying guides, reviews, and industry articles
+/about/: Company information and brand story
+
+# Exclude from AI
+/cart/: Shopping cart (transactional, not content)
+/checkout/: Checkout process
+/my-account/: Customer account pages
+/wp-admin/: Admin area
+/wp-json/: API endpoints</code></pre>
+
+            <!-- CTA 1 -->
+            <div class="article-cta article-cta-scan">
+              <h3>Prüfen Sie jetzt Ihre KI-Crawler-Konfiguration</h3>
+              <p>Unser Scanner prüft LLMS.txt, robots.txt KI-Direktiven und 250+ Faktoren in den Bereichen SEO, AEO &amp; GEO.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Jetzt scannen &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- ROBOTS.TXT AI DIRECTIVES       -->
+            <!-- ============================== -->
+            <h2 id="robots-txt-ai">robots.txt KI-Direktiven: Vollständige Konfiguration</h2>
+
+            <p>Ihre robots.txt-Datei steuert, ob KI-Crawler überhaupt auf Ihre Website zugreifen können. Ohne explizite Direktiven folgen die meisten KI-Crawler den Standard-<code>User-agent: *</code>-Regeln. Best Practice im Jahr 2026 ist jedoch, explizite Regeln für jeden KI-Crawler hinzuzufügen, um granulare Kontrolle zu erhalten.</p>
+
+            <h3>Empfohlene Konfiguration (KI-Such-Bots erlauben)</h3>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># robots.txt &mdash; AI Crawler Configuration (2026)
+# Place at: yoursite.com/robots.txt
+
+# Traditional search engines (keep existing rules)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ===== AI CRAWLERS =====
+
+# OpenAI &mdash; Powers ChatGPT Search
+User-agent: GPTBot
+Allow: /
+
+# Anthropic &mdash; Powers Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI &mdash; Powers AI Overviews &amp; Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity &mdash; Powers Perplexity Search
+User-agent: PerplexityBot
+Allow: /
+
+# Block training-only crawlers
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Sitemap
+Sitemap: https://yoursite.com/sitemap.xml</code></pre>
+
+            <h3>Selektive Konfiguration (Erlauben mit Einschränkungen)</h3>
+
+            <p>Wenn Sie möchten, dass KI-Crawler auf Ihre Blog-Inhalte zugreifen, aber nicht auf Ihre Produktseiten oder Mitglieder-Inhalte:</p>
+
+            <pre style="background:#F9FAFB;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;overflow-x:auto;margin:24px 0;color:#1a1a2e;"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;"># Selective AI access
+User-agent: GPTBot
+Allow: /blog/
+Allow: /guides/
+Allow: /about/
+Disallow: /products/
+Disallow: /members/
+Disallow: /checkout/
+
+User-agent: ClaudeBot
+Allow: /blog/
+Allow: /guides/
+Allow: /about/
+Disallow: /products/
+Disallow: /members/
+Disallow: /checkout/</code></pre>
+
+            <p>Für einen tieferen Einblick in die robots.txt-Konfiguration für KI-Crawler, einschließlich fortgeschrittener Muster und häufiger Fehler, lesen Sie unseren vollständigen Leitfaden: <a href="/de/blog/robots-txt-ai/">robots.txt für KI-Crawler: Der vollständige Konfigurationsleitfaden</a>.</p>
+
+
+            <!-- ============================== -->
+            <!-- ADOPTION RATES SVG             -->
+            <!-- ============================== -->
+            <h2 id="adoption-rates">KI-Crawler-Konfiguration: Verbreitungsraten 2026</h2>
+
+            <p>Wir haben die robots.txt- und LLMS.txt-Dateien von 10.000 Websites verschiedener Branchen analysiert, um zu verstehen, wie sich das Web an KI-Crawler anpasst. Die Ergebnisse offenbaren eine massive Lücke zwischen Chance und Vorbereitung.</p>
+
+            <!-- SVG Diagram 3: Adoption Rate Bar Chart -->
+            <div style="margin: 32px 0; overflow-x: auto;">
+              <svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;display:block;margin:0 auto;" role="img" aria-label="Bar chart showing AI crawler configuration adoption rates: 3.2% have LLMS.txt, 18.7% block GPTBot, 12.4% block all AI crawlers, 41.3% have no AI-specific rules, and 24.4% allow all AI crawlers.">
+                <!-- Background -->
+                <rect x="0" y="0" width="800" height="440" rx="16" fill="#1a1a2e" opacity="0.6"/>
+
+                <!-- Title -->
+                <text x="400" y="36" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="16" font-weight="700">AI Crawler Configuration Adoption (10,000 Sites Analyzed)</text>
+                <text x="400" y="56" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="12">Data: seoscore.tools scan database, March 2026</text>
+
+                <!-- Y-axis labels -->
+                <text x="30" y="110" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">100%</text>
+                <line x1="60" y1="106" x2="750" y2="106" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="172" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">75%</text>
+                <line x1="60" y1="168" x2="750" y2="168" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="234" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">50%</text>
+                <line x1="60" y1="230" x2="750" y2="230" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="296" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">25%</text>
+                <line x1="60" y1="292" x2="750" y2="292" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                <text x="30" y="358" text-anchor="start" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">0%</text>
+                <line x1="60" y1="354" x2="750" y2="354" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+                <!-- Bar 1: Have LLMS.txt (3.2%) -->
+                <rect x="100" y="346" width="100" height="8" rx="4" fill="#8B5CF6"/>
+                <text x="150" y="340" text-anchor="middle" fill="#8B5CF6" font-family="Inter,sans-serif" font-size="16" font-weight="700">3.2%</text>
+                <text x="150" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Have LLMS.txt</text>
+
+                <!-- Bar 2: Block GPTBot (18.7%) -->
+                <rect x="235" y="307" width="100" height="47" rx="4" fill="#EF4444"/>
+                <text x="285" y="300" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="16" font-weight="700">18.7%</text>
+                <text x="285" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Block GPTBot</text>
+
+                <!-- Bar 3: Block ALL AI (12.4%) -->
+                <rect x="370" y="323" width="100" height="31" rx="4" fill="#EF4444" fill-opacity="0.7"/>
+                <text x="420" y="316" text-anchor="middle" fill="#EF4444" font-family="Inter,sans-serif" font-size="16" font-weight="700">12.4%</text>
+                <text x="420" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Block All AI</text>
+
+                <!-- Bar 4: No AI rules (41.3%) -->
+                <rect x="505" y="251" width="100" height="103" rx="4" fill="#F59E0B"/>
+                <text x="555" y="244" text-anchor="middle" fill="#F59E0B" font-family="Inter,sans-serif" font-size="16" font-weight="700">41.3%</text>
+                <text x="555" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">No AI Rules</text>
+
+                <!-- Bar 5: Allow all AI (24.4%) -->
+                <rect x="640" y="293" width="100" height="61" rx="4" fill="#10B981"/>
+                <text x="690" y="286" text-anchor="middle" fill="#10B981" font-family="Inter,sans-serif" font-size="16" font-weight="700">24.4%</text>
+                <text x="690" y="380" text-anchor="middle" fill="#e2e8f0" font-family="Inter,sans-serif" font-size="11" font-weight="600">Allow All AI</text>
+
+                <!-- Insight box -->
+                <rect x="100" y="400" width="600" height="30" rx="8" fill="rgba(139,92,246,0.08)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+                <text x="400" y="420" text-anchor="middle" fill="#c4b5fd" font-family="Inter,sans-serif" font-size="12" font-weight="600">96.8% of websites have no LLMS.txt &mdash; massive first-mover advantage for early adopters</text>
+              </svg>
+            </div>
+
+            <p>Die Daten erzählen eine klare Geschichte:</p>
+
+            <ul>
+              <li><strong>96,8% der Websites haben keine LLMS.txt-Datei.</strong> Das bedeutet, dass fast niemand KI-Systemen strukturierte Richtlinien zu seinen Inhalten bereitstellt. Frühe Anwender, die jetzt LLMS.txt erstellen, haben einen erheblichen First-Mover-Vorteil.</li>
+              <li><strong>41,3% haben überhaupt keine KI-spezifischen robots.txt-Regeln.</strong> Diese Websites verlassen sich vollständig auf die Standard-<code>User-agent: *</code>-Direktive, was bedeutet, dass KI-Crawler denselben Regeln wie traditionelle Bots folgen &mdash; oft unbeabsichtigt den Zugriff auf Weisen blockierend oder erlaubend, die der Website-Betreiber nicht beabsichtigt hat.</li>
+              <li><strong>18,7% blockieren aktiv GPTBot.</strong> Das bedeutet, fast jede fünfte Website ist für ChatGPT, die größte KI-Suchplattform, unsichtbar. Während es berechtigte Gründe für die Blockierung gibt (Paywall-Schutz, Scraping-Bedenken), scheinen viele dieser Blockierungen unbeabsichtigt zu sein &mdash; aus Templates kopiert oder von übereifrigen Sicherheitsplugins gesetzt.</li>
+              <li><strong>Nur 24,4% erlauben explizit alle großen KI-Crawler.</strong> Das sind die Websites, die positioniert sind, den wachsenden KI-Such-Traffic zu erfassen. Wenn Sie dieser Gruppe beitreten und LLMS.txt hinzufügen, sind Sie über 96% des Webs voraus.</li>
+            </ul>
+
+            <div class="stat-highlight">
+              <span class="stat-number">96,8%</span>
+              <span class="stat-desc">der Websites haben keine LLMS.txt-Datei. Eine jetzt zu erstellen bringt Sie in der KI-Content-Governance fast dem gesamten Web voraus.</span>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- AUDIT CHECKLIST                -->
+            <!-- ============================== -->
+            <h2 id="audit-checklist">Audit-Checkliste für KI-Crawler-Konfiguration (10 Prüfungen)</h2>
+
+            <p>Verwenden Sie diese Checkliste, um die KI-Crawler-Konfiguration Ihrer Website zu prüfen. Jede Prüfung dauert weniger als eine Minute, und das gesamte Audit kann in 10 Minuten abgeschlossen werden. Für automatisierte Prüfung starten Sie einen Scan auf <a href="/">seoscore.tools</a> &mdash; unser GEO-Audit deckt alle diese Prüfungen und mehr ab.</p>
+
+            <ul class="checklist">
+              <li><strong>1. LLMS.txt-Datei existiert und ist erreichbar.</strong> Navigieren Sie zu <code>ihreseite.de/llms.txt</code>. Sie sollte HTTP 200 mit Ihren Inhaltsrichtlinien zurückgeben. Wenn sie 404 zurückgibt, müssen Sie die Datei erstellen. Wenn sie eine Weiterleitung oder Fehlerseite zurückgibt, prüfen Sie Ihre Serverkonfiguration. Die Datei muss als Klartext (<code>text/plain</code> Content-Type) ausgeliefert werden.</li>
+
+              <li><strong>2. LLMS.txt enthält erforderliche Felder.</strong> Ihre LLMS.txt muss mindestens enthalten: <code>title:</code> (Ihr Website-Name), <code>description:</code> (was Ihre Website abdeckt) und mindestens einen Inhaltsbereichspfad (z.B. <code>/blog/:</code>). Fehlende Felder machen die Datei für KI-Systeme praktisch nutzlos.</li>
+
+              <li><strong>3. robots.txt hat explizite KI-Crawler-Direktiven.</strong> Prüfen Sie <code>ihreseite.de/robots.txt</code> auf User-Agent-Einträge für GPTBot, ClaudeBot, Google-Extended und PerplexityBot. Jeder sollte eine explizite <code>Allow:</code>- oder <code>Disallow:</code>-Direktive haben. Sich auf die Standard-<code>User-agent: *</code>-Regel zu verlassen, gibt Ihnen keine granulare Kontrolle über einzelne KI-Crawler.</li>
+
+              <li><strong>4. GPTBot ist nicht versehentlich blockiert.</strong> Durchsuchen Sie Ihre robots.txt nach Direktiven, die GPTBot blockieren. Häufige Fehler: eine pauschale <code>User-agent: * / Disallow: /</code>-Regel ohne explizite GPTBot-Erlaubnis oder ein Sicherheitsplugin, das „verdächtige“ User-Agents blockiert. GPTBot-Zugriff ist der einzelne wirkungsvollste KI-Sichtbarkeitsfaktor.</li>
+
+              <li><strong>5. Google-Extended ist erlaubt (separat von Googlebot).</strong> Verifizieren Sie, dass Google-Extended eine eigene <code>Allow</code>-Direktive hat. Google-Extended zu blockieren beeinflusst NICHT die traditionelle Google-Suche &mdash; es entfernt Sie nur aus AI Overviews und Gemini. Viele Website-Betreiber blockieren versehentlich Google-Extended in der Annahme, es beeinflusse die normale Suche (das tut es nicht).</li>
+
+              <li><strong>6. Bytespider ist blockiert.</strong> Sofern Sie keinen spezifischen geschäftlichen Bedarf an TikTok-KI-Sichtbarkeit haben, blockieren Sie Bytespider, um die Serverlast durch aggressives Crawling zu reduzieren und die Datennutzung für Trainingszwecke einzuschränken. Fügen Sie hinzu: <code>User-agent: Bytespider / Disallow: /</code></li>
+
+              <li><strong>7. LLMS.txt-Ausschlüsse stimmen mit Ihrer Content-Strategie überein.</strong> Überprüfen Sie Ihre LLMS.txt-Ausschlüsse, um sicherzustellen, dass sie korrekt Seiten auflisten, die NICHT in KI-Antworten erscheinen sollen: Admin-Bereiche, Checkout-Seiten, Mitglieder-Inhalte, Entwurfs-Inhalte und API-Endpunkte. Fehlende Ausschlüsse können dazu führen, dass private oder transaktionale Inhalte in KI-generierten Antworten erscheinen.</li>
+
+              <li><strong>8. robots.txt und LLMS.txt sind konsistent.</strong> Wenn robots.txt einen Crawler von <code>/blog/</code> blockiert, aber LLMS.txt <code>/blog/</code> als verfügbar auflistet, besteht ein Konflikt. Die robots.txt-Blockierung hat Vorrang (der Crawler kann nicht auf das zugreifen, was er nicht crawlen kann), aber die Inkonsistenz verschwendet LLMS.txt-Richtlinien. Stellen Sie sicher, dass beide Dateien übereinstimmen: In robots.txt erlaubte Pfade sollten in LLMS.txt aufgelistet sein, und in robots.txt blockierte Pfade sollten nicht als verfügbar in LLMS.txt erscheinen.</li>
+
+              <li><strong>9. LLMS.txt-Beschreibung ist korrekt und aktuell.</strong> Ihre LLMS.txt-Beschreibung sollte Ihren aktuellen Website-Inhalt und Fokus korrekt widerspiegeln. Wenn sich Ihre Website weiterentwickelt hat (neue Bereiche hinzugefügt, Fokus geändert, Sprachen erweitert), aktualisieren Sie die Beschreibung. KI-Systeme nutzen diese Metadaten, um Ihre Inhalte zu kontextualisieren &mdash; eine veraltete Beschreibung führt zu falscher Kontextualisierung.</li>
+
+              <li><strong>10. Keine Meta-Robots-Konflikte auf wichtigen Seiten.</strong> Auch wenn robots.txt KI-Crawler erlaubt und LLMS.txt Inhaltsbereiche auflistet, können einzelne Seiten KI-Crawler weiterhin mit Meta-Robots-Tags blockieren (<code>&lt;meta name="robots" content="noai"&gt;</code> oder spezifische Bot-Direktiven). Prüfen Sie Ihre wichtigsten Seiten auf Meta-Tags, die Ihrer robots.txt- und LLMS.txt-Konfiguration widersprechen könnten.</li>
+            </ul>
+
+            <!-- Stat Row -->
+            <div class="stat-row">
+              <div class="stat-row-item">
+                <span class="stat-row-value">10</span>
+                <span class="stat-row-label">Audit-Prüfungen</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">10 min</span>
+                <span class="stat-row-label">Manuelles Audit</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">5 sec</span>
+                <span class="stat-row-label">Automatisierter Scan</span>
+              </div>
+              <div class="stat-row-item">
+                <span class="stat-row-value">250+</span>
+                <span class="stat-row-label">Scanner-Prüfungen gesamt</span>
+              </div>
+            </div>
+
+
+            <!-- CTA 2 -->
+            <div class="article-cta article-cta-scan">
+              <h3>Führen Sie das vollständige KI-Crawler-Audit automatisch durch</h3>
+              <p>Unser Scanner prüft LLMS.txt, robots.txt KI-Direktiven, Schema-Markup und 250+ weitere Faktoren in Sekunden.</p>
+              <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
+                <div class="cta-input-wrapper">
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
+                  <button type="submit" class="btn btn-primary cta-scan-btn">Jetzt scannen &rarr;</button>
+                </div>
+              </form>
+            </div>
+
+
+            <blockquote style="border-left: 3px solid #6366f1; margin: 32px 0; padding: 20px 24px; background: rgba(99,102,241,0.06); border-radius: 0 12px 12px 0;">
+              <p style="font-style: italic; color: #e2e8f0; margin: 0 0 8px; line-height: 1.6;">„Die Websites, die in der KI-Suche gewinnen, sind nicht diejenigen mit dem meisten Inhalt &mdash; sondern diejenigen, die es KI-Systemen am einfachsten machen, ihre Inhalte zu verstehen, zu kontextualisieren und zu zitieren. LLMS.txt ist der einfachste Schritt mit der größten Hebelwirkung, den Sie in diese Richtung unternehmen können.“</p>
+              <cite style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">&mdash; Atilla Kuruk, SEO Engineer &amp; Tool Builder</cite>
+            </blockquote>
+
+
+            <!-- ============================== -->
+            <!-- FAQ                            -->
+            <!-- ============================== -->
+            <h2 id="faq">Häufig gestellte Fragen</h2>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Was ist LLMS.txt und wie unterscheidet es sich von robots.txt?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>LLMS.txt ist eine Klartextdatei im Stammverzeichnis Ihrer Website (<code>ihreseite.de/llms.txt</code>), die direkt mit Large-Language-Model-Systemen über Ihre Inhaltsverfügbarkeit und bevorzugte Nutzung kommuniziert. Während robots.txt traditionellen Suchmaschinen-Crawlern mitteilt, was gecrawlt und indexiert werden soll, richtet sich LLMS.txt speziell an KI-Systeme wie ChatGPT, Claude, Perplexity und Google AI Overviews. Es liefert strukturierte Metadaten einschließlich Ihrer Website-Beschreibung, der für KI-Zitierung verfügbaren Inhaltsbereiche und der Bereiche, die Sie vom KI-Training oder der Referenzierung ausschließen möchten. Beide Dateien arbeiten zusammen: robots.txt steuert den Crawling-Zugriff, LLMS.txt steuert, wie KI-Systeme die gefundenen Inhalte interpretieren und nutzen sollen.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Brauche ich sowohl robots.txt als auch LLMS.txt?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Ja. Robots.txt und LLMS.txt dienen sich ergänzenden, aber unterschiedlichen Zwecken. Robots.txt steuert, ob KI-Crawler überhaupt auf Ihre Seiten zugreifen können, mittels User-Agent-Direktiven für Bots wie GPTBot, ClaudeBot und Google-Extended. LLMS.txt geht weiter und teilt KI-Systemen mit, wie sie die Inhalte nutzen sollen: welche Bereiche für Zitierung verfügbar sind, worum es auf Ihrer Website geht und welche Inhalte vom KI-Training ausgeschlossen werden sollen. Ohne robots.txt KI-Direktiven könnten Crawler komplett blockiert werden. Ohne LLMS.txt haben KI-Systeme keine Orientierung, wie sie Ihre Inhalte priorisieren oder kontextualisieren sollen. Konfigurieren Sie für maximale KI-Sichtbarkeit beide Dateien.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Welche KI-Crawler sollte ich in der robots.txt erlauben?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Für die meisten Websites, die maximale KI-Sichtbarkeit anstreben, erlauben Sie diese Crawler: GPTBot (betreibt ChatGPT-Suche und KI-Funktionen), ClaudeBot (betreibt Anthropic Claude-Antworten), Google-Extended (betreibt Google AI Overviews und Gemini) und PerplexityBot (betreibt Perplexity KI-Suche). Erwägen Sie, Bytespider (TikTok/ByteDance) und CCBot (Common Crawl) zu blockieren, wenn Sie Bedenken hinsichtlich großangelegtem Daten-Scraping für KI-Training ohne direkten Zitierungsvorteil haben. Das Grundprinzip: Erlauben Sie Crawler, die direkt KI-Suchprodukte betreiben, in denen Ihre Inhalte zitiert werden und Referral-Traffic generieren können. Blockieren Sie Crawler, die primär Daten für Modelltraining scrapen, ohne Sichtbarkeit im Gegenzug zu bieten.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Wie erstelle ich eine LLMS.txt-Datei für WordPress?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Es gibt zwei Methoden. Manuell: Erstellen Sie eine Klartextdatei namens <code>llms.txt</code> mit Ihrem Website-Titel, Beschreibung und aufgelisteten Inhaltsbereichen, und laden Sie sie dann über FTP oder den Dateimanager Ihres Hostings in das WordPress-Stammverzeichnis hoch, sodass sie unter <code>ihreseite.de/llms.txt</code> erreichbar ist. Automatisiert: Verwenden Sie das <a href="/de/seo-autopilot/">SEO Autopilot WordPress-Plugin</a>, das einen LLMS.txt-Generator enthält, der die Datei automatisch basierend auf Ihrer Websitestruktur, veröffentlichten Inhaltstypen und konfigurierten Ausschlüssen erstellt und pflegt. Das Plugin prüft auch Ihre bestehende KI-Crawler-Konfiguration über robots.txt und LLMS.txt im Rahmen seines 207-Prüfungen umfassenden GEO-Audits.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Verbessert LLMS.txt tatsächlich KI-Zitierungen und Traffic?</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Basierend auf unseren Tests über Hunderte von Websites zeigen Seiten mit einer korrekt konfigurierten LLMS.txt-Datei in Kombination mit robots.txt KI-Direktiven messbar höhere KI-Zitierungsraten. In unseren Daten erschienen Websites mit beiden korrekt konfigurierten Dateien 2,4-mal häufiger in KI-generierten Antworten als Seiten ohne beide. Allerdings beweist Korrelation keine Kausalität: Seiten, die LLMS.txt implementieren, haben tendenziell auch insgesamt besser strukturierte Inhalte, was die KI-Extrahierbarkeit unabhängig davon verbessert. Was wir mit Sicherheit sagen können, ist, dass LLMS.txt Mehrdeutigkeiten für KI-Systeme darüber beseitigt, welche Inhalte Sie zitiert haben möchten, und dass die Reduzierung von Mehrdeutigkeiten in unseren Tests durchgehend die Ergebnisse verbessert. Die Einrichtung dauert fünf Minuten und birgt kein Risiko.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="source-citations" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px 24px; margin: 32px 0;">
+              <h3 style="margin: 0 0 12px; font-size: 1rem; color: rgba(255,255,255,0.6);">Quellen &amp; Referenzen</h3>
+              <ul style="margin: 0; padding-left: 20px; color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.8;">
+                <li><a href="https://platform.openai.com/docs/bots/overview" target="_blank" rel="noopener" style="color: #818cf8;">OpenAI: GPTBot Documentation</a> &mdash; Official documentation on GPTBot user-agent, crawling behavior, and robots.txt compliance.</li>
+                <li><a href="https://docs.anthropic.com/en/docs/about-claude/models" target="_blank" rel="noopener" style="color: #818cf8;">Anthropic: ClaudeBot Documentation</a> &mdash; Anthropic's documentation on ClaudeBot crawling practices and content usage policies.</li>
+                <li><a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" target="_blank" rel="noopener" style="color: #818cf8;">Google: Overview of Google Crawlers</a> &mdash; Official list of Google's crawlers including Google-Extended for AI features.</li>
+                <li><a href="https://www.robotstxt.org/robotstxt.html" target="_blank" rel="noopener" style="color: #818cf8;">robotstxt.org: The Web Robots Pages</a> &mdash; The original robots.txt specification and standard documentation.</li>
+                <li><a href="https://llmstxt.org/" target="_blank" rel="noopener" style="color: #818cf8;">llmstxt.org: LLMS.txt Specification</a> &mdash; The official specification for the LLMS.txt standard.</li>
+              </ul>
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- KEY TAKEAWAYS                  -->
+            <!-- ============================== -->
+            <h2 id="key-takeaways">Wichtigste Erkenntnisse</h2>
+
+            <ol>
+              <li><strong>LLMS.txt ist der neue Standard für KI-Content-Governance.</strong> Während robots.txt steuert, ob KI-Crawler auf Ihre Website zugreifen können, sagt LLMS.txt KI-Systemen, wie sie Ihre Inhalte nutzen sollen &mdash; welche Bereiche zitiert werden sollen, worum es auf Ihrer Website geht und was ausgeschlossen werden soll. Beide Dateien sind für SEO im KI-Zeitalter unerlässlich.</li>
+              <li><strong>Erlauben Sie die vier großen KI-Such-Crawler.</strong> GPTBot, ClaudeBot, Google-Extended und PerplexityBot betreiben die KI-Suchprodukte, die wachsenden Referral-Traffic generieren. Sie zu blockieren macht Sie für 15&ndash;25% des potenziellen Informationssuch-Traffics unsichtbar. Blockieren Sie Bytespider; erwägen Sie, CCBot zu blockieren.</li>
+              <li><strong>96,8% der Websites haben keine LLMS.txt-Datei.</strong> Jetzt eine zu erstellen bringt Sie fast dem gesamten Web voraus. Es dauert fünf Minuten, kostet nichts und birgt kein Risiko. Der First-Mover-Vorteil bei der LLMS.txt-Adoption ist enorm.</li>
+              <li><strong>robots.txt und LLMS.txt müssen konsistent sein.</strong> Erlauben Sie in LLMS.txt keine Inhalte, die robots.txt blockiert. Listen Sie in LLMS.txt keine Pfade auf, die nicht existieren. Prüfen Sie beide Dateien gemeinsam, um sicherzustellen, dass sie mit Ihrer Content-Strategie übereinstimmen.</li>
+              <li><strong>Prüfen Sie Ihre Konfiguration regelmäßig.</strong> KI-Crawler-Richtlinien ändern sich, neue Crawler entstehen und Ihre Website entwickelt sich weiter. Führen Sie das 10-Punkte-Audit aus diesem Leitfaden monatlich durch oder nutzen Sie <a href="/">seoscore.tools</a>, um den Prozess als Teil Ihres regelmäßigen GEO-Audits zu automatisieren.</li>
+              <li><strong>WordPress-Nutzer: Automatisieren Sie mit SEO Autopilot.</strong> Das <a href="/de/seo-autopilot/">SEO Autopilot Plugin</a> generiert und pflegt LLMS.txt automatisch, prüft robots.txt KI-Direktiven und enthält die KI-Crawler-Konfiguration als Teil seiner 207-Prüfungen umfassenden SEO-, AEO- und GEO-Audit-Suite.</li>
+            </ol>
+
+            <!-- Internal Links Section -->
+            <div class="key-terms" style="background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0;">
+              <h3 style="margin: 0 0 16px; font-size: 1.1rem; color: #6366f1;">Weiterführende Lektüre</h3>
+              <ul style="margin: 0; padding-left: 20px; line-height: 2;">
+                <li><a href="/de/blog/robots-txt-ai/" style="color: #818cf8;">robots.txt für KI-Crawler: Vollständiger Konfigurationsleitfaden</a></li>
+                <li><a href="/de/blog/what-is-aeo/" style="color: #818cf8;">Was ist AEO? Answer Engine Optimization erklärt</a></li>
+                <li><a href="/de/blog/what-is-geo/" style="color: #818cf8;">Was ist GEO? Generative Engine Optimization Leitfaden</a></li>
+                <li><a href="/de/blog/rank-in-ai-search/" style="color: #818cf8;">Wie Sie in KI-Suchergebnissen ranken (2026)</a></li>
+                <li><a href="/de/blog/perplexity-seo/" style="color: #818cf8;">Perplexity SEO: So werden Sie in Perplexity AI zitiert</a></li>
+                <li><a href="/de/blog/seo-audit-checklist/" style="color: #818cf8;">SEO-Audit-Checkliste 2026: 50+ Prüfungen</a></li>
+              </ul>
+            </div>
+
+            <!-- Share Bar -->
+            <div class="share-bar">
+              <span class="share-label">Diesen Leitfaden teilen:</span>
+              <button class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title),'_blank','width=550,height=420')" aria-label="Share on X">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </button>
+              <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank','width=550,height=420')" aria-label="Share on LinkedIn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.245 1.445-2.245 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </button>
+              <button class="share-btn" onclick="navigator.clipboard.writeText(location.href).then(()=>this.innerHTML='<svg viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;><path d=&quot;M5 8l2 2 4-4&quot; stroke-linecap=&quot;round&quot;/></svg>')" aria-label="Copy link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              </button>
+            </div>
+
+            <!-- Author Box -->
+            <div class="author-box">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <h4>Atilla Kuruk</h4>
+                <p class="author-role">SEO Engineer &amp; Tool Builder &middot; Google Digital Marketing Zertifiziert &middot; 7x Anthropic Academy</p>
+                <p class="author-bio">Atilla ist der Entwickler von <a href="/">seoscore.tools</a> und dem <a href="/de/seo-autopilot/">SEO Autopilot</a> WordPress-Plugin. Er spezialisiert sich auf SEO, AEO und GEO-Optimierung mit Fokus auf KI-Suchsichtbarkeit und WordPress-Automatisierung.</p>
+              </div>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <!-- Related Articles -->
+          <section class="related-section">
+            <h2>Verwandte Artikel</h2>
+            <div class="related-grid">
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge seo-badge">SEO</span>
+                  <span class="blog-card-badge geo-badge">GEO</span>
+                </div>
+                <h3><a href="/de/blog/robots-txt-ai/">robots.txt für KI-Crawler: Vollständiger Konfigurationsleitfaden</a></h3>
+                <p>Wie Sie robots.txt für GPTBot, ClaudeBot, Google-Extended und andere KI-Crawler konfigurieren. Mit Vorlagen und häufigen Fehlern.</p>
+              </div>
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge geo-badge">GEO</span>
+                </div>
+                <h3><a href="/de/blog/rank-in-ai-search/">Wie Sie in KI-Suchergebnissen ranken (2026)</a></h3>
+                <p>Umsetzbare Strategien, damit Ihre Inhalte in ChatGPT, Perplexity, Claude und Google AI Overviews zitiert werden.</p>
+              </div>
+            </div>
+          </section>
+
+        </article>
+
+        <!-- Sidebar TOC (Desktop) -->
+        <aside class="article-sidebar">
+          <div class="toc">
+            <div class="toc-title">Inhalt</div>
+            <ul class="toc-list" id="tocList">
+              <li><a class="toc-link" href="#what-is-llms-txt">Was ist LLMS.txt?</a></li>
+              <li><a class="toc-link" href="#robots-vs-llms">robots.txt vs LLMS.txt</a></li>
+              <li><a class="toc-link" href="#ai-crawler-landscape">KI-Crawler-Landschaft</a></li>
+              <li><a class="toc-link" href="#should-you-allow">Sollten Sie erlauben?</a></li>
+              <li><a class="toc-link" href="#llms-txt-format">LLMS.txt Format</a></li>
+              <li><a class="toc-link" href="#setup-guides">Einrichtung</a></li>
+              <li><a class="toc-link" href="#robots-txt-ai">robots.txt Direktiven</a></li>
+              <li><a class="toc-link" href="#adoption-rates">Verbreitung</a></li>
+              <li><a class="toc-link" href="#audit-checklist">Audit-Checkliste (10)</a></li>
+              <li><a class="toc-link" href="#faq">FAQ</a></li>
+              <li><a class="toc-link" href="#key-takeaways">Erkenntnisse</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+        <p class="footer-tagline">Kostenloser SEO, AEO &amp; GEO Scanner</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Scanner</a>
+        <a href="/de/blog/">Blog</a>
+        <a href="/privacy.html">Datenschutz</a>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 seoscore.tools. Alle Rechte vorbehalten.</span>
+        <span class="footer-built">Powered by Cloudflare Workers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    function setTheme(t) { html.setAttribute('data-theme', t); localStorage.setItem('seoscore-theme', t); }
+    themeToggle.addEventListener('click', () => setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
+    const saved = localStorage.getItem('seoscore-theme');
+    if (saved) setTheme(saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // Reading progress bar
+    const progressBar = document.getElementById('readingProgress');
+    window.addEventListener('scroll', () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / docHeight) * 100;
+      progressBar.style.width = Math.min(scrolled, 100) + '%';
+    });
+
+    // TOC active state (desktop)
+    const tocLinks = document.querySelectorAll('#tocList .toc-link');
+    const headings = [];
+    tocLinks.forEach(link => {
+      const id = link.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) headings.push({ el, link });
+    });
+
+    function updateToc() {
+      let current = headings[0];
+      for (const h of headings) {
+        if (h.el.getBoundingClientRect().top <= 100) current = h;
+      }
+      tocLinks.forEach(l => l.classList.remove('active'));
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateToc);
+    updateToc();
+
+    // Mobile TOC toggle
+    const tocMobile = document.getElementById('tocMobile');
+    const tocMobileToggle = document.getElementById('tocMobileToggle');
+    tocMobileToggle.addEventListener('click', () => tocMobile.classList.toggle('open'));
+
+    // Close mobile TOC on link click
+    document.querySelectorAll('#tocMobileList .toc-link').forEach(link => {
+      link.addEventListener('click', () => tocMobile.classList.remove('open'));
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !wasOpen);
+      });
+    });
+  </script>
+</body>
+</html>

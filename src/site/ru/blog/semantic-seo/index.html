@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semantic SEO: оптимизация по смыслу, а не только по ключевым словам (2026) — seoscore.tools</title>
-  <meta name="description" content="Semantic SEO выходит за рамки ключевых слов и оптимизирует контент по смыслу, сущностям и контексту. Узнайте, как работает Knowledge Graph Google и как строить стратегии SEO на основе сущностей в 2026 году.">
+  <title>Semantic SEO 2026: 7 Entity Strategies Beyond Keywords</title>
+  <meta name="description" content="Modern SEO optimizes for entities and meaning, not keywords. 7 strategies using Knowledge Graph, topic clusters, and semantic relationships. 2026 examples.">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="seoscore.tools">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="author" content="Atilla Kuruk, SEO & AI Search Specialist">
   <link rel="canonical" href="https://seoscore.tools/ru/blog/semantic-seo/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
 
   <!-- hreflang -->
   <link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/semantic-seo/">
@@ -20,8 +22,8 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Semantic SEO: оптимизация по смыслу, а не только по ключевым словам (2026) — seoscore.tools">
-  <meta property="og:description" content="Semantic SEO выходит за рамки ключевых слов и оптимизирует по смыслу, сущностям и контексту. Узнайте стратегии SEO на основе сущностей для 2026 года.">
+  <meta property="og:title" content="Semantic SEO 2026: 7 Entity Strategies Beyond Keywords">
+  <meta property="og:description" content="Modern SEO optimizes for entities and meaning, not keywords. 7 strategies using Knowledge Graph, topic clusters, and semantic relationships. 2026 examples.">
   <meta property="og:url" content="https://seoscore.tools/ru/blog/semantic-seo/">
   <meta property="og:site_name" content="seoscore.tools">
   <meta property="og:image" content="https://seoscore.tools/og-image.png">
@@ -34,8 +36,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Semantic SEO: оптимизация по смыслу, а не только по ключевым словам (2026)">
-  <meta name="twitter:description" content="Semantic SEO выходит за рамки ключевых слов и оптимизирует по смыслу, сущностям и контексту. Узнайте стратегии на основе сущностей для 2026 года.">
+  <meta name="twitter:title" content="Semantic SEO 2026: 7 Entity Strategies Beyond Keywords">
+  <meta name="twitter:description" content="Modern SEO optimizes for entities and meaning, not keywords. 7 strategies using Knowledge Graph, topic clusters, and semantic relationships. 2026 examples.">
   <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
 
   <!-- Fonts -->
@@ -43,8 +45,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/blog.css">
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -66,8 +68,9 @@
     "datePublished": "2026-03-15T00:00:00+00:00",
     "dateModified": "2026-03-15T00:00:00+00:00",
     "author": {
-      "@type": "Organization",
-      "name": "seoscore.tools",
+      "@type": "Person",
+      "name": "Atilla Kuruk",
+      "jobTitle": "SEO & AI Search Specialist",
       "url": "https://seoscore.tools"
     },
     "publisher": {
@@ -76,8 +79,16 @@
       "url": "https://seoscore.tools",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://seoscore.tools/favicon.svg"
+        "url": "https://seoscore.tools/logo.png",
+        "width": 600,
+        "height": 60
       }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://seoscore.tools/og-image.png",
+      "width": 1200,
+      "height": 630
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -176,7 +187,7 @@
     "name": "Semantic SEO: оптимизация по смыслу, а не только по ключевым словам",
     "speakable": {
       "@type": "SpeakableSpecification",
-      "cssSelector": [".article-intro", ".key-definition"]
+      "cssSelector": [".article-intro", ".key-definition", ".qa-text", ".qa-card"]
     }
   }
   </script>
@@ -200,6 +211,7 @@
       <nav class="nav">
         <a href="/" class="nav-link">Сканер</a>
         <a href="/ru/blog/" class="nav-link" style="color:var(--accent)">Блог</a>
+
         <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -238,7 +250,7 @@
             <div class="article-meta">
               <span class="article-meta-item">
                 <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
-                15 марта 2026
+                <time datetime="2026-03-23">15 марта 2026</time>
               </span>
               <span class="article-meta-sep">&middot;</span>
               <span class="article-meta-item">
@@ -246,7 +258,7 @@
                 13 мин. чтения
               </span>
               <span class="article-meta-sep">&middot;</span>
-              <span class="article-meta-item">Автор: seoscore.tools</span>
+              <span class="article-meta-item"><strong>Атилла Курук</strong>, SEO и AI специалист</span>
             </div>
           </header>
 
@@ -369,7 +381,21 @@
             </div>
 
             <!-- How Google's Knowledge Graph Works -->
-            <h2 id="knowledge-graph">Как работает Knowledge Graph Google</h2>
+                        <div class="key-terms" style="background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0;">
+              <h3 style="margin: 0 0 16px; font-size: 1.1rem; color: #6366f1;">Ключевые термины</h3>
+              <dl style="margin: 0;">
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">Entity</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">A uniquely identifiable thing or concept in Google's Knowledge Graph, such as a person, organization, product, or place. Unlike keywords, entities are language-independent and unambiguous.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">Knowledge Graph</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Google's database of over 5 billion entities and 500 billion facts that powers semantic search understanding.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">Topic Cluster</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">A content architecture model where one pillar page links to multiple spoke pages covering subtopics, signaling comprehensive topical authority.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">Entity Salience</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">A measure of how central and prominent an entity is within a piece of content, evaluated by Google to determine topical relevance.</dd>
+              </dl>
+            </div>
+
+<h2 id="knowledge-graph">Как работает Knowledge Graph Google</h2>
 
             <p>Чтобы понять Semantic SEO, нужно понять Knowledge Graph &mdash; огромную базу данных сущностей и связей, которая обеспечивает возможности семантического поиска Google. <strong>Knowledge Graph Google содержит более 500 миллиардов фактов о 5 миллиардах сущностей</strong>, и является основой того, как Google переходит от обработки строк символов к пониманию концепций реального мира.</p>
 
@@ -557,17 +583,22 @@
             <!-- CTA 1 -->
             <div class="article-cta article-cta-scan">
               <h3>Проверьте ваш Semantic SEO Score &mdash; бесплатно</h3>
-              <p>Наш сканер анализирует покрытие сущностей, структурированные данные, тематическую глубину и 136+ семантических сигналов.</p>
+              <p>Наш сканер анализирует покрытие сущностей, структурированные данные, тематическую глубину и 260+ семантических сигналов.</p>
               <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
                 <div class="cta-input-wrapper">
-                  <input type="url" name="url" class="cta-scan-input" placeholder="Введите URL вашего сайта..." required>
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
                   <button type="submit" class="btn btn-primary cta-scan-btn">Сканировать &rarr;</button>
                 </div>
               </form>
             </div>
 
             <!-- 10 Semantic SEO Strategies -->
-            <h2 id="10-strategies">10 стратегий Semantic SEO на 2026 год</h2>
+                        <blockquote style="border-left: 3px solid #6366f1; margin: 32px 0; padding: 20px 24px; background: rgba(99,102,241,0.06); border-radius: 0 12px 12px 0;">
+              <p style="font-style: italic; color: #e2e8f0; margin: 0 0 8px; line-height: 1.6;">"Semantic SEO is not a separate discipline from traditional SEO — it is where SEO is heading. Every Google algorithm update since BERT has pushed search further toward meaning and entities. The sites that build semantic foundations now will dominate both traditional and AI search for years."</p>
+              <cite style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">— Атилла Курук, специалист по SEO и AI-поиску</cite>
+            </blockquote>
+
+<h2 id="10-strategies">10 стратегий Semantic SEO на 2026 год</h2>
 
             <p>Это наиболее эффективные стратегии Semantic SEO, которые вы можете реализовать сегодня. Каждая из них напрямую улучшает то, как Google и ИИ-системы понимают ваш контент, что приводит к более широкому охвату ранжирования и повышенной видимости в семантическом поиске.</p>
 
@@ -685,7 +716,7 @@
               <p>Получите ваши баллы SEO, AEO &amp; GEO и узнайте, где именно нужно улучшить семантические сигналы.</p>
               <form class="cta-scan-form" action="https://seoscore.tools/" method="GET">
                 <div class="cta-input-wrapper">
-                  <input type="url" name="url" class="cta-scan-input" placeholder="Введите URL вашего сайта..." required>
+                  <input type="url" name="url" class="cta-scan-input" placeholder="https://example.com" required>
                   <button type="submit" class="btn btn-primary cta-scan-btn">Сканировать &rarr;</button>
                 </div>
               </form>
@@ -770,6 +801,16 @@
             </div>
 
             <!-- Key Takeaways -->
+            
+            <div class="source-citations" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px 24px; margin: 32px 0;">
+              <h3 style="margin: 0 0 12px; font-size: 1rem; color: rgba(255,255,255,0.6);">Источники и ссылки</h3>
+              <ul style="margin: 0; padding-left: 20px; color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.8;">
+                <li><a href="https://blog.google/products/search/introducing-knowledge-graph-things-not/" target="_blank" rel="noopener" style="color: #818cf8;">Google: Introducing the Knowledge Graph</a> — Google's original announcement of the Knowledge Graph ("things, not strings")</li>
+                <li><a href="https://blog.google/products/search/search-language-understanding-bert/" target="_blank" rel="noopener" style="color: #818cf8;">Google: Understanding BERT</a> — How BERT transformed Google Search toward semantic language understanding</li>
+                <li><a href="https://www.wikidata.org/" target="_blank" rel="noopener" style="color: #818cf8;">Wikidata</a> — The free knowledge base with structured entity data used by search engines and AI systems</li>
+              </ul>
+            </div>
+
             <h2 id="key-takeaways">Ключевые выводы</h2>
 
             <ol>
@@ -788,7 +829,7 @@
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </button>
               <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank','width=550,height=420')" aria-label="Поделиться в LinkedIn">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.245 1.445-2.245 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </button>
               <button class="share-btn" onclick="navigator.clipboard.writeText(location.href).then(()=>this.innerHTML='<svg viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;><path d=&quot;M5 8l2 2 4-4&quot; stroke-linecap=&quot;round&quot;/></svg>')" aria-label="Копировать ссылку">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
@@ -797,11 +838,11 @@
 
             <!-- Author Box -->
             <div class="author-box">
-              <div class="author-avatar">S</div>
+              <div class="author-avatar">AK</div>
               <div class="author-info">
-                <h4>seoscore.tools</h4>
+                <h4>Atilla Kuruk</h4>
                 <p class="author-role">Эксперты SEO, AEO и GEO</p>
-                <p class="author-bio">Мы создаём бесплатные инструменты, помогающие владельцам сайтов оптимизировать для поисковых систем и ИИ-поиска. Наш сканер выполняет 136+ проверок по SEO, AEO и GEO для предоставления практических рекомендаций.</p>
+                <p class="author-bio">Atilla is the creator of <a href="/">seoscore.tools</a> and the <a href="/seo-autopilot/">SEO Autopilot</a> WordPress plugin. He specializes in SEO, AEO, and GEO optimization for WordPress and e-commerce sites.</p>
               </div>
             </div>
 

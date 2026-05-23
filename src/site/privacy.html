@@ -8,10 +8,26 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://seoscore.tools/privacy.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy Policy — seoscore.tools">
+  <meta property="og:description" content="Privacy policy for seoscore.tools. Scans are processed in real-time. We respect your privacy.">
+  <meta property="og:url" content="https://seoscore.tools/privacy.html">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy Policy — seoscore.tools">
+  <meta name="twitter:description" content="How seoscore.tools handles your data. Scans processed in real-time, no data stored.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -34,9 +50,14 @@
         </svg>
         <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="nav-links">
         <a href="/" class="nav-link">Home</a>
         <a href="/blog/" class="nav-link">Blog</a>
+        </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -48,7 +69,7 @@
   <main>
     <div class="container privacy-page">
       <h1>Privacy Policy</h1>
-      <p class="privacy-date">Last updated: March 14, 2026</p>
+      <p class="privacy-date">Last updated: March 26, 2026</p>
 
       <h2>Overview</h2>
       <p>seoscore.tools is committed to protecting your privacy. This policy explains what data we collect (spoiler: almost none) and how we handle it.</p>
@@ -57,7 +78,7 @@
       <ul>
         <li>We do <strong>not</strong> store your website content or scan results on our servers</li>
         <li>We do <strong>not</strong> require signup, email, or personal information</li>
-        <li>We do <strong>not</strong> use tracking cookies or third-party analytics</li>
+        <li>We do <strong>not</strong> use tracking cookies</li>
         <li>We do <strong>not</strong> sell or share any data with third parties</li>
       </ul>
 
@@ -78,7 +99,9 @@
       <p>We use the following third-party services:</p>
       <ul>
         <li><strong>Cloudflare Workers</strong> — Hosts and serves our application</li>
+        <li><strong>Google Analytics 4</strong> — Anonymous usage analytics (page views, scan counts) to improve the tool. No personal data is collected. You can opt out via browser extensions or privacy settings.</li>
         <li><strong>Google Fonts</strong> — Provides the Inter and JetBrains Mono typefaces</li>
+        <li><strong>Impact.com</strong> — Affiliate link tracking for tool recommendations in scan results</li>
       </ul>
       <p>These services may collect standard web server logs (IP address, user agent, timestamps) according to their own privacy policies.</p>
 
@@ -118,5 +141,6 @@
     if (saved) setTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
   </script>
+  <script>var nt=document.getElementById('navToggle'),nl=document.querySelector('.nav-links');if(nt&&nl){nt.addEventListener('click',function(){var o=nl.classList.toggle('open');nt.setAttribute('aria-expanded',o)});document.addEventListener('click',function(e){if(!e.target.closest('.nav')&&nl.classList.contains('open')){nl.classList.remove('open');nt.setAttribute('aria-expanded','false')}})}</script>
 </body>
 </html>

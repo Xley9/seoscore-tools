@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Das erste WordPress-Plugin, das SEO, AEO & GEO gemeinsam</title>
+  <meta name="description" content="SEO Autopilot ist das erste WordPress-Plugin, das SEO, AEO und GEO gemeinsam bewertet. Vergleich mit Yoast und RankMath.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="author" content="Atilla Kuruk, SEO & AI Search Specialist">
+  <link rel="canonical" href="https://seoscore.tools/de/blog/seo-aeo-geo-wordpress-plugin/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://seoscore.tools/blog/seo-aeo-geo-wordpress-plugin/">
+  <link rel="alternate" hreflang="de" href="https://seoscore.tools/de/blog/seo-aeo-geo-wordpress-plugin/">
+  <link rel="alternate" hreflang="tr" href="https://seoscore.tools/tr/blog/seo-aeo-geo-wordpress-plugin/">
+  <link rel="alternate" hreflang="ru" href="https://seoscore.tools/ru/blog/seo-aeo-geo-wordpress-plugin/">
+  <link rel="alternate" hreflang="es" href="https://seoscore.tools/es/blog/seo-aeo-geo-wordpress-plugin/">
+  <link rel="alternate" hreflang="x-default" href="https://seoscore.tools/blog/seo-aeo-geo-wordpress-plugin/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Das erste WordPress-Plugin, das SEO, AEO & GEO gemeinsam">
+  <meta property="og:description" content="SEO Autopilot ist das erste WordPress-Plugin, das SEO, AEO und GEO gemeinsam bewertet. Vergleich mit Yoast und RankMath.">
+  <meta property="og:url" content="https://seoscore.tools/de/blog/seo-aeo-geo-wordpress-plugin/">
+  <meta property="og:site_name" content="seoscore.tools">
+  <meta property="og:image" content="https://seoscore.tools/og-image.png">
+  <meta property="article:published_time" content="2026-03-21T00:00:00+00:00">
+  <meta property="article:modified_time" content="2026-03-21T00:00:00+00:00">
+  <meta property="article:section" content="SEO">
+  <meta property="article:tag" content="SEO">
+  <meta property="article:tag" content="AEO">
+  <meta property="article:tag" content="GEO">
+  <meta property="article:tag" content="WordPress Plugin">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Das erste WordPress-Plugin, das SEO, AEO & GEO gemeinsam">
+  <meta name="twitter:description" content="SEO Autopilot ist das erste WordPress-Plugin, das SEO, AEO und GEO gemeinsam bewertet. Vergleich mit Yoast und RankMath.">
+  <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JP76DPK4GK');
+  </script>
+
+  <!-- Schema.org — BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Das erste WordPress-Plugin, das SEO, AEO & GEO gemeinsam bewertet (2026)",
+    "description": "SEO Autopilot ist das erste WordPress-Plugin, das SEO, AEO und GEO gemeinsam bewertet. Vergleich mit Yoast und RankMath. Erfahren Sie, warum 3 Scores 2026 entscheidend sind.",
+    "url": "https://seoscore.tools/de/blog/seo-aeo-geo-wordpress-plugin/",
+    "datePublished": "2026-03-21T00:00:00+00:00",
+    "dateModified": "2026-03-21T00:00:00+00:00",
+    "author": {
+      "@type": "Person",
+      "name": "Atilla Kuruk",
+      "jobTitle": "SEO & AI Search Specialist",
+      "url": "https://seoscore.tools"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "seoscore.tools",
+      "url": "https://seoscore.tools",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://seoscore.tools/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://seoscore.tools/og-image.png",
+      "width": 1200,
+      "height": 630
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://seoscore.tools/de/blog/seo-aeo-geo-wordpress-plugin/"
+    },
+    "articleSection": "SEO",
+    "keywords": ["SEO", "AEO", "GEO", "WordPress Plugin", "SEO Autopilot", "Yoast", "RankMath"],
+    "wordCount": 2200,
+    "inLanguage": "de"
+  }
+  </script>
+
+  <!-- Schema.org — Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "SEO Autopilot Pro",
+    "description": "Das erste WordPress-Plugin, das SEO, AEO und GEO gemeinsam bewertet. 245 automatisierte Pruefungen, KI-gestuetzte Content-Fixes und Ein-Klick-Optimierung.",
+    "brand": {
+      "@type": "Organization",
+      "name": "seoscore.tools"
+    },
+    "category": "SEO Plugin",
+    "url": "https://atilla45.gumroad.com/l/seo-autopilot-pro",
+    "offers": {
+      "@type": "Offer",
+      "price": "79.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://atilla45.gumroad.com/l/seo-autopilot-pro"
+    }
+  }
+  </script>
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://seoscore.tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://seoscore.tools/de/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SEO Autopilot: SEO, AEO & GEO WordPress-Plugin",
+        "item": "https://seoscore.tools/de/blog/seo-aeo-geo-wordpress-plugin/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — Speakable -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Das erste WordPress-Plugin, das SEO, AEO & GEO gemeinsam bewertet (2026)",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-intro", ".key-definition", ".qa-text", ".qa-card"]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="28" height="28">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 6 L16 16 L24 20" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="2.5" fill="var(--accent)"/>
+        </svg>
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-link">Scanner</a>
+        <a href="/de/blog/" class="nav-link" style="color:var(--accent)">Blog</a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumbs -->
+    <div class="blog-container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Startseite</a>
+        <span class="bc-sep">/</span>
+        <a href="/de/blog/">Blog</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-current">SEO, AEO & GEO fuer WordPress</span>
+      </nav>
+    </div>
+
+    <!-- Article Layout -->
+    <div class="blog-container">
+      <div class="article-layout">
+
+        <!-- Main Content -->
+        <article class="article-main blog-article">
+
+          <!-- Article Header -->
+          <header class="article-header">
+            <div class="article-badges">
+              <span class="article-badge seo-badge">SEO</span>
+              <span class="article-badge aeo-badge">AEO</span>
+              <span class="article-badge geo-badge">GEO</span>
+            </div>
+            <h1>Das erste WordPress-Plugin, das SEO, AEO & GEO gemeinsam bewertet (2026)</h1>
+            <div class="article-meta">
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21. M&auml;rz 2026
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 Min. Lesezeit
+              </span>
+              <span class="article-meta-sep">&middot;</span>
+              <span class="article-meta-item">Von seoscore.tools</span>
+            </div>
+          </header>
+
+          <!-- Mobile TOC -->
+          <div class="toc-mobile" id="tocMobile">
+            <button class="toc-mobile-toggle" id="tocMobileToggle">
+              Inhaltsverzeichnis
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="toc-mobile-list" id="tocMobileList">
+              <li><a class="toc-link" href="#why-seo-plugins-not-enough">Warum klassische SEO-Plugins nicht ausreichen</a></li>
+              <li><a class="toc-link" href="#what-are-seo-aeo-geo">Was sind SEO, AEO & GEO?</a></li>
+              <li><a class="toc-link" href="#the-problem">Das Problem: Yoast und RankMath pruefen nur SEO</a></li>
+              <li><a class="toc-link" href="#how-seo-autopilot-works">So funktioniert das Plugin: 245 Pruefungen</a></li>
+              <li><a class="toc-link" href="#comparison-table">Vergleich: SEO Autopilot vs Yoast vs RankMath</a></li>
+              <li><a class="toc-link" href="#what-makes-aeo-geo-unique">Was AEO & GEO einzigartig macht</a></li>
+              <li><a class="toc-link" href="#real-results">Echte Ergebnisse: Vorher & Nachher</a></li>
+              <li><a class="toc-link" href="#who-is-this-for">Fuer wen ist das?</a></li>
+              <li><a class="toc-link" href="#get-started">Jetzt starten</a></li>
+            </ul>
+          </div>
+
+          <!-- Article Body -->
+          <div class="article-body">
+
+            <!-- Introduction -->
+            <p class="article-intro key-definition"><strong>SEO Autopilot ist das erste WordPress-Plugin, das Ihren Seiten drei separate Scores gibt &mdash; SEO, AEO und GEO &mdash; anstatt des einzelnen SEO-Scores, den Sie von Yoast oder RankMath erhalten.</strong> Mit 245 automatisierten Pruefungen, die klassische Suchmaschinen, KI-Antwortmaschinen und generative Suchergebnisse abdecken, ist es fuer eine Welt konzipiert, in der Google nicht mehr der einzige Weg ist, wie Menschen Ihre Inhalte finden.</p>
+
+            <p>Wenn Sie 2026 eine WordPress-Website betreiben, verwenden Sie wahrscheinlich bereits ein SEO-Plugin. Yoast SEO und RankMath sind auf ueber 15 Millionen Websites installiert. Sie leisten solide Arbeit bei der Pruefung Ihrer Meta-Tags, Lesbarkeit und Keyword-Dichte. Aber hier ist die unbequeme Wahrheit: Sie wurden fuer eine Suchlandschaft entwickelt, die nicht mehr existiert.</p>
+
+            <p>Heute beinhalten ueber 40% der Informationsanfragen KI-gestuetzte Tools. ChatGPT hat mehr als 200 Millionen woechentliche Nutzer. <a href="/de/blog/perplexity-seo/">Perplexity</a> verarbeitet 100 Millionen Anfragen pro Monat. <a href="/de/blog/google-ai-overviews/">Google AI Overview</a> erscheint ueber den traditionellen Suchergebnissen fuer eine wachsende Zahl von Anfragen. Wenn Ihr Plugin nur prueft, ob Sie ein Fokus-Keyword und eine Meta-Beschreibung haben, misst es weniger als ein Drittel dessen, was Ihre Sichtbarkeit tatsaechlich bestimmt.</p>
+
+            <!-- Why Traditional SEO Plugins Are Not Enough -->
+            <h2 id="why-seo-plugins-not-enough">Warum klassische SEO-Plugins 2026 nicht ausreichen</h2>
+
+            <p>Die Art, wie Nutzer Inhalte entdecken, hat sich grundlegend veraendert. Wir sind von einer Ein-Kanal-Welt (Google-Suche) zu einer Drei-Kanal-Welt uebergegangen:</p>
+
+            <ul>
+              <li><strong>Klassische Suche (SEO):</strong> Google, Bing, DuckDuckGo &mdash; die bekannte Rangliste blauer Links.</li>
+              <li><strong>Antwortmaschinen (AEO):</strong> ChatGPT, Claude, Perplexity, Gemini &mdash; Nutzer stellen direkte Fragen und erhalten Konversationsantworten mit Quellenangaben.</li>
+              <li><strong>Generative Suche (GEO):</strong> Google AI Overview, Bing Copilot &mdash; KI-generierte Zusammenfassungen, die ueber oder anstelle traditioneller Suchergebnisse erscheinen.</li>
+            </ul>
+
+            <p>Jeder Kanal hat seine eigenen Ranking-Faktoren, seine eigenen Optimierungssignale und seine eigene Art zu bewerten, ob Ihre Inhalte es verdienen, angezeigt zu werden. Ein Plugin, das nur SEO prueft, ist wie ein Auto-Dashboard, das nur Ihre Geschwindigkeit anzeigt, aber Tankfuellung und Motortemperatur verbirgt. Sie brauchen alle drei Anzeigen, um sicher zu fahren.</p>
+
+            <div class="callout callout-warning">
+              <div class="callout-icon">!</div>
+              <div class="callout-content">
+                <strong>Die Sichtbarkeitsluecke</strong>
+                <p>Websites, die nur fuer klassisches SEO optimieren, sind fuer Antwortmaschinen und generative Suche unsichtbar. Das bedeutet: Sie koennten auf Google Platz 1 fuer ein Keyword ranken, aber ChatGPT und Perplexity zitieren Ihre Inhalte moeglicherweise nie &mdash; weil Ihnen die strukturierten Daten, das Inhaltsformat und die Vertrauenssignale fehlen, nach denen KI-Systeme suchen.</p>
+              </div>
+            </div>
+
+            <!-- What Are SEO, AEO & GEO -->
+
+            <div class="key-terms" style="background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; padding: 24px 28px; margin: 32px 0;">
+              <h3 style="margin: 0 0 16px; font-size: 1.1rem; color: #6366f1;">Wichtige Begriffe</h3>
+              <dl style="margin: 0;">
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">SEO (Search Engine Optimization)</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Optimizing web pages to rank higher in traditional search engine results like Google and Bing.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">AEO (Answer Engine Optimization)</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Making content discoverable and citable by AI assistants such as ChatGPT, Perplexity, and Claude.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">GEO (Generative Engine Optimization)</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">Optimizing for AI-powered search features like Google AI Overview and Bing Copilot that generate summaries above results.</dd>
+                <dt style="font-weight: 700; color: #e2e8f0; margin-top: 12px;">Auto-Fix</dt>
+                <dd style="margin: 0 0 0 0; color: rgba(255,255,255,0.7); padding-left: 16px;">One-click automated corrections that inject missing schema, meta tags, or content without manual code editing.</dd>
+              </dl>
+            </div>
+
+            <h2 id="what-are-seo-aeo-geo">Was sind SEO, AEO & GEO? Eine kurze Auffrischung</h2>
+
+            <p>Bevor wir uns ansehen, wie SEO Autopilot funktioniert, definieren wir kurz jede Optimierungsdisziplin. Fuer ausfuehrliche Leitfaeden folgen Sie den unten verlinkten Artikeln.</p>
+
+            <h3>SEO (Search Engine Optimization)</h3>
+            <p>SEO ist die Praxis, Ihre Website zu optimieren, um in den traditionellen Suchmaschinenergebnissen hoeher zu ranken. Es umfasst technische Aspekte (Seitengeschwindigkeit, Mobilfreundlichkeit, Crawlbarkeit), On-Page-Faktoren (Title-Tags, Ueberschriften, Keyword-Verwendung) und Off-Page-Signale (Backlinks, Domain-Autoritaet). SEO ist seit den spaeten 1990er Jahren das Fundament digitaler Sichtbarkeit und bleibt 2026 unverzichtbar.</p>
+
+            <h3>AEO (Answer Engine Optimization)</h3>
+            <p><a href="/de/blog/what-is-aeo/">AEO</a> konzentriert sich darauf, Ihre Inhalte fuer KI-Assistenten wie ChatGPT, Perplexity, Claude und Gemini auffindbar und zitierbar zu machen. Wichtige AEO-Signale umfassen <a href="/de/blog/faq-schema-markup/">FAQ-Schema-Markup</a>, strukturierte Q&A-Inhalte, Speakable-Markup, praegnante Definitionen und <a href="/de/blog/eeat-optimization/">starke E-E-A-T-Signale</a>. Wenn Ihre Website bei AEO gut abschneidet, ist es wahrscheinlicher, dass KI-Assistenten Informationen von Ihren Seiten abrufen und Sie als Quelle zitieren.</p>
+
+            <h3>GEO (Generative Engine Optimization)</h3>
+            <p><a href="/de/blog/what-is-geo/">GEO</a> zielt auf KI-gestuetzte Suchfunktionen wie Google AI Overview und Bing Copilot &mdash; die generierten Zusammenfassungen, die ueber oder anstelle traditioneller Ergebnisse erscheinen. GEO-Pruefungen umfassen Autoritaetszitierungen, statistische Daten, <a href="/de/blog/schema-markup-guide/">umfassendes Schema-Markup</a>, <a href="/de/blog/topical-authority/">Signale thematischer Autoritaet</a>, Inhaltsvollstaendigkeit und Markenerwaehnungen im Web. Eine hohe GEO-Bewertung bedeutet, dass Ihre Inhalte wahrscheinlich in diesen KI-generierten Zusammenfassungen erscheinen.</p>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>Weiterfuehrende Lektuere</strong>
+                <p>Fuer einen detaillierten Vergleich aller drei Disziplinen lesen Sie unseren Leitfaden: <a href="/de/blog/seo-vs-aeo-vs-geo/">SEO vs AEO vs GEO &mdash; Was ist der Unterschied?</a></p>
+              </div>
+            </div>
+
+            <!-- The Problem -->
+            <h2 id="the-problem">Das Problem: Yoast und RankMath pruefen nur SEO</h2>
+
+            <p>Yoast SEO und RankMath sind hervorragende Tools &mdash; fuer das, wofuer sie entwickelt wurden. Sie pruefen Ihre Fokus-Keyword-Platzierung, Meta-Beschreibungslaenge, Ueberschriftenstruktur, Lesbarkeit und interne Verlinkung. Das sind wichtige klassische SEO-Faktoren.</p>
+
+            <p>Aber hier ist, was sie <strong>nicht</strong> pruefen:</p>
+
+            <ul>
+              <li><strong>Keine FAQ-Schema-Validierung:</strong> Sie lassen Sie zwar FAQ-Bloecke hinzufuegen, ueberpruefen aber nicht, ob Ihr FAQ-Schema korrekt fuer die KI-Extraktion strukturiert ist.</li>
+              <li><strong>Keine Speakable-Markup-Pruefung:</strong> KI-Assistenten verwenden Speakable, um zu erkennen, welche Bereiche Ihrer Seite fuer Sprachantworten geeignet sind. Weder Yoast noch RankMath pruefen dies.</li>
+              <li><strong>Keine KI-Content-Bereitschaft:</strong> Sind Ihre Inhalte so strukturiert, dass eine KI eine saubere, zitierbare Antwort extrahieren kann? Diese Plugins haben keine Ahnung.</li>
+              <li><strong>Keine Zitierungssignale:</strong> Autoritaetszitierungen, Expertenzitate, statistische Daten, Quellenlinks &mdash; die Signale, die KI-Systeme dazu bringen, Ihre Inhalte zu vertrauen und zu zitieren, werden ueberhaupt nicht geprueft.</li>
+              <li><strong>Keine GEO-spezifischen Pruefungen:</strong> Markenautoritaet, Inhaltsvollstaendigkeit, thematische Tiefe, Entity-Optimierung &mdash; die Faktoren, die bestimmen, ob Google AI Overview Ihre Inhalte zeigt, werden ueberhaupt nicht gemessen.</li>
+            </ul>
+
+            <p>In der Praxis koennte eine Seite ein gruenes "SEO: Gut" von Yoast erhalten, waehrend sie fuer ChatGPT, Perplexity und Google AI Overview voellig unsichtbar ist. Das ist die Luecke, die SEO Autopilot schliesst.</p>
+
+            <!-- How SEO Autopilot Works -->
+            <h2 id="how-seo-autopilot-works">So funktioniert das Plugin: 245 Pruefungen in 3 Kategorien</h2>
+
+            <p>SEO Autopilot fuehrt 245 einzelne Pruefungen auf jeder Seite durch, organisiert in drei Kategorien:</p>
+
+            <div class="score-cards-row">
+              <div class="mini-score-card">
+                <div class="mini-score-value score-green">50</div>
+                <div class="mini-score-label">SEO-Pruefungen</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value" style="color:#8B5CF6">40</div>
+                <div class="mini-score-label">AEO-Pruefungen</div>
+              </div>
+              <div class="mini-score-card">
+                <div class="mini-score-value score-yellow">46</div>
+                <div class="mini-score-label">GEO-Pruefungen</div>
+              </div>
+            </div>
+
+            <h3>SEO-Pruefungen (68 Checks)</h3>
+            <p>Die klassische SEO-Ebene deckt alles ab, was Sie von einem erstklassigen SEO-Plugin erwarten: Meta-Titel- und Beschreibungsoptimierung, Ueberschriftenhierarchie (H1 bis H6), Canonical-Tags, Open-Graph- und Twitter-Card-Validierung, Bild-ALT-Attribute, <a href="/de/blog/core-web-vitals/">Core Web Vitals</a>, Mobilfreundlichkeit, interne und externe Linkanalyse, <a href="/de/blog/robots-txt-ai/">robots.txt</a>- und Sitemap-Ueberpruefung, HTTPS-Erzwingung und mehr. Jeder Check enthaelt spezifische, umsetzbare Hinweise zur Behebung.</p>
+
+            <h3>AEO-Pruefungen (50 Checks)</h3>
+            <p>Die AEO-Ebene bewertet, wie gut Ihre Inhalte fuer KI-Antwortmaschinen optimiert sind. Sie prueft FAQ-Schema-Praesenz und -Validitaet, <a href="/de/blog/schema-markup-guide/">HowTo-Schema</a>, Speakable-Markup, Inhaltsstruktur (liefern Ihre Inhalte direkte Antworten?), Q&A-Format-Nutzung, Definitionsabsaetze, Zusammenfassungsbereiche, Zitierbereitschaft, Quellenlinks, Expertenzuordnung und <a href="/de/blog/semantic-seo/">semantische HTML</a>-Struktur. Dies sind die Signale, die bestimmen, ob ChatGPT, Perplexity und Claude Ihre Inhalte zitieren.</p>
+
+            <h3>GEO-Pruefungen (55 Checks)</h3>
+            <p>Die GEO-Ebene misst Ihre Bereitschaft fuer generative Suchfunktionen. Sie prueft Autoritaetszitierungen (verlinken Sie auf autoritative Quellen?), statistische Inhalte (enthaelt Ihr Inhalt Daten, Zahlen und Forschungsergebnisse?), <a href="/de/blog/content-clusters/">thematische Abdeckung</a> (wie umfassend behandeln Sie das Thema?), Markenautoritaetssignale, Entity-Optimierung, Inhaltstiefe, Abdeckung verwandter Themen und Vertrauenssignale. Diese Faktoren bestimmen, ob Google AI Overview und Bing Copilot Ihre Inhalte in ihren generierten Zusammenfassungen zeigen.</p>
+
+            <div class="callout callout-tip">
+              <div class="callout-icon">+</div>
+              <div class="callout-content">
+                <strong>Auto-Fix-Engine</strong>
+                <p>SEO Autopilot identifiziert nicht nur Probleme &mdash; es behebt sie. Ueber 45 der 260+ Pruefungen koennen mit einem einzigen Klick automatisch behoben werden. Das Plugin fuegt fehlendes Schema-Markup ein, ergaenzt Meta-Tags, korrigiert die Ueberschriftenstruktur, generiert FAQ-Bereiche und mehr &mdash; ohne dass Sie Code bearbeiten muessen.</p>
+              </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <h2 id="comparison-table">Vergleich: SEO Autopilot vs Yoast vs RankMath</h2>
+
+            <p>So schneidet SEO Autopilot im Vergleich zu den zwei beliebtesten WordPress-SEO-Plugins ab:</p>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Funktion</th>
+                    <th class="highlight-col">SEO Autopilot</th>
+                    <th>Yoast SEO</th>
+                    <th>RankMath</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>SEO-Score</strong></td>
+                    <td class="highlight-col">68 Pruefungen</td>
+                    <td>~25 Pruefungen</td>
+                    <td>~30 Pruefungen</td>
+                  </tr>
+                  <tr>
+                    <td><strong>AEO-Score</strong></td>
+                    <td class="highlight-col">50 Pruefungen</td>
+                    <td>Keine</td>
+                    <td>Keine</td>
+                  </tr>
+                  <tr>
+                    <td><strong>GEO-Score</strong></td>
+                    <td class="highlight-col">55 Pruefungen</td>
+                    <td>Keine</td>
+                    <td>Keine</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Gesamte Pruefungen</strong></td>
+                    <td class="highlight-col">245</td>
+                    <td>~25</td>
+                    <td>~30</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Auto-Fix</strong></td>
+                    <td class="highlight-col">45+ Fixes (1 Klick)</td>
+                    <td>Nur manuell</td>
+                    <td>Nur manuell</td>
+                  </tr>
+                  <tr>
+                    <td><strong>KI-Content-Generierung</strong></td>
+                    <td class="highlight-col">FAQ, Zusammenfassung, Tabellen, Experten-Content</td>
+                    <td>Keine (KI-Add-on extra)</td>
+                    <td>Content AI (kostenpflichtiges Add-on)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>FAQ-Schema</strong></td>
+                    <td class="highlight-col">Auto-generiert + validiert</td>
+                    <td>Nur Block (keine Validierung)</td>
+                    <td>Nur Block (keine Validierung)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Speakable-Markup</strong></td>
+                    <td class="highlight-col">Auto-eingefuegt</td>
+                    <td>Nicht unterstuetzt</td>
+                    <td>Nicht unterstuetzt</td>
+                  </tr>
+                  <tr>
+                    <td><strong>HowTo-Schema</strong></td>
+                    <td class="highlight-col">Auto-generiert</td>
+                    <td>Nur Block</td>
+                    <td>Nur Block</td>
+                  </tr>
+                  <tr>
+                    <td><strong>WooCommerce</strong></td>
+                    <td class="highlight-col">Vollstaendiges Produkt-Schema</td>
+                    <td>WooSEO (kostenpflichtig)</td>
+                    <td>Kostenlos (einfach)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Preis</strong></td>
+                    <td class="highlight-col">$79 (einmalig)</td>
+                    <td>$99/Jahr</td>
+                    <td>$69/Jahr</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Laufende Kosten</strong></td>
+                    <td class="highlight-col">Nein (lebenslang)</td>
+                    <td>Ja (jaehrlich)</td>
+                    <td>Ja (jaehrlich)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Der wichtigste Unterschied ist nicht die Anzahl der Pruefungen &mdash; es ist der <strong>Umfang</strong>. Yoast und RankMath optimieren fuer einen Kanal (Google-Suche). SEO Autopilot optimiert fuer drei Kanaele (Google-Suche, KI-Antwortmaschinen und generative Suche). Im Jahr 2026 bestimmt dieser Unterschied, ob Ihre Inhalte ihr volles Publikum erreichen oder Traffic verschenken.</p>
+
+            <!-- What Makes AEO & GEO Unique -->
+            <h2 id="what-makes-aeo-geo-unique">Was AEO- & GEO-Pruefungen einzigartig macht</h2>
+
+            <p>Sie fragen sich vielleicht: Was genau pruefen AEO- und GEO-Checks, das ein klassisches SEO-Plugin uebersieht? Hier sind die wichtigsten Signale, die SEO Autopilot bewertet:</p>
+
+            <h3>AEO-spezifische Signale</h3>
+
+            <div class="icon-grid">
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-purple">?</div>
+                <div class="icon-grid-content">
+                  <h4>FAQ-Schema</h4>
+                  <p>Validiert, dass Ihre Seite korrekt strukturiertes FAQ-Markup enthaelt, das KI-Assistenten direkt auswerten und zitieren koennen.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-accent">S</div>
+                <div class="icon-grid-content">
+                  <h4>Speakable-Markup</h4>
+                  <p>Prueft auf Speakable-strukturierte Daten, die Sprachassistenten und KI mitteilen, welche Bereiche am besten fuer gesprochene Antworten geeignet sind.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-success">A</div>
+                <div class="icon-grid-content">
+                  <h4>KI-Inhaltsstruktur</h4>
+                  <p>Bewertet, ob Ihre Inhalte Definitionsabsaetze, Zusammenfassungsbereiche und direkt beantwortende Formatierung enthalten, die KI extrahieren kann.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-warning">C</div>
+                <div class="icon-grid-content">
+                  <h4>Zitierbereitschaft</h4>
+                  <p>Prueft auf Expertenzuordnung, Quellenlinks und autoritative Referenzen &mdash; die Signale, die KI-Systeme dazu bringen, Ihren Inhalten genug zu vertrauen, um sie zu zitieren.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3>GEO-spezifische Signale</h3>
+
+            <ul>
+              <li><strong>Autoritaetszitierungen:</strong> Verlinkt und referenziert Ihr Inhalt autoritative Quellen? Google AI Overview bevorzugt Inhalte, die Recherchetiefe demonstrieren.</li>
+              <li><strong>Statistische Daten:</strong> Seiten, die spezifische Zahlen, Prozentsaetze, Forschungsergebnisse und Datenpunkte enthalten, erscheinen signifikant haeufiger in KI-generierten Zusammenfassungen.</li>
+              <li><strong>Inhaltsvollstaendigkeit:</strong> GEO belohnt Seiten, die ein Thema gruendlich abdecken. Kurze, duenne Inhalte erscheinen selten in AI-Overview-Ergebnissen.</li>
+              <li><strong>Vertrauenssignale:</strong> Autorenzuordnung, Organisations-Schema, Veroeffentlichungs- und Aktualisierungsdaten sowie redaktionelle Transparenz tragen alle zur GEO-Performance bei.</li>
+              <li><strong>Thematische Autoritaet:</strong> Ein Cluster verwandter Inhalte (wie dieser Blog, der <a href="/de/blog/what-is-aeo/">AEO</a>, <a href="/de/blog/what-is-geo/">GEO</a>, <a href="/de/blog/schema-markup-guide/">Schema-Markup</a> und <a href="/de/blog/semantic-seo/">semantisches SEO</a> abdeckt) signalisiert generativen Suchmaschinen, dass Sie eine Autoritaet in diesem Bereich sind.</li>
+            </ul>
+
+            <blockquote>
+              <p><strong>Stellen Sie es sich so vor:</strong> SEO bringt Ihnen Rankings. AEO bringt Ihnen Zitierungen. GEO bringt Ihnen Featured-Platzierungen. Sie brauchen alle drei, um Ihre Sichtbarkeit 2026 zu maximieren.</p>
+            </blockquote>
+
+            <!-- Real Results -->
+            <h2 id="real-results">Echte Ergebnisse: Vorher- und Nachher-Scores</h2>
+
+            <p>Hier sind tatsaechliche Score-Verbesserungen, gemessen auf WordPress-Websites nach Installation von SEO Autopilot und Nutzung der Auto-Fix- und KI-Content-Funktionen:</p>
+
+            <h3>WooCommerce-Produktseite</h3>
+            <div class="compare-cards">
+              <div class="compare-card compare-card-before">
+                <span class="compare-card-label">Vorher</span>
+                <h4>Ohne SEO Autopilot</h4>
+                <ul>
+                  <li>SEO: 44/100</li>
+                  <li>AEO: 28/100</li>
+                  <li>GEO: 13/100</li>
+                  <li>Gesamt: 85/300</li>
+                </ul>
+              </div>
+              <div class="compare-card compare-card-after">
+                <span class="compare-card-label">Nachher</span>
+                <h4>Mit SEO Autopilot</h4>
+                <ul>
+                  <li>SEO: 85/100</li>
+                  <li>AEO: 90/100</li>
+                  <li>GEO: 83/100</li>
+                  <li>Gesamt: 258/300</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Das ist eine <strong>Verbesserung um +245 Punkte</strong> ueber alle drei Scores. Der SEO-Score hat sich nahezu verdoppelt, aber die wirklichen Zugewinne kamen bei AEO (+62 Punkte) und GEO (+70 Punkte) &mdash; Kategorien, die klassische SEO-Plugins nicht einmal messen.</p>
+
+            <h3>WordPress-Blogbeitrag</h3>
+            <div class="compare-cards">
+              <div class="compare-card compare-card-before">
+                <span class="compare-card-label">Vorher</span>
+                <h4>Standard-WordPress-Beitrag</h4>
+                <ul>
+                  <li>SEO: 58/100</li>
+                  <li>AEO: 22/100</li>
+                  <li>GEO: 15/100</li>
+                  <li>Gesamt: 95/300</li>
+                </ul>
+              </div>
+              <div class="compare-card compare-card-after">
+                <span class="compare-card-label">Nachher</span>
+                <h4>Mit Auto-Fix + KI-Content</h4>
+                <ul>
+                  <li>SEO: 98/100</li>
+                  <li>AEO: 95/100</li>
+                  <li>GEO: 93/100</li>
+                  <li>Gesamt: 286/300</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Blogbeitraege verzeichnen noch hoehere Zugewinne, da die KI-Content-Generierung FAQ-Bereiche, Zusammenfassungstabellen, Experteninhaltsblöcke und strukturierte Daten hinzufuegt, die AEO- und GEO-Scores in den 90+-Bereich treiben. Ein Score von 286/300 ist nahezu perfekt ueber alle drei Kategorien.</p>
+
+            <div class="stat-highlight">
+              <span class="stat-number">286/300</span>
+              <span class="stat-desc">Hoechster erreichter Blogbeitrag-Score: SEO 98 + AEO 95 + GEO 93</span>
+            </div>
+
+            <!-- Who Is This For -->
+            <h2 id="who-is-this-for">Fuer wen ist das?</h2>
+
+            <p>SEO Autopilot wurde fuer alle entwickelt, die Inhalte auf WordPress veroeffentlichen und ueber alle drei Entdeckungskanaele sichtbar sein moechten:</p>
+
+            <div class="icon-grid">
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-accent">W</div>
+                <div class="icon-grid-content">
+                  <h4>WordPress-Website-Betreiber</h4>
+                  <p>Unternehmer, Portfolio-Websites, Dienstleister &mdash; alle mit einer WordPress-Website, die moechten, dass ihre Inhalte von Google, ChatGPT und AI Overview gefunden werden.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-success">S</div>
+                <div class="icon-grid-content">
+                  <h4>WooCommerce-Shops</h4>
+                  <p>E-Commerce-Websites, die Produkt-Schema, Rich Snippets und KI-bereite Produktbeschreibungen benoetigen, um in einem Markt zu bestehen, in dem Kaeufer zunehmend KI-Assistenten nach Produktempfehlungen fragen.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-purple">B</div>
+                <div class="icon-grid-content">
+                  <h4>Blogger & Content-Ersteller</h4>
+                  <p>Autoren, die moechten, dass ihre Artikel von KI-Assistenten zitiert und in Google AI Overview vorgestellt werden. Die KI-Content-Funktionen generieren automatisch FAQ-Bereiche, Zusammenfassungsbloecke und strukturierte Daten.</p>
+                </div>
+              </div>
+              <div class="icon-grid-item">
+                <div class="icon-grid-icon icon-grid-icon-warning">A</div>
+                <div class="icon-grid-content">
+                  <h4>SEO-Agenturen</h4>
+                  <p>Agenturen, die mehrere Kundenwebsites verwalten und ein umfassendes Audit-Tool benoetigen, das ueber klassisches SEO hinausgeht. Der 245-Pruefungen-Bericht gibt Kunden ein klares Bild ihrer Sichtbarkeit ueber alle drei Kanaele.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3>Unterstuetzte Seitentypen</h3>
+            <p>Das Plugin passt seine Pruefungen an den Inhaltstyp an, den es scannt:</p>
+            <ul>
+              <li><strong>Blogbeitraege / Artikel:</strong> Vollstaendige 245 Pruefungen einschliesslich Inhaltsqualitaet, Lesbarkeit, FAQ-Generierung und KI-Content-Optimierung.</li>
+              <li><strong>WooCommerce-Produkte:</strong> Produktspezifisches Schema, Preis-Markup, Bewertungsaggregation, Versand- und Rueckgabe-Schema sowie KI-bereite Produktbeschreibungen.</li>
+              <li><strong>Statische Seiten:</strong> Service-Seiten, Landing Pages, Ueber-uns-Seiten &mdash; mit passenden Pruefungen fuer jeden Seitentyp.</li>
+              <li><strong>Kategorie- und Archivseiten:</strong> Breadcrumb-Schema, Paginierungshandhabung, Canonical-Management.</li>
+            </ul>
+
+            <!-- CTA -->
+            <h2 id="get-started">SEO Autopilot Pro kaufen</h2>
+
+            <p>Hoeren Sie auf, fuer einen Kanal zu optimieren, wenn Ihre Zielgruppe drei nutzt. SEO Autopilot gibt Ihnen das vollstaendige Bild &mdash; SEO, AEO und GEO &mdash; in einem einzigen WordPress-Plugin mit Ein-Klick-Fixes und KI-gestuetzter Content-Generierung.</p>
+
+            <div class="article-cta">
+              <h3>SEO Autopilot Pro &mdash; $79 (Einmalig)</h3>
+              <p>245 Pruefungen. 45+ Auto-Fixes. KI-Content-Generierung. SEO + AEO + GEO. Keine laufenden Kosten.</p>
+              <a href="https://atilla45.gumroad.com/l/seo-autopilot-pro" class="btn btn-primary" target="_blank" rel="noopener">SEO Autopilot Pro kaufen &mdash; $79</a>
+            </div>
+
+            <p>Nutzen Sie bereits Yoast oder RankMath? SEO Autopilot funktioniert parallel dazu. Sie muessen Ihr bestehendes Plugin nicht ersetzen. SEO Autopilot ergaenzt die AEO- und GEO-Ebenen, die ihnen fehlen. Fuehren Sie einen Scan durch und sehen Sie Ihre drei Scores in Sekunden.</p>
+
+            <div class="callout callout-info">
+              <div class="callout-icon">i</div>
+              <div class="callout-content">
+                <strong>Kostenloser Scanner verfuegbar</strong>
+                <p>Noch nicht bereit zum Kauf? Nutzen Sie unseren <a href="/">kostenlosen Online-Scanner</a>, um die SEO-, AEO- und GEO-Scores jeder Website sofort zu pruefen &mdash; keine Installation erforderlich.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Author Box -->
+          <div class="author-box">
+            <div class="author-avatar">AK</div>
+            <div class="author-info">
+              <h4>Atilla Kuruk</h4>
+              <p class="author-role">SEO, AEO & GEO Analyse-Plattform</p>
+              <p class="author-bio">seoscore.tools ist ein kostenloser SEO-, AEO- & GEO-Scanner, der Websites anhand von 245 Pruefungen analysiert. Entwickelt fuer das Zeitalter der KI-Suche.</p>
+            </div>
+          </div>
+
+          <!-- Related Articles -->
+          <section class="related-section">
+            <div class="source-citations" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px 24px; margin: 32px 0;">
+              <h3 style="margin: 0 0 12px; font-size: 1rem; color: rgba(255,255,255,0.6);">Quellen &amp; Referenzen</h3>
+              <ul style="margin: 0; padding-left: 20px; color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.8;">
+                <li><a href="https://schema.org/FAQPage" target="_blank" rel="noopener" style="color: #818cf8;">Schema.org FAQPage Specification</a> &mdash; Official structured data schema for FAQ content used by AI and search engines.</li>
+                <li><a href="https://developers.google.com/search/docs/appearance/structured-data/faqpage" target="_blank" rel="noopener" style="color: #818cf8;">Google FAQ Structured Data Documentation</a> &mdash; Implementation guidelines for FAQ rich results in Google Search.</li>
+                <li><a href="https://www.searchenginejournal.com/google-ai-overviews/" target="_blank" rel="noopener" style="color: #818cf8;">Search Engine Journal: Google AI Overviews</a> &mdash; Analysis of AI Overview adoption and impact on organic traffic.</li>
+              </ul>
+            </div>
+
+            <h2>Verwandte Artikel</h2>
+            <div class="related-grid">
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge aeo-badge">AEO</span>
+                </div>
+                <h3><a href="/de/blog/what-is-aeo/">Was ist AEO? Der komplette Leitfaden zur Answer Engine Optimization</a></h3>
+                <p>Erfahren Sie, was AEO ist, warum es wichtig ist und wie Sie Ihre Inhalte fuer ChatGPT, Perplexity und Claude optimieren.</p>
+              </div>
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge geo-badge">GEO</span>
+                </div>
+                <h3><a href="/de/blog/what-is-geo/">Was ist GEO? Generative Engine Optimization erklaert</a></h3>
+                <p>Verstehen Sie, wie generative Suche funktioniert und wie Sie fuer Google AI Overview und Bing Copilot optimieren.</p>
+              </div>
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge seo-badge">SEO</span>
+                  <span class="blog-card-badge aeo-badge">AEO</span>
+                  <span class="blog-card-badge geo-badge">GEO</span>
+                </div>
+                <h3><a href="/de/blog/seo-vs-aeo-vs-geo/">SEO vs AEO vs GEO &mdash; Was ist der Unterschied?</a></h3>
+                <p>Ein detaillierter Vergleich aller drei Optimierungsdisziplinen mit praxisnahen Beispielen und umsetzbaren Tipps.</p>
+              </div>
+              <div class="related-card">
+                <div class="related-card-badges">
+                  <span class="blog-card-badge seo-badge">SEO</span>
+                </div>
+                <h3><a href="/de/blog/schema-markup-guide/">Der komplette Schema-Markup-Leitfaden fuer SEO</a></h3>
+                <p>Alles, was Sie ueber strukturierte Daten wissen muessen: Typen, Implementierung, Validierung und Einfluss auf die Suchsichtbarkeit.</p>
+              </div>
+            </div>
+          </section>
+
+        </article>
+
+        <!-- Sidebar TOC (Desktop) -->
+        <aside class="article-sidebar">
+          <div class="toc">
+            <div class="toc-title">Inhalt</div>
+            <ul class="toc-list" id="tocList">
+              <li><a class="toc-link" href="#why-seo-plugins-not-enough">Warum SEO-Plugins nicht reichen</a></li>
+              <li><a class="toc-link" href="#what-are-seo-aeo-geo">Was sind SEO, AEO & GEO?</a></li>
+              <li><a class="toc-link" href="#the-problem">Yoast & RankMath: Die Luecke</a></li>
+              <li><a class="toc-link" href="#how-seo-autopilot-works">245 Pruefungen erklaert</a></li>
+              <li><a class="toc-link" href="#comparison-table">Vergleichstabelle</a></li>
+              <li><a class="toc-link" href="#what-makes-aeo-geo-unique">AEO- & GEO-Signale</a></li>
+              <li><a class="toc-link" href="#real-results">Echte Ergebnisse</a></li>
+              <li><a class="toc-link" href="#who-is-this-for">Fuer wen ist das?</a></li>
+              <li><a class="toc-link" href="#get-started">Jetzt starten</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">seoscore<span class="logo-dot">.tools</span></span>
+        <p class="footer-tagline">Kostenloser SEO, AEO & GEO Scanner</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Scanner</a>
+        <a href="/de/blog/">Blog</a>
+        <a href="/de/seo-autopilot/">SEO Autopilot</a>
+        <a href="/privacy.html">Datenschutz</a>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 seoscore.tools. Alle Rechte vorbehalten.</span>
+        <span class="footer-built">Powered by Cloudflare Workers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    function setTheme(t) { html.setAttribute('data-theme', t); localStorage.setItem('seoscore-theme', t); }
+    themeToggle.addEventListener('click', () => setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
+    const saved = localStorage.getItem('seoscore-theme');
+    if (saved) setTheme(saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // Reading progress bar
+    const progressBar = document.getElementById('readingProgress');
+    window.addEventListener('scroll', () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / docHeight) * 100;
+      progressBar.style.width = Math.min(scrolled, 100) + '%';
+    });
+
+    // TOC active state (desktop)
+    const tocLinks = document.querySelectorAll('#tocList .toc-link');
+    const headings = [];
+    tocLinks.forEach(link => {
+      const id = link.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) headings.push({ el, link });
+    });
+
+    function updateToc() {
+      let current = headings[0];
+      for (const h of headings) {
+        if (h.el.getBoundingClientRect().top <= 100) current = h;
+      }
+      tocLinks.forEach(l => l.classList.remove('active'));
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateToc);
+    updateToc();
+
+    // Mobile TOC toggle
+    const tocMobile = document.getElementById('tocMobile');
+    const tocMobileToggle = document.getElementById('tocMobileToggle');
+    tocMobileToggle.addEventListener('click', () => tocMobile.classList.toggle('open'));
+
+    // Close mobile TOC on link click
+    document.querySelectorAll('#tocMobileList .toc-link').forEach(link => {
+      link.addEventListener('click', () => tocMobile.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>

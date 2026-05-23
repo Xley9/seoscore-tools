@@ -1,0 +1,5 @@
+# Force fresh content on the blog index — required to bust an aggressively
+# cached version of /blog/ from before fix-mojibake-v2 ran.
+/blog/
+  Cache-Control: public, max-age=0, must-revalidate
+  CDN-Cache-Control: public, max-age=0

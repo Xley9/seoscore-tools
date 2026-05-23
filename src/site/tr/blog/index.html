@@ -37,8 +37,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/blog.css">
+  <link rel="stylesheet" href="/style.min.css">
+  <link rel="stylesheet" href="/blog.min.css">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP76DPK4GK"></script>
@@ -104,6 +104,7 @@
       <nav class="nav">
         <a href="/tr/" class="nav-link">Tarayıcı</a>
         <a href="/tr/blog/" class="nav-link" style="color:var(--accent)">Blog</a>
+
         <button class="theme-toggle" id="themeToggle" aria-label="Temayı değiştir">
           <svg class="theme-icon sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <svg class="theme-icon moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -131,9 +132,428 @@
       </div>
     </section>
 
+    <!-- Blog Search -->
+    <div class="container" style="margin-bottom:24px">
+      <div style="max-width:480px;margin:0 auto;position:relative">
+        <input type="text" id="blogSearch" placeholder="Makale ara..." style="width:100%;padding:12px 16px 12px 44px;border:2px solid var(--border);border-radius:10px;background:var(--bg-primary);color:var(--text-primary);font-size:1rem;outline:none;transition:border-color 0.2s" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" style="position:absolute;left:14px;top:50%;transform:translateY(-50%)"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <span id="blogSearchCount" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:0.8rem;color:var(--text-muted);display:none"></span>
+      </div>
+    </div>
+
     <!-- Blog Grid -->
     <div class="container">
       <div class="blog-grid">
+
+        <!-- YENİ: OpenAI SEO Stratejisi -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">Strategy</span>
+            </div>
+            <h2><a href="/tr/blog/openai-seo-strategy/">OpenAI 76,5 Milyon Organik Ziyareti Nasıl Elde Ediyor: $600K SEO Stratejisi Çözümlendi</a></h2>
+            <p class="blog-card-excerpt">OpenAI, SEO yeteneklerine $600K yatırım yapıyor ve aylık 76,5 milyon organik ziyaret alıyor — %15.200 ROI. İşte bunu nasıl yapıyorlar ve siz neler öğrenebilirsiniz.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 Mar 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 12 dk okuma</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENİ: AI Şirketleri SEO İşe Alım -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/ai-companies-hiring-seo/">Yapay Zeka Şirketleri Neden SEO Uzmanlarına $320K Ödüyor (2026 İş İlanı Analizi)</a></h2>
+            <p class="blog-card-excerpt">Anthropic, OpenAI ve Perplexity, $200K–$320K maaşla SEO liderleri arıyor. İş ilanlarını analiz ederek hangi AEO ve GEO becerilerini talep ettiklerini ortaya koyduk.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 Mar 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 10 dk okuma</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENİ: UGC SEO Stratejisi -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge geo-badge">Strategy</span>
+            </div>
+            <h2><a href="/tr/blog/ugc-seo-strategy/">SEO Stratejisi Olarak Kullanıcı İçeriği: Aylık 938K Organik Ziyaret (Vaka Çalışması)</a></h2>
+            <p class="blog-card-excerpt">İndekslenebilir kullanıcı içeriği nasıl aylık 938K organik ziyaret sağlıyor. OpenAI, Reddit ve Stack Overflow’un kullandığı UGC-SEO stratejisini öğrenin.</p>
+            <div class="blog-card-meta">
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg> 30 Mar 2026</span>
+              <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> 11 dk okuma</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: AI Overviews'da Alıntılanma -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge geo-badge">GEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+            </div>
+            <h2><a href="/tr/blog/get-cited-ai-overviews/">Google AI Overviews'da Alıntılanma: Web Sitenizin Geçmesi Gereken 12 Kontrol</a></h2>
+            <p class="blog-card-excerpt">AI Overviews aramaların %55'inde görünüyor ancak alıntıların yalnızca %38'i ilk 10 sonuçtan geliyor. İşte sitenizin geçmesi gereken 12 kontrol.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                26 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                13 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: En İyi Ücretsiz SEO Denetim Araçları -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/best-free-seo-audit-tools/">2026'nın En İyi Ücretsiz SEO Denetim Araçları: Hangileri AEO &amp; GEO'yu Kontrol Ediyor?</a></h2>
+            <p class="blog-card-excerpt">8 ücretsiz SEO denetim aracını AEO ve GEO yetenekleri açısından test ettik. Sadece 1'i 3 kategoriyi de kontrol ediyor. Fiyatlar, özellikler ve gerçek test sonuçlarıyla dürüst karşılaştırma.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                26 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- NEW: LLMS.txt Rehberi -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge geo-badge">GEO</span>
+              <span class="blog-card-badge seo-badge">Technical</span>
+            </div>
+            <h2><a href="/tr/blog/llms-txt-guide/">LLMS.txt: AI Tarayıcılar İçin Yeni robots.txt Rehberi</a></h2>
+            <p class="blog-card-excerpt">Web sitelerinin yalnızca %3,2'sinin LLMS.txt dosyası var. Ne olduğunu, WordPress için nasıl kurulacağını ve GPTBot, ClaudeBot &amp; daha fazlası için robots.txt yapılandırmasını öğrenin.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                26 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: Abonelik Tuzağı Olmadan WordPress SEO -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/wordpress-seo-no-subscription/">Abonelik Tuzağı Olmadan WordPress SEO: Tek Seferlik Ödeme Neden Yıllık Ücretlerden Daha İyi</a></h2>
+            <p class="blog-card-excerpt">Yoast Premium yılda 118 $ tutuyor. RankMath Pro yılda 96 $ tutuyor. SEO Autopilot tek seferlik 79 $. WordPress SEO eklentilerinin 3 yıllık gerçek maliyetini karşılaştırın ve abonelik modelinin neden bozuk olduğunu görün.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                13 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: WordPress SEO Kontrol Listesi 2026 -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/wordpress-seo-checklist-complete/">WordPress SEO Kontrol Listesi 2026: Muhtemelen Kaçırdığınız 50 Kontrol</a></h2>
+            <p class="blog-card-excerpt">2026 için SEO, AEO ve GEO genelinde 50 kontrolle en kapsamlı WordPress SEO kontrol listesi. Her kontrol neden önemli olduğunu ve nasıl düzeltileceğini açıklıyor. Ya da yapay zeka destekli SEO Autopilot eklentisinin 50'sini de otomatik halletmesine izin verin.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                16 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: WordPress SEO Puanını İyileştirme -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/wordpress-seo-score-improve/">WordPress SEO Puanı 45'ten 95'e: Adım Adım Vaka Çalışması</a></h2>
+            <p class="blog-card-excerpt">Gerçek vaka çalışması: Bir WordPress sitesinin SEO 45, AEO 28, GEO 13'ten SEO 95, AEO 90, GEO 83'e nasıl yükseldiğini izleyin. Her optimizasyon adım adım belgelendi. Yapay zeka destekli SEO Autopilot eklentisi 5 dakikada tamamladı.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: En İyi WordPress SEO Eklentisi 2026 -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/best-wordpress-seo-plugin/">2026'nın En İyi WordPress SEO Eklentisi: Yoast vs RankMath vs SEO Autopilot (Dürüst Karşılaştırma)</a></h2>
+            <p class="blog-card-excerpt">2026'nın en iyi 3 WordPress SEO eklentisinin tarafsız karşılaştırması. Yoast, RankMath ve SEO Autopilot'un özellik özellik analizi — AEO, GEO puanları, yapay zeka özellikleri ve gerçek fiyatlar dahil.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                15 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- KILLER: ChatGPT'de Sıralama WordPress -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/rank-in-chatgpt-wordpress/">ChatGPT, Perplexity ve Google AI Overviews'da Nasıl Sıralanırsınız: WordPress İçin AEO ve GEO</a></h2>
+            <p class="blog-card-excerpt">810 milyon ChatGPT kullanıcısı arama yapıyor — WordPress siteniz yapay zekanın alıntı yaptığı cevap mı? AEO ve GEO optimizasyonunun içeriklerinizi ChatGPT, Perplexity ve Google AI Overviews'da nasıl görünür kıldığını öğrenin.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                13 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: Yeni Başlayanlar İçin WordPress SEO -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/wordpress-seo-beginners/">Yeni Başlayanlar İçin WordPress SEO: Görünürlüğünüzü Anında Artıran 10 Düzeltme</a></h2>
+            <p class="blog-card-excerpt">Kodlama gerektirmez. En etkili 10 WordPress SEO düzeltmesini öğrenin — meta etiketlerden yapay zeka arama optimizasyonuna. Her düzeltme öncesi/sonrası puanları içerir. Ya da yapay zeka destekli SEO Autopilot eklentisinin her şeyi 60 saniyede yapmasına izin verin.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                14 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: SEO Denetim Sonuçları -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/seo-audit-results/">Sıfırdan Birinci Sayfaya: SEO Denetimi Gerçekte Ne Yapar (Gerçek Verilerle)</a></h2>
+            <p class="blog-card-excerpt">Gerçek vaka çalışması: Haftalarda 3.200'den 45.000 gösterime. WordPress sitenizin arama görünürlüğünde en büyük etkiyi yaratan 5 düzeltmeyi görün. 245 kontrolle yapay zeka destekli denetim.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                11 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: Yapay Zeka Araması WordPress -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/ai-search-wordpress/">Yapay Zeka Araması Burada: WordPress Sitenizin Neden Şimdi AEO + GEO Optimizasyonuna İhtiyacı Var</a></h2>
+            <p class="blog-card-excerpt">Google AI Overviews, ChatGPT ve Perplexity aramayı sonsuza dek değiştiriyor. AEO ve GEO'nun WordPress siteniz için ne anlama geldiğini öğrenin — ve yapay zeka destekli SEO Autopilot eklentisinin üçü için nasıl optimize ettiğini görün.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: SEO Ölmedi -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/seo-not-dead/">SEO Ölmedi &mdash; Rakipleriniz Zaten Yapıyor (Gerçek Rakamlarla)</a></h2>
+            <p class="blog-card-excerpt">Her yıl SEO'nun öldüğü söyleniyor. Veriler aksini söylüyor: Tüm web trafiğinin %53'ü organik. Gerçek rakamları, rakip analizlerini ve yapay zeka destekli bir WordPress eklentisinin size nasıl avantaj sağladığını görün.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                11 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: WordPress Siteleri Neden Görünmez -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/why-wordpress-sites-invisible/">WordPress Sitelerinin %90'ı Neden Google İçin Görünmez (ve 10 Dakikada Nasıl Düzeltilir)</a></h2>
+            <p class="blog-card-excerpt">Çoğu WordPress sitesi, sıralamalarını sessizce öldüren kritik SEO sorunlarına sahip. Ortalama puanlar: SEO 52, AEO 28, GEO 13. 7 gizli katili öğrenin ve yapay zeka destekli otomatik düzeltmelerin sizi 258/300'e nasıl çıkardığını görün.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                23 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: WordPress SEO Otomatik Düzeltme -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+            </div>
+            <h2><a href="/tr/blog/wordpress-seo-auto-fix/">45+ WordPress SEO Sorununu Tek Tıkla Otomatik Düzeltin (2026)</a></h2>
+            <p class="blog-card-excerpt">SEO Autopilot ile 45+ WordPress SEO sorununu otomatik olarak nasıl düzelteceğinizi öğrenin. Meta etiketlerden schema markup'a — kodlama gerektirmez.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                10 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: SEO AEO GEO WordPress Eklentisi -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge seo-badge">SEO</span>
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/seo-aeo-geo-wordpress-plugin/">SEO, AEO ve GEO'yu Birlikte Puanlayan İlk WordPress Eklentisi (2026)</a></h2>
+            <p class="blog-card-excerpt">SEO Autopilot, SEO, AEO ve GEO'yu birlikte puanlayan ilk WordPress eklentisidir. Yoast ve RankMath ile karşılaştırın.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                12 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- YENI: Yapay Zeka İçerik SEO -->
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-badges">
+              <span class="blog-card-badge aeo-badge">AEO</span>
+              <span class="blog-card-badge geo-badge">GEO</span>
+            </div>
+            <h2><a href="/tr/blog/ai-content-seo-wordpress/">Yapay Zeka İçerik SEO Puanınızı 44'ten 98'e Nasıl Yükseltir (2026)</a></h2>
+            <p class="blog-card-excerpt">Yapay zeka içeriklerin SEO puanlarınızı nasıl dönüştüreceğini keşfedin. Gerçek vaka: SEO 44→98, AEO 28→95, GEO 13→93.</p>
+            <div class="blog-card-meta">
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+                21 Mar 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+                10 dk okuma
+              </span>
+            </div>
+          </div>
+        </article>
 
         <!-- Article 1: What is AEO? -->
         <article class="blog-card">
@@ -558,6 +978,30 @@
     const saved = localStorage.getItem('seoscore-theme');
     if (saved) setTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+    // Blog Search
+    const searchInput = document.getElementById('blogSearch');
+    const searchCount = document.getElementById('blogSearchCount');
+    if (searchInput) {
+      const cards = document.querySelectorAll('.blog-card');
+      const total = cards.length;
+      searchInput.addEventListener('input', function() {
+        const q = this.value.toLowerCase().trim();
+        let visible = 0;
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          const match = !q || text.includes(q);
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        if (q) {
+          searchCount.textContent = visible + '/' + total;
+          searchCount.style.display = '';
+        } else {
+          searchCount.style.display = 'none';
+        }
+      });
+    }
   </script>
 </body>
 </html>

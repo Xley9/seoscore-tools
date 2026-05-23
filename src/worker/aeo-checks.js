@@ -1,5 +1,5 @@
 /**
- * AEO Check Engine — 40 checks
+ * AEO Check Engine — 56 checks
  * Answer Engine Optimization
  * Evaluates AI-readiness for ChatGPT, Perplexity, Claude, Gemini
  */
@@ -7,7 +7,7 @@
 import { NA_CHECKS } from './site-detector.js';
 
 export function runAeoChecks(pageData) {
-  const { html, url, siteType } = pageData;
+  const { html, url, siteType, headers, llmsTxt, robotsTxt } = pageData;
   const detectedType = siteType?.siteType || 'default';
   const naCheckIds = NA_CHECKS[detectedType]?.aeo || [];
   const checks = [];
@@ -163,7 +163,7 @@ export function runAeoChecks(pageData) {
   const hasFaqContent = hasFaqHtml || hasFaqSchema;
   checks.push({
     id: 'aeo_faq',
-    label: hasFaqContent ? 'FAQ content detected — great for AI answers' : 'No FAQ section found — add Q&A content for AI citation',
+    label: hasFaqContent ? 'FAQ content detected — great for AI answers (Note: FAQ rich results limited to gov/health sites since Aug 2023)' : 'No FAQ section found — add Q&A content for AI citation',
     pass: hasFaqContent,
     category: 'structure',
   });
@@ -210,7 +210,7 @@ export function runAeoChecks(pageData) {
   });
 
   // 16. Numbered Steps
-  const hasNumberedSteps = /step\s*\d|step\s*[one|two|three|four|five]|schritt\s*\d|adım\s*\d|\d+\.\s+[A-Z]/i.test(textContent);
+  const hasNumberedSteps = /step\s*\d|step\s*(one|two|three|four|five)|schritt\s*\d|adım\s*\d|\d+\.\s+[A-Z]/i.test(textContent);
   const hasOrderedList = /<ol[^>]*>/i.test(html);
   checks.push({
     id: 'aeo_numbered_steps',
@@ -378,12 +378,13 @@ export function runAeoChecks(pageData) {
     category: 'citation',
   });
 
-  // 30. Answer Box Format (bold + paragraph pattern)
-  const answerBoxPattern = /<(strong|b)>[^<]{10,80}<\/(strong|b)>[\s\S]{0,20}<p[^>]*>/i;
-  const hasAnswerBox = answerBoxPattern.test(html) || paragraphTexts.some(p => p.length >= 40 && p.length <= 200);
+  // 30. Answer Box Format — requires concise paragraph right after a heading
+  const answerAfterHeading = /<h[2-4][^>]*>[^<]*<\/h[2-4]>\s*<p[^>]*>([^<]{40,200})<\/p>/gi;
+  const answerBoxMatches = html.match(answerAfterHeading) || [];
+  const hasAnswerBox = answerBoxMatches.length >= 2;
   checks.push({
     id: 'aeo_answer_box',
-    label: hasAnswerBox ? 'Answer-box-ready content found (40-200 char answers)' : 'No concise answer-ready paragraphs — add 1-2 sentence answers',
+    label: hasAnswerBox ? `${answerBoxMatches.length} answer-box-ready paragraphs found after headings` : `Only ${answerBoxMatches.length} concise answer paragraph(s) after headings — add 2+ short summaries (40-200 chars) right after H2/H3 tags`,
     pass: hasAnswerBox,
     severity: 'warning',
     category: 'citation',
@@ -497,6 +498,44 @@ export function runAeoChecks(pageData) {
     category: 'voice',
   });
 
+  // ==========================================
+  // EXTENDED AEO CHECKS (3 checks)
+  // ==========================================
+
+  // 41. AI Robots Meta — no noai/noimageai blocking
+  const robotsMeta = metaContent('robots');
+  const hasNoAi = /noai|noimageai/i.test(robotsMeta);
+  checks.push({
+    id: 'aeo_ai_robots',
+    label: hasNoAi ? 'AI crawling blocked (noai/noimageai in robots meta) — AI cannot index your content' : 'No AI-blocking robots directives — AI crawlers can access content',
+    pass: !hasNoAi,
+    severity: hasNoAi ? 'error' : undefined,
+    category: 'discoverability',
+  });
+
+  // 42. Last-Modified / dateModified freshness signal
+  const lastModifiedHeader = (headers || {})['last-modified'] || '';
+  const hasDateModified = /"dateModified"/i.test(html);
+  checks.push({
+    id: 'aeo_last_modified',
+    label: (lastModifiedHeader || hasDateModified) ? 'Freshness signal found (Last-Modified header or dateModified)' : 'No Last-Modified header or dateModified — AI prefers content with freshness signals',
+    pass: !!(lastModifiedHeader || hasDateModified),
+    severity: 'warning',
+    category: 'citation',
+  });
+
+  // 43. llms.txt exists (AI crawling standard)
+  if (llmsTxt !== undefined) {
+    const llmsExists = llmsTxt !== null && llmsTxt.length > 0;
+    checks.push({
+      id: 'aeo_llms_txt',
+      label: llmsExists ? '/llms.txt found — AI crawlers can discover your content guidelines' : 'No /llms.txt found — add one to guide AI crawlers (emerging standard)',
+      pass: llmsExists,
+      severity: 'warning',
+      category: 'discoverability',
+    });
+  }
+
   // Mark N/A checks for detected site type
   checks.forEach(c => {
     if (naCheckIds.includes(c.id)) {
@@ -535,10 +574,196 @@ export function runAeoChecks(pageData) {
     });
   }
 
+  // ══════════════════════════════════════════
+  // RESEARCH-BASED AEO CHECKS (4)
+  // Based on AirOps 48-Point Checklist + Citation Research
+  // ══════════════════════════════════════════
+
+  // 44. AI Crawlers Allowed — robots.txt explicitly allows GPTBot, ClaudeBot, PerplexityBot
+  if (robotsTxt !== undefined) {
+    const robotsLower = (robotsTxt || '').toLowerCase();
+    const aiBots = ['gptbot', 'claudebot', 'perplexitybot', 'google-extended'];
+    let aiCrawlersFound = 0;
+    for (const bot of aiBots) {
+      if (robotsLower.includes(bot)) aiCrawlersFound++;
+    }
+    const hasGlobalDisallow = /user-agent:\s*\*[\s\S]*?disallow:\s*\/\s*$/mi.test(robotsTxt || '');
+    const aiCrawlersOk = aiCrawlersFound >= 2 || (!hasGlobalDisallow && robotsTxt !== null);
+    checks.push({
+      id: 'aeo_ai_crawlers',
+      label: aiCrawlersOk
+        ? `AI crawlers allowed in robots.txt (${aiCrawlersFound}/4 explicitly listed)`
+        : 'robots.txt does not explicitly allow AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended)',
+      pass: aiCrawlersOk,
+      severity: 'warning',
+      category: 'discoverability',
+    });
+  }
+
+  // 45. SameAs Links — Organization/Person schema has sameAs social links
+  let sameasCount = 0;
+  const ldJsons = html.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi) || [];
+  for (const block of ldJsons) {
+    const content = block.replace(/<\/?script[^>]*>/gi, '');
+    try {
+      const data = JSON.parse(content);
+      if (data.sameAs && Array.isArray(data.sameAs)) sameasCount = Math.max(sameasCount, data.sameAs.length);
+      if (data['@graph']) {
+        for (const item of data['@graph']) {
+          if (item.sameAs && Array.isArray(item.sameAs)) sameasCount = Math.max(sameasCount, item.sameAs.length);
+        }
+      }
+    } catch (e) {}
+  }
+  checks.push({
+    id: 'aeo_sameas_links',
+    label: sameasCount >= 2
+      ? `${sameasCount} sameAs social links in schema — strong brand signal for AI`
+      : 'No sameAs links in schema — add social profiles for brand recognition',
+    pass: sameasCount >= 2,
+    severity: 'info',
+    category: 'citation',
+  });
+
+  // 46. Brand Consistency — brand name matches across title, og:site_name, Organization.name
+  const titleMatch = html.match(/<title[^>]*>(.*?)<\/title>/si);
+  const titleTag = titleMatch ? titleMatch[1].replace(/<[^>]+>/g, '').toLowerCase().trim() : '';
+  const ogSiteName = metaContent('og:site_name').toLowerCase().trim();
+  let orgName = '';
+  for (const block of ldJsons) {
+    const content = block.replace(/<\/?script[^>]*>/gi, '');
+    try {
+      const data = JSON.parse(content);
+      const checkOrg = (item) => {
+        if (item['@type'] && ['Organization', 'LocalBusiness', 'Corporation'].includes(item['@type'])) {
+          orgName = (item.name || '').toLowerCase().trim();
+        }
+      };
+      if (Array.isArray(data)) {
+        data.forEach(checkOrg);
+      } else {
+        checkOrg(data);
+        if (Array.isArray(data['@graph'])) data['@graph'].forEach(checkOrg);
+      }
+    } catch (e) {}
+  }
+  let brandSignals = 0;
+  const brandRef = ogSiteName || orgName;
+  if (brandRef) {
+    if (titleTag.includes(brandRef)) brandSignals++;
+    if (ogSiteName && ogSiteName === brandRef) brandSignals++;
+    if (orgName && orgName === brandRef) brandSignals++;
+  }
+  checks.push({
+    id: 'aeo_brand_consistency',
+    label: brandSignals >= 2
+      ? `Brand name consistent across ${brandSignals}/3 signals (title, OG, schema)`
+      : 'Brand name inconsistent — align site name across title, og:site_name, Organization schema',
+    pass: brandSignals >= 2,
+    severity: 'info',
+    category: 'citation',
+  });
+
+  // 47. Update Recency — content modified within 90 days (3.2x more AI citations)
+  let isRecent = false;
+  const lastModHeader = headers?.['last-modified'] || '';
+  const dateModifiedMatch = html.match(/"dateModified"\s*:\s*"([^"]+)"/i);
+  const metaModified = metaContent('article:modified_time');
+  const modDateStr = dateModifiedMatch?.[1] || metaModified || lastModHeader;
+  if (modDateStr) {
+    const modDate = new Date(modDateStr);
+    const daysDiff = (Date.now() - modDate.getTime()) / (1000 * 60 * 60 * 24);
+    isRecent = daysDiff <= 90 && daysDiff >= 0;
+  }
+  checks.push({
+    id: 'aeo_update_recency',
+    label: isRecent
+      ? 'Content updated within 90 days — fresh content gets 3.2x more AI citations'
+      : 'Content not updated in 90+ days — stale content loses AI visibility',
+    pass: isRecent,
+    severity: 'warning',
+    category: 'citation',
+  });
+
+  // ══════════════════════════════════════════
+  // AI CONTENT OPTIMIZATION (4)
+  // Unique checks no other scanner has
+  // ══════════════════════════════════════════
+
+  // 48. Table of Contents Detection
+  const hasToc = /table.of.contents|toc["'\s>]|inhaltsverzeichnis|i[çc]indekiler|содержание/i.test(html) ||
+    (html.match(/<a[^>]*href=["']#[^"']+["'][^>]*>[^<]{3,}<\/a>/gi) || []).length >= 4;
+  checks.push({
+    id: 'aeo_toc',
+    label: hasToc ? 'Table of Contents detected — helps AI navigate long content' : 'No Table of Contents — add jump links for AI content navigation',
+    pass: hasToc,
+    severity: 'warning',
+    category: 'structure',
+  });
+
+  // 49. Video / Multimedia Content + VideoObject Schema
+  const hasVideo = /<video[^>]*>|<iframe[^>]*src=["'][^"']*(youtube|vimeo|wistia|dailymotion)/i.test(html);
+  const hasVideoSchema = /"VideoObject"/i.test(html);
+  checks.push({
+    id: 'aeo_video',
+    label: hasVideo
+      ? (hasVideoSchema ? 'Video content with VideoObject schema — AI-optimized multimedia' : 'Video found but no VideoObject schema — add for AI video discovery')
+      : 'No video content — multimedia increases AI engagement and citation rate',
+    pass: hasVideo,
+    severity: 'warning',
+    category: 'discoverability',
+  });
+
+  // 50. Data Attribution (statistics with source references)
+  const statsWithSrc = /(\d+%|\d+\s*(x|times|users|more))\s*.{0,80}(according to|source:|from |by |\(.*\d{4}\)|study|research)/i;
+  const hasAttributedData = statsWithSrc.test(textContent);
+  checks.push({
+    id: 'aeo_data_attribution',
+    label: hasAttributedData ? 'Statistics with source attribution — highly credible for AI citation' : 'Statistics lack source references — attribute data to boost AI trust',
+    pass: hasAttributedData,
+    severity: 'warning',
+    category: 'citation',
+  });
+
+  // 51. Collapsible Content (<details>/<summary>)
+  const detailsEls = (html.match(/<details[^>]*>/gi) || []).length;
+  checks.push({
+    id: 'aeo_collapsible',
+    label: detailsEls > 0 ? `${detailsEls} collapsible section(s) (<details>) — interactive AI-friendly content` : 'No <details>/<summary> elements — use for expandable Q&A content',
+    pass: detailsEls > 0,
+    severity: 'warning',
+    category: 'structure',
+  });
+
+  // 52. Entity/Brand Name Consistency
+  const ogSiteNameRaw = metaContent('og:site_name');
+  if (ogSiteNameRaw && ogSiteNameRaw.length >= 2) {
+    const brandName = ogSiteNameRaw.trim();
+    const brandLower = brandName.toLowerCase();
+    const brandRegex = new RegExp(brandLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+    const brandMentions = (textContent.match(brandRegex) || []).length;
+    const brandWords = brandLower.split(/\s+/);
+    const partialMentions = brandWords.length > 1
+      ? (textContent.toLowerCase().match(new RegExp(brandWords[0].replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length - brandMentions
+      : 0;
+    const isConsistent = brandMentions >= 2 && partialMentions <= brandMentions;
+    checks.push({
+      id: 'aeo_entity_consistency',
+      label: isConsistent
+        ? `Brand "${brandName}" used consistently (${brandMentions} mentions)`
+        : brandMentions < 2
+          ? `Brand "${brandName}" mentioned only ${brandMentions} time(s) — repeat for entity recognition`
+          : `Brand name used inconsistently (${partialMentions} partial vs ${brandMentions} full) — standardize`,
+      pass: isConsistent,
+      severity: 'warning',
+      category: 'citation',
+    });
+  }
+
   // Adaptive scoring: only count applicable checks
   const applicableChecks = checks.filter(c => c.applicable !== false);
   const passed = applicableChecks.filter(c => c.pass).length;
-  const score = Math.round((passed / applicableChecks.length) * 100);
+  const score = applicableChecks.length > 0 ? Math.round((passed / applicableChecks.length) * 100) : 0;
 
   return { score, checks, passed, total: applicableChecks.length };
 }

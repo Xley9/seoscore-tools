@@ -1,5 +1,5 @@
 /**
- * GEO Check Engine — 46 checks
+ * GEO Check Engine — 61 checks
  * Generative Engine Optimization
  * Evaluates readiness for Google AI Overview, Bing Copilot, Perplexity
  */
@@ -36,7 +36,8 @@ export function runGeoChecks(pageData) {
   // ==========================================
 
   // 1. Featured Snippet Format (concise definitions)
-  const definitionPattern = /\bis a\b|\bare\b.*\bthat\b|\brefers to\b|\bmeans\b|\bdefined as\b|\bist ein\b|\bsind\b|\bbedeutet\b/i;
+  // Multilingual: EN, DE, TR, FR, ES
+  const definitionPattern = /\bis a\b|\bare\b.*\bthat\b|\brefers to\b|\bmeans\b|\bdefined as\b|\bist ein\b|\bsind\b|\bbedeutet\b|ifade eder|anlam.na gelir|olarak tan.mlan|d[ıiuü]r\b|\best un\b|\best une\b|d[eé]signe|signifie|\bes un\b|\bes una\b|se refiere|significa/i;
   const hasDefinitions = definitionPattern.test(textContent);
   checks.push({
     id: 'geo_definitions',
@@ -80,9 +81,14 @@ export function runGeoChecks(pageData) {
   });
 
   // 5. Search intent clarity (clear topic focus)
+  function decodeHtmlEntities(str) {
+    return str.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#(\d+);/g, (m, n) => String.fromCharCode(n)).replace(/&nbsp;/g, ' ');
+  }
   const title = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '';
   const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]?.replace(/<[^>]+>/g, '') || '';
-  const titleH1Match = title && h1 && (title.toLowerCase().includes(h1.toLowerCase().substring(0, 20)) || h1.toLowerCase().includes(title.toLowerCase().substring(0, 20)));
+  const titleClean = decodeHtmlEntities(title).trim();
+  const h1Clean = decodeHtmlEntities(h1).trim();
+  const titleH1Match = titleClean && h1Clean && (titleClean.toLowerCase().includes(h1Clean.toLowerCase().substring(0, 20)) || h1Clean.toLowerCase().includes(titleClean.toLowerCase().substring(0, 20)));
   checks.push({
     id: 'geo_intent_clarity',
     label: titleH1Match ? 'Title and H1 are aligned — clear topic focus' : 'Title and H1 don\'t align — confusing for AI topic matching',
@@ -142,7 +148,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 10. Source citations in content
-  const citationPatterns = /according to|source:|study|research|survey|report by|data from|based on|published in/i;
+  // Multilingual: EN, TR, DE, FR, ES
+  const citationPatterns = /according to|source:|study|research|survey|report by|data from|based on|published in|g[oö]re|ara[sş]t[ıi]rma|kaynak|verileri|laut|studie|forschung|selon|[eé]tude|recherche|d'apr[eè]s|seg[uú]n|estudio|investigaci[oó]n|fuente/i;
   const hasCitations = citationPatterns.test(textContent);
   checks.push({
     id: 'geo_citations',
@@ -181,7 +188,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 13. Unique/original content signals
-  const hasOriginalData = /our (data|research|study|analysis)|we (found|discovered|analyzed)|our (team|experts)/i.test(textContent);
+  // Multilingual: EN, TR, DE, FR, ES
+  const hasOriginalData = /our (data|research|study|analysis)|we (found|discovered|analyzed)|our (team|experts)|ekibimiz|uzmanlar[ıi]m[ıi]z|verilerimiz|analiz.*(ettik|g[oö]steriyor)|unsere (Daten|Forschung|Experten|Analyse)|wir haben|notre (équipe|analyse|recherche)|nos (experts|données)|nuestro equipo|nuestros (datos|expertos)/i.test(textContent);
   checks.push({
     id: 'geo_original',
     label: hasOriginalData ? 'Original research/data signals found' : 'No original data signals — "our research shows..." boosts AI citation',
@@ -191,7 +199,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 14. Expert Quotes
-  const hasExpertQuotes = /<blockquote/i.test(html) || /"[^"]{20,200}"\s*[-—]\s*[A-Z]/m.test(textContent) || /says |states |explains |notes /i.test(textContent);
+  // Multilingual: EN, DE, TR, FR, ES
+  const hasExpertQuotes = /<blockquote/i.test(html) || /"[^"]{20,200}"\s*[-—]\s*[A-Z]/m.test(textContent) || /says |states |explains |notes |sagt |erkl[aä]rt |diyor |a[cç][ıi]kl[ıi]yor |belirtiyor |dit |explique |d[eé]clare |dice |explica |se[nñ]ala /i.test(textContent);
   checks.push({
     id: 'geo_expert_quotes',
     label: hasExpertQuotes ? 'Expert quotes or testimonials found — authority signal' : 'No expert quotes — add professional opinions for credibility',
@@ -286,7 +295,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 22. Summary/TL;DR
-  const hasSummary = /summary|key takeaway|tl;?dr|fazit|zusammenfassung|özet|conclusion|in short|bottom line/i.test(textContent);
+  // Multilingual: EN, DE, TR, FR, ES
+  const hasSummary = /summary|key takeaway|tl;?dr|fazit|zusammenfassung|[oö]zet|conclusion|in short|bottom line|sonu[cç]|k[ıi]saca|[oö]zetle|r[eé]sum[eé]|en r[eé]sum[eé]|en bref|resumen|en resumen/i.test(textContent);
   checks.push({
     id: 'geo_summary',
     label: hasSummary ? 'Summary/conclusion section found' : 'No summary section — add Key Takeaways or TL;DR for AI',
@@ -358,7 +368,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 28. Multi-Perspective Content
-  const hasMultiPerspective = /on the other hand|however|alternatively|some (people|experts)|while others|in contrast|conversely/i.test(textContent);
+  // Multilingual: EN, TR, DE, FR, ES
+  const hasMultiPerspective = /on the other hand|however|alternatively|some (people|experts)|while others|in contrast|conversely|ancak|[oö]te yandan|bununla birlikte|di[gğ]er taraftan|buna kar[sş][ıi]n|andererseits|allerdings|jedoch|dennoch|cependant|en revanche|toutefois|n[eé]anmoins|sin embargo|por otro lado|no obstante|aunque/i.test(textContent);
   checks.push({
     id: 'geo_multi_perspective',
     label: hasMultiPerspective ? 'Multi-perspective content found — balanced analysis' : 'Single-perspective content — add "on the other hand..." for balance',
@@ -368,7 +379,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 29. Actionable Content
-  const hasActionable = /you (can|should|need to|must)|try |start by |make sure|don't forget|tip:|pro tip|best practice/i.test(textContent);
+  // Multilingual: EN, TR, DE, FR, ES
+  const hasActionable = /you (can|should|need to|must)|try |start by |make sure|don't forget|tip:|pro tip|best practice|yapabilirsiniz|yapmal[ıi]s[ıi]n[ıi]z|deneyin|unutmay[ıi]n|ipucu|dikkat edin|Sie (k[oö]nnen|sollten)|versuchen Sie|vergessen Sie nicht|tipp:|vous pouvez|essayez|n'oubliez pas|conseil|astuce|puede|intente|no olvide|consejo/i.test(textContent);
   checks.push({
     id: 'geo_actionable',
     label: hasActionable ? 'Actionable advice found — AI prefers practical content' : 'No actionable content — add "you should...", "try...", tips',
@@ -378,7 +390,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 30. Conclusion/Recommendation
-  const hasConclusion = /recommend|our pick|best choice|winner|verdict|conclusion|final thoughts|empfehlung|fazit|sonuç/i.test(textContent);
+  // Multilingual: EN, DE, TR, FR, ES
+  const hasConclusion = /recommend|our pick|best choice|winner|verdict|conclusion|final thoughts|empfehlung|fazit|sonu[cç]|tavsiye|[oö]nerimiz|recommandation|notre choix|recomendaci[oó]n|nuestra elecci[oó]n|veredicto/i.test(textContent);
   checks.push({
     id: 'geo_conclusion',
     label: hasConclusion ? 'Conclusion/recommendation found — helps AI provide answers' : 'No conclusion — add recommendations or a verdict section',
@@ -423,7 +436,8 @@ export function runGeoChecks(pageData) {
   });
 
   // 34. Numerical Data Density
-  const numberMatches = textContent.match(/\d+[\.,]?\d*\s*(%|px|ms|MB|GB|KB|users|sites|checks|seconds|minutes|countries)/gi) || [];
+  // Multilingual units: EN + TR + DE + FR + ES
+  const numberMatches = textContent.match(/\d+[\.,]?\d*\s*(%|px|ms|MB|GB|KB|users|sites|checks|seconds|minutes|countries|y[ıi]l|[uü]lke|m[uü][sş]teri|[uü]r[uü]n|ki[sş]i|dil|adet|saat|Jahre|Nutzer|L[aä]nder|ans|utilisateurs|pays|a[nñ]os|usuarios|pa[ií]ses)/gi) || [];
   checks.push({
     id: 'geo_numerical_density',
     label: numberMatches.length >= 3 ? `${numberMatches.length} data points with units — highly citable` : 'Few data points with units — add specific numbers (e.g., "300+ users")',
@@ -549,9 +563,13 @@ export function runGeoChecks(pageData) {
     const content = block.replace(/<\/?script[^>]*>/gi, '');
     try {
       const parsed = JSON.parse(content);
-      if (parsed['@type']) schemaTypes.push(parsed['@type']);
-      if (Array.isArray(parsed['@graph'])) {
-        parsed['@graph'].forEach(item => { if (item['@type']) schemaTypes.push(item['@type']); });
+      if (Array.isArray(parsed)) {
+        parsed.forEach(p => { if (p['@type']) schemaTypes.push(p['@type']); });
+      } else {
+        if (parsed['@type']) schemaTypes.push(parsed['@type']);
+        if (Array.isArray(parsed['@graph'])) {
+          parsed['@graph'].forEach(item => { if (item['@type']) schemaTypes.push(item['@type']); });
+        }
       }
     } catch {}
   }
@@ -572,6 +590,55 @@ export function runGeoChecks(pageData) {
     pass: !!htmlLang,
     severity: 'warning',
     category: 'technical',
+  });
+
+  // ==========================================
+  // EXTENDED GEO CHECKS (3 checks)
+  // ==========================================
+
+  // 47. ARIA Landmarks
+  const ariaLandmarks = [
+    /<main[^>]*>/i.test(html),
+    /<nav[^>]*>/i.test(html),
+    /<footer[^>]*>/i.test(html),
+    /role=["'](main|navigation|banner|contentinfo|complementary|search)["']/i.test(html),
+  ];
+  const landmarkCount = ariaLandmarks.filter(Boolean).length;
+  checks.push({
+    id: 'geo_aria_landmarks',
+    label: landmarkCount >= 2 ? `${landmarkCount} ARIA landmarks found — good accessibility for AI` : 'Few ARIA landmarks — add <main>, <nav>, <footer> or role attributes',
+    pass: landmarkCount >= 2,
+    severity: 'warning',
+    category: 'technical',
+  });
+
+  // 48. Image ALT Text Quality (not just "image" or too short)
+  const allImages = (html.match(/<img[^>]*>/gi) || []).filter(img => !/src=["']\s*['+]/.test(img));
+  const imagesWithBadAlt = allImages.filter(img => {
+    const altMatch = img.match(/alt=["']([^"']*)["']/i);
+    if (!altMatch) return false; // no alt = handled by img_alt check
+    const alt = altMatch[1].trim();
+    return alt.length > 0 && (alt.length <= 5 || /^(image|photo|picture|img|pic|foto|bild|resim)$/i.test(alt));
+  });
+  if (allImages.length > 0) {
+    checks.push({
+      id: 'geo_img_alt_quality',
+      label: imagesWithBadAlt.length === 0
+        ? 'All image ALT texts are descriptive (>5 chars)'
+        : `${imagesWithBadAlt.length} image(s) with generic/short ALT text — use descriptive text`,
+      pass: imagesWithBadAlt.length === 0,
+      severity: 'warning',
+      category: 'format',
+    });
+  }
+
+  // 49. Content Length for AI Depth (min 300 words)
+  checks.push({
+    id: 'geo_content_length',
+    label: wordCount >= 300 ? `${wordCount} words — sufficient depth for AI analysis` : `Only ${wordCount} words — AI systems prefer content with 300+ words for comprehensive analysis`,
+    pass: wordCount >= 300,
+    severity: 'warning',
+    category: 'overview',
   });
 
   // Mark N/A checks for detected site type
@@ -603,10 +670,201 @@ export function runGeoChecks(pageData) {
     });
   }
 
+  // ══════════════════════════════════════════
+  // RESEARCH-BASED GEO CHECKS (4)
+  // Based on Princeton/Georgia Tech GEO Paper + Google AI Overview Factors
+  // ══════════════════════════════════════════
+
+  // 50. First 200 Words — must contain primary keyword (AI extracts from start)
+  const h1Match = html.match(/<h1[^>]*>(.*?)<\/h1>/si);
+  const h1Text = h1Match ? h1Match[1].replace(/<[^>]+>/g, '').toLowerCase().trim() : '';
+  const intro200Words = paragraphTexts.slice(0, 10).join(' ').split(/\s+/).slice(0, 200).join(' ').toLowerCase();
+  const h1Words = h1Text.split(/\s+/).filter(w => w.length > 3);
+  let h1In200 = 0;
+  for (const w of h1Words) {
+    if (intro200Words.includes(w)) h1In200++;
+  }
+  const kwRatio = h1Words.length > 0 ? h1In200 / h1Words.length : 0;
+  const hasDef200 = /(is a|refers to|means|defined as|bezeichnet|bedeutet|представляет|является|es un)/i.test(intro200Words);
+  const first200Ok = kwRatio >= 0.6 || hasDef200;
+  checks.push({
+    id: 'geo_first_200_words',
+    label: first200Ok
+      ? 'First 200 words contain topic keywords — AI extracts primarily from the start'
+      : 'First 200 words lack topic keywords — AI may skip your content for extraction',
+    pass: first200Ok,
+    severity: 'warning',
+    category: 'overview',
+  });
+
+  // 51. Featured snippet format — definition + structured list combo
+  // Multilingual: EN, DE, TR, FR, ES (same as geo_definitions)
+  const hasDefinition = /\bis a\b|\bare\b.*\bthat\b|\brefers to\b|\bdefined as\b|\bist ein\b|ifade eder|anlam.na gelir|d[ıiuü]r\b|\best un\b|\best une\b|\bes un\b|\bes una\b/i.test(textContent);
+  const hasStructuredList = /<(ol|ul)[^>]*>/i.test(html);
+  checks.push({
+    id: 'geo_featured_snippet',
+    label: (hasDefinition && hasStructuredList) ? 'Definition + list combo — strong featured snippet candidate' : 'Missing definition or list format — combine "X is..." with lists for snippets',
+    pass: hasDefinition && hasStructuredList,
+    severity: 'warning',
+    category: 'overview',
+  });
+
+  // 52. Statistics Density — 5+ quantitative data points (Princeton: +30-40% visibility)
+  // Multilingual units: EN + TR + DE + FR + ES
+  const statsMatches = textContent.match(/\d+[\.,]?\d*\s*(%|\$|€|£|₺|users|visitors|customers|checks|sites|downloads|countries|million|billion|percent|m[uü][sş]teri|ziyaret[cç]i|[uü]r[uü]n|[uü]lke|milyon|milyar|ki[sş]i|y[ıi]l|adet|Kunden|Besucher|Millionen|clients|visiteurs|millions|clientes|visitantes|millones)/gi) || [];
+  const statCount = Math.min(statsMatches.length, 50);
+  checks.push({
+    id: 'geo_statistics_density',
+    label: statCount >= 5
+      ? `${statCount} data points found — statistics boost AI visibility by 30-40%`
+      : `Only ${statCount} data points — add 5+ statistics for +30-40% AI visibility (Princeton study)`,
+    pass: statCount >= 5,
+    severity: 'warning',
+    category: 'authority',
+  });
+
+  // 53. Author Credentials — named author with bio/credentials (anonymous = GEO penalty)
+  const authorSchemaMatch = html.match(/"author"\s*:\s*\{[^}]*"name"\s*:\s*"([^"]+)"/i);
+  const authorMetaMatch = html.match(/<meta[^>]*name=["']author["'][^>]*content=["']([^"']+)/i);
+  const authorName = authorSchemaMatch?.[1] || authorMetaMatch?.[1] || '';
+  const hasNamedAuthor = authorName.length > 2 && !/^(admin|administrator|editor|author|team|staff|content)$/i.test(authorName);
+  // Check for credential signals in author schema or nearby content
+  const credentialWords = /(experience|expert|specialist|certified|years|professional|founder|CEO|CTO|Ph\.?D|manager|director|consultant|analyst)/i;
+  const authorSchemaBlock = html.match(/"author"\s*:\s*\{[^}]*\}/i)?.[0] || '';
+  const hasCredentials = hasNamedAuthor && credentialWords.test(authorSchemaBlock + ' ' + textContent.substring(0, 500));
+  checks.push({
+    id: 'geo_author_credentials',
+    label: hasCredentials
+      ? `Author "${authorName}" has credentials — strong E-E-A-T signal`
+      : 'Author lacks credentials — anonymous content is a GEO penalty',
+    pass: hasCredentials,
+    severity: 'warning',
+    category: 'authority',
+  });
+
+  // ══════════════════════════════════════════
+  // AI VISIBILITY OPTIMIZATION (5)
+  // Unique checks no other scanner has
+  // ══════════════════════════════════════════
+
+  // 54. AI Snippet Control (max-image-preview / max-snippet restrictions)
+  const robotsLower = metaContent('robots').toLowerCase();
+  const restrictedSnippet = /max-snippet:\s*\d/i.test(robotsLower) && !/max-snippet:\s*-1/i.test(robotsLower);
+  const restrictedImage = /max-image-preview:\s*(none|standard)/i.test(robotsLower);
+  const hasLargePreview = /max-image-preview:\s*large/i.test(robotsLower);
+  checks.push({
+    id: 'geo_snippet_control',
+    label: restrictedSnippet || restrictedImage
+      ? 'AI snippet/image restricted — may reduce AI Overview visibility'
+      : hasLargePreview
+        ? 'max-image-preview:large — optimal AI rich result display'
+        : 'No snippet restrictions — AI can freely extract content (good)',
+    pass: !restrictedSnippet && !restrictedImage,
+    severity: restrictedSnippet || restrictedImage ? 'warning' : undefined,
+    category: 'technical',
+  });
+
+  // 55. Citation Markup Quality (<blockquote> with cite attribute)
+  const bqTags = html.match(/<blockquote[^>]*>/gi) || [];
+  const citedBqs = bqTags.filter(bq => /cite=/i.test(bq));
+  if (bqTags.length > 0) {
+    checks.push({
+      id: 'geo_citation_markup',
+      label: citedBqs.length >= bqTags.length
+        ? `All ${bqTags.length} blockquotes have cite attribute — proper attribution for AI`
+        : `${bqTags.length - citedBqs.length} blockquote(s) missing cite attribute — add source URLs for AI trust`,
+      pass: citedBqs.length >= Math.ceil(bqTags.length * 0.5),
+      severity: 'warning',
+      category: 'authority',
+    });
+  }
+
+  // 56. Content Comprehensiveness (5W1H coverage in headings)
+  const allHeadingText2 = (html.match(/<h[1-4][^>]*>([\s\S]*?)<\/h[1-4]>/gi) || [])
+    .map(h => h.replace(/<[^>]+>/g, '').toLowerCase()).join(' ');
+  // Multilingual 5W1H: EN, DE, TR, FR, ES
+  const fiveW1H = [
+    /what|was\b|ne\b|quel|qu['']est|qué|cuál/i.test(allHeadingText2),
+    /why|warum|neden|ni[cç]in|pourquoi|por qu[eé]/i.test(allHeadingText2),
+    /how|wie\b|nas[ıi]l|comment|c[oó]mo/i.test(allHeadingText2),
+    /when|wann|ne zaman|quand|cu[aá]ndo/i.test(allHeadingText2),
+    /where|wo\b|nerede|o[uù]|d[oó]nde/i.test(allHeadingText2),
+    /who|wer\b|kim\b|qui\b|qui[eé]n/i.test(allHeadingText2),
+  ];
+  const w1hCount = fiveW1H.filter(Boolean).length;
+  checks.push({
+    id: 'geo_comprehensiveness',
+    label: w1hCount >= 3 ? `${w1hCount}/6 question types (5W1H) in headings — comprehensive` : `Only ${w1hCount}/6 question types — add What, Why, How headings`,
+    pass: w1hCount >= 3,
+    severity: 'warning',
+    category: 'overview',
+  });
+
+  // 57. Anchor Text Quality (not generic "click here")
+  const anchorTexts = (html.match(/<a[^>]*>[^<]{2,60}<\/a>/gi) || [])
+    .map(a => a.replace(/<[^>]+>/g, '').trim().toLowerCase())
+    .filter(t => t.length > 1);
+  // Multilingual: EN, DE, TR, FR, ES
+  const genericAnchors = anchorTexts.filter(t => /^(click here|here|read more|more|link|this|learn more|hier klicken|hier|mehr|weiterlesen|buraya t[ıi]klay[ıi]n|devam[ıi] oku|daha fazla|cliquez ici|en savoir plus|lire la suite|haga clic|leer m[aá]s|m[aá]s)$/i.test(t));
+  if (anchorTexts.length > 3) {
+    checks.push({
+      id: 'geo_anchor_quality',
+      label: genericAnchors.length <= 2 ? 'Link anchor texts are descriptive — good AI context signal' : `${genericAnchors.length} generic anchor texts ("click here") — use descriptive link text for AI`,
+      pass: genericAnchors.length <= 2,
+      severity: 'warning',
+      category: 'semantic',
+    });
+  }
+
+  // 58. Image Captions (<figure> + <figcaption>)
+  const figcaptionCount = (html.match(/<figcaption[^>]*>/gi) || []).length;
+  if (allImages.length > 0) {
+    checks.push({
+      id: 'geo_image_captions',
+      label: figcaptionCount > 0
+        ? `${figcaptionCount} image caption(s) found — helps AI understand visual content`
+        : 'No <figure>/<figcaption> — wrap images with descriptive captions for AI',
+      pass: figcaptionCount > 0,
+      severity: 'warning',
+      category: 'format',
+    });
+  }
+
+  // 59. Knowledge Graph Alignment (sameAs with authoritative URIs)
+  const ldJsonBlocks = html.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi) || [];
+  let kgSameAs = [];
+  for (const block of ldJsonBlocks) {
+    const content = block.replace(/<\/?script[^>]*>/gi, '');
+    try {
+      const data = JSON.parse(content);
+      const extractSameAs = (item) => {
+        if (item.sameAs) {
+          const urls = Array.isArray(item.sameAs) ? item.sameAs : [item.sameAs];
+          kgSameAs.push(...urls);
+        }
+      };
+      if (Array.isArray(data)) data.forEach(extractSameAs);
+      else { extractSameAs(data); if (Array.isArray(data['@graph'])) data['@graph'].forEach(extractSameAs); }
+    } catch {}
+  }
+  const kgDomains = /wikipedia\.org|wikidata\.org|crunchbase\.com|linkedin\.com|twitter\.com|x\.com|github\.com|youtube\.com/i;
+  const kgAuthoritative = kgSameAs.filter(u => kgDomains.test(u));
+  checks.push({
+    id: 'geo_knowledge_graph',
+    label: kgAuthoritative.length >= 2
+      ? `${kgAuthoritative.length} authoritative sameAs links (Wikipedia, LinkedIn, etc.) — strong Knowledge Graph signal`
+      : kgAuthoritative.length === 1
+        ? `Only 1 authoritative sameAs link — add Wikipedia, LinkedIn, or Wikidata for Knowledge Graph`
+        : 'No authoritative sameAs links — add Wikipedia/Wikidata/LinkedIn URIs to schema for Knowledge Graph alignment',
+    pass: kgAuthoritative.length >= 2,
+    severity: 'warning',
+    category: 'authority',
+  });
+
   // Adaptive scoring: only count applicable checks
   const applicableChecks = checks.filter(c => c.applicable !== false);
   const passed = applicableChecks.filter(c => c.pass).length;
-  const score = Math.round((passed / applicableChecks.length) * 100);
+  const score = applicableChecks.length > 0 ? Math.round((passed / applicableChecks.length) * 100) : 0;
 
   return { score, checks, passed, total: applicableChecks.length };
 }
