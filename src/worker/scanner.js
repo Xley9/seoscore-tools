@@ -990,13 +990,28 @@ export function runSeoChecks(pageData) {
   }
 
   // E5. Font Display Swap
+  // `@font-face` is matched as a CSS rule (followed by `{`) so a tool
+  // card or blog paragraph that *mentions* @font-face doesn't trigger
+  // a false positive. font-preload links indicate self-hosted fonts
+  // whose @font-face declarations live in an external stylesheet we
+  // can't see from a single fetch — we treat the deliberate preload
+  // pattern as evidence the dev has thought about font-display.
   const hasFontDisplay = /font-display\s*:\s*swap/i.test(html) || /<link[^>]*display=swap/i.test(html);
-  const usesWebFonts = /fonts\.googleapis|fonts\.gstatic|@font-face/i.test(html);
+  const hasGoogleFonts = /fonts\.googleapis\.com|fonts\.gstatic\.com/i.test(html);
+  const hasInlineFontFace = /@font-face\s*\{/i.test(html);
+  const hasFontAsPreload = /<link[^>]*rel=["']preload["'][^>]*as=["']font["']/i.test(html);
+  const usesWebFonts = hasGoogleFonts || hasInlineFontFace || hasFontAsPreload;
   if (usesWebFonts) {
+    const fontsLikelySelfHosted = hasFontAsPreload && !hasGoogleFonts && !hasInlineFontFace;
+    const pass = hasFontDisplay || fontsLikelySelfHosted;
     checks.push({
       id: 'font_display',
-      label: hasFontDisplay ? 'font-display: swap detected — prevents invisible text' : 'Web fonts without font-display: swap — may cause FOIT',
-      pass: hasFontDisplay,
+      label: hasFontDisplay
+        ? 'font-display: swap detected — prevents invisible text'
+        : fontsLikelySelfHosted
+          ? 'Self-hosted fonts via preload — font-display strategy assumed (not directly verifiable from HTML)'
+          : 'Web fonts without font-display: swap — may cause FOIT',
+      pass,
       severity: 'warning',
       category: 'performance',
     });
@@ -1606,8 +1621,16 @@ export function runSeoChecks(pageData) {
     });
   }
 
+  // P4-5/6. Link and DOM-size counting use a "live" view of the HTML
+  // that drops <template> bodies. Template content is parsed but lives
+  // in an inert DocumentFragment — Chrome's `document.querySelectorAll`
+  // and the ad-network DOM-budget tools (Mediavine, Raptive) don't see
+  // it. Counting it here would punish a perfectly valid lazy-render
+  // pattern.
+  const liveHtml = html.replace(/<template\b[^>]*>[\s\S]*?<\/template>/gi, '');
+
   // P4-5. Excessive Links (>100 per page)
-  const allPageLinks = html.match(/<a[^>]*href/gi) || [];
+  const allPageLinks = liveHtml.match(/<a[^>]*href/gi) || [];
   const linkCount = allPageLinks.length;
   checks.push({
     id: 'excessive_links',
@@ -1619,7 +1642,7 @@ export function runSeoChecks(pageData) {
   });
 
   // P4-6. DOM Size estimation (count HTML tags)
-  const allTags = html.match(/<[a-z][a-z0-9]*[\s>]/gi) || [];
+  const allTags = liveHtml.match(/<[a-z][a-z0-9]*[\s>]/gi) || [];
   const domSize = allTags.length;
   checks.push({
     id: 'dom_size',
@@ -1686,7 +1709,14 @@ export function runSeoChecks(pageData) {
   // P4-10. Render-Blocking Resources — CSS/JS in <head> without async/defer
   const headHtml = (html.match(/<head[\s\S]*?<\/head>/i) || [''])[0];
   const headScriptsP4 = headHtml.match(/<script[^>]*src=["'][^"']+["'][^>]*>/gi) || [];
-  const blockingScriptsP4 = headScriptsP4.filter(s => !/defer|async/i.test(s) && !/type=["']application\/ld\+json["']/i.test(s));
+  // type="module" scripts defer by default per the HTML spec — they
+  // don't block parsing even without an explicit `defer` attribute.
+  // application/ld+json blocks are data, not executable scripts.
+  const blockingScriptsP4 = headScriptsP4.filter(s =>
+    !/defer|async/i.test(s) &&
+    !/type=["']application\/ld\+json["']/i.test(s) &&
+    !/type=["']module["']/i.test(s)
+  );
   checks.push({
     id: 'render_blocking',
     label: blockingScriptsP4.length === 0
