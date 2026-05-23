@@ -162,6 +162,30 @@ scanForm.addEventListener('submit', async (e) => {
   }
 });
 
+// Deep-link support: any blog post or external referrer can hand a URL to
+// the homepage via `?url=https://target.com` and we'll prefill the form
+// and auto-fire the scan. Used by the inline scanner cards on
+// /blog/perplexity-seo-checker/ and similar tool-intent landing pages.
+(function autoScanFromQueryParam() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const incoming = params.get('url');
+    if (!incoming) return;
+    const normalized = normalizeUrl(incoming);
+    if (!normalized) return;
+    urlInput.value = normalized;
+    // Clean the query param from the address bar so a refresh doesn't loop.
+    const cleanUrl = new URL(window.location.href);
+    cleanUrl.searchParams.delete('url');
+    window.history.replaceState({}, '', cleanUrl.toString());
+    // Defer slightly so the rest of the page can finish initializing.
+    setTimeout(() => {
+      trackEvent('scan_start', { url_scanned: normalized, source: 'deeplink' });
+      runScan(normalized);
+    }, 200);
+  } catch (e) { /* ignore — fail silent, form still works manually */ }
+})();
+
 // Scan Again button
 document.getElementById('scanAgainBtn')?.addEventListener('click', () => {
   resultsSection.classList.add('hidden');
