@@ -32,14 +32,20 @@ const SITE = path.join(ROOT, 'src', 'site');
 const WORKER = path.join(ROOT, 'src', 'worker');
 
 function generateSiteCheckMetadata() {
-  // Worker version uses `export const checkMetadata = ...` (ES module).
-  // Site version is loaded as a classic <script> and needs a global
-  // `const checkMetadata = ...`. Strip the `export` keyword; everything
-  // else stays identical so the data table is the same in both worlds.
+  // Worker version is an ES module that exports both data
+  // (`checkMetadata`, `priorityLevels`) and functions
+  // (`getCheckMetadata`, `getQuickWins`). The site loads this as a
+  // classic <script>, so every `export` must be stripped — otherwise
+  // the browser hits a parse error and the helpers never get bound to
+  // the global scope (the symptom is "getCheckMetadata is not defined"
+  // when running a scan).
   const src = fs.readFileSync(path.join(WORKER, 'check-metadata.js'), 'utf8');
-  const transformed = src.replace(/^export\s+const\s+checkMetadata\b/m, 'const checkMetadata');
-  if (!transformed.includes('const checkMetadata')) {
-    throw new Error('check-metadata transform failed: no `const checkMetadata` in output');
+  const transformed = src.replace(/^export\s+(const|function|let|var)\b/gm, '$1');
+  if (!/^const checkMetadata\b/m.test(transformed)) {
+    throw new Error('check-metadata transform failed: no top-level `const checkMetadata` in output');
+  }
+  if (!/^function getCheckMetadata\b/m.test(transformed)) {
+    throw new Error('check-metadata transform failed: no top-level `function getCheckMetadata` in output');
   }
   const banner = '/* AUTO-GENERATED from src/worker/check-metadata.js — do not edit by hand. */\n';
   fs.writeFileSync(path.join(SITE, 'check-metadata.js'), banner + transformed);
