@@ -2509,3 +2509,10 @@ details.faq-item[open] .faq-chevron {
   height: 100%;
   border: 0;
 }
+.demo-video__caption {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  text-align: left;
+}
