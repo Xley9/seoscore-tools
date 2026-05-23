@@ -250,10 +250,13 @@ export default {
           fetchAsset('/robots.txt'),
           fetchAsset('/sitemap.xml'),
           fetchAsset('/llms.txt'),
-          // PSI API with 15s timeout
+          // PSI API with 15s timeout. PSI_API_KEY (wrangler secret) lifts
+          // the anonymous public quota — without it the API returns 429
+          // once the shared free pool is drained.
           (async () => {
             try {
-              const psiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(finalUrl)}&strategy=mobile`;
+              const psiKeyParam = env.PSI_API_KEY ? `&key=${env.PSI_API_KEY}` : '';
+              const psiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(finalUrl)}&strategy=mobile${psiKeyParam}`;
               const controller = new AbortController();
               const tid = setTimeout(() => controller.abort(), 15000);
               const resp = await fetch(psiUrl, { signal: controller.signal });
