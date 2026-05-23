@@ -2432,3 +2432,43 @@ details.faq-item[open] .faq-chevron {
   line-height: 1.4;
   color: var(--text);
 }
+
+/* ─── Example scan result section (static showcase, no JS) ─── */
+.result-preview {
+  padding: 32px 0 16px;
+}
+.preview-label {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.preview-scores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+.preview-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.preview-score svg {
+  display: block;
+}
+.preview-score-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .preview-scores { gap: 20px; }
+  .preview-score svg { width: 80px; height: 80px; }
+}

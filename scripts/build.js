@@ -47,8 +47,15 @@ function generateSiteCheckMetadata() {
   if (!/^function getCheckMetadata\b/m.test(transformed)) {
     throw new Error('check-metadata transform failed: no top-level `function getCheckMetadata` in output');
   }
+  if (!/^const priorityLevels\b/m.test(transformed)) {
+    throw new Error('check-metadata transform failed: no top-level `const priorityLevels` in output');
+  }
+  // The legacy site code (app.js) references `priorityConfig`. The
+  // worker exports the same data under `priorityLevels`. Emit an alias
+  // so neither side has to be touched whenever the other adds a key.
   const banner = '/* AUTO-GENERATED from src/worker/check-metadata.js — do not edit by hand. */\n';
-  fs.writeFileSync(path.join(SITE, 'check-metadata.js'), banner + transformed);
+  const footer = '\n// Compatibility alias for the site-side renderer.\nconst priorityConfig = priorityLevels;\n';
+  fs.writeFileSync(path.join(SITE, 'check-metadata.js'), banner + transformed + footer);
 }
 
 async function buildAll() {
