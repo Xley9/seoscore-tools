@@ -1,0 +1,73 @@
+================================================================
+  SEO AUDIT CHECKLIST 2026 — 52 Items
+  Source: https://seoscore.tools/blog/seo-audit-checklist-pdf/
+  License: CC BY 4.0 — use freely, attribution appreciated
+================================================================
+
+# 1. META TAGS & ON-PAGE SEO (12 items)
+[ ] Title tag present, 30-60 characters, primary keyword in first 30
+[ ] Meta description present, 120-160 characters
+[ ] One H1 per page, 40%+ word overlap with title
+[ ] H2/H3 hierarchy clean (no skipped levels)
+[ ] Canonical tag present and correct
+[ ] Robots meta tag explicit (index, follow)
+[ ] Viewport meta tag present (mobile-friendly)
+[ ] UTF-8 charset declared
+[ ] HTML lang attribute set
+[ ] Theme color meta tag set
+[ ] No meta refresh redirects (use 301 instead)
+[ ] No duplicate titles or descriptions across pages
+
+# 2. TECHNICAL SEO & INDEXABILITY (10 items)
+[ ] HTTPS active, HTTP redirects to HTTPS (301)
+[ ] HSTS header set (max-age 31536000, includeSubDomains)
+[ ] X-Content-Type-Options: nosniff
+[ ] X-Frame-Options or CSP frame-ancestors set
+[ ] robots.txt valid at /robots.txt, includes Sitemap directive
+[ ] XML sitemap at /sitemap.xml, submitted to GSC + Bing
+[ ] Hreflang set if multilingual (incl. x-default)
+[ ] No render-blocking scripts in <head> (use defer/async/module)
+[ ] IndexNow integration set up
+[ ] DNS-prefetch + preconnect for 3rd-party domains
+
+# 3. SCHEMA & STRUCTURED DATA (8 items)
+[ ] JSON-LD validates (no syntax errors)
+[ ] Organization schema with sameAs (LinkedIn/GitHub/Wikipedia)
+[ ] WebSite schema with SearchAction
+[ ] BreadcrumbList on every non-home page
+[ ] Article or BlogPosting on content pages
+[ ] FAQPage schema on Q&A blocks (3-5 Q&A pairs)
+[ ] Person schema for authors with credentials + sameAs
+[ ] SpeakableSpecification on lede + Quick Answer blocks
+
+# 4. PERFORMANCE & CORE WEB VITALS (8 items)
+[ ] LCP under 2.5s
+[ ] CLS under 0.1
+[ ] INP under 200ms
+[ ] TBT under 200ms
+[ ] TTFB under 800ms
+[ ] Web fonts use font-display: swap
+[ ] Images modern format (WebP/AVIF) with alt text
+[ ] Page size under 1.5 MB initial load
+
+# 5. AEO — ANSWER ENGINE OPTIMIZATION (8 items)
+[ ] robots.txt Allow's GPTBot, ClaudeBot, PerplexityBot, Google-Extended
+[ ] llms.txt deployed at /llms.txt (200-400 lines)
+[ ] FAQPage schema on top 10 pages
+[ ] SpeakableSpecification on homepage + content pages
+[ ] Quick Answer / TL;DR block in first 100 words
+[ ] Author byline with credentials + Person schema
+[ ] Citation-ready facts with source attribution
+[ ] Short paragraphs (20-80 words), clear definitions
+
+# 6. GEO — GENERATIVE ENGINE OPTIMIZATION (6 items)
+[ ] Content depth (pillar 3k+ words, supporting 1.5k+ words)
+[ ] External source diversity (5+ unique domains per article)
+[ ] Multi-perspective writing (consider counter-arguments)
+[ ] Explicit conclusion / recommendations section
+[ ] Visuals with descriptive alt text
+[ ] Topical authority cluster (15+ interlinked articles per topic)
+
+================================================================
+Run automated against seoscore.tools/ to score 260+ checks in 30s.
+================================================================
