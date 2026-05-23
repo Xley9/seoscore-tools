@@ -130,7 +130,7 @@ export default {
             'x-content-type-options': 'nosniff',
             'x-frame-options': 'SAMEORIGIN',
             'referrer-policy': 'strict-origin-when-cross-origin',
-            'content-security-policy': "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://utt.impactcdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com",
+            'content-security-policy': "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://utt.impactcdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com",
             'permissions-policy': 'camera=(), microphone=(), geolocation=(), payment=()',
           };
         } else {
@@ -423,7 +423,7 @@ export default {
     newHeaders.set('X-Content-Type-Options', 'nosniff');
     newHeaders.set('X-Frame-Options', 'SAMEORIGIN');
     newHeaders.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-    newHeaders.set('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://utt.impactcdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com");
+    newHeaders.set('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://utt.impactcdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com");
     newHeaders.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=()');
     const contentType = response.headers.get('content-type') || '';
     if (contentType.includes('text/html')) {
