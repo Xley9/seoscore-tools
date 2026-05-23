@@ -1,9 +1,32 @@
 /**
- * SEO Check Engine — 142 checks
- * Parses HTML and evaluates SEO quality
+ * SEO Check Engine — 142 checks across 15 sections.
+ *
+ * SECTION INDEX (search for the heading text to jump):
+ *   META TAGS (12 checks)
+ *   CONTENT (10 checks)
+ *   SOCIAL / OPEN GRAPH (10 checks)
+ *   TECHNICAL (10 checks)
+ *   PERFORMANCE (5 checks)
+ *   SECURITY (3 checks)
+ *   E-E-A-T TRUST PAGES (5 checks)
+ *   SCHEMA
+ *   EXTENDED CHECKS (11 checks)
+ *   EXTENDED CHECKS 2 (7 checks)
+ *   PHASE 2: ADVANCED CHECKS
+ *   PHASE 3: EXTENDED ANALYSIS
+ *   E-COMMERCE BONUS CHECKS (5 checks)  — gated on isEcommerce
+ *   PHASE 4: QUALITY & ACCESSIBILITY (+15 checks)
+ *   PHASE 4: DISCOVERY & STRUCTURE CHECKS
+ *
+ * All sections share the function-scope helpers and locals declared right
+ * below this banner. Sections frequently reference state computed by
+ * earlier sections (e.g. `parsedUrl`, `headHtml`, link/script collections)
+ * — extracting them into separate modules requires threading that state,
+ * which is intentionally deferred to a follow-up refactor.
  */
 
 import { NA_CHECKS } from './site-detector.js';
+import { makeExtract, makeMetaContent } from './seo-helpers.js';
 
 export function runSeoChecks(pageData) {
   const { html, url, headers, siteType, robotsTxt, sitemapXml, brokenLinks, keyphrase } = pageData;
@@ -12,27 +35,8 @@ export function runSeoChecks(pageData) {
   const naCheckIds = NA_CHECKS[detectedType]?.seo || [];
   const checks = [];
 
-  // Helper: extract content between tags
-  function extract(tag, attr) {
-    if (attr) {
-      const re = new RegExp(`<${tag}[^>]*${attr}=["']([^"']*)["']`, 'i');
-      const m = html.match(re);
-      return m ? m[1] : '';
-    }
-    const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i');
-    const m = html.match(re);
-    return m ? m[1].trim() : '';
-  }
-
-  function metaContent(name) {
-    // Find the meta tag first, then extract content (handles apostrophes in values)
-    const tagRe = new RegExp(`<meta[^>]*(?:name|property)=["']${name}["'][^>]*>`, 'i');
-    const tag = (html.match(tagRe) || [''])[0];
-    if (!tag) return '';
-    const cm = tag.match(/content="([^"]*)"/i) || tag.match(/content='([^']*)'/i);
-    return cm ? cm[1] : '';
-  }
-
+  const extract = makeExtract(html);
+  const metaContent = makeMetaContent(html);
   const parsedUrl = new URL(url);
 
   // ==========================================
