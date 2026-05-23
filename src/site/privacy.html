@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — seoscore.tools</title>
-  <meta name="description" content="Privacy policy for seoscore.tools. We don't store your data. Scans are processed in real-time.">
+  <meta name="description" content="Privacy policy for seoscore.tools. No signup, no email. Scan results are publicly viewable for 90 days. Full transparency on what we store and for how long.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://seoscore.tools/privacy.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy — seoscore.tools">
-  <meta name="twitter:description" content="How seoscore.tools handles your data. Scans processed in real-time, no data stored.">
+  <meta name="twitter:description" content="How seoscore.tools handles your data. No signup, no email. Scan results are publicly viewable for 90 days; details inside.">
   <meta name="twitter:image" content="https://seoscore.tools/og-image.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,21 +69,31 @@
   <main>
     <div class="container privacy-page">
       <h1>Privacy Policy</h1>
-      <p class="privacy-date">Last updated: March 26, 2026</p>
+      <p class="privacy-date">Last updated: May 23, 2026</p>
 
       <h2>Overview</h2>
-      <p>seoscore.tools is committed to protecting your privacy. This policy explains what data we collect (spoiler: almost none) and how we handle it.</p>
+      <p>seoscore.tools is built privacy-first: no signup, no email gate, no personal account required. We do collect a small amount of operational data — scan results are stored as publicly shareable reports for 90 days, anonymous analytics are collected via Google Analytics 4, and IP addresses are used for short-window rate limiting. This page lists exactly what is stored, where, and for how long. If something here is unclear, email us — we believe an SEO tool that scores E-E-A-T should be honest about its own data handling.</p>
 
       <h2>Data We Do NOT Collect</h2>
       <ul>
-        <li>We do <strong>not</strong> store your website content or scan results on our servers</li>
-        <li>We do <strong>not</strong> require signup, email, or personal information</li>
-        <li>We do <strong>not</strong> use tracking cookies</li>
-        <li>We do <strong>not</strong> sell or share any data with third parties</li>
+        <li>We do <strong>not</strong> require signup, email, or any personal account</li>
+        <li>We do <strong>not</strong> use behavioral tracking cookies (only the necessary cookies set by Google Analytics for session continuity)</li>
+        <li>We do <strong>not</strong> sell or share data with any third party</li>
+        <li>We do <strong>not</strong> persist your browsing behavior across sessions on our own systems</li>
+        <li>We do <strong>not</strong> use the URL you scan for any purpose other than producing the public report</li>
+      </ul>
+
+      <h2>Data We DO Store</h2>
+      <p>To be fully transparent — here is everything that gets stored when you use the tool:</p>
+      <ul>
+        <li><strong>Public scan reports (90 days):</strong> Each scan generates a public report at <code>seoscore.tools/report/{domain-slug}/</code> that contains the scanned URL, the SEO / AEO / GEO scores, and the list of check results. Anyone with the report URL can view it. Reports are designed to be shareable. Reports auto-expire after 90 days. Contact us if you want a specific report deleted sooner.</li>
+        <li><strong>Rate-limit counters (~2 minutes):</strong> To prevent abuse, your IP address is hashed into a short-lived rate-limit key (5 scans per IP per minute, 30 scans per target domain per hour). These counters auto-expire after 120 seconds (per-IP) and 2 hours (per-domain). Your IP is not retained beyond that window.</li>
+        <li><strong>Total scan counter:</strong> A single global integer ("total scans performed") is incremented by 1 each time anyone runs a scan. This is just a number — not tied to any IP, URL, or session.</li>
+        <li><strong>Cloudflare access logs:</strong> Like any web service, Cloudflare retains short-term server logs (IP, user-agent, request path, timestamp) for security and debugging. These are governed by <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare's own privacy policy</a> and are not accessible to us beyond aggregated dashboards.</li>
       </ul>
 
       <h2>How Scans Work</h2>
-      <p>When you scan a website, our Cloudflare Worker fetches the page in real-time, runs the analysis, and returns the results directly to your browser. No data is stored on our servers after the scan completes. Your scan history is saved only in your browser's localStorage and never leaves your device.</p>
+      <p>When you scan a website, our Cloudflare Worker fetches the page from the edge, runs 260+ checks in parallel, calls Google PageSpeed Insights for Core Web Vitals data, and returns the result. The result is also written to a public report URL (as described above) and the global scan counter is incremented. Your scan history is also saved in your browser's localStorage for personal convenience — that part never leaves your device.</p>
 
       <h2>Local Storage</h2>
       <p>We use your browser's localStorage to save:</p>
@@ -96,14 +106,14 @@
       <p>This data stays on your device and can be cleared at any time by clicking "Clear History" in the footer or clearing your browser data.</p>
 
       <h2>Third-Party Services</h2>
-      <p>We use the following third-party services:</p>
+      <p>We use the following third-party services. Each has its own privacy policy and data-handling practices outside our control:</p>
       <ul>
-        <li><strong>Cloudflare Workers</strong> — Hosts and serves our application</li>
-        <li><strong>Google Analytics 4</strong> — Anonymous usage analytics (page views, scan counts) to improve the tool. No personal data is collected. You can opt out via browser extensions or privacy settings.</li>
-        <li><strong>Google Fonts</strong> — Provides the Inter and JetBrains Mono typefaces</li>
-        <li><strong>Impact.com</strong> — Affiliate link tracking for tool recommendations in scan results</li>
+        <li><strong>Cloudflare Workers &amp; Cloudflare Pages</strong> — Hosts the application. Cloudflare retains standard server logs (IP, user-agent, timestamp, request path). See <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare's privacy policy</a>.</li>
+        <li><strong>Google Analytics 4</strong> — Page views, scan-event analytics, traffic source attribution. We run GA4 with <code>anonymize_ip: true</code> set, but Google still receives your truncated IP, user-agent, geolocation (country/region), and referrer. You can opt out via browser extensions, Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">opt-out add-on</a>, or by enabling Do-Not-Track / Global Privacy Control in your browser.</li>
+        <li><strong>Google PageSpeed Insights API</strong> — Called from our Worker when you run a scan, to fetch your site's Core Web Vitals. The URL you scan is sent to Google's API.</li>
+        <li><strong>Google Fonts</strong> — Provides the Inter and JetBrains Mono typefaces. Loaded from Google's CDN, which records request IPs.</li>
+        <li><strong>Impact.com</strong> — Affiliate-link verification script, used for the few tool recommendations that include affiliate links. Sets a session cookie when you click an affiliate link. See <a href="https://impact.com/privacy-policy/" rel="noopener">Impact's privacy policy</a>.</li>
       </ul>
-      <p>These services may collect standard web server logs (IP address, user agent, timestamps) according to their own privacy policies.</p>
 
       <h2>Affiliate Links</h2>
       <p>Some tool recommendations in scan results may contain affiliate links. These are clearly identified and do not affect your scan results or scores in any way.</p>
