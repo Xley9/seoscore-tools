@@ -1,0 +1,13 @@
+const d = JSON.parse(require('fs').readFileSync(process.env.TEMP + '/gazelli-scan.json', 'utf8'));
+console.log('=== GAZELLI.COM.TR SCAN ===');
+console.log('SEO:', d.seo.score + '/100 | AEO:', d.aeo.score + '/100 | GEO:', d.geo.score + '/100');
+console.log('Overall:', Math.round(d.seo.score * 0.5 + d.aeo.score * 0.25 + d.geo.score * 0.25) + '%');
+console.log('');
+console.log('--- SEO FAILS (' + d.seo.checks.filter(c => !c.pass).length + ') ---');
+d.seo.checks.filter(c => !c.pass).forEach(c => console.log('  X', c.id, '-', c.label));
+console.log('');
+console.log('--- AEO FAILS (' + d.aeo.checks.filter(c => !c.pass).length + ') ---');
+d.aeo.checks.filter(c => !c.pass).forEach(c => console.log('  X', c.id, '-', c.label));
+console.log('');
+console.log('--- GEO FAILS (' + d.geo.checks.filter(c => !c.pass).length + ') ---');
+d.geo.checks.filter(c => !c.pass).forEach(c => console.log('  X', c.id, '-', c.label));

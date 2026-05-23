@@ -2,6 +2,21 @@ node_modules/
 .wrangler/
 .dev.vars
 *.log
-generate-og-image.py
-parse-scan.js
-logo-impact.html
+
+# Tool/IDE state
+.claude/
+.vscode/
+.idea/
+
+# Backups
+*.bak
+
+# Generated bundles (built by `npm run build`)
+src/site/app.min.js
+src/site/i18n.min.js
+src/site/check-metadata.min.js
+src/site/style.min.css
+src/site/blog.min.css
+
+# Generated artifact: site copy of worker check-metadata
+src/site/check-metadata.js
